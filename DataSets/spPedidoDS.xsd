@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="spPedidoDS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="spPedidoDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="spPedido" msprop:Schema="spPedido">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PedidoID" type="xs:int" />
+              <xs:element name="Serie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Folio" type="xs:int" minOccurs="0" />
+              <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaModificacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Ejercicio" type="xs:int" minOccurs="0" />
+              <xs:element name="Periodo" type="xs:int" minOccurs="0" />
+              <xs:element name="Dia" type="xs:int" minOccurs="0" />
+              <xs:element name="Subtotal" type="xs:double" minOccurs="0" />
+              <xs:element name="IVA" type="xs:double" minOccurs="0" />
+              <xs:element name="IEPS" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" type="xs:double" minOccurs="0" />
+              <xs:element name="Descuento" type="xs:double" minOccurs="0" />
+              <xs:element name="Status" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Observacion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EstacionID" type="xs:int" />
+              <xs:element name="ConfiguracionID" type="xs:int" />
+              <xs:element name="UsuarioID" type="xs:int" minOccurs="0" />
+              <xs:element name="StatusID" type="xs:int" minOccurs="0" />
+              <xs:element name="FacturaID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="spCatEstacion" msprop:Schema="spCatEstacion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EstacionID" type="xs:int" />
+              <xs:element name="Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RazonSocial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Calle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoExterior" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoInterior" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ciudad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Municipio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Telefono" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contacto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GrupoID" type="xs:int" />
+              <xs:element name="ZonaID" type="xs:int" />
+              <xs:element name="FormaPagoID" type="xs:int" minOccurs="0" />
+              <xs:element name="MetodoPagoID" type="xs:int" minOccurs="0" />
+              <xs:element name="PlazoPago" type="xs:int" minOccurs="0" />
+              <xs:element name="NIP" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaBaja" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LimiteCredito" type="xs:double" minOccurs="0" />
+              <xs:element name="Deposito" type="xs:double" minOccurs="0" />
+              <xs:element name="CambioCredito" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UltimoPago" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DiasRevisionID" type="xs:int" minOccurs="0" />
+              <xs:element name="DiaPagoID" type="xs:int" minOccurs="0" />
+              <xs:element name="VendedorID" type="xs:int" minOccurs="0" />
+              <xs:element name="GrupoFacturarID" type="xs:int" minOccurs="0" />
+              <xs:element name="CP" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="spCatUsuario" msprop:Schema="spCatUsuario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UsuarioID" type="xs:int" />
+              <xs:element name="Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Clave" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EstacionID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="spStatus" msprop:Schema="spStatus">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StatusID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Operacion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_spPedido" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//spPedido" />
+      <xs:field xpath="PedidoID" />
+    </xs:unique>
+    <xs:unique name="PK_spCatEstacion" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//spCatEstacion" />
+      <xs:field xpath="EstacionID" />
+    </xs:unique>
+    <xs:unique name="PK_spStatus" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//spStatus" />
+      <xs:field xpath="StatusID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DetallePedidoDS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="DetallePedidoDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="spDetallePedido" msprop:Schema="spDetallePedido">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DetallePedidoID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="ProductoID" type="xs:int" minOccurs="0" />
+              <xs:element name="PedidoID" type="xs:int" minOccurs="0" />
+              <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+              <xs:element name="VehiculoID" type="xs:int" minOccurs="0" />
+              <xs:element name="Volumen" type="xs:int" minOccurs="0" />
+              <xs:element name="Precio" type="xs:double" minOccurs="0" />
+              <xs:element name="Subtotal" type="xs:double" minOccurs="0" />
+              <xs:element name="IVA" type="xs:double" minOccurs="0" />
+              <xs:element name="IEPS" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" type="xs:double" minOccurs="0" />
+              <xs:element name="Descuento" type="xs:double" minOccurs="0" />
+              <xs:element name="NoItems" type="xs:int" minOccurs="0" />
+              <xs:element name="ChoferID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_spDetallePedido" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//spDetallePedido" />
+      <xs:field xpath="DetallePedidoID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

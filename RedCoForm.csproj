@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D50C51C-B8BA-4C81-8168-632B7006AF81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RedCoForm</RootNamespace>
+    <AssemblyName>RedCoForm</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="RemObjects.DataAbstract, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098, processorArchitecture=MSIL" />
+    <Reference Include="RemObjects.DataAbstract.Async, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098, processorArchitecture=MSIL" />
+    <Reference Include="RemObjects.SDK, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098, processorArchitecture=MSIL" />
+    <Reference Include="RemObjects.SDK.ZLib, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\ActionKeys.cs" />
+    <Compile Include="Base\Actions.cs" />
+    <Compile Include="Base\BarItemAction.cs" />
+    <Compile Include="Base\BaseModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseModule.Designer.cs">
+      <DependentUpon>BaseModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmCatalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmCatalogo.Designer.cs">
+      <DependentUpon>frmCatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmEstructura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmEstructura.Designer.cs">
+      <DependentUpon>frmEstructura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmPadre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmPadre.Designer.cs">
+      <DependentUpon>frmPadre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Modules.cs" />
+    <Compile Include="Base\ModulesRegistration.cs" />
+    <Compile Include="Class\clsCategoria.cs" />
+    <Compile Include="Class\clsEstacion.cs" />
+    <Compile Include="Class\clsGrupo.cs" />
+    <Compile Include="Class\clsProducto.cs" />
+    <Compile Include="Class\clsStatus.cs" />
+    <Compile Include="Class\clsTerminal.cs" />
+    <Compile Include="Class\clsUsuario.cs" />
+    <Compile Include="Class\clsVehiculo.cs" />
+    <Compile Include="Class\clsZona.cs" />
+    <Compile Include="Class\GlobalVar.cs" />
+    <Compile Include="Class\Misc.cs" />
+    <Compile Include="Class\UserInfo.cs" />
+    <Compile Include="Data\DataModule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\DataModule.Designer.cs">
+      <DependentUpon>DataModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DetallePedidoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetallePedidoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatEstacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatEstacion.Designer.cs">
+      <DependentUpon>frmCatEstacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatEstaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatEstaciones.Designer.cs">
+      <DependentUpon>frmCatEstaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatProducto.Designer.cs">
+      <DependentUpon>frmCatProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatPedido.Designer.cs">
+      <DependentUpon>frmCatPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatTerminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatTerminal.Designer.cs">
+      <DependentUpon>frmCatTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatVehiculo.Designer.cs">
+      <DependentUpon>frmCatVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataSets\spCatEstacionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatEstacionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatUsuarioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatUsuarioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatProductoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatProductoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatTerminalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatTerminalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatVehiculoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatVehiculoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spPedidoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spPedidoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatFormaPagoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatFormaPagoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatMetodoPagoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatMetodoPagoDS.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Base\BaseModule.resx">
+      <DependentUpon>BaseModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmCatalogo.resx">
+      <DependentUpon>frmCatalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmEstructura.resx">
+      <DependentUpon>frmEstructura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmPadre.resx">
+      <DependentUpon>frmPadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\DataModule.resx">
+      <DependentUpon>DataModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatEstacion.resx">
+      <DependentUpon>frmCatEstacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatEstaciones.resx">
+      <DependentUpon>frmCatEstaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatPedido.resx">
+      <DependentUpon>frmCatPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatProducto.resx">
+      <DependentUpon>frmCatProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatTerminal.resx">
+      <DependentUpon>frmCatTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatVehiculo.resx">
+      <DependentUpon>frmCatVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSets\DetallePedidoDS.xsc">
+      <DependentUpon>DetallePedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DetallePedidoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>DetallePedidoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\DetallePedidoDS.xss">
+      <DependentUpon>DetallePedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="DataSets\spCatEstacionDS.xsc">
+      <DependentUpon>spCatEstacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatEstacionDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatEstacionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatEstacionDS.xss">
+      <DependentUpon>spCatEstacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatUsuarioDS.xsc">
+      <DependentUpon>spCatUsuarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatUsuarioDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatUsuarioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatUsuarioDS.xss">
+      <DependentUpon>spCatUsuarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatProductoDS.xsc">
+      <DependentUpon>spCatProductoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatProductoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatProductoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatProductoDS.xss">
+      <DependentUpon>spCatProductoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatTerminalDS.xsc">
+      <DependentUpon>spCatTerminalDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatTerminalDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatTerminalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatTerminalDS.xss">
+      <DependentUpon>spCatTerminalDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatVehiculoDS.xsc">
+      <DependentUpon>spCatVehiculoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatVehiculoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatVehiculoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatVehiculoDS.xss">
+      <DependentUpon>spCatVehiculoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spPedidoDS.xsc">
+      <DependentUpon>spPedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spPedidoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spPedidoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spPedidoDS.xss">
+      <DependentUpon>spPedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatFormaPagoDS.xsc">
+      <DependentUpon>spCatFormaPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatFormaPagoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatFormaPagoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatFormaPagoDS.xss">
+      <DependentUpon>spCatFormaPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatMetodoPagoDS.xsc">
+      <DependentUpon>spCatMetodoPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatMetodoPagoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatMetodoPagoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatMetodoPagoDS.xss">
+      <DependentUpon>spCatMetodoPagoDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RPSuiteServer\RPSuiteServer.csproj">
+      <Project>{a5453b9c-7e66-4da7-8ca0-2ae983896619}</Project>
+      <Name>RPSuiteServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
