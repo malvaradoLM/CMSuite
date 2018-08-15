@@ -33,9 +33,9 @@ namespace RedCoForm.Forms.Catalogos
         public frmCatPedido()
         {
             InitializeComponent();
-            cdsCatalogo = spPedidoDS;
-            DataSource = spPedidoBindingSource;
-            NombreDataSet = "spPedido";
+            cdsCatalogo = spCatPedidoDS1;
+            DataSource = spCatPedidoBindingSource;
+            NombreDataSet = "spCatPedido";
             Buscar("~`|`~");
             getUsuarios();
             getEstaciones();
@@ -111,9 +111,9 @@ namespace RedCoForm.Forms.Catalogos
             Params.Clear();
 
             Data.DataModule.ParamByName(Params, "Datos", "");
-            Data.DataModule.FillDataSet(spPedidoDS, "spCatEstacion", Params.ToArray());
+            Data.DataModule.FillDataSet(spCatPedidoDS1, "spCatEstacion", Params.ToArray());
 
-            dt = spPedidoDS.Tables["spCatEstacion"];
+            dt = spCatPedidoDS1.Tables["spCatEstacion"];
             lstEstacion = clsEstacion.FillList(dt);
             bs.DataSource = lstEstacion;
 
@@ -151,9 +151,9 @@ namespace RedCoForm.Forms.Catalogos
             Params.Clear();
 
             Data.DataModule.ParamByName(Params, "Datos", "");
-            Data.DataModule.FillDataSet(spPedidoDS, "spStatus", Params.ToArray());
+            Data.DataModule.FillDataSet(spCatPedidoDS1, "spStatus", Params.ToArray());
 
-            dt = spPedidoDS.Tables["spStatus"];
+            dt = spCatPedidoDS1.Tables["spStatus"];
             lstStatus = clsStatus.FillList(dt);
             bs.DataSource = lstStatus;
 
@@ -194,9 +194,9 @@ namespace RedCoForm.Forms.Catalogos
             Params.Clear();
 
             Data.DataModule.ParamByName(Params, "Datos", "");
-            Data.DataModule.FillDataSet(spPedidoDS, "spCatUsuario", Params.ToArray());
+            Data.DataModule.FillDataSet(spCatPedidoDS1, "spCatUsuario", Params.ToArray());
 
-            dt = spPedidoDS.Tables["spCatUsuario"];
+            dt = spCatPedidoDS1.Tables["spCatUsuario"];
             Usuario = c.FillList(dt);
             bs.DataSource = Usuario;
 
@@ -484,7 +484,7 @@ namespace RedCoForm.Forms.Catalogos
                 pedido.Folio =int.Parse( txtFolio.Text);
                 pedido.Dia = (int)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "Dia");
                 pedido.IVA= (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IVA");
-                pedido.Status = (bool)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "Status");
+                //pedido.Status = (bool)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "Status");
                 pedido.Observacion = memObservacion.Text;
                 
                 

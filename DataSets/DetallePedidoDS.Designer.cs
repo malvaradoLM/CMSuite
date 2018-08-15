@@ -397,6 +397,16 @@ namespace RedCoForm.DataSets {
             
             private global::System.Data.DataColumn columnCategoriaID;
             
+            private global::System.Data.DataColumn columnCuentaContableCompra;
+            
+            private global::System.Data.DataColumn columnCuentaContableVenta;
+            
+            private global::System.Data.DataColumn columnCuentaContableIVA;
+            
+            private global::System.Data.DataColumn columnStatus;
+            
+            private global::System.Data.DataColumn columnCostoPromedio;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public spCatProductoDataTable() {
@@ -488,6 +498,46 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CuentaContableCompraColumn {
+                get {
+                    return this.columnCuentaContableCompra;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CuentaContableVentaColumn {
+                get {
+                    return this.columnCuentaContableVenta;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CuentaContableIVAColumn {
+                get {
+                    return this.columnCuentaContableIVA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn StatusColumn {
+                get {
+                    return this.columnStatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CostoPromedioColumn {
+                get {
+                    return this.columnCostoPromedio;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -523,7 +573,7 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatProductoRow AddspCatProductoRow(int ProductoID, string Descripcion, string Codigo, double Precio, string CodigoBarras, string ClaveSAT, int CategoriaID) {
+            public spCatProductoRow AddspCatProductoRow(int ProductoID, string Descripcion, string Codigo, double Precio, string CodigoBarras, string ClaveSAT, int CategoriaID, string CuentaContableCompra, string CuentaContableVenta, string CuentaContableIVA, bool Status, string CostoPromedio) {
                 spCatProductoRow rowspCatProductoRow = ((spCatProductoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ProductoID,
@@ -532,7 +582,12 @@ namespace RedCoForm.DataSets {
                         Precio,
                         CodigoBarras,
                         ClaveSAT,
-                        CategoriaID};
+                        CategoriaID,
+                        CuentaContableCompra,
+                        CuentaContableVenta,
+                        CuentaContableIVA,
+                        Status,
+                        CostoPromedio};
                 rowspCatProductoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowspCatProductoRow);
                 return rowspCatProductoRow;
@@ -562,6 +617,11 @@ namespace RedCoForm.DataSets {
                 this.columnCodigoBarras = base.Columns["CodigoBarras"];
                 this.columnClaveSAT = base.Columns["ClaveSAT"];
                 this.columnCategoriaID = base.Columns["CategoriaID"];
+                this.columnCuentaContableCompra = base.Columns["CuentaContableCompra"];
+                this.columnCuentaContableVenta = base.Columns["CuentaContableVenta"];
+                this.columnCuentaContableIVA = base.Columns["CuentaContableIVA"];
+                this.columnStatus = base.Columns["Status"];
+                this.columnCostoPromedio = base.Columns["CostoPromedio"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -581,6 +641,16 @@ namespace RedCoForm.DataSets {
                 base.Columns.Add(this.columnClaveSAT);
                 this.columnCategoriaID = new global::System.Data.DataColumn("CategoriaID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCategoriaID);
+                this.columnCuentaContableCompra = new global::System.Data.DataColumn("CuentaContableCompra", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCuentaContableCompra);
+                this.columnCuentaContableVenta = new global::System.Data.DataColumn("CuentaContableVenta", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCuentaContableVenta);
+                this.columnCuentaContableIVA = new global::System.Data.DataColumn("CuentaContableIVA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCuentaContableIVA);
+                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatus);
+                this.columnCostoPromedio = new global::System.Data.DataColumn("CostoPromedio", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCostoPromedio);
                 this.columnProductoID.AllowDBNull = false;
                 this.columnDescripcion.MaxLength = 250;
                 this.columnCodigo.MaxLength = 30;
@@ -588,6 +658,10 @@ namespace RedCoForm.DataSets {
                 this.columnCodigoBarras.MaxLength = 50;
                 this.columnClaveSAT.MaxLength = 10;
                 this.columnCategoriaID.AllowDBNull = false;
+                this.columnCuentaContableCompra.MaxLength = 30;
+                this.columnCuentaContableVenta.MaxLength = 30;
+                this.columnCuentaContableIVA.MaxLength = 30;
+                this.columnCostoPromedio.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1979,6 +2053,86 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string CuentaContableCompra {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProducto.CuentaContableCompraColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CuentaContableCompra\' in table \'spCatProducto\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProducto.CuentaContableCompraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string CuentaContableVenta {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProducto.CuentaContableVentaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CuentaContableVenta\' in table \'spCatProducto\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProducto.CuentaContableVentaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string CuentaContableIVA {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProducto.CuentaContableIVAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CuentaContableIVA\' in table \'spCatProducto\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProducto.CuentaContableIVAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool Status {
+                get {
+                    try {
+                        return ((bool)(this[this.tablespCatProducto.StatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Status\' in table \'spCatProducto\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProducto.StatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string CostoPromedio {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProducto.CostoPromedioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CostoPromedio\' in table \'spCatProducto\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProducto.CostoPromedioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsDescripcionNull() {
                 return this.IsNull(this.tablespCatProducto.DescripcionColumn);
             }
@@ -2023,6 +2177,66 @@ namespace RedCoForm.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetClaveSATNull() {
                 this[this.tablespCatProducto.ClaveSATColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCuentaContableCompraNull() {
+                return this.IsNull(this.tablespCatProducto.CuentaContableCompraColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCuentaContableCompraNull() {
+                this[this.tablespCatProducto.CuentaContableCompraColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCuentaContableVentaNull() {
+                return this.IsNull(this.tablespCatProducto.CuentaContableVentaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCuentaContableVentaNull() {
+                this[this.tablespCatProducto.CuentaContableVentaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCuentaContableIVANull() {
+                return this.IsNull(this.tablespCatProducto.CuentaContableIVAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCuentaContableIVANull() {
+                this[this.tablespCatProducto.CuentaContableIVAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsStatusNull() {
+                return this.IsNull(this.tablespCatProducto.StatusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetStatusNull() {
+                this[this.tablespCatProducto.StatusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCostoPromedioNull() {
+                return this.IsNull(this.tablespCatProducto.CostoPromedioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCostoPromedioNull() {
+                this[this.tablespCatProducto.CostoPromedioColumn] = global::System.Convert.DBNull;
             }
         }
         

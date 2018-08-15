@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.spPedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.spPedidoDS = new RedCoForm.DataSets.spPedidoDS();
             this.colPedidoID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSerie = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFolio = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -91,6 +89,8 @@
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.txtTotal = new DevExpress.XtraEditors.TextEdit();
             this.lueEstacion = new DevExpress.XtraEditors.LookUpEdit();
+            this.spCatPedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatPedidoDS1 = new RedCoForm.DataSets.spCatPedidoDS();
             this.txtDescuento = new DevExpress.XtraEditors.TextEdit();
             this.chkStatus = new DevExpress.XtraEditors.CheckEdit();
             this.txtIEPS = new DevExpress.XtraEditors.TextEdit();
@@ -118,8 +118,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgcCatalogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvCatalogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spPedidoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueColEstacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueColConfiguracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueColUsuario)).BeginInit();
@@ -142,6 +140,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueEstacion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuento.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIEPS.Properties)).BeginInit();
@@ -186,7 +186,7 @@
             // 
             // dgcCatalogo
             // 
-            this.dgcCatalogo.DataSource = this.spPedidoBindingSource;
+            this.dgcCatalogo.DataSource = this.spCatPedidoBindingSource;
             this.dgcCatalogo.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.lueColEstacion,
             this.lueColConfiguracion,
@@ -226,17 +226,6 @@
             this.gvCatalogo.OptionsSelection.MultiSelect = true;
             this.gvCatalogo.OptionsView.ColumnAutoWidth = false;
             this.gvCatalogo.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gvCatalogo_FocusedRowChanged);
-            // 
-            // spPedidoBindingSource
-            // 
-            this.spPedidoBindingSource.DataMember = "spPedido";
-            this.spPedidoBindingSource.DataSource = this.spPedidoDS;
-            this.spPedidoBindingSource.Sort = "";
-            // 
-            // spPedidoDS
-            // 
-            this.spPedidoDS.DataSetName = "spPedidoDS";
-            this.spPedidoDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // colPedidoID
             // 
@@ -439,7 +428,6 @@
             // lblFactura
             // 
             this.lblFactura.AutoSize = true;
-            this.lblFactura.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spPedidoBindingSource, "FacturaID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.lblFactura.Location = new System.Drawing.Point(23, 76);
             this.lblFactura.Name = "lblFactura";
             this.lblFactura.Size = new System.Drawing.Size(0, 13);
@@ -475,7 +463,6 @@
             // 
             // lueStatusPedido
             // 
-            this.lueStatusPedido.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "StatusID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.lueStatusPedido.Location = new System.Drawing.Point(193, 73);
             this.lueStatusPedido.Name = "lueStatusPedido";
             this.lueStatusPedido.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -753,7 +740,6 @@
             // txtTotal
             // 
             this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotal.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "Total", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtTotal.Location = new System.Drawing.Point(688, 80);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
@@ -761,7 +747,7 @@
             // 
             // lueEstacion
             // 
-            this.lueEstacion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "EstacionID", true));
+            this.lueEstacion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatPedidoBindingSource, "EstacionID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.lueEstacion.Location = new System.Drawing.Point(249, 22);
             this.lueEstacion.Name = "lueEstacion";
             this.lueEstacion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -769,10 +755,19 @@
             this.lueEstacion.Size = new System.Drawing.Size(100, 20);
             this.lueEstacion.TabIndex = 23;
             // 
+            // spCatPedidoBindingSource
+            // 
+            this.spCatPedidoBindingSource.DataMember = "spCatPedido";
+            this.spCatPedidoBindingSource.DataSource = this.spCatPedidoDS1;
+            // 
+            // spCatPedidoDS1
+            // 
+            this.spCatPedidoDS1.DataSetName = "spCatPedidoDS";
+            this.spCatPedidoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtDescuento
             // 
             this.txtDescuento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescuento.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "Descuento", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDescuento.Location = new System.Drawing.Point(688, 61);
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(100, 20);
@@ -780,7 +775,6 @@
             // 
             // chkStatus
             // 
-            this.chkStatus.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "Status", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkStatus.Location = new System.Drawing.Point(85, 73);
             this.chkStatus.Name = "chkStatus";
             this.chkStatus.Properties.Caption = "Activo";
@@ -790,7 +784,6 @@
             // txtIEPS
             // 
             this.txtIEPS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIEPS.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "IEPS", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtIEPS.Location = new System.Drawing.Point(688, 42);
             this.txtIEPS.Name = "txtIEPS";
             this.txtIEPS.Size = new System.Drawing.Size(100, 20);
@@ -807,7 +800,6 @@
             // txtIVA
             // 
             this.txtIVA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIVA.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "IVA", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtIVA.Location = new System.Drawing.Point(688, 23);
             this.txtIVA.Name = "txtIVA";
             this.txtIVA.Size = new System.Drawing.Size(100, 20);
@@ -815,7 +807,7 @@
             // 
             // txtSerie
             // 
-            this.txtSerie.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "Serie", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtSerie.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatPedidoBindingSource, "Serie", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtSerie.Location = new System.Drawing.Point(389, 22);
             this.txtSerie.Name = "txtSerie";
             this.txtSerie.Size = new System.Drawing.Size(100, 20);
@@ -824,7 +816,6 @@
             // txtSubtotal
             // 
             this.txtSubtotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSubtotal.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "Subtotal", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtSubtotal.Location = new System.Drawing.Point(688, 4);
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(100, 20);
@@ -832,7 +823,7 @@
             // 
             // lueUsuario
             // 
-            this.lueUsuario.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "UsuarioID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.lueUsuario.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatPedidoBindingSource, "UsuarioID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.lueUsuario.Location = new System.Drawing.Point(132, 22);
             this.lueUsuario.Name = "lueUsuario";
             this.lueUsuario.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -842,7 +833,7 @@
             // 
             // txtFolio
             // 
-            this.txtFolio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "Folio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtFolio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatPedidoBindingSource, "Folio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtFolio.Location = new System.Drawing.Point(499, 22);
             this.txtFolio.Name = "txtFolio";
             this.txtFolio.Size = new System.Drawing.Size(100, 20);
@@ -882,7 +873,7 @@
             // 
             // dateFecha
             // 
-            this.dateFecha.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "Fecha", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.dateFecha.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatPedidoBindingSource, "Fecha", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.dateFecha.EditValue = null;
             this.dateFecha.Location = new System.Drawing.Point(24, 22);
             this.dateFecha.Name = "dateFecha";
@@ -903,7 +894,7 @@
             // 
             // memObservacion
             // 
-            this.memObservacion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spPedidoBindingSource, "Observacion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.memObservacion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatPedidoBindingSource, "Observacion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.memObservacion.Location = new System.Drawing.Point(310, 74);
             this.memObservacion.Name = "memObservacion";
             this.memObservacion.Size = new System.Drawing.Size(289, 34);
@@ -932,8 +923,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgcCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spPedidoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueColEstacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueColConfiguracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueColUsuario)).EndInit();
@@ -958,6 +947,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueEstacion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIEPS.Properties)).EndInit();
@@ -974,9 +965,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource spPedidoBindingSource;
-        private DataSets.spPedidoDS spPedidoDS;
         private DevExpress.XtraGrid.Columns.GridColumn colPedidoID;
         private DevExpress.XtraGrid.Columns.GridColumn colSerie;
         private DevExpress.XtraGrid.Columns.GridColumn colFolio;
@@ -1054,5 +1042,7 @@
         private System.Windows.Forms.Button btnGenerarRecibo;
         private System.Windows.Forms.Label lblFactura;
         private System.Windows.Forms.Label label1;
+        private DataSets.spCatPedidoDS spCatPedidoDS1;
+        private System.Windows.Forms.BindingSource spCatPedidoBindingSource;
     }
 }

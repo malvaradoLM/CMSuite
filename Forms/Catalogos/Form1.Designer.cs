@@ -43,7 +43,6 @@
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.dateFecha = new DevExpress.XtraEditors.DateEdit();
             this.spPedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.spPedidoDS1 = new RedCoForm.DataSets.spPedidoDS();
             this.memObservacion = new DevExpress.XtraEditors.MemoEdit();
             this.txtSerie = new DevExpress.XtraEditors.TextEdit();
             this.txtFolio = new DevExpress.XtraEditors.TextEdit();
@@ -119,7 +118,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateFecha.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateFecha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spPedidoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memObservacion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSerie.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFolio.Properties)).BeginInit();
@@ -273,17 +271,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateFecha.Size = new System.Drawing.Size(100, 20);
             this.dateFecha.TabIndex = 13;
-            // 
-            // spPedidoBindingSource
-            // 
-            this.spPedidoBindingSource.DataMember = "spPedido";
-            this.spPedidoBindingSource.DataSource = this.spPedidoDS1;
-            this.spPedidoBindingSource.Sort = "";
-            // 
-            // spPedidoDS1
-            // 
-            this.spPedidoDS1.DataSetName = "spPedidoDS";
-            this.spPedidoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // memObservacion
             // 
@@ -884,7 +871,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateFecha.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateFecha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spPedidoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memObservacion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSerie.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFolio.Properties)).EndInit();
@@ -1000,7 +986,6 @@
         private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraEditors.SimpleButton btnUpdate;
         private System.Windows.Forms.BindingSource spPedidoBindingSource;
-        private DataSets.spPedidoDS spPedidoDS1;
         private DevExpress.XtraGrid.Columns.GridColumn colPedidoID1;
         private DevExpress.XtraGrid.Columns.GridColumn colSerie;
         private DevExpress.XtraGrid.Columns.GridColumn colFolio;

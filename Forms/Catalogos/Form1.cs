@@ -56,7 +56,7 @@ namespace RedCoForm
         {
             try
             {
-                cdsDatos = spPedidoDS1;
+                //cdsDatos = spPedidoDS1;
                 DataSource = spPedidoBindingSource;
                 NombreDataSetDatos = "spPedido";
                 cdsDatos.Clear();
@@ -82,7 +82,7 @@ namespace RedCoForm
             lueEstacion.EditValue = Pedido.EstacionID;
             txtSerie.Text = Pedido.Serie;
             txtFolio.Text = Pedido.Folio.ToString();
-            chkStatus.Checked = Pedido.Status;
+            //chkStatus.Checked = Pedido.Status;
             memObservacion.Text = Pedido.Observacion;
             txtTotal.Text = Pedido.Total.ToString();
             txtSubtotal.Text = Pedido.Subtotal.ToString();

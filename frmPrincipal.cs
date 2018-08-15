@@ -279,8 +279,7 @@ namespace RedCoForm
 
         private void tileItem28_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
-            ModuleInfoCollection.ShowModuleByName("CatalogoBanco", this);
-            bvcMenuPrincipal.Close();
+
         }
 
         private void timAlmacen_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
@@ -327,6 +326,22 @@ namespace RedCoForm
         {
             ModuleInfoCollection.ShowModuleByName("CatalogoEstacion", this);
             bvcMenuPrincipal.Close();
+        }
+
+        private void tileItem39_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+
+        }
+
+        private void tileItem40_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("CatalogoBanco", this);
+            bvcMenuPrincipal.Close();
+        }
+
+        private void tileItem38_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+
         }
     }
 }

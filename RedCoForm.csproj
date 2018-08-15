@@ -193,11 +193,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatVehiculoDS.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataSets\spPedidoDS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>spPedidoDS.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DataSets\spCatFormaPagoDS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -207,6 +202,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatMetodoPagoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatPedidoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatPedidoDS.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
@@ -336,17 +336,6 @@
     <None Include="DataSets\spCatVehiculoDS.xss">
       <DependentUpon>spCatVehiculoDS.xsd</DependentUpon>
     </None>
-    <None Include="DataSets\spPedidoDS.xsc">
-      <DependentUpon>spPedidoDS.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\spPedidoDS.xsd">
-      <Generator>MSDatasetGenerator</Generator>
-      <LastGenOutput>spPedidoDS.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSets\spPedidoDS.xss">
-      <DependentUpon>spPedidoDS.xsd</DependentUpon>
-    </None>
     <None Include="DataSets\spCatFormaPagoDS.xsc">
       <DependentUpon>spCatFormaPagoDS.xsd</DependentUpon>
     </None>
@@ -369,12 +358,23 @@
     <None Include="DataSets\spCatMetodoPagoDS.xss">
       <DependentUpon>spCatMetodoPagoDS.xsd</DependentUpon>
     </None>
+    <None Include="DataSets\spCatPedidoDS.xsc">
+      <DependentUpon>spCatPedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatPedidoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatPedidoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatPedidoDS.xss">
+      <DependentUpon>spCatPedidoDS.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\RPSuiteServer\RPSuiteServer.csproj">
+    <ProjectReference Include="..\CMSuiteServer\RPSuiteServer.csproj">
       <Project>{a5453b9c-7e66-4da7-8ca0-2ae983896619}</Project>
       <Name>RPSuiteServer</Name>
     </ProjectReference>
