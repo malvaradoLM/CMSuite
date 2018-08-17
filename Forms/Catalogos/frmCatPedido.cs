@@ -470,6 +470,7 @@ namespace RedCoForm.Forms.Catalogos
             try
             {
                 TPedido pedido = new TPedido();
+                TDetallePedido detallepedido = new TDetallePedido();
                 //MOVIMIENTO
                 pedido.Fecha = (DateTime)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "Fecha");
                 pedido.FechaModificacion = (DateTime)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "FechaModificacion");
@@ -486,36 +487,47 @@ namespace RedCoForm.Forms.Catalogos
                 pedido.IVA= (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IVA");
                 //pedido.Status = (bool)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "Status");
                 pedido.Observacion = memObservacion.Text;
-                
-                
+
+                //DETALLEPEDIDO
+                detallepedido.Volumen = (int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Volumen");
+                detallepedido.Precio = (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Precio");
+                detallepedido.Subtotal = (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Subtotal");
+                detallepedido.IVA = (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IVA");
+                detallepedido.IEPS = (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IEPS");
+                detallepedido.Total = (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Total");
+                detallepedido.Descuento= double.Parse(txtDescuento.Text);
+                detallepedido.NoItems = (int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "NoItems");
+                detallepedido.ProductoID = (int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "ProductoID");
+
                 //mOVIMIENTOID
 
 
-                int MovimientoID = RedCoForm.Data.DataModule.DataService.GenerarFactura(pedido);
+                int MovimientoID = RedCoForm.Data.DataModule.DataService.GenerarFactura(pedido, detallepedido);
                 if (MovimientoID <= 0)
                 {
                     throw new Exception("Error al generar el recibo");
                 }
                 else
                 {
-                    int detalleFactura;
+                    //   int detalleFactura;
 
-                    detalleFactura= RedCoForm.Data.DataModule.DataService.InsertarDetalleFactura((int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Volumen"),
-                        (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Precio"),
-                        (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Subtotal"),
-                        (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IVA"),
-                        (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IEPS"),
-                        (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Total"),
-                        double.Parse(txtDescuento.Text),
-                        (int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "NoItems"),
-                        MovimientoID, (int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "ProductoID"));
+                    //   detalleFactura= RedCoForm.Data.DataModule.DataService.InsertarDetalleFactura((int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Volumen"),
+                    //       (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Precio"),
+                    //       (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Subtotal"),
+                    //       (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IVA"),
+                    //       (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IEPS"),
+                    //       (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Total"),
+                    //       double.Parse(txtDescuento.Text),
+                    //       (int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "NoItems"),
+                    //       MovimientoID, (int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "ProductoID"));
 
-                    //Actualiza saldo del cliente por un cargo
-                 double saldo = RedCoForm.Data.DataModule.DataService.UpdateSaldoCargoPedido( (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Total"), (int)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "EstacionID"));
+                    //   //Actualiza saldo del cliente por un cargo
+                    //double saldo = RedCoForm.Data.DataModule.DataService.UpdateSaldoCargoPedido( (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Total"), (int)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "EstacionID"));
 
                     //Actualiza facturaid del pedidoid
-                    lblFactura.Text= DataModule.DataService.UpdatePedidoFactura((int)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "PedidoID"), MovimientoID).ToString();
+                    //lblFactura.Text= DataModule.DataService.UpdatePedidoFactura((int)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "PedidoID"), MovimientoID).ToString();
 
+                    lblFactura.Text = MovimientoID.ToString();
                     MessageBox.Show("Recibo generado correctamente");
                     ButtonGenerarRecibo();
                 }
