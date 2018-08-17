@@ -13,6 +13,7 @@ namespace RedCoForm.Data
 {
     public sealed partial class DataModule : Component
     {
+
         private RPSuiteServer.IRPLoginService fLoginService;
         private RPSuiteServer.IRPDataService fDataService;
         private RPSuiteServer.IRPDataService_Async fDataServiceAsync;
