@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RedCoForm.Forms.Catalogos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,7 @@ namespace RedCoForm.Base
             //    ModuleInfoCollection.Add("CatalogoCategoria", typeof(frmCatalogoCategoria));
             //    ModuleInfoCollection.Add("CatalogoProducto", typeof(frmCatalogoProducto));
             //    ModuleInfoCollection.Add("CatalogoCuentaBancaria", typeof(frmCatalogoCuentaBancaria));
-            //    ModuleInfoCollection.Add("CatalogoProveedor", typeof(frmCatalogoProveedor));
+                ModuleInfoCollection.Add("CatalogoProveedor", typeof(frmCatalogoProveedor));
             //    ModuleInfoCollection.Add("CatalogoFormadePago", typeof(frmCatalogoFormadePago));
             //    ModuleInfoCollection.Add("CatalogoEstacion", typeof(frmCatalogoEstacion));
             //    ModuleInfoCollection.Add("CatalogoGrupoNomina", typeof(frmCatalogoGrupoNomina));

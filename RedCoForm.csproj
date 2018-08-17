@@ -129,6 +129,12 @@
     <Compile Include="Forms\Catalogos\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoProveedor.Designer.cs">
+      <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Catalogos\frmCatEstacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoProveedor.resx">
+      <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatEstacion.resx">
       <DependentUpon>frmCatEstacion.cs</DependentUpon>
