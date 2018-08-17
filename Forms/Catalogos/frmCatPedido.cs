@@ -33,9 +33,9 @@ namespace RedCoForm.Forms.Catalogos
         public frmCatPedido()
         {
             InitializeComponent();
-            cdsCatalogo = spCatPedidoDS1;
+            cdsCatalogo = spPedidoDS1;
             DataSource = spCatPedidoBindingSource;
-            NombreDataSet = "spCatPedido";
+            NombreDataSet = "spPedido";
             Buscar("~`|`~");
             getUsuarios();
             getEstaciones();
@@ -111,9 +111,9 @@ namespace RedCoForm.Forms.Catalogos
             Params.Clear();
 
             Data.DataModule.ParamByName(Params, "Datos", "");
-            Data.DataModule.FillDataSet(spCatPedidoDS1, "spCatEstacion", Params.ToArray());
+            Data.DataModule.FillDataSet(spPedidoDS1, "spCatEstacion", Params.ToArray());
 
-            dt = spCatPedidoDS1.Tables["spCatEstacion"];
+            dt = spPedidoDS1.Tables["spCatEstacion"];
             lstEstacion = clsEstacion.FillList(dt);
             bs.DataSource = lstEstacion;
 
@@ -151,9 +151,9 @@ namespace RedCoForm.Forms.Catalogos
             Params.Clear();
 
             Data.DataModule.ParamByName(Params, "Datos", "");
-            Data.DataModule.FillDataSet(spCatPedidoDS1, "spStatus", Params.ToArray());
+            Data.DataModule.FillDataSet(spPedidoDS1, "spStatus", Params.ToArray());
 
-            dt = spCatPedidoDS1.Tables["spStatus"];
+            dt = spPedidoDS1.Tables["spStatus"];
             lstStatus = clsStatus.FillList(dt);
             bs.DataSource = lstStatus;
 
@@ -194,9 +194,9 @@ namespace RedCoForm.Forms.Catalogos
             Params.Clear();
 
             Data.DataModule.ParamByName(Params, "Datos", "");
-            Data.DataModule.FillDataSet(spCatPedidoDS1, "spCatUsuario", Params.ToArray());
+            Data.DataModule.FillDataSet(spPedidoDS1, "spCatUsuario", Params.ToArray());
 
-            dt = spCatPedidoDS1.Tables["spCatUsuario"];
+            dt = spPedidoDS1.Tables["spCatUsuario"];
             Usuario = c.FillList(dt);
             bs.DataSource = Usuario;
 
@@ -359,7 +359,7 @@ namespace RedCoForm.Forms.Catalogos
         private void ButtonGenerarRecibo()
         {
 
-            if(int.Parse(gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "StatusID").ToString()) == 7)//En proceso de entrega
+            if(int.Parse(gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "StatusID").ToString()) == 5)//En proceso de entrega
             {
                 if (lblFactura.Text != string.Empty)
                     btnGenerarRecibo.Visible = false;

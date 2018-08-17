@@ -101,6 +101,17 @@
     <Compile Include="Class\GlobalVar.cs" />
     <Compile Include="Class\Misc.cs" />
     <Compile Include="Class\UserInfo.cs" />
+    <Compile Include="DataSets\spCatVehiculoDS.cs">
+      <DependentUpon>spCatVehiculoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spPedidoDS.cs">
+      <DependentUpon>spPedidoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spPedidoDS.Designer.cs">
+      <DependentUpon>spPedidoDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Data\DataModule.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -203,11 +214,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatMetodoPagoDS.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataSets\spCatPedidoDS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>spCatPedidoDS.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +277,17 @@
     </None>
     <None Include="DataSets\DetallePedidoDS.xss">
       <DependentUpon>DetallePedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spPedidoDS.xsc">
+      <DependentUpon>spPedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spPedidoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spPedidoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spPedidoDS.xss">
+      <DependentUpon>spPedidoDS.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -357,17 +374,6 @@
     </None>
     <None Include="DataSets\spCatMetodoPagoDS.xss">
       <DependentUpon>spCatMetodoPagoDS.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\spCatPedidoDS.xsc">
-      <DependentUpon>spCatPedidoDS.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\spCatPedidoDS.xsd">
-      <Generator>MSDatasetGenerator</Generator>
-      <LastGenOutput>spCatPedidoDS.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSets\spCatPedidoDS.xss">
-      <DependentUpon>spCatPedidoDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

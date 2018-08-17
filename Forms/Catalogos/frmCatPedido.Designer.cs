@@ -90,7 +90,7 @@
             this.txtTotal = new DevExpress.XtraEditors.TextEdit();
             this.lueEstacion = new DevExpress.XtraEditors.LookUpEdit();
             this.spCatPedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.spCatPedidoDS1 = new RedCoForm.DataSets.spCatPedidoDS();
+            this.spPedidoDS1 = new RedCoForm.DataSets.spPedidoDS();
             this.txtDescuento = new DevExpress.XtraEditors.TextEdit();
             this.chkStatus = new DevExpress.XtraEditors.CheckEdit();
             this.txtIEPS = new DevExpress.XtraEditors.TextEdit();
@@ -141,7 +141,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueEstacion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoDS1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuento.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIEPS.Properties)).BeginInit();
@@ -183,6 +183,7 @@
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.pnlDatos);
+            this.tpDatos.Size = new System.Drawing.Size(1103, 420);
             // 
             // dgcCatalogo
             // 
@@ -422,7 +423,7 @@
             this.pnlDatos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDatos.Location = new System.Drawing.Point(0, 0);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(678, 282);
+            this.pnlDatos.Size = new System.Drawing.Size(1103, 420);
             this.pnlDatos.TabIndex = 32;
             // 
             // lblFactura
@@ -463,6 +464,7 @@
             // 
             // lueStatusPedido
             // 
+            this.lueStatusPedido.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatPedidoBindingSource, "StatusID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.lueStatusPedido.Location = new System.Drawing.Point(193, 73);
             this.lueStatusPedido.Name = "lueStatusPedido";
             this.lueStatusPedido.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -484,13 +486,13 @@
             this.panelControl4.Controls.Add(this.dgcDetallePedido);
             this.panelControl4.Location = new System.Drawing.Point(22, 118);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(620, 247);
+            this.panelControl4.Size = new System.Drawing.Size(1045, 247);
             this.panelControl4.TabIndex = 30;
             // 
             // labelControl5
             // 
             this.labelControl5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl5.Location = new System.Drawing.Point(428, 165);
+            this.labelControl5.Location = new System.Drawing.Point(853, 165);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(51, 13);
             this.labelControl5.TabIndex = 34;
@@ -499,7 +501,7 @@
             // labelControl4
             // 
             this.labelControl4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl4.Location = new System.Drawing.Point(428, 98);
+            this.labelControl4.Location = new System.Drawing.Point(853, 98);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(39, 13);
             this.labelControl4.TabIndex = 33;
@@ -508,7 +510,7 @@
             // labelControl3
             // 
             this.labelControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl3.Location = new System.Drawing.Point(428, 31);
+            this.labelControl3.Location = new System.Drawing.Point(853, 31);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(40, 13);
             this.labelControl3.TabIndex = 32;
@@ -518,7 +520,7 @@
             // 
             this.txtcDescuento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtcDescuento.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spDetallePedidoBindingSource, "Descuento", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtcDescuento.Location = new System.Drawing.Point(404, 184);
+            this.txtcDescuento.Location = new System.Drawing.Point(829, 184);
             this.txtcDescuento.Name = "txtcDescuento";
             this.txtcDescuento.Size = new System.Drawing.Size(100, 20);
             this.txtcDescuento.TabIndex = 31;
@@ -538,7 +540,7 @@
             // 
             this.lueCatVehiculo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lueCatVehiculo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spDetallePedidoBindingSource, "VehiculoID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.lueCatVehiculo.Location = new System.Drawing.Point(404, 117);
+            this.lueCatVehiculo.Location = new System.Drawing.Point(829, 117);
             this.lueCatVehiculo.Name = "lueCatVehiculo";
             this.lueCatVehiculo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -549,7 +551,7 @@
             // 
             this.lueCatTerminal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lueCatTerminal.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spDetallePedidoBindingSource, "TerminalID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.lueCatTerminal.Location = new System.Drawing.Point(404, 50);
+            this.lueCatTerminal.Location = new System.Drawing.Point(829, 50);
             this.lueCatTerminal.Name = "lueCatTerminal";
             this.lueCatTerminal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -569,7 +571,7 @@
             this.lueTerminal,
             this.lueVehiculo,
             this.repositoryItemLookUpEdit4});
-            this.dgcDetallePedido.Size = new System.Drawing.Size(275, 243);
+            this.dgcDetallePedido.Size = new System.Drawing.Size(700, 243);
             this.dgcDetallePedido.TabIndex = 28;
             this.dgcDetallePedido.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDetallePedido});
@@ -740,7 +742,7 @@
             // txtTotal
             // 
             this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotal.Location = new System.Drawing.Point(688, 80);
+            this.txtTotal.Location = new System.Drawing.Point(1113, 80);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
             this.txtTotal.TabIndex = 21;
@@ -757,18 +759,18 @@
             // 
             // spCatPedidoBindingSource
             // 
-            this.spCatPedidoBindingSource.DataMember = "spCatPedido";
-            this.spCatPedidoBindingSource.DataSource = this.spCatPedidoDS1;
+            this.spCatPedidoBindingSource.DataMember = "spPedido";
+            this.spCatPedidoBindingSource.DataSource = this.spPedidoDS1;
             // 
-            // spCatPedidoDS1
+            // spPedidoDS1
             // 
-            this.spCatPedidoDS1.DataSetName = "spCatPedidoDS";
-            this.spCatPedidoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.spPedidoDS1.DataSetName = "spPedidoDS";
+            this.spPedidoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtDescuento
             // 
             this.txtDescuento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescuento.Location = new System.Drawing.Point(688, 61);
+            this.txtDescuento.Location = new System.Drawing.Point(1113, 61);
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(100, 20);
             this.txtDescuento.TabIndex = 20;
@@ -784,7 +786,7 @@
             // txtIEPS
             // 
             this.txtIEPS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIEPS.Location = new System.Drawing.Point(688, 42);
+            this.txtIEPS.Location = new System.Drawing.Point(1113, 42);
             this.txtIEPS.Name = "txtIEPS";
             this.txtIEPS.Size = new System.Drawing.Size(100, 20);
             this.txtIEPS.TabIndex = 19;
@@ -800,7 +802,7 @@
             // txtIVA
             // 
             this.txtIVA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIVA.Location = new System.Drawing.Point(688, 23);
+            this.txtIVA.Location = new System.Drawing.Point(1113, 23);
             this.txtIVA.Name = "txtIVA";
             this.txtIVA.Size = new System.Drawing.Size(100, 20);
             this.txtIVA.TabIndex = 18;
@@ -816,7 +818,7 @@
             // txtSubtotal
             // 
             this.txtSubtotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSubtotal.Location = new System.Drawing.Point(688, 4);
+            this.txtSubtotal.Location = new System.Drawing.Point(1113, 4);
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(100, 20);
             this.txtSubtotal.TabIndex = 17;
@@ -948,7 +950,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueEstacion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoDS1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIEPS.Properties)).EndInit();
@@ -1042,7 +1044,7 @@
         private System.Windows.Forms.Button btnGenerarRecibo;
         private System.Windows.Forms.Label lblFactura;
         private System.Windows.Forms.Label label1;
-        private DataSets.spCatPedidoDS spCatPedidoDS1;
         private System.Windows.Forms.BindingSource spCatPedidoBindingSource;
+        private DataSets.spPedidoDS spPedidoDS1;
     }
 }
