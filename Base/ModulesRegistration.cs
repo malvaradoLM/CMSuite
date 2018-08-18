@@ -1,4 +1,5 @@
 ﻿using RedCoForm.Forms.Catalogos;
+using RedCoForm.Forms.Configuracion;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,9 @@ namespace RedCoForm.Base
             ////Almacen
             //ModuleInfoCollection.Add("Almacen", typeof(frmAlmacen));
 
+            // Configuracion
+            ModuleInfoCollection.Add("Comercializadora", typeof(frmComercializadora));
+            ModuleInfoCollection.Add("RegimenFiscal", typeof(frmRegimenFiscal));
 
 
 

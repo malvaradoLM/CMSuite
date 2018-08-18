@@ -26,7 +26,7 @@ namespace RedCoForm.Forms.Catalogos
     {
         if (newRecordRow != null)
         {
-            newRecordRow["FormadePagoID"] = Data.DataModule.DataService.Folio("FormaPAgoID", "");
+            newRecordRow["FormaPagoID"] = Data.DataModule.DataService.Folio("FormadePagoID", "");
 
         }
     }

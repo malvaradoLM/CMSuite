@@ -147,6 +147,12 @@
     <Compile Include="Forms\Catalogos\frmCatalogoProveedor.Designer.cs">
       <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoVendedor.Designer.cs">
+      <DependentUpon>frmCatalogoVendedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Catalogos\frmCatEstacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,24 @@
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatVehiculo.Designer.cs">
       <DependentUpon>frmCatVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmCatalogoZona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmCatalogoZona.Designer.cs">
+      <DependentUpon>frmCatalogoZona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmComercializadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmComercializadora.Designer.cs">
+      <DependentUpon>frmComercializadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmRegimenFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmRegimenFiscal.Designer.cs">
+      <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -269,6 +293,9 @@
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoProveedor.resx">
       <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoVendedor.resx">
+      <DependentUpon>frmCatalogoVendedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatEstacion.resx">
       <DependentUpon>frmCatEstacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,6 +313,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatVehiculo.resx">
       <DependentUpon>frmCatVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuracion\frmCatalogoZona.resx">
+      <DependentUpon>frmCatalogoZona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuracion\frmComercializadora.resx">
+      <DependentUpon>frmComercializadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuracion\frmRegimenFiscal.resx">
+      <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

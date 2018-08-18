@@ -34,14 +34,14 @@
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.spCatProveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatProveedorDS1 = new RedCoForm.DataSets.spCatProveedorDS();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.spCatProveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.spCatProveedorDS1 = new RedCoForm.DataSets.spCatProveedorDS();
             this.colProveedorId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCalle = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -71,14 +71,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
             // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.Size = new System.Drawing.Size(555, 331);
             // 
             // gcBusqueda
@@ -99,7 +98,6 @@
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
-            this.tpDatos.Size = new System.Drawing.Size(491, 246);
             // 
             // dgcCatalogo
             // 
@@ -178,6 +176,17 @@
             this.textEdit2.Size = new System.Drawing.Size(196, 20);
             this.textEdit2.TabIndex = 7;
             // 
+            // spCatProveedorBindingSource
+            // 
+            this.spCatProveedorBindingSource.DataMember = "spCatProveedor";
+            this.spCatProveedorBindingSource.DataSource = this.spCatProveedorDS1;
+            this.spCatProveedorBindingSource.Sort = "";
+            // 
+            // spCatProveedorDS1
+            // 
+            this.spCatProveedorDS1.DataSetName = "spCatProveedorDS";
+            this.spCatProveedorDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtID
             // 
             this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "ProveedorId", true));
@@ -226,17 +235,6 @@
             this.labelControl1.Size = new System.Drawing.Size(11, 13);
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "ID";
-            // 
-            // spCatProveedorBindingSource
-            // 
-            this.spCatProveedorBindingSource.DataMember = "spCatProveedor";
-            this.spCatProveedorBindingSource.DataSource = this.spCatProveedorDS1;
-            this.spCatProveedorBindingSource.Sort = "";
-            // 
-            // spCatProveedorDS1
-            // 
-            this.spCatProveedorDS1.DataSetName = "spCatProveedorDS";
-            this.spCatProveedorDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // colProveedorId
             // 
@@ -353,9 +351,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
