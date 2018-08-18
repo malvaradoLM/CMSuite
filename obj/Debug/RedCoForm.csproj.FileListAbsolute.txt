@@ -485,3 +485,4 @@ Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.csproj.C
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.exe
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.pdb
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmCatalogoProveedor.resources
+C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmCatalogoProveedor.resources

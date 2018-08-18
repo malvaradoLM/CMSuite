@@ -218,5 +218,10 @@ namespace RedCoForm.Forms.Catalogos
         {
 
         }
+
+        private void groupControl4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
