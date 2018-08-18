@@ -20,17 +20,17 @@ namespace RedCoForm.DataSets {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("spCatFormaPagoDS")]
+    [global::System.Xml.Serialization.XmlRootAttribute("spCatProveedorDS")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class spCatFormaPagoDS : global::System.Data.DataSet {
+    public partial class spCatProveedorDS : global::System.Data.DataSet {
         
-        private spCatFormaPagoDataTable tablespCatFormaPago;
+        private spCatProveedorDataTable tablespCatProveedor;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public spCatFormaPagoDS() {
+        public spCatProveedorDS() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace RedCoForm.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected spCatFormaPagoDS(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected spCatProveedorDS(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace RedCoForm.DataSets {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["spCatFormaPago"] != null)) {
-                    base.Tables.Add(new spCatFormaPagoDataTable(ds.Tables["spCatFormaPago"]));
+                if ((ds.Tables["spCatProveedor"] != null)) {
+                    base.Tables.Add(new spCatProveedorDataTable(ds.Tables["spCatProveedor"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace RedCoForm.DataSets {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public spCatFormaPagoDataTable spCatFormaPago {
+        public spCatProveedorDataTable spCatProveedor {
             get {
-                return this.tablespCatFormaPago;
+                return this.tablespCatProveedor;
             }
         }
         
@@ -127,7 +127,7 @@ namespace RedCoForm.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            spCatFormaPagoDS cln = ((spCatFormaPagoDS)(base.Clone()));
+            spCatProveedorDS cln = ((spCatProveedorDS)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace RedCoForm.DataSets {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["spCatFormaPago"] != null)) {
-                    base.Tables.Add(new spCatFormaPagoDataTable(ds.Tables["spCatFormaPago"]));
+                if ((ds.Tables["spCatProveedor"] != null)) {
+                    base.Tables.Add(new spCatProveedorDataTable(ds.Tables["spCatProveedor"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace RedCoForm.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablespCatFormaPago = ((spCatFormaPagoDataTable)(base.Tables["spCatFormaPago"]));
+            this.tablespCatProveedor = ((spCatProveedorDataTable)(base.Tables["spCatProveedor"]));
             if ((initTable == true)) {
-                if ((this.tablespCatFormaPago != null)) {
-                    this.tablespCatFormaPago.InitVars();
+                if ((this.tablespCatProveedor != null)) {
+                    this.tablespCatProveedor.InitVars();
                 }
             }
         }
@@ -199,17 +199,17 @@ namespace RedCoForm.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "spCatFormaPagoDS";
+            this.DataSetName = "spCatProveedorDS";
             this.Prefix = "";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablespCatFormaPago = new spCatFormaPagoDataTable();
-            base.Tables.Add(this.tablespCatFormaPago);
+            this.tablespCatProveedor = new spCatProveedorDataTable();
+            base.Tables.Add(this.tablespCatProveedor);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializespCatFormaPago() {
+        private bool ShouldSerializespCatProveedor() {
             return false;
         }
         
@@ -224,7 +224,7 @@ namespace RedCoForm.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            spCatFormaPagoDS ds = new spCatFormaPagoDS();
+            spCatProveedorDS ds = new spCatProveedorDS();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -269,25 +269,45 @@ namespace RedCoForm.DataSets {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void spCatFormaPagoRowChangeEventHandler(object sender, spCatFormaPagoRowChangeEvent e);
+        public delegate void spCatProveedorRowChangeEventHandler(object sender, spCatProveedorRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class spCatFormaPagoDataTable : global::System.Data.TypedTableBase<spCatFormaPagoRow> {
+        public partial class spCatProveedorDataTable : global::System.Data.TypedTableBase<spCatProveedorRow> {
             
-            private global::System.Data.DataColumn columnFormaPagoID;
+            private global::System.Data.DataColumn columnProveedorId;
             
-            private global::System.Data.DataColumn columnCodigoSAT;
+            private global::System.Data.DataColumn columnNombre;
             
-            private global::System.Data.DataColumn columnDescripcion;
+            private global::System.Data.DataColumn columnCalle;
+            
+            private global::System.Data.DataColumn columnColonia;
+            
+            private global::System.Data.DataColumn columnCiudad;
+            
+            private global::System.Data.DataColumn columnRFC;
+            
+            private global::System.Data.DataColumn columnTelefono;
+            
+            private global::System.Data.DataColumn columnFax;
+            
+            private global::System.Data.DataColumn columnCodPostal;
+            
+            private global::System.Data.DataColumn columnEmail;
+            
+            private global::System.Data.DataColumn columnReferencia;
+            
+            private global::System.Data.DataColumn columnDiasPlazo;
+            
+            private global::System.Data.DataColumn columnCuentaContable;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatFormaPagoDataTable() {
-                this.TableName = "spCatFormaPago";
+            public spCatProveedorDataTable() {
+                this.TableName = "spCatProveedor";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -295,7 +315,7 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal spCatFormaPagoDataTable(global::System.Data.DataTable table) {
+            internal spCatProveedorDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -312,32 +332,112 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected spCatFormaPagoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected spCatProveedorDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn FormaPagoIDColumn {
+            public global::System.Data.DataColumn ProveedorIdColumn {
                 get {
-                    return this.columnFormaPagoID;
+                    return this.columnProveedorId;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CodigoSATColumn {
+            public global::System.Data.DataColumn NombreColumn {
                 get {
-                    return this.columnCodigoSAT;
+                    return this.columnNombre;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn DescripcionColumn {
+            public global::System.Data.DataColumn CalleColumn {
                 get {
-                    return this.columnDescripcion;
+                    return this.columnCalle;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn ColoniaColumn {
+                get {
+                    return this.columnColonia;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CiudadColumn {
+                get {
+                    return this.columnCiudad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn RFCColumn {
+                get {
+                    return this.columnRFC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn TelefonoColumn {
+                get {
+                    return this.columnTelefono;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn FaxColumn {
+                get {
+                    return this.columnFax;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CodPostalColumn {
+                get {
+                    return this.columnCodPostal;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn EmailColumn {
+                get {
+                    return this.columnEmail;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn ReferenciaColumn {
+                get {
+                    return this.columnReferencia;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn DiasPlazoColumn {
+                get {
+                    return this.columnDiasPlazo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CuentaContableColumn {
+                get {
+                    return this.columnCuentaContable;
                 }
             }
             
@@ -352,54 +452,64 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatFormaPagoRow this[int index] {
+            public spCatProveedorRow this[int index] {
                 get {
-                    return ((spCatFormaPagoRow)(this.Rows[index]));
+                    return ((spCatProveedorRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event spCatFormaPagoRowChangeEventHandler spCatFormaPagoRowChanging;
+            public event spCatProveedorRowChangeEventHandler spCatProveedorRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event spCatFormaPagoRowChangeEventHandler spCatFormaPagoRowChanged;
+            public event spCatProveedorRowChangeEventHandler spCatProveedorRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event spCatFormaPagoRowChangeEventHandler spCatFormaPagoRowDeleting;
+            public event spCatProveedorRowChangeEventHandler spCatProveedorRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event spCatFormaPagoRowChangeEventHandler spCatFormaPagoRowDeleted;
+            public event spCatProveedorRowChangeEventHandler spCatProveedorRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddspCatFormaPagoRow(spCatFormaPagoRow row) {
+            public void AddspCatProveedorRow(spCatProveedorRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatFormaPagoRow AddspCatFormaPagoRow(int FormaPagoID, string CodigoSAT, string Descripcion) {
-                spCatFormaPagoRow rowspCatFormaPagoRow = ((spCatFormaPagoRow)(this.NewRow()));
+            public spCatProveedorRow AddspCatProveedorRow(int ProveedorId, string Nombre, string Calle, string Colonia, string Ciudad, string RFC, string Telefono, string Fax, string CodPostal, string Email, string Referencia, int DiasPlazo, string CuentaContable) {
+                spCatProveedorRow rowspCatProveedorRow = ((spCatProveedorRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        FormaPagoID,
-                        CodigoSAT,
-                        Descripcion};
-                rowspCatFormaPagoRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowspCatFormaPagoRow);
-                return rowspCatFormaPagoRow;
+                        ProveedorId,
+                        Nombre,
+                        Calle,
+                        Colonia,
+                        Ciudad,
+                        RFC,
+                        Telefono,
+                        Fax,
+                        CodPostal,
+                        Email,
+                        Referencia,
+                        DiasPlazo,
+                        CuentaContable};
+                rowspCatProveedorRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowspCatProveedorRow);
+                return rowspCatProveedorRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatFormaPagoRow FindByFormaPagoID(int FormaPagoID) {
-                return ((spCatFormaPagoRow)(this.Rows.Find(new object[] {
-                            FormaPagoID})));
+            public spCatProveedorRow FindByProveedorId(int ProveedorId) {
+                return ((spCatProveedorRow)(this.Rows.Find(new object[] {
+                            ProveedorId})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                spCatFormaPagoDataTable cln = ((spCatFormaPagoDataTable)(base.Clone()));
+                spCatProveedorDataTable cln = ((spCatProveedorDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -407,58 +517,102 @@ namespace RedCoForm.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new spCatFormaPagoDataTable();
+                return new spCatProveedorDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
-                this.columnFormaPagoID = base.Columns["FormaPagoID"];
-                this.columnCodigoSAT = base.Columns["CodigoSAT"];
-                this.columnDescripcion = base.Columns["Descripcion"];
+                this.columnProveedorId = base.Columns["ProveedorId"];
+                this.columnNombre = base.Columns["Nombre"];
+                this.columnCalle = base.Columns["Calle"];
+                this.columnColonia = base.Columns["Colonia"];
+                this.columnCiudad = base.Columns["Ciudad"];
+                this.columnRFC = base.Columns["RFC"];
+                this.columnTelefono = base.Columns["Telefono"];
+                this.columnFax = base.Columns["Fax"];
+                this.columnCodPostal = base.Columns["CodPostal"];
+                this.columnEmail = base.Columns["Email"];
+                this.columnReferencia = base.Columns["Referencia"];
+                this.columnDiasPlazo = base.Columns["DiasPlazo"];
+                this.columnCuentaContable = base.Columns["CuentaContable"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columnFormaPagoID = new global::System.Data.DataColumn("FormaPagoID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFormaPagoID);
-                this.columnCodigoSAT = new global::System.Data.DataColumn("CodigoSAT", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCodigoSAT);
-                this.columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDescripcion);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("PK_spCatFormaPago", new global::System.Data.DataColumn[] {
-                                this.columnFormaPagoID}, true));
-                this.columnFormaPagoID.AllowDBNull = false;
-                this.columnFormaPagoID.Unique = true;
-                this.columnCodigoSAT.MaxLength = 10;
-                this.columnDescripcion.MaxLength = 100;
+                this.columnProveedorId = new global::System.Data.DataColumn("ProveedorId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProveedorId);
+                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombre);
+                this.columnCalle = new global::System.Data.DataColumn("Calle", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCalle);
+                this.columnColonia = new global::System.Data.DataColumn("Colonia", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnColonia);
+                this.columnCiudad = new global::System.Data.DataColumn("Ciudad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCiudad);
+                this.columnRFC = new global::System.Data.DataColumn("RFC", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRFC);
+                this.columnTelefono = new global::System.Data.DataColumn("Telefono", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTelefono);
+                this.columnFax = new global::System.Data.DataColumn("Fax", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFax);
+                this.columnCodPostal = new global::System.Data.DataColumn("CodPostal", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodPostal);
+                this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmail);
+                this.columnReferencia = new global::System.Data.DataColumn("Referencia", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnReferencia);
+                this.columnDiasPlazo = new global::System.Data.DataColumn("DiasPlazo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDiasPlazo);
+                this.columnCuentaContable = new global::System.Data.DataColumn("CuentaContable", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCuentaContable);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("PK_spCatProveedor", new global::System.Data.DataColumn[] {
+                                this.columnProveedorId}, true));
+                this.columnProveedorId.AllowDBNull = false;
+                this.columnProveedorId.Unique = true;
+                this.columnNombre.MaxLength = 50;
+                this.columnCalle.AllowDBNull = false;
+                this.columnCalle.MaxLength = 40;
+                this.columnColonia.AllowDBNull = false;
+                this.columnColonia.MaxLength = 30;
+                this.columnCiudad.AllowDBNull = false;
+                this.columnCiudad.MaxLength = 30;
+                this.columnRFC.AllowDBNull = false;
+                this.columnRFC.MaxLength = 15;
+                this.columnTelefono.MaxLength = 20;
+                this.columnFax.MaxLength = 20;
+                this.columnCodPostal.MaxLength = 5;
+                this.columnEmail.MaxLength = 30;
+                this.columnReferencia.MaxLength = 50;
+                this.columnDiasPlazo.AllowDBNull = false;
+                this.columnCuentaContable.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatFormaPagoRow NewspCatFormaPagoRow() {
-                return ((spCatFormaPagoRow)(this.NewRow()));
+            public spCatProveedorRow NewspCatProveedorRow() {
+                return ((spCatProveedorRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new spCatFormaPagoRow(builder);
+                return new spCatProveedorRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(spCatFormaPagoRow);
+                return typeof(spCatProveedorRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.spCatFormaPagoRowChanged != null)) {
-                    this.spCatFormaPagoRowChanged(this, new spCatFormaPagoRowChangeEvent(((spCatFormaPagoRow)(e.Row)), e.Action));
+                if ((this.spCatProveedorRowChanged != null)) {
+                    this.spCatProveedorRowChanged(this, new spCatProveedorRowChangeEvent(((spCatProveedorRow)(e.Row)), e.Action));
                 }
             }
             
@@ -466,8 +620,8 @@ namespace RedCoForm.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.spCatFormaPagoRowChanging != null)) {
-                    this.spCatFormaPagoRowChanging(this, new spCatFormaPagoRowChangeEvent(((spCatFormaPagoRow)(e.Row)), e.Action));
+                if ((this.spCatProveedorRowChanging != null)) {
+                    this.spCatProveedorRowChanging(this, new spCatProveedorRowChangeEvent(((spCatProveedorRow)(e.Row)), e.Action));
                 }
             }
             
@@ -475,8 +629,8 @@ namespace RedCoForm.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.spCatFormaPagoRowDeleted != null)) {
-                    this.spCatFormaPagoRowDeleted(this, new spCatFormaPagoRowChangeEvent(((spCatFormaPagoRow)(e.Row)), e.Action));
+                if ((this.spCatProveedorRowDeleted != null)) {
+                    this.spCatProveedorRowDeleted(this, new spCatProveedorRowChangeEvent(((spCatProveedorRow)(e.Row)), e.Action));
                 }
             }
             
@@ -484,14 +638,14 @@ namespace RedCoForm.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.spCatFormaPagoRowDeleting != null)) {
-                    this.spCatFormaPagoRowDeleting(this, new spCatFormaPagoRowChangeEvent(((spCatFormaPagoRow)(e.Row)), e.Action));
+                if ((this.spCatProveedorRowDeleting != null)) {
+                    this.spCatProveedorRowDeleting(this, new spCatProveedorRowChangeEvent(((spCatProveedorRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemovespCatFormaPagoRow(spCatFormaPagoRow row) {
+            public void RemovespCatProveedorRow(spCatProveedorRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -500,7 +654,7 @@ namespace RedCoForm.DataSets {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                spCatFormaPagoDS ds = new spCatFormaPagoDS();
+                spCatProveedorDS ds = new spCatProveedorDS();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -518,7 +672,7 @@ namespace RedCoForm.DataSets {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "spCatFormaPagoDataTable";
+                attribute2.FixedValue = "spCatProveedorDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -562,82 +716,277 @@ namespace RedCoForm.DataSets {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class spCatFormaPagoRow : global::System.Data.DataRow {
+        public partial class spCatProveedorRow : global::System.Data.DataRow {
             
-            private spCatFormaPagoDataTable tablespCatFormaPago;
+            private spCatProveedorDataTable tablespCatProveedor;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal spCatFormaPagoRow(global::System.Data.DataRowBuilder rb) : 
+            internal spCatProveedorRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablespCatFormaPago = ((spCatFormaPagoDataTable)(this.Table));
+                this.tablespCatProveedor = ((spCatProveedorDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int FormaPagoID {
+            public int ProveedorId {
                 get {
-                    return ((int)(this[this.tablespCatFormaPago.FormaPagoIDColumn]));
+                    return ((int)(this[this.tablespCatProveedor.ProveedorIdColumn]));
                 }
                 set {
-                    this[this.tablespCatFormaPago.FormaPagoIDColumn] = value;
+                    this[this.tablespCatProveedor.ProveedorIdColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string CodigoSAT {
-                get {
-                    try {
-                        return ((string)(this[this.tablespCatFormaPago.CodigoSATColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CodigoSAT\' in table \'spCatFormaPago\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablespCatFormaPago.CodigoSATColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Descripcion {
+            public string Nombre {
                 get {
                     try {
-                        return ((string)(this[this.tablespCatFormaPago.DescripcionColumn]));
+                        return ((string)(this[this.tablespCatProveedor.NombreColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Descripcion\' in table \'spCatFormaPago\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Nombre\' in table \'spCatProveedor\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablespCatFormaPago.DescripcionColumn] = value;
+                    this[this.tablespCatProveedor.NombreColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsCodigoSATNull() {
-                return this.IsNull(this.tablespCatFormaPago.CodigoSATColumn);
+            public string Calle {
+                get {
+                    return ((string)(this[this.tablespCatProveedor.CalleColumn]));
+                }
+                set {
+                    this[this.tablespCatProveedor.CalleColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetCodigoSATNull() {
-                this[this.tablespCatFormaPago.CodigoSATColumn] = global::System.Convert.DBNull;
+            public string Colonia {
+                get {
+                    return ((string)(this[this.tablespCatProveedor.ColoniaColumn]));
+                }
+                set {
+                    this[this.tablespCatProveedor.ColoniaColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsDescripcionNull() {
-                return this.IsNull(this.tablespCatFormaPago.DescripcionColumn);
+            public string Ciudad {
+                get {
+                    return ((string)(this[this.tablespCatProveedor.CiudadColumn]));
+                }
+                set {
+                    this[this.tablespCatProveedor.CiudadColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetDescripcionNull() {
-                this[this.tablespCatFormaPago.DescripcionColumn] = global::System.Convert.DBNull;
+            public string RFC {
+                get {
+                    return ((string)(this[this.tablespCatProveedor.RFCColumn]));
+                }
+                set {
+                    this[this.tablespCatProveedor.RFCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string Telefono {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProveedor.TelefonoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Telefono\' in table \'spCatProveedor\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProveedor.TelefonoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string Fax {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProveedor.FaxColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Fax\' in table \'spCatProveedor\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProveedor.FaxColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string CodPostal {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProveedor.CodPostalColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CodPostal\' in table \'spCatProveedor\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProveedor.CodPostalColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string Email {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProveedor.EmailColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Email\' in table \'spCatProveedor\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProveedor.EmailColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string Referencia {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProveedor.ReferenciaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Referencia\' in table \'spCatProveedor\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProveedor.ReferenciaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int DiasPlazo {
+                get {
+                    return ((int)(this[this.tablespCatProveedor.DiasPlazoColumn]));
+                }
+                set {
+                    this[this.tablespCatProveedor.DiasPlazoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string CuentaContable {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatProveedor.CuentaContableColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CuentaContable\' in table \'spCatProveedor\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatProveedor.CuentaContableColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNombreNull() {
+                return this.IsNull(this.tablespCatProveedor.NombreColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNombreNull() {
+                this[this.tablespCatProveedor.NombreColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsTelefonoNull() {
+                return this.IsNull(this.tablespCatProveedor.TelefonoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetTelefonoNull() {
+                this[this.tablespCatProveedor.TelefonoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsFaxNull() {
+                return this.IsNull(this.tablespCatProveedor.FaxColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetFaxNull() {
+                this[this.tablespCatProveedor.FaxColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCodPostalNull() {
+                return this.IsNull(this.tablespCatProveedor.CodPostalColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCodPostalNull() {
+                this[this.tablespCatProveedor.CodPostalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsEmailNull() {
+                return this.IsNull(this.tablespCatProveedor.EmailColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetEmailNull() {
+                this[this.tablespCatProveedor.EmailColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsReferenciaNull() {
+                return this.IsNull(this.tablespCatProveedor.ReferenciaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetReferenciaNull() {
+                this[this.tablespCatProveedor.ReferenciaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCuentaContableNull() {
+                return this.IsNull(this.tablespCatProveedor.CuentaContableColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCuentaContableNull() {
+                this[this.tablespCatProveedor.CuentaContableColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -645,22 +994,22 @@ namespace RedCoForm.DataSets {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class spCatFormaPagoRowChangeEvent : global::System.EventArgs {
+        public class spCatProveedorRowChangeEvent : global::System.EventArgs {
             
-            private spCatFormaPagoRow eventRow;
+            private spCatProveedorRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatFormaPagoRowChangeEvent(spCatFormaPagoRow row, global::System.Data.DataRowAction action) {
+            public spCatProveedorRowChangeEvent(spCatProveedorRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatFormaPagoRow Row {
+            public spCatProveedorRow Row {
                 get {
                     return this.eventRow;
                 }

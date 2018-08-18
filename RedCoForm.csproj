@@ -129,11 +129,29 @@
     <Compile Include="Forms\Catalogos\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoCategoria.Designer.cs">
+      <DependentUpon>frmCatalogoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoFormadePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoFormadePago.Designer.cs">
+      <DependentUpon>frmCatalogoFormadePago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoProveedor.Designer.cs">
       <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoVendedor.Designer.cs">
+      <DependentUpon>frmCatalogoVendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatEstacion.cs">
       <SubType>Form</SubType>
@@ -170,6 +188,24 @@
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatVehiculo.Designer.cs">
       <DependentUpon>frmCatVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmCatalogoZona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmCatalogoZona.Designer.cs">
+      <DependentUpon>frmCatalogoZona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmComercializadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmComercializadora.Designer.cs">
+      <DependentUpon>frmComercializadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmRegimenFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configuracion\frmRegimenFiscal.Designer.cs">
+      <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -220,6 +256,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatMetodoPagoDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spCatCategoriaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatCategoriaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatProveedorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatProveedorDS.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,8 +284,17 @@
     <EmbeddedResource Include="Forms\Catalogos\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoCategoria.resx">
+      <DependentUpon>frmCatalogoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoFormadePago.resx">
+      <DependentUpon>frmCatalogoFormadePago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoProveedor.resx">
       <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoVendedor.resx">
+      <DependentUpon>frmCatalogoVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatEstacion.resx">
       <DependentUpon>frmCatEstacion.cs</DependentUpon>
@@ -258,6 +313,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatVehiculo.resx">
       <DependentUpon>frmCatVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuracion\frmCatalogoZona.resx">
+      <DependentUpon>frmCatalogoZona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuracion\frmComercializadora.resx">
+      <DependentUpon>frmComercializadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configuracion\frmRegimenFiscal.resx">
+      <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -383,6 +447,28 @@
     </None>
     <None Include="DataSets\spCatMetodoPagoDS.xss">
       <DependentUpon>spCatMetodoPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatCategoriaDS.xsc">
+      <DependentUpon>spCatCategoriaDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatCategoriaDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatCategoriaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatCategoriaDS.xss">
+      <DependentUpon>spCatCategoriaDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatProveedorDS.xsc">
+      <DependentUpon>spCatProveedorDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatProveedorDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatProveedorDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatProveedorDS.xss">
+      <DependentUpon>spCatProveedorDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

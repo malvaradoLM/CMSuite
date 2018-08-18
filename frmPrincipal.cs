@@ -343,5 +343,22 @@ namespace RedCoForm
         {
 
         }
+
+        private void tileItem12_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+
+        }
+
+        private void tileItem15_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("Comercializadora", this);
+            bvcMenuPrincipal.Close();
+        }
+
+        private void tileItem26_ItemClick_1(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("RegimenFiscal", this);
+            bvcMenuPrincipal.Close();
+        }
     }
 }

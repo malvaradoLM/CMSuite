@@ -1,4 +1,5 @@
 ﻿using RedCoForm.Forms.Catalogos;
+using RedCoForm.Forms.Configuracion;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,11 +25,11 @@ namespace RedCoForm.Base
             //    ModuleInfoCollection.Add("CatalogoCliente", typeof(frmCatalogoCliente));
             //    ModuleInfoCollection.Add("CatalogoBanco", typeof(frmCatalogoBanco));
             //    ModuleInfoCollection.Add("CatalogoReportes", typeof(frmCatalogoReportes));
-            //    ModuleInfoCollection.Add("CatalogoCategoria", typeof(frmCatalogoCategoria));
+                ModuleInfoCollection.Add("CatalogoCategoria", typeof(frmCatalogoCategoria));
             //    ModuleInfoCollection.Add("CatalogoProducto", typeof(frmCatalogoProducto));
             //    ModuleInfoCollection.Add("CatalogoCuentaBancaria", typeof(frmCatalogoCuentaBancaria));
                 ModuleInfoCollection.Add("CatalogoProveedor", typeof(frmCatalogoProveedor));
-            //    ModuleInfoCollection.Add("CatalogoFormadePago", typeof(frmCatalogoFormadePago));
+                ModuleInfoCollection.Add("CatalogoFormadePago", typeof(frmCatalogoFormadePago));
             //    ModuleInfoCollection.Add("CatalogoEstacion", typeof(frmCatalogoEstacion));
             //    ModuleInfoCollection.Add("CatalogoGrupoNomina", typeof(frmCatalogoGrupoNomina));
             //    ModuleInfoCollection.Add("CatalogoEmpleado", typeof(frmCatalogoEmpleadocs));
@@ -43,6 +44,9 @@ namespace RedCoForm.Base
             ////Almacen
             //ModuleInfoCollection.Add("Almacen", typeof(frmAlmacen));
 
+            // Configuracion
+            ModuleInfoCollection.Add("Comercializadora", typeof(frmComercializadora));
+            ModuleInfoCollection.Add("RegimenFiscal", typeof(frmRegimenFiscal));
 
 
 

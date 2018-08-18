@@ -59,6 +59,9 @@
             this.txtCuentaContVenta = new DevExpress.XtraEditors.TextEdit();
             this.txtCuentaContIVA = new DevExpress.XtraEditors.TextEdit();
             this.txtCostoPromedio = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -82,15 +85,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCuentaContVenta.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCuentaContIVA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCostoPromedio.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
             // 
-            this.tcCatalogo.Size = new System.Drawing.Size(803, 307);
+            this.tcCatalogo.Size = new System.Drawing.Size(763, 399);
             // 
             // gcBusqueda
             // 
-            this.gcBusqueda.Size = new System.Drawing.Size(801, 100);
+            this.gcBusqueda.Size = new System.Drawing.Size(1054, 100);
             // 
             // btnBuscar
             // 
@@ -101,37 +107,17 @@
             // 
             // tpBuscar
             // 
-            this.tpBuscar.Size = new System.Drawing.Size(801, 282);
+            this.tpBuscar.Size = new System.Drawing.Size(1054, 543);
             // 
             // tpDatos
             // 
-            this.tpDatos.Controls.Add(this.txtCostoPromedio);
-            this.tpDatos.Controls.Add(this.txtCuentaContIVA);
-            this.tpDatos.Controls.Add(this.txtCuentaContVenta);
-            this.tpDatos.Controls.Add(this.txtCuentaContCompra);
-            this.tpDatos.Controls.Add(this.txtClaveSAT);
-            this.tpDatos.Controls.Add(this.txtCodigoBarras);
-            this.tpDatos.Controls.Add(this.txtPrecio);
-            this.tpDatos.Controls.Add(this.txtCodigo);
-            this.tpDatos.Controls.Add(this.txtDescripcion);
-            this.tpDatos.Controls.Add(this.lueCategoria);
-            this.tpDatos.Controls.Add(this.chkStatus);
-            this.tpDatos.Controls.Add(this.labelControl1);
-            this.tpDatos.Controls.Add(this.labelControl2);
-            this.tpDatos.Controls.Add(this.labelControl3);
-            this.tpDatos.Controls.Add(this.labelControl4);
-            this.tpDatos.Controls.Add(this.labelControl5);
-            this.tpDatos.Controls.Add(this.labelControl6);
-            this.tpDatos.Controls.Add(this.labelControl7);
-            this.tpDatos.Controls.Add(this.labelControl8);
-            this.tpDatos.Controls.Add(this.labelControl9);
-            this.tpDatos.Controls.Add(this.labelControl10);
-            this.tpDatos.Size = new System.Drawing.Size(801, 282);
+            this.tpDatos.Controls.Add(this.groupControl1);
+            this.tpDatos.Size = new System.Drawing.Size(761, 374);
             // 
             // dgcCatalogo
             // 
             this.dgcCatalogo.DataSource = this.spCatProductoDSBindingSource;
-            this.dgcCatalogo.Size = new System.Drawing.Size(801, 182);
+            this.dgcCatalogo.Size = new System.Drawing.Size(1054, 443);
             // 
             // gvCatalogo
             // 
@@ -203,7 +189,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(22, 30);
+            this.labelControl1.Location = new System.Drawing.Point(126, 35);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(54, 13);
             this.labelControl1.TabIndex = 2;
@@ -211,7 +197,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(22, 59);
+            this.labelControl2.Location = new System.Drawing.Point(44, 80);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(33, 13);
             this.labelControl2.TabIndex = 3;
@@ -219,7 +205,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(22, 91);
+            this.labelControl3.Location = new System.Drawing.Point(132, 80);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(29, 13);
             this.labelControl3.TabIndex = 4;
@@ -227,7 +213,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(22, 126);
+            this.labelControl4.Location = new System.Drawing.Point(253, 80);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(67, 13);
             this.labelControl4.TabIndex = 5;
@@ -235,7 +221,7 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(22, 166);
+            this.labelControl5.Location = new System.Drawing.Point(44, 125);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(49, 13);
             this.labelControl5.TabIndex = 6;
@@ -243,7 +229,7 @@
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(363, 30);
+            this.labelControl6.Location = new System.Drawing.Point(392, 80);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(47, 13);
             this.labelControl6.TabIndex = 7;
@@ -251,7 +237,7 @@
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(363, 166);
+            this.labelControl7.Location = new System.Drawing.Point(132, 125);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(75, 13);
             this.labelControl7.TabIndex = 8;
@@ -259,7 +245,7 @@
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(363, 59);
+            this.labelControl8.Location = new System.Drawing.Point(44, 174);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(121, 13);
             this.labelControl8.TabIndex = 9;
@@ -267,7 +253,7 @@
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(363, 91);
+            this.labelControl9.Location = new System.Drawing.Point(238, 125);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(112, 13);
             this.labelControl9.TabIndex = 10;
@@ -275,7 +261,7 @@
             // 
             // labelControl10
             // 
-            this.labelControl10.Location = new System.Drawing.Point(363, 126);
+            this.labelControl10.Location = new System.Drawing.Point(407, 125);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(101, 13);
             this.labelControl10.TabIndex = 11;
@@ -284,10 +270,10 @@
             // chkStatus
             // 
             this.chkStatus.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CostoPromedio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.chkStatus.Location = new System.Drawing.Point(22, 200);
+            this.chkStatus.Location = new System.Drawing.Point(44, 229);
             this.chkStatus.Name = "chkStatus";
-            this.chkStatus.Properties.Caption = "Status";
-            this.chkStatus.Size = new System.Drawing.Size(75, 19);
+            this.chkStatus.Properties.Caption = "Producto Activo";
+            this.chkStatus.Size = new System.Drawing.Size(188, 19);
             this.chkStatus.TabIndex = 12;
             // 
             // spCatProductoDSBindingSource
@@ -303,33 +289,33 @@
             // lueCategoria
             // 
             this.lueCategoria.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CategoriaID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.lueCategoria.Location = new System.Drawing.Point(518, 27);
+            this.lueCategoria.Location = new System.Drawing.Point(407, 99);
             this.lueCategoria.Name = "lueCategoria";
             this.lueCategoria.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lueCategoria.Size = new System.Drawing.Size(100, 20);
+            this.lueCategoria.Size = new System.Drawing.Size(235, 20);
             this.lueCategoria.TabIndex = 13;
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtDescripcion.Location = new System.Drawing.Point(112, 27);
+            this.txtDescripcion.Location = new System.Drawing.Point(132, 54);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(510, 20);
             this.txtDescripcion.TabIndex = 14;
             // 
             // txtCodigo
             // 
             this.txtCodigo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "Codigo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtCodigo.Location = new System.Drawing.Point(112, 56);
+            this.txtCodigo.Location = new System.Drawing.Point(44, 99);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(82, 20);
             this.txtCodigo.TabIndex = 15;
             // 
             // txtPrecio
             // 
             this.txtPrecio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "Precio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtPrecio.Location = new System.Drawing.Point(112, 88);
+            this.txtPrecio.Location = new System.Drawing.Point(132, 99);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 16;
@@ -337,58 +323,105 @@
             // txtCodigoBarras
             // 
             this.txtCodigoBarras.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CodigoBarras", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtCodigoBarras.Location = new System.Drawing.Point(112, 123);
+            this.txtCodigoBarras.Location = new System.Drawing.Point(238, 99);
             this.txtCodigoBarras.Name = "txtCodigoBarras";
-            this.txtCodigoBarras.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigoBarras.Size = new System.Drawing.Size(163, 20);
             this.txtCodigoBarras.TabIndex = 17;
             // 
             // txtClaveSAT
             // 
             this.txtClaveSAT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "ClaveSAT", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtClaveSAT.Location = new System.Drawing.Point(112, 163);
+            this.txtClaveSAT.Location = new System.Drawing.Point(44, 148);
             this.txtClaveSAT.Name = "txtClaveSAT";
-            this.txtClaveSAT.Size = new System.Drawing.Size(100, 20);
+            this.txtClaveSAT.Size = new System.Drawing.Size(82, 20);
             this.txtClaveSAT.TabIndex = 18;
             this.txtClaveSAT.EditValueChanged += new System.EventHandler(this.textEdit5_EditValueChanged);
             // 
             // txtCuentaContCompra
             // 
             this.txtCuentaContCompra.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CuentaContableCompra", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtCuentaContCompra.Location = new System.Drawing.Point(518, 56);
+            this.txtCuentaContCompra.Location = new System.Drawing.Point(44, 193);
             this.txtCuentaContCompra.Name = "txtCuentaContCompra";
-            this.txtCuentaContCompra.Size = new System.Drawing.Size(100, 20);
+            this.txtCuentaContCompra.Size = new System.Drawing.Size(188, 20);
             this.txtCuentaContCompra.TabIndex = 19;
             // 
             // txtCuentaContVenta
             // 
             this.txtCuentaContVenta.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CuentaContableVenta", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtCuentaContVenta.Location = new System.Drawing.Point(518, 88);
+            this.txtCuentaContVenta.Location = new System.Drawing.Point(238, 148);
             this.txtCuentaContVenta.Name = "txtCuentaContVenta";
-            this.txtCuentaContVenta.Size = new System.Drawing.Size(100, 20);
+            this.txtCuentaContVenta.Size = new System.Drawing.Size(163, 20);
             this.txtCuentaContVenta.TabIndex = 20;
             // 
             // txtCuentaContIVA
             // 
             this.txtCuentaContIVA.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CuentaContableIVA", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtCuentaContIVA.Location = new System.Drawing.Point(518, 123);
+            this.txtCuentaContIVA.Location = new System.Drawing.Point(407, 148);
             this.txtCuentaContIVA.Name = "txtCuentaContIVA";
-            this.txtCuentaContIVA.Size = new System.Drawing.Size(100, 20);
+            this.txtCuentaContIVA.Size = new System.Drawing.Size(235, 20);
             this.txtCuentaContIVA.TabIndex = 22;
             // 
             // txtCostoPromedio
             // 
             this.txtCostoPromedio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CostoPromedio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtCostoPromedio.Location = new System.Drawing.Point(518, 163);
+            this.txtCostoPromedio.Location = new System.Drawing.Point(132, 148);
             this.txtCostoPromedio.Name = "txtCostoPromedio";
             this.txtCostoPromedio.Size = new System.Drawing.Size(100, 20);
             this.txtCostoPromedio.TabIndex = 23;
             this.txtCostoPromedio.EditValueChanged += new System.EventHandler(this.textEdit10_EditValueChanged);
             // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.labelControl11);
+            this.groupControl1.Controls.Add(this.txtDescripcion);
+            this.groupControl1.Controls.Add(this.chkStatus);
+            this.groupControl1.Controls.Add(this.txtCostoPromedio);
+            this.groupControl1.Controls.Add(this.labelControl5);
+            this.groupControl1.Controls.Add(this.txtCuentaContIVA);
+            this.groupControl1.Controls.Add(this.labelControl4);
+            this.groupControl1.Controls.Add(this.txtCuentaContVenta);
+            this.groupControl1.Controls.Add(this.labelControl3);
+            this.groupControl1.Controls.Add(this.txtCuentaContCompra);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.lueCategoria);
+            this.groupControl1.Controls.Add(this.txtClaveSAT);
+            this.groupControl1.Controls.Add(this.labelControl6);
+            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.labelControl7);
+            this.groupControl1.Controls.Add(this.txtCodigoBarras);
+            this.groupControl1.Controls.Add(this.labelControl8);
+            this.groupControl1.Controls.Add(this.txtCodigo);
+            this.groupControl1.Controls.Add(this.labelControl9);
+            this.groupControl1.Controls.Add(this.txtPrecio);
+            this.groupControl1.Controls.Add(this.labelControl10);
+            this.groupControl1.Location = new System.Drawing.Point(28, 27);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(684, 281);
+            this.groupControl1.TabIndex = 24;
+            this.groupControl1.Text = "Datos";
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Location = new System.Drawing.Point(44, 35);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(11, 13);
+            this.labelControl11.TabIndex = 24;
+            this.labelControl11.Text = "ID";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(44, 54);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(82, 20);
+            this.textEdit1.TabIndex = 25;
+            // 
             // frmCatProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(803, 307);
+            this.ClientSize = new System.Drawing.Size(763, 399);
             this.Name = "frmCatProducto";
+            this.Text = "Catalogo Producto";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
             this.tcCatalogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).EndInit();
@@ -397,7 +430,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDatosBusqueda.Properties)).EndInit();
             this.tpBuscar.ResumeLayout(false);
             this.tpDatos.ResumeLayout(false);
-            this.tpDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgcCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).EndInit();
@@ -414,6 +446,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCuentaContVenta.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCuentaContIVA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCostoPromedio.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -449,5 +485,8 @@
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private System.Windows.Forms.BindingSource spCatProductoDSBindingSource;
         private DataSets.spCatProductoDS spCatProductoDS;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
     }
 }

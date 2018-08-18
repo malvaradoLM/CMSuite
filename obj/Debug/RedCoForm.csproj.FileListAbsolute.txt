@@ -390,7 +390,6 @@ Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.RichEdi
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.XtraTreeList.v17.2.dll
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.Office.v17.2.Core.dll
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.Images.v17.2.dll
-Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\RPSuiteServer.pdb
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\RPSuiteServer.exe.config
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.Data.v17.2.xml
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.Printing.v17.2.Core.xml
@@ -463,7 +462,6 @@ Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\de\DevExpress.Offi
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\es\DevExpress.Office.v17.2.Core.resources.dll
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\ja\DevExpress.Office.v17.2.Core.resources.dll
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\ru\DevExpress.Office.v17.2.Core.resources.dll
-Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.csprojResolveAssemblyReference.cache
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Base.BaseModule.resources
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Base.frmCatalogo.resources
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Base.frmEstructura.resources
@@ -486,3 +484,9 @@ Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.exe
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.pdb
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmCatalogoProveedor.resources
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmCatalogoProveedor.resources
+Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmCatalogoCategoria.resources
+Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmCatalogoFormadePago.resources
+Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\RPSuiteServer.pdb
+Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.csprojResolveAssemblyReference.cache
+Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmComercializadora.resources
+Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Configuracion.frmRegimenFiscal.resources
