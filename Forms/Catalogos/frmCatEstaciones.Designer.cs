@@ -144,7 +144,7 @@
             // tcCatalogo
             // 
             this.tcCatalogo.SelectedTabPage = this.tpBuscar;
-            this.tcCatalogo.Size = new System.Drawing.Size(1102, 421);
+            this.tcCatalogo.Size = new System.Drawing.Size(753, 421);
             this.tcCatalogo.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpDireccion});
             this.tcCatalogo.Controls.SetChildIndex(this.tpDireccion, 0);
@@ -169,7 +169,7 @@
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
-            this.tpDatos.Size = new System.Drawing.Size(1100, 396);
+            this.tpDatos.Size = new System.Drawing.Size(751, 396);
             // 
             // dgcCatalogo
             // 
@@ -855,7 +855,7 @@
             this.groupControl3.Controls.Add(this.dateTimePicker3);
             this.groupControl3.Location = new System.Drawing.Point(491, 227);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(238, 158);
+            this.groupControl3.Size = new System.Drawing.Size(229, 158);
             this.groupControl3.TabIndex = 104;
             this.groupControl3.Text = "Fechas";
             // 
@@ -907,7 +907,7 @@
             // frmCatEstaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1102, 421);
+            this.ClientSize = new System.Drawing.Size(753, 421);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatEstaciones";
             this.Text = "Estacion";

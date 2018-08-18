@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatVehiculo));
             this.spCatVehiculoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCatVehiculoDS1 = new RedCoForm.DataSets.spCatVehiculoDS();
             this.colVehiculoID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -50,6 +51,7 @@
             this.txtModelo = new DevExpress.XtraEditors.TextEdit();
             this.txtNoToneles = new DevExpress.XtraEditors.TextEdit();
             this.txtNoSerie = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -68,6 +70,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtModelo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNoToneles.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNoSerie.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcCatalogo
@@ -83,18 +87,7 @@
             // 
             // tpDatos
             // 
-            this.tpDatos.Controls.Add(this.labelControl1);
-            this.tpDatos.Controls.Add(this.labelControl2);
-            this.tpDatos.Controls.Add(this.labelControl3);
-            this.tpDatos.Controls.Add(this.labelControl4);
-            this.tpDatos.Controls.Add(this.labelControl5);
-            this.tpDatos.Controls.Add(this.labelControl6);
-            this.tpDatos.Controls.Add(this.txtCapacidad);
-            this.tpDatos.Controls.Add(this.txtMarca);
-            this.tpDatos.Controls.Add(this.txtNoEconomico);
-            this.tpDatos.Controls.Add(this.txtModelo);
-            this.tpDatos.Controls.Add(this.txtNoToneles);
-            this.tpDatos.Controls.Add(this.txtNoSerie);
+            this.tpDatos.Controls.Add(this.groupControl1);
             // 
             // dgcCatalogo
             // 
@@ -181,7 +174,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(26, 29);
+            this.labelControl1.Location = new System.Drawing.Point(20, 30);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(90, 13);
             this.labelControl1.TabIndex = 2;
@@ -189,7 +182,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(26, 66);
+            this.labelControl2.Location = new System.Drawing.Point(20, 84);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(79, 13);
             this.labelControl2.TabIndex = 3;
@@ -197,7 +190,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(26, 102);
+            this.labelControl3.Location = new System.Drawing.Point(20, 138);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(29, 13);
             this.labelControl3.TabIndex = 4;
@@ -205,7 +198,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(312, 29);
+            this.labelControl4.Location = new System.Drawing.Point(180, 30);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(34, 13);
             this.labelControl4.TabIndex = 5;
@@ -213,7 +206,7 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(312, 102);
+            this.labelControl5.Location = new System.Drawing.Point(180, 138);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(50, 13);
             this.labelControl5.TabIndex = 6;
@@ -221,7 +214,7 @@
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(312, 66);
+            this.labelControl6.Location = new System.Drawing.Point(180, 84);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(92, 13);
             this.labelControl6.TabIndex = 7;
@@ -230,57 +223,79 @@
             // txtCapacidad
             // 
             this.txtCapacidad.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVehiculoBindingSource, "Capacidad", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtCapacidad.Location = new System.Drawing.Point(419, 99);
+            this.txtCapacidad.Location = new System.Drawing.Point(180, 157);
             this.txtCapacidad.Name = "txtCapacidad";
-            this.txtCapacidad.Size = new System.Drawing.Size(100, 20);
+            this.txtCapacidad.Size = new System.Drawing.Size(92, 20);
             this.txtCapacidad.TabIndex = 8;
             // 
             // txtMarca
             // 
             this.txtMarca.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVehiculoBindingSource, "Marca", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtMarca.Location = new System.Drawing.Point(134, 99);
+            this.txtMarca.Location = new System.Drawing.Point(20, 157);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(100, 20);
+            this.txtMarca.Size = new System.Drawing.Size(127, 20);
             this.txtMarca.TabIndex = 9;
             // 
             // txtNoEconomico
             // 
             this.txtNoEconomico.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVehiculoBindingSource, "NoEconomico", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtNoEconomico.Location = new System.Drawing.Point(134, 26);
+            this.txtNoEconomico.Location = new System.Drawing.Point(20, 49);
             this.txtNoEconomico.Name = "txtNoEconomico";
-            this.txtNoEconomico.Size = new System.Drawing.Size(100, 20);
+            this.txtNoEconomico.Size = new System.Drawing.Size(127, 20);
             this.txtNoEconomico.TabIndex = 10;
             this.txtNoEconomico.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
             // 
             // txtModelo
             // 
             this.txtModelo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVehiculoBindingSource, "Modelo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtModelo.Location = new System.Drawing.Point(419, 26);
+            this.txtModelo.Location = new System.Drawing.Point(180, 49);
             this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(100, 20);
+            this.txtModelo.Size = new System.Drawing.Size(50, 20);
             this.txtModelo.TabIndex = 11;
             // 
             // txtNoToneles
             // 
             this.txtNoToneles.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVehiculoBindingSource, "NoToneles", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtNoToneles.Location = new System.Drawing.Point(419, 63);
+            this.txtNoToneles.Location = new System.Drawing.Point(180, 103);
             this.txtNoToneles.Name = "txtNoToneles";
-            this.txtNoToneles.Size = new System.Drawing.Size(100, 20);
+            this.txtNoToneles.Size = new System.Drawing.Size(50, 20);
             this.txtNoToneles.TabIndex = 12;
             // 
             // txtNoSerie
             // 
             this.txtNoSerie.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVehiculoBindingSource, "NoSerie", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtNoSerie.Location = new System.Drawing.Point(134, 63);
+            this.txtNoSerie.Location = new System.Drawing.Point(20, 103);
             this.txtNoSerie.Name = "txtNoSerie";
-            this.txtNoSerie.Size = new System.Drawing.Size(100, 20);
+            this.txtNoSerie.Size = new System.Drawing.Size(127, 20);
             this.txtNoSerie.TabIndex = 13;
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.txtNoSerie);
+            this.groupControl1.Controls.Add(this.txtNoToneles);
+            this.groupControl1.Controls.Add(this.labelControl3);
+            this.groupControl1.Controls.Add(this.txtModelo);
+            this.groupControl1.Controls.Add(this.labelControl4);
+            this.groupControl1.Controls.Add(this.txtNoEconomico);
+            this.groupControl1.Controls.Add(this.labelControl5);
+            this.groupControl1.Controls.Add(this.txtMarca);
+            this.groupControl1.Controls.Add(this.labelControl6);
+            this.groupControl1.Controls.Add(this.txtCapacidad);
+            this.groupControl1.Location = new System.Drawing.Point(11, 11);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(312, 198);
+            this.groupControl1.TabIndex = 14;
+            this.groupControl1.Text = "Datos";
             // 
             // frmCatVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatVehiculo";
+            this.Text = "Vehiculo";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
             this.tcCatalogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).EndInit();
@@ -289,7 +304,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDatosBusqueda.Properties)).EndInit();
             this.tpBuscar.ResumeLayout(false);
             this.tpDatos.ResumeLayout(false);
-            this.tpDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgcCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).EndInit();
@@ -301,6 +315,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtModelo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNoToneles.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNoSerie.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -328,5 +345,6 @@
         private DevExpress.XtraEditors.TextEdit txtModelo;
         private DevExpress.XtraEditors.TextEdit txtNoToneles;
         private DevExpress.XtraEditors.TextEdit txtNoSerie;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
     }
 }
