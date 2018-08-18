@@ -28,17 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.spCatProveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatProveedorDS1 = new RedCoForm.DataSets.spCatProveedorDS();
+            this.colProveedorId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCalle = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colColonia = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCiudad = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRFC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTelefono = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colFax = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCodPostal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colReferencia = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDiasPlazo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCuentaContable = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -55,12 +71,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
             // 
             this.tcCatalogo.SelectedTabPage = this.tpBuscar;
+            this.tcCatalogo.Size = new System.Drawing.Size(555, 331);
+            // 
+            // gcBusqueda
+            // 
+            this.gcBusqueda.Size = new System.Drawing.Size(553, 100);
             // 
             // btnBuscar
             // 
@@ -69,12 +92,36 @@
             // txtDatosBusqueda
             // 
             // 
+            // tpBuscar
+            // 
+            this.tpBuscar.Size = new System.Drawing.Size(553, 306);
+            // 
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
+            this.tpDatos.Size = new System.Drawing.Size(491, 246);
+            // 
+            // dgcCatalogo
+            // 
+            this.dgcCatalogo.DataSource = this.spCatProveedorBindingSource;
+            this.dgcCatalogo.Size = new System.Drawing.Size(553, 206);
             // 
             // gvCatalogo
             // 
+            this.gvCatalogo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colProveedorId,
+            this.colNombre,
+            this.colCalle,
+            this.colColonia,
+            this.colCiudad,
+            this.colRFC,
+            this.colTelefono,
+            this.colFax,
+            this.colCodPostal,
+            this.colEmail,
+            this.colReferencia,
+            this.colDiasPlazo,
+            this.colCuentaContable});
             this.gvCatalogo.OptionsBehavior.Editable = false;
             this.gvCatalogo.OptionsFind.AlwaysVisible = true;
             this.gvCatalogo.OptionsFind.SearchInPreview = true;
@@ -90,7 +137,7 @@
             this.groupControl1.Controls.Add(this.textEdit4);
             this.groupControl1.Controls.Add(this.textEdit3);
             this.groupControl1.Controls.Add(this.textEdit2);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.labelControl3);
@@ -125,17 +172,20 @@
             // 
             // textEdit2
             // 
+            this.textEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Nombre", true));
             this.textEdit2.Location = new System.Drawing.Point(19, 97);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Size = new System.Drawing.Size(196, 20);
             this.textEdit2.TabIndex = 7;
             // 
-            // textEdit1
+            // txtID
             // 
-            this.textEdit1.Location = new System.Drawing.Point(19, 52);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(49, 20);
-            this.textEdit1.TabIndex = 6;
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "ProveedorId", true));
+            this.txtID.Location = new System.Drawing.Point(19, 52);
+            this.txtID.Name = "txtID";
+            this.txtID.Properties.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(49, 20);
+            this.txtID.TabIndex = 6;
             // 
             // labelControl5
             // 
@@ -177,10 +227,112 @@
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "ID";
             // 
+            // spCatProveedorBindingSource
+            // 
+            this.spCatProveedorBindingSource.DataMember = "spCatProveedor";
+            this.spCatProveedorBindingSource.DataSource = this.spCatProveedorDS1;
+            this.spCatProveedorBindingSource.Sort = "";
+            // 
+            // spCatProveedorDS1
+            // 
+            this.spCatProveedorDS1.DataSetName = "spCatProveedorDS";
+            this.spCatProveedorDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // colProveedorId
+            // 
+            this.colProveedorId.FieldName = "ProveedorId";
+            this.colProveedorId.Name = "colProveedorId";
+            this.colProveedorId.Visible = true;
+            this.colProveedorId.VisibleIndex = 0;
+            // 
+            // colNombre
+            // 
+            this.colNombre.FieldName = "Nombre";
+            this.colNombre.Name = "colNombre";
+            this.colNombre.Visible = true;
+            this.colNombre.VisibleIndex = 1;
+            // 
+            // colCalle
+            // 
+            this.colCalle.FieldName = "Calle";
+            this.colCalle.Name = "colCalle";
+            this.colCalle.Visible = true;
+            this.colCalle.VisibleIndex = 2;
+            // 
+            // colColonia
+            // 
+            this.colColonia.FieldName = "Colonia";
+            this.colColonia.Name = "colColonia";
+            this.colColonia.Visible = true;
+            this.colColonia.VisibleIndex = 3;
+            // 
+            // colCiudad
+            // 
+            this.colCiudad.FieldName = "Ciudad";
+            this.colCiudad.Name = "colCiudad";
+            this.colCiudad.Visible = true;
+            this.colCiudad.VisibleIndex = 4;
+            // 
+            // colRFC
+            // 
+            this.colRFC.FieldName = "RFC";
+            this.colRFC.Name = "colRFC";
+            this.colRFC.Visible = true;
+            this.colRFC.VisibleIndex = 5;
+            // 
+            // colTelefono
+            // 
+            this.colTelefono.FieldName = "Telefono";
+            this.colTelefono.Name = "colTelefono";
+            this.colTelefono.Visible = true;
+            this.colTelefono.VisibleIndex = 6;
+            // 
+            // colFax
+            // 
+            this.colFax.FieldName = "Fax";
+            this.colFax.Name = "colFax";
+            this.colFax.Visible = true;
+            this.colFax.VisibleIndex = 7;
+            // 
+            // colCodPostal
+            // 
+            this.colCodPostal.FieldName = "CodPostal";
+            this.colCodPostal.Name = "colCodPostal";
+            this.colCodPostal.Visible = true;
+            this.colCodPostal.VisibleIndex = 8;
+            // 
+            // colEmail
+            // 
+            this.colEmail.FieldName = "Email";
+            this.colEmail.Name = "colEmail";
+            this.colEmail.Visible = true;
+            this.colEmail.VisibleIndex = 9;
+            // 
+            // colReferencia
+            // 
+            this.colReferencia.FieldName = "Referencia";
+            this.colReferencia.Name = "colReferencia";
+            this.colReferencia.Visible = true;
+            this.colReferencia.VisibleIndex = 10;
+            // 
+            // colDiasPlazo
+            // 
+            this.colDiasPlazo.FieldName = "DiasPlazo";
+            this.colDiasPlazo.Name = "colDiasPlazo";
+            this.colDiasPlazo.Visible = true;
+            this.colDiasPlazo.VisibleIndex = 11;
+            // 
+            // colCuentaContable
+            // 
+            this.colCuentaContable.FieldName = "CuentaContable";
+            this.colCuentaContable.Name = "colCuentaContable";
+            this.colCuentaContable.Visible = true;
+            this.colCuentaContable.VisibleIndex = 12;
+            // 
             // frmCatalogoProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(680, 307);
+            this.ClientSize = new System.Drawing.Size(555, 331);
             this.Name = "frmCatalogoProveedor";
             this.Text = "Catalogo Proveedor";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
@@ -201,7 +353,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,11 +367,26 @@
         private DevExpress.XtraEditors.TextEdit textEdit4;
         private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.BindingSource spCatProveedorBindingSource;
+        private DataSets.spCatProveedorDS spCatProveedorDS1;
+        private DevExpress.XtraGrid.Columns.GridColumn colProveedorId;
+        private DevExpress.XtraGrid.Columns.GridColumn colNombre;
+        private DevExpress.XtraGrid.Columns.GridColumn colCalle;
+        private DevExpress.XtraGrid.Columns.GridColumn colColonia;
+        private DevExpress.XtraGrid.Columns.GridColumn colCiudad;
+        private DevExpress.XtraGrid.Columns.GridColumn colRFC;
+        private DevExpress.XtraGrid.Columns.GridColumn colTelefono;
+        private DevExpress.XtraGrid.Columns.GridColumn colFax;
+        private DevExpress.XtraGrid.Columns.GridColumn colCodPostal;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmail;
+        private DevExpress.XtraGrid.Columns.GridColumn colReferencia;
+        private DevExpress.XtraGrid.Columns.GridColumn colDiasPlazo;
+        private DevExpress.XtraGrid.Columns.GridColumn colCuentaContable;
     }
 }

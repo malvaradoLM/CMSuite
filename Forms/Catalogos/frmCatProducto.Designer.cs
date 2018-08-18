@@ -126,7 +126,6 @@
             this.tpDatos.Controls.Add(this.labelControl8);
             this.tpDatos.Controls.Add(this.labelControl9);
             this.tpDatos.Controls.Add(this.labelControl10);
-            this.tpDatos.Size = new System.Drawing.Size(801, 282);
             // 
             // dgcCatalogo
             // 
