@@ -490,3 +490,5 @@ Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\RPSuiteServer.pdb
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.csprojResolveAssemblyReference.cache
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmComercializadora.resources
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Configuracion.frmRegimenFiscal.resources
+Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmCatalogoVendedor.resources
+Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\obj\Debug\RedCoForm.Forms.Configuracion.frmCatalogoZona.resources

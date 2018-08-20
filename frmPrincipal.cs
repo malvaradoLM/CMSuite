@@ -360,5 +360,17 @@ namespace RedCoForm
             ModuleInfoCollection.ShowModuleByName("RegimenFiscal", this);
             bvcMenuPrincipal.Close();
         }
+
+        private void tileItem35_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("RegimenFiscal", this);
+            bvcMenuPrincipal.Close();
+        }
+
+        private void tileItem27_ItemClick_1(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("CatalogoVendedor", this);
+            bvcMenuPrincipal.Close();
+        }
     }
 }

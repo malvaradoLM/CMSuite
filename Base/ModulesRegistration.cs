@@ -36,6 +36,7 @@ namespace RedCoForm.Base
             //    ModuleInfoCollection.Add("CatalogoTipoDocumento", typeof(frmCatalogoTipoDocumento));
             //    ModuleInfoCollection.Add("CatalogoDiaFestivo", typeof(frmCatalogoDiaFestivo));
             //    ModuleInfoCollection.Add("CatalogoTerminalBiometrica", typeof(frmCatalogoTerminalBiometrica));
+            ModuleInfoCollection.Add("CatalogoVendedor", typeof(frmCatalogoVendedor));
 
             //// Facturacion
             //ModuleInfoCollection.Add("FacturacionContado", typeof(frmFacturaContado));

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
-            this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
             this.txtCodigoSAT = new DevExpress.XtraEditors.TextEdit();
+            this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -47,14 +47,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigoSAT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tcCatalogo
-            // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -92,21 +88,26 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Datos";
             // 
-            // labelControl1
+            // txtCodigoSAT
             // 
-            this.labelControl1.Location = new System.Drawing.Point(32, 33);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(11, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "ID";
+            this.txtCodigoSAT.Location = new System.Drawing.Point(32, 142);
+            this.txtCodigoSAT.Name = "txtCodigoSAT";
+            this.txtCodigoSAT.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigoSAT.TabIndex = 5;
             // 
-            // labelControl2
+            // txtDescripcion
             // 
-            this.labelControl2.Location = new System.Drawing.Point(32, 78);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(54, 13);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "Descripcion";
+            this.txtDescripcion.Location = new System.Drawing.Point(32, 97);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(432, 20);
+            this.txtDescripcion.TabIndex = 4;
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(32, 52);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(61, 20);
+            this.txtID.TabIndex = 3;
             // 
             // labelControl3
             // 
@@ -116,26 +117,21 @@
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "Codigo SAT";
             // 
-            // txtID
+            // labelControl2
             // 
-            this.txtID.Location = new System.Drawing.Point(32, 52);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(61, 20);
-            this.txtID.TabIndex = 3;
+            this.labelControl2.Location = new System.Drawing.Point(32, 78);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(54, 13);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "Descripcion";
             // 
-            // txtDescripcion
+            // labelControl1
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(32, 97);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(432, 20);
-            this.txtDescripcion.TabIndex = 4;
-            // 
-            // txtCodigoSAT
-            // 
-            this.txtCodigoSAT.Location = new System.Drawing.Point(32, 142);
-            this.txtCodigoSAT.Name = "txtCodigoSAT";
-            this.txtCodigoSAT.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigoSAT.TabIndex = 5;
+            this.labelControl1.Location = new System.Drawing.Point(32, 33);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(11, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "ID";
             // 
             // frmRegimenFiscal
             // 
@@ -157,9 +153,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigoSAT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
