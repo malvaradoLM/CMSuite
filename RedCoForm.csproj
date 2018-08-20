@@ -155,12 +155,19 @@
     <Compile Include="Forms\Catalogos\frmCatalogoFormadePago.Designer.cs">
       <DependentUpon>frmCatalogoFormadePago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoGrupoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoGrupoUsuario.Designer.cs">
+      <DependentUpon>frmCatalogoGrupoUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoProveedor.Designer.cs">
       <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Forms\Catalogos\frmCatalogoRegimenFiscal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +179,13 @@
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoTipoDocumento.Designer.cs">
       <DependentUpon>frmCatalogoTipoDocumento.cs</DependentUpon>
+=======
+    <Compile Include="Forms\Catalogos\frmCatalogoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoUsuario.Designer.cs">
+      <DependentUpon>frmCatalogoUsuario.cs</DependentUpon>
+>>>>>>> 474691054bdc8a4d597c16dd6fa91d9da9c59592
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoVendedor.cs">
       <SubType>Form</SubType>
@@ -329,14 +343,22 @@
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoFormadePago.resx">
       <DependentUpon>frmCatalogoFormadePago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoGrupoUsuario.resx">
+      <DependentUpon>frmCatalogoGrupoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoProveedor.resx">
       <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoRegimenFiscal.resx">
       <DependentUpon>frmCatalogoRegimenFiscal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoTipoDocumento.resx">
       <DependentUpon>frmCatalogoTipoDocumento.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoUsuario.resx">
+      <DependentUpon>frmCatalogoUsuario.cs</DependentUpon>
+>>>>>>> 474691054bdc8a4d597c16dd6fa91d9da9c59592
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoVendedor.resx">
       <DependentUpon>frmCatalogoVendedor.cs</DependentUpon>
