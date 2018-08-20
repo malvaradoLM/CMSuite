@@ -13,6 +13,18 @@ namespace RedCoForm.Forms.Catalogos
         public frmCatalogoRegimenFiscal()
         {
             InitializeComponent();
+            cdsCatalogo = spCatRegimenFiscalDS1;
+            DataSource = spCatRegimenFiscalBindingSource1;
+            NombreDataSet = "spCatRegimenFiscal";
+            Buscar("~`|`~");
+        }
+        public override void onBeforePost()
+        {
+            if (newRecordRow != null)
+            {
+                newRecordRow["RegimenFiscalID"] = Data.DataModule.DataService.Folio("RegimenFiscalID", "");
+
+            }
         }
     }
 }

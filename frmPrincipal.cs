@@ -387,5 +387,11 @@ namespace RedCoForm
             ModuleInfoCollection.ShowModuleByName("CatalogoZona", this);
             bvcMenuPrincipal.Close();
         }
+
+        private void tileItem36_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("CatalogoFacturaUso", this);
+            bvcMenuPrincipal.Close();
+        }
     }
 }

@@ -408,7 +408,7 @@ namespace RedCoForm.DataSets {
                 base.Columns.Add(this.columnDescripcion);
                 this.columnTipoDocumentoID.AllowDBNull = false;
                 this.columnTipoDocumentoID.MaxLength = 10;
-                this.columnDescripcion.MaxLength = 10;
+                this.columnDescripcion.MaxLength = 40;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
