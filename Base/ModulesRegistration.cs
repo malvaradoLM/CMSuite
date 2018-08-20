@@ -37,6 +37,8 @@ namespace RedCoForm.Base
             //    ModuleInfoCollection.Add("CatalogoDiaFestivo", typeof(frmCatalogoDiaFestivo));
             //    ModuleInfoCollection.Add("CatalogoTerminalBiometrica", typeof(frmCatalogoTerminalBiometrica));
             ModuleInfoCollection.Add("CatalogoVendedor", typeof(frmCatalogoVendedor));
+            ModuleInfoCollection.Add("CatalogoGrupoUsuario", typeof(frmCatalogoGrupoUsuario));
+            ModuleInfoCollection.Add("CatalogoUsuario", typeof(frmCatalogoUsuario));
 
             //// Facturacion
             //ModuleInfoCollection.Add("FacturacionContado", typeof(frmFacturaContado));
@@ -48,6 +50,7 @@ namespace RedCoForm.Base
             // Configuracion
             ModuleInfoCollection.Add("Comercializadora", typeof(frmComercializadora));
             ModuleInfoCollection.Add("RegimenFiscal", typeof(frmRegimenFiscal));
+            ModuleInfoCollection.Add("CatalogoZona", typeof(frmCatalogoZona));
 
 
 
