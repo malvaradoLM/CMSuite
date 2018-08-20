@@ -101,6 +101,14 @@
     <Compile Include="Class\GlobalVar.cs" />
     <Compile Include="Class\Misc.cs" />
     <Compile Include="Class\UserInfo.cs" />
+    <Compile Include="DataSets\spCatTipoDocumentoDS.cs">
+      <DependentUpon>spCatTipoDocumentoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatTipoDocumentoDS.Designer.cs">
+      <DependentUpon>spCatTipoDocumentoDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="DataSets\spCatVehiculoDS.cs">
       <DependentUpon>spCatVehiculoDS.xsd</DependentUpon>
     </Compile>
@@ -135,6 +143,12 @@
     <Compile Include="Forms\Catalogos\frmCatalogoCategoria.Designer.cs">
       <DependentUpon>frmCatalogoCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoFacturaUso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoFacturaUso.Designer.cs">
+      <DependentUpon>frmCatalogoFacturaUso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoFormadePago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +160,18 @@
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoProveedor.Designer.cs">
       <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoRegimenFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoRegimenFiscal.Designer.cs">
+      <DependentUpon>frmCatalogoRegimenFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoTipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoTipoDocumento.Designer.cs">
+      <DependentUpon>frmCatalogoTipoDocumento.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoVendedor.cs">
       <SubType>Form</SubType>
@@ -266,6 +292,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatProveedorDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spCatRegimenFiscalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatRegimenFiscalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatFacturaUsoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatFacturaUsoDS.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -287,11 +323,20 @@
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoCategoria.resx">
       <DependentUpon>frmCatalogoCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoFacturaUso.resx">
+      <DependentUpon>frmCatalogoFacturaUso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoFormadePago.resx">
       <DependentUpon>frmCatalogoFormadePago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoProveedor.resx">
       <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoRegimenFiscal.resx">
+      <DependentUpon>frmCatalogoRegimenFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoTipoDocumento.resx">
+      <DependentUpon>frmCatalogoTipoDocumento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoVendedor.resx">
       <DependentUpon>frmCatalogoVendedor.cs</DependentUpon>
@@ -350,6 +395,17 @@
     </None>
     <None Include="DataSets\DetallePedidoDS.xss">
       <DependentUpon>DetallePedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatTipoDocumentoDS.xsc">
+      <DependentUpon>spCatTipoDocumentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatTipoDocumentoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatTipoDocumentoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatTipoDocumentoDS.xss">
+      <DependentUpon>spCatTipoDocumentoDS.xsd</DependentUpon>
     </None>
     <None Include="DataSets\spPedidoDS.xsc">
       <DependentUpon>spPedidoDS.xsd</DependentUpon>
@@ -469,6 +525,28 @@
     </None>
     <None Include="DataSets\spCatProveedorDS.xss">
       <DependentUpon>spCatProveedorDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatRegimenFiscalDS.xsc">
+      <DependentUpon>spCatRegimenFiscalDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatRegimenFiscalDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatRegimenFiscalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatRegimenFiscalDS.xss">
+      <DependentUpon>spCatRegimenFiscalDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatFacturaUsoDS.xsc">
+      <DependentUpon>spCatFacturaUsoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatFacturaUsoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatFacturaUsoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatFacturaUsoDS.xss">
+      <DependentUpon>spCatFacturaUsoDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
