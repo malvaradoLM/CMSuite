@@ -60,6 +60,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
+            // tcCatalogo
+            // 
+            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
+            // 
             // btnBuscar
             // 
             this.btnBuscar.ImageOptions.ImageIndex = 0;

@@ -60,8 +60,8 @@
             this.txtCuentaContIVA = new DevExpress.XtraEditors.TextEdit();
             this.txtCostoPromedio = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtProductoID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -87,7 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCostoPromedio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProductoID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
@@ -96,7 +96,7 @@
             // 
             // gcBusqueda
             // 
-            this.gcBusqueda.Size = new System.Drawing.Size(1054, 100);
+            this.gcBusqueda.Size = new System.Drawing.Size(761, 100);
             // 
             // btnBuscar
             // 
@@ -107,7 +107,7 @@
             // 
             // tpBuscar
             // 
-            this.tpBuscar.Size = new System.Drawing.Size(1054, 543);
+            this.tpBuscar.Size = new System.Drawing.Size(761, 374);
             // 
             // tpDatos
             // 
@@ -117,7 +117,7 @@
             // dgcCatalogo
             // 
             this.dgcCatalogo.DataSource = this.spCatProductoDSBindingSource;
-            this.dgcCatalogo.Size = new System.Drawing.Size(1054, 443);
+            this.dgcCatalogo.Size = new System.Drawing.Size(761, 274);
             // 
             // gvCatalogo
             // 
@@ -293,6 +293,8 @@
             this.lueCategoria.Name = "lueCategoria";
             this.lueCategoria.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueCategoria.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lueCategoria.Properties.NullText = "[Seleccione una Categoria...]";
             this.lueCategoria.Size = new System.Drawing.Size(235, 20);
             this.lueCategoria.TabIndex = 13;
             // 
@@ -301,6 +303,7 @@
             this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDescripcion.Location = new System.Drawing.Point(132, 54);
             this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDescripcion.Size = new System.Drawing.Size(510, 20);
             this.txtDescripcion.TabIndex = 14;
             // 
@@ -309,6 +312,7 @@
             this.txtCodigo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "Codigo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCodigo.Location = new System.Drawing.Point(44, 99);
             this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigo.Size = new System.Drawing.Size(82, 20);
             this.txtCodigo.TabIndex = 15;
             // 
@@ -317,6 +321,7 @@
             this.txtPrecio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "Precio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtPrecio.Location = new System.Drawing.Point(132, 99);
             this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 16;
             // 
@@ -325,6 +330,7 @@
             this.txtCodigoBarras.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CodigoBarras", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCodigoBarras.Location = new System.Drawing.Point(238, 99);
             this.txtCodigoBarras.Name = "txtCodigoBarras";
+            this.txtCodigoBarras.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigoBarras.Size = new System.Drawing.Size(163, 20);
             this.txtCodigoBarras.TabIndex = 17;
             // 
@@ -333,6 +339,7 @@
             this.txtClaveSAT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "ClaveSAT", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtClaveSAT.Location = new System.Drawing.Point(44, 148);
             this.txtClaveSAT.Name = "txtClaveSAT";
+            this.txtClaveSAT.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtClaveSAT.Size = new System.Drawing.Size(82, 20);
             this.txtClaveSAT.TabIndex = 18;
             this.txtClaveSAT.EditValueChanged += new System.EventHandler(this.textEdit5_EditValueChanged);
@@ -342,6 +349,7 @@
             this.txtCuentaContCompra.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CuentaContableCompra", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCuentaContCompra.Location = new System.Drawing.Point(44, 193);
             this.txtCuentaContCompra.Name = "txtCuentaContCompra";
+            this.txtCuentaContCompra.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCuentaContCompra.Size = new System.Drawing.Size(188, 20);
             this.txtCuentaContCompra.TabIndex = 19;
             // 
@@ -350,6 +358,7 @@
             this.txtCuentaContVenta.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CuentaContableVenta", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCuentaContVenta.Location = new System.Drawing.Point(238, 148);
             this.txtCuentaContVenta.Name = "txtCuentaContVenta";
+            this.txtCuentaContVenta.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCuentaContVenta.Size = new System.Drawing.Size(163, 20);
             this.txtCuentaContVenta.TabIndex = 20;
             // 
@@ -358,6 +367,7 @@
             this.txtCuentaContIVA.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CuentaContableIVA", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCuentaContIVA.Location = new System.Drawing.Point(407, 148);
             this.txtCuentaContIVA.Name = "txtCuentaContIVA";
+            this.txtCuentaContIVA.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCuentaContIVA.Size = new System.Drawing.Size(235, 20);
             this.txtCuentaContIVA.TabIndex = 22;
             // 
@@ -366,13 +376,14 @@
             this.txtCostoPromedio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CostoPromedio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCostoPromedio.Location = new System.Drawing.Point(132, 148);
             this.txtCostoPromedio.Name = "txtCostoPromedio";
+            this.txtCostoPromedio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCostoPromedio.Size = new System.Drawing.Size(100, 20);
             this.txtCostoPromedio.TabIndex = 23;
             this.txtCostoPromedio.EditValueChanged += new System.EventHandler(this.textEdit10_EditValueChanged);
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.txtProductoID);
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.txtDescripcion);
             this.groupControl1.Controls.Add(this.chkStatus);
@@ -401,6 +412,15 @@
             this.groupControl1.TabIndex = 24;
             this.groupControl1.Text = "Datos";
             // 
+            // txtProductoID
+            // 
+            this.txtProductoID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "ProductoID", true));
+            this.txtProductoID.Location = new System.Drawing.Point(44, 54);
+            this.txtProductoID.Name = "txtProductoID";
+            this.txtProductoID.Properties.ReadOnly = true;
+            this.txtProductoID.Size = new System.Drawing.Size(82, 20);
+            this.txtProductoID.TabIndex = 25;
+            // 
             // labelControl11
             // 
             this.labelControl11.Location = new System.Drawing.Point(44, 35);
@@ -408,13 +428,6 @@
             this.labelControl11.Size = new System.Drawing.Size(11, 13);
             this.labelControl11.TabIndex = 24;
             this.labelControl11.Text = "ID";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(44, 54);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(82, 20);
-            this.textEdit1.TabIndex = 25;
             // 
             // frmCatProducto
             // 
@@ -449,7 +462,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProductoID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -486,7 +499,7 @@
         private System.Windows.Forms.BindingSource spCatProductoDSBindingSource;
         private DataSets.spCatProductoDS spCatProductoDS;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtProductoID;
         private DevExpress.XtraEditors.LabelControl labelControl11;
     }
 }

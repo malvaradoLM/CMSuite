@@ -278,31 +278,15 @@ namespace RedCoForm.DataSets {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class spCatProveedorDataTable : global::System.Data.TypedTableBase<spCatProveedorRow> {
             
-            private global::System.Data.DataColumn columnProveedorId;
+            private global::System.Data.DataColumn columnProveedorID;
             
             private global::System.Data.DataColumn columnNombre;
             
-            private global::System.Data.DataColumn columnCalle;
-            
-            private global::System.Data.DataColumn columnColonia;
-            
-            private global::System.Data.DataColumn columnCiudad;
-            
-            private global::System.Data.DataColumn columnRFC;
+            private global::System.Data.DataColumn columnRazonSocial;
             
             private global::System.Data.DataColumn columnTelefono;
             
-            private global::System.Data.DataColumn columnFax;
-            
-            private global::System.Data.DataColumn columnCodPostal;
-            
             private global::System.Data.DataColumn columnEmail;
-            
-            private global::System.Data.DataColumn columnReferencia;
-            
-            private global::System.Data.DataColumn columnDiasPlazo;
-            
-            private global::System.Data.DataColumn columnCuentaContable;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -339,9 +323,9 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ProveedorIdColumn {
+            public global::System.Data.DataColumn ProveedorIDColumn {
                 get {
-                    return this.columnProveedorId;
+                    return this.columnProveedorID;
                 }
             }
             
@@ -355,33 +339,9 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CalleColumn {
+            public global::System.Data.DataColumn RazonSocialColumn {
                 get {
-                    return this.columnCalle;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ColoniaColumn {
-                get {
-                    return this.columnColonia;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CiudadColumn {
-                get {
-                    return this.columnCiudad;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn RFCColumn {
-                get {
-                    return this.columnRFC;
+                    return this.columnRazonSocial;
                 }
             }
             
@@ -395,49 +355,9 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn FaxColumn {
-                get {
-                    return this.columnFax;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CodPostalColumn {
-                get {
-                    return this.columnCodPostal;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public global::System.Data.DataColumn EmailColumn {
                 get {
                     return this.columnEmail;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ReferenciaColumn {
-                get {
-                    return this.columnReferencia;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn DiasPlazoColumn {
-                get {
-                    return this.columnDiasPlazo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CuentaContableColumn {
-                get {
-                    return this.columnCuentaContable;
                 }
             }
             
@@ -478,22 +398,14 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatProveedorRow AddspCatProveedorRow(int ProveedorId, string Nombre, string Calle, string Colonia, string Ciudad, string RFC, string Telefono, string Fax, string CodPostal, string Email, string Referencia, int DiasPlazo, string CuentaContable) {
+            public spCatProveedorRow AddspCatProveedorRow(int ProveedorID, string Nombre, string RazonSocial, string Telefono, string Email) {
                 spCatProveedorRow rowspCatProveedorRow = ((spCatProveedorRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ProveedorId,
+                        ProveedorID,
                         Nombre,
-                        Calle,
-                        Colonia,
-                        Ciudad,
-                        RFC,
+                        RazonSocial,
                         Telefono,
-                        Fax,
-                        CodPostal,
-                        Email,
-                        Referencia,
-                        DiasPlazo,
-                        CuentaContable};
+                        Email};
                 rowspCatProveedorRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowspCatProveedorRow);
                 return rowspCatProveedorRow;
@@ -501,9 +413,9 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatProveedorRow FindByProveedorId(int ProveedorId) {
+            public spCatProveedorRow FindByProveedorID(int ProveedorID) {
                 return ((spCatProveedorRow)(this.Rows.Find(new object[] {
-                            ProveedorId})));
+                            ProveedorID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -523,70 +435,34 @@ namespace RedCoForm.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
-                this.columnProveedorId = base.Columns["ProveedorId"];
+                this.columnProveedorID = base.Columns["ProveedorID"];
                 this.columnNombre = base.Columns["Nombre"];
-                this.columnCalle = base.Columns["Calle"];
-                this.columnColonia = base.Columns["Colonia"];
-                this.columnCiudad = base.Columns["Ciudad"];
-                this.columnRFC = base.Columns["RFC"];
+                this.columnRazonSocial = base.Columns["RazonSocial"];
                 this.columnTelefono = base.Columns["Telefono"];
-                this.columnFax = base.Columns["Fax"];
-                this.columnCodPostal = base.Columns["CodPostal"];
                 this.columnEmail = base.Columns["Email"];
-                this.columnReferencia = base.Columns["Referencia"];
-                this.columnDiasPlazo = base.Columns["DiasPlazo"];
-                this.columnCuentaContable = base.Columns["CuentaContable"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columnProveedorId = new global::System.Data.DataColumn("ProveedorId", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProveedorId);
+                this.columnProveedorID = new global::System.Data.DataColumn("ProveedorID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProveedorID);
                 this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNombre);
-                this.columnCalle = new global::System.Data.DataColumn("Calle", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCalle);
-                this.columnColonia = new global::System.Data.DataColumn("Colonia", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnColonia);
-                this.columnCiudad = new global::System.Data.DataColumn("Ciudad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCiudad);
-                this.columnRFC = new global::System.Data.DataColumn("RFC", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRFC);
+                this.columnRazonSocial = new global::System.Data.DataColumn("RazonSocial", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRazonSocial);
                 this.columnTelefono = new global::System.Data.DataColumn("Telefono", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTelefono);
-                this.columnFax = new global::System.Data.DataColumn("Fax", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFax);
-                this.columnCodPostal = new global::System.Data.DataColumn("CodPostal", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCodPostal);
                 this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEmail);
-                this.columnReferencia = new global::System.Data.DataColumn("Referencia", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnReferencia);
-                this.columnDiasPlazo = new global::System.Data.DataColumn("DiasPlazo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDiasPlazo);
-                this.columnCuentaContable = new global::System.Data.DataColumn("CuentaContable", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCuentaContable);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("PK_spCatProveedor", new global::System.Data.DataColumn[] {
-                                this.columnProveedorId}, true));
-                this.columnProveedorId.AllowDBNull = false;
-                this.columnProveedorId.Unique = true;
-                this.columnNombre.MaxLength = 50;
-                this.columnCalle.AllowDBNull = false;
-                this.columnCalle.MaxLength = 40;
-                this.columnColonia.AllowDBNull = false;
-                this.columnColonia.MaxLength = 30;
-                this.columnCiudad.AllowDBNull = false;
-                this.columnCiudad.MaxLength = 30;
-                this.columnRFC.AllowDBNull = false;
-                this.columnRFC.MaxLength = 15;
-                this.columnTelefono.MaxLength = 20;
-                this.columnFax.MaxLength = 20;
-                this.columnCodPostal.MaxLength = 5;
-                this.columnEmail.MaxLength = 30;
-                this.columnReferencia.MaxLength = 50;
-                this.columnDiasPlazo.AllowDBNull = false;
-                this.columnCuentaContable.MaxLength = 20;
+                                this.columnProveedorID}, true));
+                this.columnProveedorID.AllowDBNull = false;
+                this.columnProveedorID.Unique = true;
+                this.columnNombre.MaxLength = 250;
+                this.columnRazonSocial.MaxLength = 250;
+                this.columnTelefono.MaxLength = 50;
+                this.columnEmail.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -729,12 +605,12 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int ProveedorId {
+            public int ProveedorID {
                 get {
-                    return ((int)(this[this.tablespCatProveedor.ProveedorIdColumn]));
+                    return ((int)(this[this.tablespCatProveedor.ProveedorIDColumn]));
                 }
                 set {
-                    this[this.tablespCatProveedor.ProveedorIdColumn] = value;
+                    this[this.tablespCatProveedor.ProveedorIDColumn] = value;
                 }
             }
             
@@ -756,45 +632,17 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Calle {
+            public string RazonSocial {
                 get {
-                    return ((string)(this[this.tablespCatProveedor.CalleColumn]));
+                    try {
+                        return ((string)(this[this.tablespCatProveedor.RazonSocialColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RazonSocial\' in table \'spCatProveedor\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablespCatProveedor.CalleColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Colonia {
-                get {
-                    return ((string)(this[this.tablespCatProveedor.ColoniaColumn]));
-                }
-                set {
-                    this[this.tablespCatProveedor.ColoniaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Ciudad {
-                get {
-                    return ((string)(this[this.tablespCatProveedor.CiudadColumn]));
-                }
-                set {
-                    this[this.tablespCatProveedor.CiudadColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string RFC {
-                get {
-                    return ((string)(this[this.tablespCatProveedor.RFCColumn]));
-                }
-                set {
-                    this[this.tablespCatProveedor.RFCColumn] = value;
+                    this[this.tablespCatProveedor.RazonSocialColumn] = value;
                 }
             }
             
@@ -816,38 +664,6 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Fax {
-                get {
-                    try {
-                        return ((string)(this[this.tablespCatProveedor.FaxColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Fax\' in table \'spCatProveedor\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablespCatProveedor.FaxColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string CodPostal {
-                get {
-                    try {
-                        return ((string)(this[this.tablespCatProveedor.CodPostalColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CodPostal\' in table \'spCatProveedor\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablespCatProveedor.CodPostalColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public string Email {
                 get {
                     try {
@@ -859,49 +675,6 @@ namespace RedCoForm.DataSets {
                 }
                 set {
                     this[this.tablespCatProveedor.EmailColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Referencia {
-                get {
-                    try {
-                        return ((string)(this[this.tablespCatProveedor.ReferenciaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Referencia\' in table \'spCatProveedor\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablespCatProveedor.ReferenciaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int DiasPlazo {
-                get {
-                    return ((int)(this[this.tablespCatProveedor.DiasPlazoColumn]));
-                }
-                set {
-                    this[this.tablespCatProveedor.DiasPlazoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string CuentaContable {
-                get {
-                    try {
-                        return ((string)(this[this.tablespCatProveedor.CuentaContableColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CuentaContable\' in table \'spCatProveedor\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablespCatProveedor.CuentaContableColumn] = value;
                 }
             }
             
@@ -919,6 +692,18 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsRazonSocialNull() {
+                return this.IsNull(this.tablespCatProveedor.RazonSocialColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetRazonSocialNull() {
+                this[this.tablespCatProveedor.RazonSocialColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsTelefonoNull() {
                 return this.IsNull(this.tablespCatProveedor.TelefonoColumn);
             }
@@ -931,30 +716,6 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsFaxNull() {
-                return this.IsNull(this.tablespCatProveedor.FaxColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetFaxNull() {
-                this[this.tablespCatProveedor.FaxColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsCodPostalNull() {
-                return this.IsNull(this.tablespCatProveedor.CodPostalColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetCodPostalNull() {
-                this[this.tablespCatProveedor.CodPostalColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsEmailNull() {
                 return this.IsNull(this.tablespCatProveedor.EmailColumn);
             }
@@ -963,30 +724,6 @@ namespace RedCoForm.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetEmailNull() {
                 this[this.tablespCatProveedor.EmailColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsReferenciaNull() {
-                return this.IsNull(this.tablespCatProveedor.ReferenciaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetReferenciaNull() {
-                this[this.tablespCatProveedor.ReferenciaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsCuentaContableNull() {
-                return this.IsNull(this.tablespCatProveedor.CuentaContableColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetCuentaContableNull() {
-                this[this.tablespCatProveedor.CuentaContableColumn] = global::System.Convert.DBNull;
             }
         }
         
