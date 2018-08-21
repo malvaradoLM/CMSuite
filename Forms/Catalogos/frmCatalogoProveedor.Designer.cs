@@ -32,8 +32,8 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtRazonSocial = new DevExpress.XtraEditors.TextEdit();
+            this.txtNombre = new DevExpress.XtraEditors.TextEdit();
             this.spCatProveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCatProveedorDS1 = new RedCoForm.DataSets.spCatProveedorDS();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
@@ -69,8 +69,8 @@
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
@@ -78,6 +78,7 @@
             // 
             // tcCatalogo
             // 
+            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.Size = new System.Drawing.Size(555, 331);
             // 
             // gcBusqueda
@@ -134,8 +135,8 @@
             // 
             this.groupControl1.Controls.Add(this.textEdit5);
             this.groupControl1.Controls.Add(this.textEdit4);
-            this.groupControl1.Controls.Add(this.textEdit3);
-            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.txtRazonSocial);
+            this.groupControl1.Controls.Add(this.txtNombre);
             this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.labelControl4);
@@ -162,20 +163,20 @@
             this.textEdit4.Size = new System.Drawing.Size(100, 20);
             this.textEdit4.TabIndex = 9;
             // 
-            // textEdit3
+            // txtRazonSocial
             // 
-            this.textEdit3.Location = new System.Drawing.Point(19, 142);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(373, 20);
-            this.textEdit3.TabIndex = 8;
+            this.txtRazonSocial.Location = new System.Drawing.Point(19, 142);
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.Size = new System.Drawing.Size(373, 20);
+            this.txtRazonSocial.TabIndex = 8;
             // 
-            // textEdit2
+            // txtNombre
             // 
-            this.textEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Nombre", true));
-            this.textEdit2.Location = new System.Drawing.Point(19, 97);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(196, 20);
-            this.textEdit2.TabIndex = 7;
+            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Nombre", true));
+            this.txtNombre.Location = new System.Drawing.Point(19, 97);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(196, 20);
+            this.txtNombre.TabIndex = 7;
             // 
             // spCatProveedorBindingSource
             // 
@@ -350,8 +351,8 @@
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
@@ -364,8 +365,8 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtRazonSocial;
+        private DevExpress.XtraEditors.TextEdit txtNombre;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;

@@ -315,6 +315,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatFacturaUsoDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spCatVendedorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatVendedorDS.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -566,6 +571,17 @@
     </None>
     <None Include="DataSets\spCatFacturaUsoDS.xss">
       <DependentUpon>spCatFacturaUsoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatVendedorDS.xsc">
+      <DependentUpon>spCatVendedorDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatVendedorDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatVendedorDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatVendedorDS.xss">
+      <DependentUpon>spCatVendedorDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

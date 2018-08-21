@@ -13,6 +13,19 @@ namespace RedCoForm.Forms.Catalogos
         public frmCatalogoProveedor()
         {
             InitializeComponent();
+            cdsCatalogo = spCatProveedorDS1;
+            DataSource = spCatProveedorBindingSource;
+            NombreDataSet = "spCatProveedor";
+            Buscar("~`|`~");
+        }
+
+        public override void onBeforePost()
+        {
+            if (newRecordRow != null)
+            {
+                newRecordRow["ProveedorID"] = Data.DataModule.DataService.Folio("ProveedorID", "");
+
+            }
         }
     }
 }

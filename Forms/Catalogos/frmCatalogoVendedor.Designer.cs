@@ -28,15 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
+            this.txtTelefono = new DevExpress.XtraEditors.TextEdit();
+            this.txtNombre = new DevExpress.XtraEditors.TextEdit();
+            this.txtVendedorID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.spCatVendedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatVendedorDS1 = new RedCoForm.DataSets.spCatVendedorDS();
+            this.colVendedorID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTelefono = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmail = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -49,11 +56,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVendedorID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorDS1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tcCatalogo
+            // 
+            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -66,8 +79,17 @@
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
             // 
+            // dgcCatalogo
+            // 
+            this.dgcCatalogo.DataSource = this.spCatVendedorBindingSource;
+            // 
             // gvCatalogo
             // 
+            this.gvCatalogo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colVendedorID,
+            this.colNombre,
+            this.colTelefono,
+            this.colEmail});
             this.gvCatalogo.OptionsBehavior.Editable = false;
             this.gvCatalogo.OptionsFind.AlwaysVisible = true;
             this.gvCatalogo.OptionsFind.SearchInPreview = true;
@@ -79,10 +101,10 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.textEdit4);
-            this.groupControl1.Controls.Add(this.textEdit3);
-            this.groupControl1.Controls.Add(this.textEdit2);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.txtEmail);
+            this.groupControl1.Controls.Add(this.txtTelefono);
+            this.groupControl1.Controls.Add(this.txtNombre);
+            this.groupControl1.Controls.Add(this.txtVendedorID);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.labelControl2);
@@ -93,33 +115,37 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Datos";
             // 
-            // textEdit4
+            // txtEmail
             // 
-            this.textEdit4.Location = new System.Drawing.Point(24, 191);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(247, 20);
-            this.textEdit4.TabIndex = 7;
+            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVendedorBindingSource, "Email", true));
+            this.txtEmail.Location = new System.Drawing.Point(24, 191);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(247, 20);
+            this.txtEmail.TabIndex = 7;
             // 
-            // textEdit3
+            // txtTelefono
             // 
-            this.textEdit3.Location = new System.Drawing.Point(24, 146);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(247, 20);
-            this.textEdit3.TabIndex = 6;
+            this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVendedorBindingSource, "Telefono", true));
+            this.txtTelefono.Location = new System.Drawing.Point(24, 146);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(247, 20);
+            this.txtTelefono.TabIndex = 6;
             // 
-            // textEdit2
+            // txtNombre
             // 
-            this.textEdit2.Location = new System.Drawing.Point(24, 100);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(432, 20);
-            this.textEdit2.TabIndex = 5;
+            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVendedorBindingSource, "Nombre", true));
+            this.txtNombre.Location = new System.Drawing.Point(24, 100);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(432, 20);
+            this.txtNombre.TabIndex = 5;
             // 
-            // textEdit1
+            // txtVendedorID
             // 
-            this.textEdit1.Location = new System.Drawing.Point(24, 55);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(60, 20);
-            this.textEdit1.TabIndex = 4;
+            this.txtVendedorID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVendedorBindingSource, "VendedorID", true));
+            this.txtVendedorID.Location = new System.Drawing.Point(24, 55);
+            this.txtVendedorID.Name = "txtVendedorID";
+            this.txtVendedorID.Size = new System.Drawing.Size(60, 20);
+            this.txtVendedorID.TabIndex = 4;
             // 
             // labelControl4
             // 
@@ -153,6 +179,45 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID";
             // 
+            // spCatVendedorBindingSource
+            // 
+            this.spCatVendedorBindingSource.DataMember = "spCatVendedor";
+            this.spCatVendedorBindingSource.DataSource = this.spCatVendedorDS1;
+            this.spCatVendedorBindingSource.Sort = "";
+            // 
+            // spCatVendedorDS1
+            // 
+            this.spCatVendedorDS1.DataSetName = "spCatVendedorDS";
+            this.spCatVendedorDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // colVendedorID
+            // 
+            this.colVendedorID.FieldName = "VendedorID";
+            this.colVendedorID.Name = "colVendedorID";
+            this.colVendedorID.Visible = true;
+            this.colVendedorID.VisibleIndex = 0;
+            // 
+            // colNombre
+            // 
+            this.colNombre.FieldName = "Nombre";
+            this.colNombre.Name = "colNombre";
+            this.colNombre.Visible = true;
+            this.colNombre.VisibleIndex = 1;
+            // 
+            // colTelefono
+            // 
+            this.colTelefono.FieldName = "Telefono";
+            this.colTelefono.Name = "colTelefono";
+            this.colTelefono.Visible = true;
+            this.colTelefono.VisibleIndex = 2;
+            // 
+            // colEmail
+            // 
+            this.colEmail.FieldName = "Email";
+            this.colEmail.Name = "colEmail";
+            this.colEmail.Visible = true;
+            this.colEmail.VisibleIndex = 3;
+            // 
             // frmCatalogoVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,10 +238,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVendedorID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorDS1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,13 +251,19 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtEmail;
+        private DevExpress.XtraEditors.TextEdit txtTelefono;
+        private DevExpress.XtraEditors.TextEdit txtNombre;
+        private DevExpress.XtraEditors.TextEdit txtVendedorID;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.BindingSource spCatVendedorBindingSource;
+        private DataSets.spCatVendedorDS spCatVendedorDS1;
+        private DevExpress.XtraGrid.Columns.GridColumn colVendedorID;
+        private DevExpress.XtraGrid.Columns.GridColumn colNombre;
+        private DevExpress.XtraGrid.Columns.GridColumn colTelefono;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmail;
     }
 }
