@@ -58,6 +58,8 @@
             this.btnGenerarRecibo = new System.Windows.Forms.Button();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.lueStatusPedido = new DevExpress.XtraEditors.LookUpEdit();
+            this.spCatPedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spPedidoDS1 = new RedCoForm.DataSets.spPedidoDS();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -89,10 +91,7 @@
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.txtTotal = new DevExpress.XtraEditors.TextEdit();
             this.lueEstacion = new DevExpress.XtraEditors.LookUpEdit();
-            this.spCatPedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.spPedidoDS1 = new RedCoForm.DataSets.spPedidoDS();
             this.txtDescuento = new DevExpress.XtraEditors.TextEdit();
-            this.chkStatus = new DevExpress.XtraEditors.CheckEdit();
             this.txtIEPS = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtIVA = new DevExpress.XtraEditors.TextEdit();
@@ -102,7 +101,6 @@
             this.txtFolio = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.dateFecha = new DevExpress.XtraEditors.DateEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -125,6 +123,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnlDatos)).BeginInit();
             this.pnlDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lueStatusPedido.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtcDescuento.Properties)).BeginInit();
@@ -140,10 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueEstacion.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuento.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIEPS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIVA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSerie.Properties)).BeginInit();
@@ -405,7 +402,6 @@
             this.pnlDatos.Controls.Add(this.txtTotal);
             this.pnlDatos.Controls.Add(this.lueEstacion);
             this.pnlDatos.Controls.Add(this.txtDescuento);
-            this.pnlDatos.Controls.Add(this.chkStatus);
             this.pnlDatos.Controls.Add(this.txtIEPS);
             this.pnlDatos.Controls.Add(this.labelControl9);
             this.pnlDatos.Controls.Add(this.txtIVA);
@@ -415,7 +411,6 @@
             this.pnlDatos.Controls.Add(this.txtFolio);
             this.pnlDatos.Controls.Add(this.labelControl8);
             this.pnlDatos.Controls.Add(this.labelControl1);
-            this.pnlDatos.Controls.Add(this.labelControl11);
             this.pnlDatos.Controls.Add(this.labelControl12);
             this.pnlDatos.Controls.Add(this.dateFecha);
             this.pnlDatos.Controls.Add(this.labelControl2);
@@ -449,7 +444,7 @@
             this.btnGenerarRecibo.Name = "btnGenerarRecibo";
             this.btnGenerarRecibo.Size = new System.Drawing.Size(110, 97);
             this.btnGenerarRecibo.TabIndex = 31;
-            this.btnGenerarRecibo.Text = "Generar Recibo";
+            this.btnGenerarRecibo.Text = "Facturar";
             this.btnGenerarRecibo.UseVisualStyleBackColor = true;
             this.btnGenerarRecibo.Visible = false;
             this.btnGenerarRecibo.Click += new System.EventHandler(this.btnGenerarRecibo_Click);
@@ -472,6 +467,16 @@
             this.lueStatusPedido.Size = new System.Drawing.Size(100, 20);
             this.lueStatusPedido.TabIndex = 3;
             this.lueStatusPedido.EditValueChanged += new System.EventHandler(this.lueStatusPedido_EditValueChanged);
+            // 
+            // spCatPedidoBindingSource
+            // 
+            this.spCatPedidoBindingSource.DataMember = "spPedido";
+            this.spCatPedidoBindingSource.DataSource = this.spPedidoDS1;
+            // 
+            // spPedidoDS1
+            // 
+            this.spPedidoDS1.DataSetName = "spPedidoDS";
+            this.spPedidoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panelControl4
             // 
@@ -757,16 +762,6 @@
             this.lueEstacion.Size = new System.Drawing.Size(100, 20);
             this.lueEstacion.TabIndex = 23;
             // 
-            // spCatPedidoBindingSource
-            // 
-            this.spCatPedidoBindingSource.DataMember = "spPedido";
-            this.spCatPedidoBindingSource.DataSource = this.spPedidoDS1;
-            // 
-            // spPedidoDS1
-            // 
-            this.spPedidoDS1.DataSetName = "spPedidoDS";
-            this.spPedidoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // txtDescuento
             // 
             this.txtDescuento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -774,14 +769,6 @@
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(100, 20);
             this.txtDescuento.TabIndex = 20;
-            // 
-            // chkStatus
-            // 
-            this.chkStatus.Location = new System.Drawing.Point(85, 73);
-            this.chkStatus.Name = "chkStatus";
-            this.chkStatus.Properties.Caption = "Activo";
-            this.chkStatus.Size = new System.Drawing.Size(75, 19);
-            this.chkStatus.TabIndex = 29;
             // 
             // txtIEPS
             // 
@@ -857,14 +844,6 @@
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Fecha";
             // 
-            // labelControl11
-            // 
-            this.labelControl11.Location = new System.Drawing.Point(85, 54);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(31, 13);
-            this.labelControl11.TabIndex = 11;
-            this.labelControl11.Text = "Status";
-            // 
             // labelControl12
             // 
             this.labelControl12.Location = new System.Drawing.Point(310, 55);
@@ -933,6 +912,8 @@
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lueStatusPedido.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             this.panelControl4.PerformLayout();
@@ -949,10 +930,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueEstacion.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatPedidoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spPedidoDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuento.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIEPS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIVA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSerie.Properties)).EndInit();
@@ -1011,7 +989,6 @@
         private DevExpress.XtraEditors.TextEdit txtTotal;
         private DevExpress.XtraEditors.LookUpEdit lueEstacion;
         private DevExpress.XtraEditors.TextEdit txtDescuento;
-        private DevExpress.XtraEditors.CheckEdit chkStatus;
         private DevExpress.XtraEditors.TextEdit txtIEPS;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.TextEdit txtIVA;
@@ -1021,7 +998,6 @@
         private DevExpress.XtraEditors.TextEdit txtFolio;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.DateEdit dateFecha;
         private DevExpress.XtraEditors.LabelControl labelControl2;

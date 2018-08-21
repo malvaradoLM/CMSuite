@@ -110,7 +110,7 @@ namespace RedCoForm.Forms.Catalogos
 
             Params.Clear();
 
-            Data.DataModule.ParamByName(Params, "Datos", "");
+            Data.DataModule.ParamByName(Params, "Datos", "1738");
             Data.DataModule.FillDataSet(spPedidoDS1, "spCatEstacion", Params.ToArray());
 
             dt = spPedidoDS1.Tables["spCatEstacion"];
@@ -471,6 +471,9 @@ namespace RedCoForm.Forms.Catalogos
             {
                 TPedido pedido = new TPedido();
                 TDetallePedido detallepedido = new TDetallePedido();
+
+                pedido.PedidoID = (int)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "PedidoID");
+
                 //MOVIMIENTO
                 pedido.Fecha = (DateTime)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "Fecha");
                 pedido.FechaModificacion = (DateTime)gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "FechaModificacion");
@@ -495,7 +498,7 @@ namespace RedCoForm.Forms.Catalogos
                 detallepedido.IVA = (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IVA");
                 detallepedido.IEPS = (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "IEPS");
                 detallepedido.Total = (double)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Total");
-                detallepedido.Descuento= double.Parse(txtDescuento.Text);
+                detallepedido.Descuento= double.Parse(txtcDescuento.Text);
                 detallepedido.NoItems = (int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "NoItems");
                 detallepedido.ProductoID = (int)gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "ProductoID");
 
