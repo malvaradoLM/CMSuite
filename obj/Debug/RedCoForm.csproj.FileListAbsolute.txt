@@ -22,7 +22,6 @@ Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.Pdf.v17
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.RichEdit.v17.2.Core.dll
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.Office.v17.2.Core.dll
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.Images.v17.2.dll
-Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\RPSuiteServer.pdb
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\RPSuiteServer.exe.config
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.Data.v17.2.xml
 Z:\Compartida\Proyectos\LM\Comercializadora\CMSuite\bin\Debug\DevExpress.Printing.v17.2.Core.xml
