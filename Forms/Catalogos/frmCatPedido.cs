@@ -324,7 +324,7 @@ namespace RedCoForm.Forms.Catalogos
 
                 DataModule.ParamByName(Params, "PedidoID", PedidoID);
                 DataModule.FillDataSet(cdsDatos, cDataSetDatos, Params.ToArray());
-                gvDetallePedido.BestFitColumns(true);
+                gvDetallePedido.BestFitColumns(false);
                 if (gvDetallePedido.DataRowCount > 0)
                 {
                     IEnumerable<DataRow> query = from dts in detallePedidoDS1.Tables["spDetallePedido"].AsEnumerable() select dts;
@@ -541,6 +541,11 @@ namespace RedCoForm.Forms.Catalogos
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dgcDetallePedido_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
