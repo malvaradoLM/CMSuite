@@ -30,16 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoTipoDocumento));
-            this.colTipoDocumentoID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCodigo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
+            this.spCatTipoDocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatTipoDocumentoDS1 = new RedCoForm.DataSets.spCatTipoDocumentoDS();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.spCatTipoDocumentoDS1 = new RedCoForm.DataSets.spCatTipoDocumentoDS();
-            this.bindingsourceTipoDocumento = new System.Windows.Forms.BindingSource(this.components);
+            this.colTipoDocumentoID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -53,14 +52,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatTipoDocumentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTipoDocumentoDS1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingsourceTipoDocumento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tcCatalogo
-            // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -75,15 +70,10 @@
             // 
             // dgcCatalogo
             // 
-            this.dgcCatalogo.DataMember = null;
-            this.dgcCatalogo.DataSource = this.bindingsourceTipoDocumento;
+            this.dgcCatalogo.DataSource = this.spCatTipoDocumentoBindingSource;
             // 
             // gvCatalogo
             // 
-            this.gvCatalogo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colTipoDocumentoID,
-            this.colCodigo,
-            this.colNombre});
             this.gvCatalogo.OptionsBehavior.Editable = false;
             this.gvCatalogo.OptionsFind.AlwaysVisible = true;
             this.gvCatalogo.OptionsFind.SearchInPreview = true;
@@ -92,27 +82,6 @@
             this.gvCatalogo.OptionsFind.ShowFindButton = false;
             this.gvCatalogo.OptionsSelection.MultiSelect = true;
             this.gvCatalogo.OptionsView.ColumnAutoWidth = false;
-            // 
-            // colTipoDocumentoID
-            // 
-            this.colTipoDocumentoID.FieldName = "TipoDocumentoID";
-            this.colTipoDocumentoID.Name = "colTipoDocumentoID";
-            this.colTipoDocumentoID.Visible = true;
-            this.colTipoDocumentoID.VisibleIndex = 0;
-            // 
-            // colCodigo
-            // 
-            this.colCodigo.FieldName = "Codigo";
-            this.colCodigo.Name = "colCodigo";
-            this.colCodigo.Visible = true;
-            this.colCodigo.VisibleIndex = 1;
-            // 
-            // colNombre
-            // 
-            this.colNombre.FieldName = "Nombre";
-            this.colNombre.Name = "colNombre";
-            this.colNombre.Visible = true;
-            this.colNombre.VisibleIndex = 2;
             // 
             // groupControl1
             // 
@@ -123,20 +92,31 @@
             this.groupControl1.Location = new System.Drawing.Point(11, 11);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(157, 136);
-            this.groupControl1.TabIndex = 0;
+            this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Datos";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bindingsourceTipoDocumento, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTipoDocumentoBindingSource, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDescripcion.Location = new System.Drawing.Point(8, 98);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(136, 20);
             this.txtDescripcion.TabIndex = 5;
             // 
+            // spCatTipoDocumentoBindingSource
+            // 
+            this.spCatTipoDocumentoBindingSource.DataMember = "spCatTipoDocumento";
+            this.spCatTipoDocumentoBindingSource.DataSource = this.spCatTipoDocumentoDS1;
+            this.spCatTipoDocumentoBindingSource.Sort = "";
+            // 
+            // spCatTipoDocumentoDS1
+            // 
+            this.spCatTipoDocumentoDS1.DataSetName = "spCatTipoDocumentoDS";
+            this.spCatTipoDocumentoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtID
             // 
-            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bindingsourceTipoDocumento, "TipoDocumentoID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTipoDocumentoBindingSource, "TipoDocumentoID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(8, 43);
             this.txtID.Name = "txtID";
@@ -159,15 +139,19 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID";
             // 
-            // spCatTipoDocumentoDS1
+            // colTipoDocumentoID
             // 
-            this.spCatTipoDocumentoDS1.DataSetName = "spCatTipoDocumentoDS";
-            this.spCatTipoDocumentoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.colTipoDocumentoID.FieldName = "TipoDocumentoID";
+            this.colTipoDocumentoID.Name = "colTipoDocumentoID";
+            this.colTipoDocumentoID.Visible = true;
+            this.colTipoDocumentoID.VisibleIndex = 0;
             // 
-            // bindingsourceTipoDocumento
+            // colDescripcion
             // 
-            this.bindingsourceTipoDocumento.DataMember = "spCatTipoDocumento";
-            this.bindingsourceTipoDocumento.DataSource = this.spCatTipoDocumentoDS1;
+            this.colDescripcion.FieldName = "Descripcion";
+            this.colDescripcion.Name = "colDescripcion";
+            this.colDescripcion.Visible = true;
+            this.colDescripcion.VisibleIndex = 1;
             // 
             // frmCatalogoTipoDocumento
             // 
@@ -175,7 +159,7 @@
             this.ClientSize = new System.Drawing.Size(680, 307);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoTipoDocumento";
-            this.Text = "Tipo Documento";
+            this.Text = "Tipo Documendo";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
             this.tcCatalogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).EndInit();
@@ -191,23 +175,23 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatTipoDocumentoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTipoDocumentoDS1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingsourceTipoDocumento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private DevExpress.XtraGrid.Columns.GridColumn colTipoDocumentoID;
-        private DevExpress.XtraGrid.Columns.GridColumn colCodigo;
-        private DevExpress.XtraGrid.Columns.GridColumn colNombre;
+
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.TextEdit txtDescripcion;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.BindingSource bindingsourceTipoDocumento;
+        private System.Windows.Forms.BindingSource spCatTipoDocumentoBindingSource;
         private DataSets.spCatTipoDocumentoDS spCatTipoDocumentoDS1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTipoDocumentoID;
+        private DevExpress.XtraGrid.Columns.GridColumn colDescripcion;
     }
 }
