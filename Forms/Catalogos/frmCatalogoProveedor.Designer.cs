@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.txtCorreo = new DevExpress.XtraEditors.TextEdit();
+            this.txtTelefono = new DevExpress.XtraEditors.TextEdit();
             this.txtRazonSocial = new DevExpress.XtraEditors.TextEdit();
             this.txtNombre = new DevExpress.XtraEditors.TextEdit();
             this.spCatProveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -67,8 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCorreo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).BeginInit();
@@ -98,6 +98,7 @@
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
+            this.tpDatos.Size = new System.Drawing.Size(553, 306);
             // 
             // dgcCatalogo
             // 
@@ -131,8 +132,8 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.textEdit5);
-            this.groupControl1.Controls.Add(this.textEdit4);
+            this.groupControl1.Controls.Add(this.txtCorreo);
+            this.groupControl1.Controls.Add(this.txtTelefono);
             this.groupControl1.Controls.Add(this.txtRazonSocial);
             this.groupControl1.Controls.Add(this.txtNombre);
             this.groupControl1.Controls.Add(this.txtID);
@@ -147,19 +148,21 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Datos";
             // 
-            // textEdit5
+            // txtCorreo
             // 
-            this.textEdit5.Location = new System.Drawing.Point(132, 185);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(260, 20);
-            this.textEdit5.TabIndex = 10;
+            this.txtCorreo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Email", true));
+            this.txtCorreo.Location = new System.Drawing.Point(132, 185);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(260, 20);
+            this.txtCorreo.TabIndex = 10;
             // 
-            // textEdit4
+            // txtTelefono
             // 
-            this.textEdit4.Location = new System.Drawing.Point(19, 185);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(100, 20);
-            this.textEdit4.TabIndex = 9;
+            this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Telefono", true));
+            this.txtTelefono.Location = new System.Drawing.Point(19, 185);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefono.TabIndex = 9;
             // 
             // txtRazonSocial
             // 
@@ -347,8 +350,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCorreo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).EndInit();
@@ -361,8 +364,8 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit txtCorreo;
+        private DevExpress.XtraEditors.TextEdit txtTelefono;
         private DevExpress.XtraEditors.TextEdit txtRazonSocial;
         private DevExpress.XtraEditors.TextEdit txtNombre;
         private DevExpress.XtraEditors.TextEdit txtID;
