@@ -29,19 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoFacturaUso));
-            this.spCatFacturaUsoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colFacturaUsoID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCodigo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
+            this.spCatFacturaUsoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatFacturaUsoDS1 = new RedCoForm.DataSets.spCatFacturaUsoDS();
             this.txtCodigoSAT = new DevExpress.XtraEditors.TextEdit();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.spCatFacturaUsoDS1 = new RedCoForm.DataSets.spCatFacturaUsoDS();
+            this.colFacturaUsoID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCodigoSAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -52,18 +51,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgcCatalogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvCatalogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatFacturaUsoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatFacturaUsoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatFacturaUsoDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigoSAT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatFacturaUsoDS1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tcCatalogo
-            // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -84,8 +79,8 @@
             // 
             this.gvCatalogo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colFacturaUsoID,
-            this.colCodigo,
-            this.colNombre});
+            this.colCodigoSAT,
+            this.colDescripcion});
             this.gvCatalogo.OptionsBehavior.Editable = false;
             this.gvCatalogo.OptionsFind.AlwaysVisible = true;
             this.gvCatalogo.OptionsFind.SearchInPreview = true;
@@ -94,32 +89,6 @@
             this.gvCatalogo.OptionsFind.ShowFindButton = false;
             this.gvCatalogo.OptionsSelection.MultiSelect = true;
             this.gvCatalogo.OptionsView.ColumnAutoWidth = false;
-            // 
-            // spCatFacturaUsoBindingSource
-            // 
-            this.spCatFacturaUsoBindingSource.DataMember = "spCatFacturaUso";
-            this.spCatFacturaUsoBindingSource.DataSource = this.spCatFacturaUsoDS1;
-            // 
-            // colFacturaUsoID
-            // 
-            this.colFacturaUsoID.FieldName = "FacturaUsoID";
-            this.colFacturaUsoID.Name = "colFacturaUsoID";
-            this.colFacturaUsoID.Visible = true;
-            this.colFacturaUsoID.VisibleIndex = 0;
-            // 
-            // colCodigo
-            // 
-            this.colCodigo.FieldName = "Codigo";
-            this.colCodigo.Name = "colCodigo";
-            this.colCodigo.Visible = true;
-            this.colCodigo.VisibleIndex = 1;
-            // 
-            // colNombre
-            // 
-            this.colNombre.FieldName = "Nombre";
-            this.colNombre.Name = "colNombre";
-            this.colNombre.Visible = true;
-            this.colNombre.VisibleIndex = 2;
             // 
             // groupControl1
             // 
@@ -132,7 +101,7 @@
             this.groupControl1.Location = new System.Drawing.Point(11, 11);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(157, 172);
-            this.groupControl1.TabIndex = 1;
+            this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Datos";
             // 
             // txtDescripcion
@@ -143,9 +112,20 @@
             this.txtDescripcion.Size = new System.Drawing.Size(136, 20);
             this.txtDescripcion.TabIndex = 5;
             // 
+            // spCatFacturaUsoBindingSource
+            // 
+            this.spCatFacturaUsoBindingSource.DataMember = "spCatFacturaUso";
+            this.spCatFacturaUsoBindingSource.DataSource = this.spCatFacturaUsoDS1;
+            this.spCatFacturaUsoBindingSource.Sort = "";
+            // 
+            // spCatFacturaUsoDS1
+            // 
+            this.spCatFacturaUsoDS1.DataSetName = "spCatFacturaUsoDS";
+            this.spCatFacturaUsoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtCodigoSAT
             // 
-            this.txtCodigoSAT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatFacturaUsoBindingSource, "CodigoSAT", true));
+            this.txtCodigoSAT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatFacturaUsoBindingSource, "CodigoSAT", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCodigoSAT.Location = new System.Drawing.Point(8, 88);
             this.txtCodigoSAT.Name = "txtCodigoSAT";
             this.txtCodigoSAT.Size = new System.Drawing.Size(136, 20);
@@ -153,7 +133,7 @@
             // 
             // txtID
             // 
-            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatFacturaUsoBindingSource, "FacturaUsoID", true));
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatFacturaUsoBindingSource, "FacturaUsoID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(8, 43);
             this.txtID.Name = "txtID";
@@ -184,18 +164,32 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID";
             // 
-            // spCatFacturaUsoDS1
+            // colFacturaUsoID
             // 
-            this.spCatFacturaUsoDS1.DataSetName = "spCatFacturaUsoDS";
-            this.spCatFacturaUsoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.colFacturaUsoID.FieldName = "FacturaUsoID";
+            this.colFacturaUsoID.Name = "colFacturaUsoID";
+            this.colFacturaUsoID.Visible = true;
+            this.colFacturaUsoID.VisibleIndex = 0;
+            // 
+            // colCodigoSAT
+            // 
+            this.colCodigoSAT.FieldName = "CodigoSAT";
+            this.colCodigoSAT.Name = "colCodigoSAT";
+            this.colCodigoSAT.Visible = true;
+            this.colCodigoSAT.VisibleIndex = 1;
+            // 
+            // colDescripcion
+            // 
+            this.colDescripcion.FieldName = "Descripcion";
+            this.colDescripcion.Name = "colDescripcion";
+            this.colDescripcion.Visible = true;
+            this.colDescripcion.VisibleIndex = 2;
             // 
             // frmCatalogoFacturaUso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoFacturaUso";
-            this.Text = "Factura Uso";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
             this.tcCatalogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).EndInit();
@@ -207,24 +201,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgcCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatFacturaUsoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatFacturaUsoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatFacturaUsoDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigoSAT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatFacturaUsoDS1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.BindingSource spCatFacturaUsoBindingSource;
-        private DevExpress.XtraGrid.Columns.GridColumn colFacturaUsoID;
-        private DevExpress.XtraGrid.Columns.GridColumn colCodigo;
-        private DevExpress.XtraGrid.Columns.GridColumn colNombre;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.TextEdit txtDescripcion;
         private DevExpress.XtraEditors.TextEdit txtCodigoSAT;
@@ -232,6 +222,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.BindingSource spCatFacturaUsoBindingSource;
         private DataSets.spCatFacturaUsoDS spCatFacturaUsoDS1;
+        private DevExpress.XtraGrid.Columns.GridColumn colFacturaUsoID;
+        private DevExpress.XtraGrid.Columns.GridColumn colCodigoSAT;
+        private DevExpress.XtraGrid.Columns.GridColumn colDescripcion;
     }
 }
