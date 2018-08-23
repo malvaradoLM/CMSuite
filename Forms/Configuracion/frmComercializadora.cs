@@ -20,6 +20,11 @@ namespace RedCoForm.Forms.Catalogos
             InitializeComponent();
 
             getRegimenFiscal();
+
+            //Cargar Los Estados
+            GlobalVar.CargarEstados();
+            lueEstado.Properties.DataSource = GlobalVar.Estados;
+            lueExpEstado.Properties.DataSource = GlobalVar.Estados;
         }
 
 
