@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoVendedor));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
+            this.spCatVendedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatVendedorDS1 = new RedCoForm.DataSets.spCatVendedorDS();
             this.txtTelefono = new DevExpress.XtraEditors.TextEdit();
             this.txtNombre = new DevExpress.XtraEditors.TextEdit();
             this.txtVendedorID = new DevExpress.XtraEditors.TextEdit();
@@ -38,8 +41,6 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.spCatVendedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.spCatVendedorDS1 = new RedCoForm.DataSets.spCatVendedorDS();
             this.colVendedorID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTelefono = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -57,16 +58,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVendedorID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorDS1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tcCatalogo
-            // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -122,6 +119,17 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(247, 20);
             this.txtEmail.TabIndex = 7;
+            // 
+            // spCatVendedorBindingSource
+            // 
+            this.spCatVendedorBindingSource.DataMember = "spCatVendedor";
+            this.spCatVendedorBindingSource.DataSource = this.spCatVendedorDS1;
+            this.spCatVendedorBindingSource.Sort = "";
+            // 
+            // spCatVendedorDS1
+            // 
+            this.spCatVendedorDS1.DataSetName = "spCatVendedorDS";
+            this.spCatVendedorDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtTelefono
             // 
@@ -179,17 +187,6 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID";
             // 
-            // spCatVendedorBindingSource
-            // 
-            this.spCatVendedorBindingSource.DataMember = "spCatVendedor";
-            this.spCatVendedorBindingSource.DataSource = this.spCatVendedorDS1;
-            this.spCatVendedorBindingSource.Sort = "";
-            // 
-            // spCatVendedorDS1
-            // 
-            this.spCatVendedorDS1.DataSetName = "spCatVendedorDS";
-            this.spCatVendedorDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // colVendedorID
             // 
             this.colVendedorID.FieldName = "VendedorID";
@@ -222,6 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoVendedor";
             this.Text = "Catalogo Vendedor";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
@@ -239,11 +237,11 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVendedorID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatVendedorDS1)).EndInit();
             this.ResumeLayout(false);
 
         }

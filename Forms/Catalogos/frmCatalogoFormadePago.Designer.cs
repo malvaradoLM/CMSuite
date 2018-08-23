@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoFormadePago));
             this.spCatFormaPagoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCatFormaPagoDS = new RedCoForm.DataSets.spCatFormaPagoDS();
             this.colFormaPagoID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -59,10 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tcCatalogo
-            // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -195,6 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoFormadePago";
             this.Text = "Forma de Pago";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();

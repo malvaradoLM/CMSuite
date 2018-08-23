@@ -36,8 +36,8 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tpPermisos = new DevExpress.XtraTab.XtraTabPage();
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.imagecollection = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
@@ -59,7 +59,6 @@
             // 
             // tcCatalogo
             // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpPermisos});
             this.tcCatalogo.Controls.SetChildIndex(this.tpPermisos, 0);
@@ -137,6 +136,17 @@
             this.tpPermisos.Size = new System.Drawing.Size(678, 282);
             this.tpPermisos.Text = "Permisos";
             // 
+            // groupControl2
+            // 
+            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupControl2.Controls.Add(this.treeView1);
+            this.groupControl2.Location = new System.Drawing.Point(11, 11);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(494, 255);
+            this.groupControl2.TabIndex = 0;
+            this.groupControl2.Text = "Permisos";
+            // 
             // treeView1
             // 
             this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -150,17 +160,6 @@
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.Size = new System.Drawing.Size(470, 226);
             this.treeView1.TabIndex = 1;
-            // 
-            // groupControl2
-            // 
-            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupControl2.Controls.Add(this.treeView1);
-            this.groupControl2.Location = new System.Drawing.Point(11, 11);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(494, 255);
-            this.groupControl2.TabIndex = 0;
-            this.groupControl2.Text = "Permisos";
             // 
             // imagecollection
             // 
