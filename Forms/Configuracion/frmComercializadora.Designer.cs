@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmComercializadora));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
@@ -83,6 +84,31 @@
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.spCatRegimenFiscalDS = new RedCoForm.DataSets.spCatRegimenFiscalDS();
+            this.spCatConfiguracionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spcatConfiguracionDS1 = new RedCoForm.DataSets.spcatConfiguracionDS();
+            this.colConfiguracionID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRazonSocial = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRFC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCalle = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNoExterior = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNoInterior = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTelefono = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colColonia = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMunicipio = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLocalidad = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEstado = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCodigoPostal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRegimenFiscalID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colExCalle = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colexColonia = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colExNoExterior = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colexNoInterior = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colexMunicipio = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colexLocalidad = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colexEstado = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colVersionCFDI = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -125,6 +151,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNoExterior.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCalle.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatRegimenFiscalDS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatConfiguracionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spcatConfiguracionDS1)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
@@ -159,10 +187,35 @@
             // 
             // dgcCatalogo
             // 
+            this.dgcCatalogo.DataSource = this.spCatConfiguracionBindingSource;
             this.dgcCatalogo.Size = new System.Drawing.Size(815, 358);
             // 
             // gvCatalogo
             // 
+            this.gvCatalogo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colConfiguracionID,
+            this.colNombre,
+            this.colRazonSocial,
+            this.colRFC,
+            this.colCalle,
+            this.colNoExterior,
+            this.colNoInterior,
+            this.colTelefono,
+            this.colColonia,
+            this.colMunicipio,
+            this.colLocalidad,
+            this.colEstado,
+            this.colCodigoPostal,
+            this.colEmail,
+            this.colRegimenFiscalID,
+            this.colExCalle,
+            this.colexColonia,
+            this.colExNoExterior,
+            this.colexNoInterior,
+            this.colexMunicipio,
+            this.colexLocalidad,
+            this.colexEstado,
+            this.colVersionCFDI});
             this.gvCatalogo.OptionsBehavior.Editable = false;
             this.gvCatalogo.OptionsFind.AlwaysVisible = true;
             this.gvCatalogo.OptionsFind.SearchInPreview = true;
@@ -198,27 +251,34 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "Email", true));
             this.txtEmail.Location = new System.Drawing.Point(269, 216);
             this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEmail.Size = new System.Drawing.Size(406, 20);
             this.txtEmail.TabIndex = 15;
             // 
             // txtTelefono
             // 
+            this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "Telefono", true));
             this.txtTelefono.Location = new System.Drawing.Point(134, 216);
             this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtTelefono.Size = new System.Drawing.Size(119, 20);
             this.txtTelefono.TabIndex = 14;
             // 
             // txtVersionCFDI
             // 
+            this.txtVersionCFDI.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "VersionCFDI", true));
             this.txtVersionCFDI.Location = new System.Drawing.Point(28, 216);
             this.txtVersionCFDI.Name = "txtVersionCFDI";
+            this.txtVersionCFDI.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtVersionCFDI.Size = new System.Drawing.Size(100, 20);
             this.txtVersionCFDI.TabIndex = 13;
             // 
             // lueRegimenFiscal
             // 
+            this.lueRegimenFiscal.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "RegimenFiscalID", true));
             this.lueRegimenFiscal.Location = new System.Drawing.Point(270, 159);
             this.lueRegimenFiscal.Name = "lueRegimenFiscal";
             this.lueRegimenFiscal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -228,35 +288,43 @@
             // 
             // txtRFC
             // 
+            this.txtRFC.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "RFC", true));
             this.txtRFC.Location = new System.Drawing.Point(29, 159);
             this.txtRFC.Name = "txtRFC";
+            this.txtRFC.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtRFC.Size = new System.Drawing.Size(225, 20);
             this.txtRFC.TabIndex = 11;
             // 
             // txtRazonSocial
             // 
+            this.txtRazonSocial.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "RazonSocial", true));
             this.txtRazonSocial.Location = new System.Drawing.Point(29, 103);
             this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtRazonSocial.Size = new System.Drawing.Size(647, 20);
             this.txtRazonSocial.TabIndex = 10;
             // 
             // txtNombre
             // 
+            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "Nombre", true));
             this.txtNombre.Location = new System.Drawing.Point(144, 58);
             this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombre.Size = new System.Drawing.Size(532, 20);
             this.txtNombre.TabIndex = 9;
             // 
             // txtID
             // 
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "ConfiguracionID", true));
             this.txtID.Location = new System.Drawing.Point(28, 58);
             this.txtID.Name = "txtID";
+            this.txtID.Properties.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 8;
             // 
             // labelControl23
             // 
-            this.labelControl23.Location = new System.Drawing.Point(29, 197);
+            this.labelControl23.Location = new System.Drawing.Point(28, 197);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(62, 13);
             this.labelControl23.TabIndex = 7;
@@ -360,59 +428,75 @@
             // 
             // txtExpCodigoPostal
             // 
+            this.txtExpCodigoPostal.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "exEstado", true));
             this.txtExpCodigoPostal.Location = new System.Drawing.Point(251, 148);
             this.txtExpCodigoPostal.Name = "txtExpCodigoPostal";
+            this.txtExpCodigoPostal.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtExpCodigoPostal.Size = new System.Drawing.Size(100, 20);
             this.txtExpCodigoPostal.TabIndex = 14;
             // 
             // lueExpEstado
             // 
+            this.lueExpEstado.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "exEstado", true));
             this.lueExpEstado.Location = new System.Drawing.Point(19, 148);
             this.lueExpEstado.Name = "lueExpEstado";
             this.lueExpEstado.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueExpEstado.Properties.NullText = "[Seleccione un Estado...]";
             this.lueExpEstado.Size = new System.Drawing.Size(206, 20);
             this.lueExpEstado.TabIndex = 13;
             // 
             // txtExpMunicipio
             // 
+            this.txtExpMunicipio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "exMunicipio", true));
             this.txtExpMunicipio.Location = new System.Drawing.Point(466, 103);
             this.txtExpMunicipio.Name = "txtExpMunicipio";
+            this.txtExpMunicipio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtExpMunicipio.Size = new System.Drawing.Size(206, 20);
             this.txtExpMunicipio.TabIndex = 12;
             // 
             // txtExpCiudad
             // 
+            this.txtExpCiudad.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "exLocalidad", true));
             this.txtExpCiudad.Location = new System.Drawing.Point(251, 103);
             this.txtExpCiudad.Name = "txtExpCiudad";
+            this.txtExpCiudad.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtExpCiudad.Size = new System.Drawing.Size(199, 20);
             this.txtExpCiudad.TabIndex = 11;
             // 
             // txtExpColonia
             // 
+            this.txtExpColonia.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "exColonia", true));
             this.txtExpColonia.Location = new System.Drawing.Point(19, 103);
             this.txtExpColonia.Name = "txtExpColonia";
+            this.txtExpColonia.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtExpColonia.Size = new System.Drawing.Size(225, 20);
             this.txtExpColonia.TabIndex = 10;
             // 
             // txtExpNoInterior
             // 
+            this.txtExpNoInterior.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "exNoInterior", true));
             this.txtExpNoInterior.Location = new System.Drawing.Point(572, 58);
             this.txtExpNoInterior.Name = "txtExpNoInterior";
+            this.txtExpNoInterior.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtExpNoInterior.Size = new System.Drawing.Size(100, 20);
             this.txtExpNoInterior.TabIndex = 9;
             // 
             // txtExpNoExterior
             // 
+            this.txtExpNoExterior.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "ExNoExterior", true));
             this.txtExpNoExterior.Location = new System.Drawing.Point(466, 58);
             this.txtExpNoExterior.Name = "txtExpNoExterior";
+            this.txtExpNoExterior.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtExpNoExterior.Size = new System.Drawing.Size(100, 20);
             this.txtExpNoExterior.TabIndex = 8;
             // 
             // txtExpCalle
             // 
+            this.txtExpCalle.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "ExCalle", true));
             this.txtExpCalle.Location = new System.Drawing.Point(19, 58);
             this.txtExpCalle.Name = "txtExpCalle";
+            this.txtExpCalle.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtExpCalle.Size = new System.Drawing.Size(431, 20);
             this.txtExpCalle.TabIndex = 7;
             // 
@@ -498,61 +582,80 @@
             // 
             // txtCodigoPostal
             // 
+            this.txtCodigoPostal.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "CodigoPostal", true));
             this.txtCodigoPostal.Location = new System.Drawing.Point(251, 150);
             this.txtCodigoPostal.Name = "txtCodigoPostal";
+            this.txtCodigoPostal.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigoPostal.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoPostal.TabIndex = 15;
             // 
             // lueEstado
             // 
+            this.lueEstado.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "Estado", true));
             this.lueEstado.Location = new System.Drawing.Point(19, 150);
             this.lueEstado.Name = "lueEstado";
             this.lueEstado.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueEstado.Properties.NullText = "[Seleccione un Estado...]";
             this.lueEstado.Size = new System.Drawing.Size(225, 20);
             this.lueEstado.TabIndex = 14;
             // 
             // txtMunicipio
             // 
+            this.txtMunicipio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "Municipio", true));
             this.txtMunicipio.Location = new System.Drawing.Point(466, 105);
             this.txtMunicipio.Name = "txtMunicipio";
+            this.txtMunicipio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtMunicipio.Size = new System.Drawing.Size(206, 20);
             this.txtMunicipio.TabIndex = 13;
             // 
             // txtCiudad
             // 
+            this.txtCiudad.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "Localidad", true));
             this.txtCiudad.Location = new System.Drawing.Point(251, 105);
             this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCiudad.Size = new System.Drawing.Size(199, 20);
             this.txtCiudad.TabIndex = 12;
             // 
             // txtColonia
             // 
+            this.txtColonia.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "Colonia", true));
             this.txtColonia.Location = new System.Drawing.Point(19, 105);
             this.txtColonia.Name = "txtColonia";
+            this.txtColonia.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtColonia.Size = new System.Drawing.Size(225, 20);
             this.txtColonia.TabIndex = 11;
             // 
             // txtNoInterior
             // 
+            this.txtNoInterior.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "NoInterior", true));
             this.txtNoInterior.Location = new System.Drawing.Point(572, 57);
             this.txtNoInterior.Name = "txtNoInterior";
+            this.txtNoInterior.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNoInterior.Size = new System.Drawing.Size(100, 20);
             this.txtNoInterior.TabIndex = 10;
+            this.txtNoInterior.EditValueChanged += new System.EventHandler(this.txtNoInterior_EditValueChanged);
             // 
             // txtNoExterior
             // 
+            this.txtNoExterior.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "NoExterior", true));
             this.txtNoExterior.Location = new System.Drawing.Point(466, 57);
             this.txtNoExterior.Name = "txtNoExterior";
+            this.txtNoExterior.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNoExterior.Size = new System.Drawing.Size(100, 20);
             this.txtNoExterior.TabIndex = 9;
+            this.txtNoExterior.EditValueChanged += new System.EventHandler(this.txtNoExterior_EditValueChanged);
             // 
             // txtCalle
             // 
+            this.txtCalle.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatConfiguracionBindingSource, "Calle", true));
             this.txtCalle.Location = new System.Drawing.Point(19, 57);
             this.txtCalle.Name = "txtCalle";
+            this.txtCalle.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCalle.Size = new System.Drawing.Size(431, 20);
             this.txtCalle.TabIndex = 8;
+            this.txtCalle.EditValueChanged += new System.EventHandler(this.txtCalle_EditValueChanged);
             // 
             // labelControl12
             // 
@@ -623,6 +726,178 @@
             this.spCatRegimenFiscalDS.DataSetName = "spCatRegimenFiscalDS";
             this.spCatRegimenFiscalDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // spCatConfiguracionBindingSource
+            // 
+            this.spCatConfiguracionBindingSource.DataMember = "spCatConfiguracion";
+            this.spCatConfiguracionBindingSource.DataSource = this.spcatConfiguracionDS1;
+            this.spCatConfiguracionBindingSource.Sort = "";
+            // 
+            // spcatConfiguracionDS1
+            // 
+            this.spcatConfiguracionDS1.DataSetName = "spcatConfiguracionDS";
+            this.spcatConfiguracionDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // colConfiguracionID
+            // 
+            this.colConfiguracionID.FieldName = "ConfiguracionID";
+            this.colConfiguracionID.Name = "colConfiguracionID";
+            this.colConfiguracionID.Visible = true;
+            this.colConfiguracionID.VisibleIndex = 0;
+            // 
+            // colNombre
+            // 
+            this.colNombre.FieldName = "Nombre";
+            this.colNombre.Name = "colNombre";
+            this.colNombre.Visible = true;
+            this.colNombre.VisibleIndex = 1;
+            // 
+            // colRazonSocial
+            // 
+            this.colRazonSocial.FieldName = "RazonSocial";
+            this.colRazonSocial.Name = "colRazonSocial";
+            this.colRazonSocial.Visible = true;
+            this.colRazonSocial.VisibleIndex = 2;
+            // 
+            // colRFC
+            // 
+            this.colRFC.FieldName = "RFC";
+            this.colRFC.Name = "colRFC";
+            this.colRFC.Visible = true;
+            this.colRFC.VisibleIndex = 3;
+            // 
+            // colCalle
+            // 
+            this.colCalle.FieldName = "Calle";
+            this.colCalle.Name = "colCalle";
+            this.colCalle.Visible = true;
+            this.colCalle.VisibleIndex = 4;
+            // 
+            // colNoExterior
+            // 
+            this.colNoExterior.FieldName = "NoExterior";
+            this.colNoExterior.Name = "colNoExterior";
+            this.colNoExterior.Visible = true;
+            this.colNoExterior.VisibleIndex = 5;
+            // 
+            // colNoInterior
+            // 
+            this.colNoInterior.FieldName = "NoInterior";
+            this.colNoInterior.Name = "colNoInterior";
+            this.colNoInterior.Visible = true;
+            this.colNoInterior.VisibleIndex = 6;
+            // 
+            // colTelefono
+            // 
+            this.colTelefono.FieldName = "Telefono";
+            this.colTelefono.Name = "colTelefono";
+            this.colTelefono.Visible = true;
+            this.colTelefono.VisibleIndex = 7;
+            // 
+            // colColonia
+            // 
+            this.colColonia.FieldName = "Colonia";
+            this.colColonia.Name = "colColonia";
+            this.colColonia.Visible = true;
+            this.colColonia.VisibleIndex = 8;
+            // 
+            // colMunicipio
+            // 
+            this.colMunicipio.FieldName = "Municipio";
+            this.colMunicipio.Name = "colMunicipio";
+            this.colMunicipio.Visible = true;
+            this.colMunicipio.VisibleIndex = 9;
+            // 
+            // colLocalidad
+            // 
+            this.colLocalidad.FieldName = "Localidad";
+            this.colLocalidad.Name = "colLocalidad";
+            this.colLocalidad.Visible = true;
+            this.colLocalidad.VisibleIndex = 10;
+            // 
+            // colEstado
+            // 
+            this.colEstado.FieldName = "Estado";
+            this.colEstado.Name = "colEstado";
+            this.colEstado.Visible = true;
+            this.colEstado.VisibleIndex = 11;
+            // 
+            // colCodigoPostal
+            // 
+            this.colCodigoPostal.FieldName = "CodigoPostal";
+            this.colCodigoPostal.Name = "colCodigoPostal";
+            this.colCodigoPostal.Visible = true;
+            this.colCodigoPostal.VisibleIndex = 12;
+            // 
+            // colEmail
+            // 
+            this.colEmail.FieldName = "Email";
+            this.colEmail.Name = "colEmail";
+            this.colEmail.Visible = true;
+            this.colEmail.VisibleIndex = 13;
+            // 
+            // colRegimenFiscalID
+            // 
+            this.colRegimenFiscalID.FieldName = "RegimenFiscalID";
+            this.colRegimenFiscalID.Name = "colRegimenFiscalID";
+            this.colRegimenFiscalID.Visible = true;
+            this.colRegimenFiscalID.VisibleIndex = 14;
+            // 
+            // colExCalle
+            // 
+            this.colExCalle.FieldName = "ExCalle";
+            this.colExCalle.Name = "colExCalle";
+            this.colExCalle.Visible = true;
+            this.colExCalle.VisibleIndex = 15;
+            // 
+            // colexColonia
+            // 
+            this.colexColonia.FieldName = "exColonia";
+            this.colexColonia.Name = "colexColonia";
+            this.colexColonia.Visible = true;
+            this.colexColonia.VisibleIndex = 16;
+            // 
+            // colExNoExterior
+            // 
+            this.colExNoExterior.FieldName = "ExNoExterior";
+            this.colExNoExterior.Name = "colExNoExterior";
+            this.colExNoExterior.Visible = true;
+            this.colExNoExterior.VisibleIndex = 17;
+            // 
+            // colexNoInterior
+            // 
+            this.colexNoInterior.FieldName = "exNoInterior";
+            this.colexNoInterior.Name = "colexNoInterior";
+            this.colexNoInterior.Visible = true;
+            this.colexNoInterior.VisibleIndex = 18;
+            // 
+            // colexMunicipio
+            // 
+            this.colexMunicipio.FieldName = "exMunicipio";
+            this.colexMunicipio.Name = "colexMunicipio";
+            this.colexMunicipio.Visible = true;
+            this.colexMunicipio.VisibleIndex = 19;
+            // 
+            // colexLocalidad
+            // 
+            this.colexLocalidad.FieldName = "exLocalidad";
+            this.colexLocalidad.Name = "colexLocalidad";
+            this.colexLocalidad.Visible = true;
+            this.colexLocalidad.VisibleIndex = 20;
+            // 
+            // colexEstado
+            // 
+            this.colexEstado.FieldName = "exEstado";
+            this.colexEstado.Name = "colexEstado";
+            this.colexEstado.Visible = true;
+            this.colexEstado.VisibleIndex = 21;
+            // 
+            // colVersionCFDI
+            // 
+            this.colVersionCFDI.FieldName = "VersionCFDI";
+            this.colVersionCFDI.Name = "colVersionCFDI";
+            this.colVersionCFDI.Visible = true;
+            this.colVersionCFDI.VisibleIndex = 22;
+            // 
             // frmComercializadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -676,6 +951,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNoExterior.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCalle.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatRegimenFiscalDS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatConfiguracionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spcatConfiguracionDS1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -736,5 +1013,30 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DataSets.spCatRegimenFiscalDS spCatRegimenFiscalDS;
+        private System.Windows.Forms.BindingSource spCatConfiguracionBindingSource;
+        private DataSets.spcatConfiguracionDS spcatConfiguracionDS1;
+        private DevExpress.XtraGrid.Columns.GridColumn colConfiguracionID;
+        private DevExpress.XtraGrid.Columns.GridColumn colNombre;
+        private DevExpress.XtraGrid.Columns.GridColumn colRazonSocial;
+        private DevExpress.XtraGrid.Columns.GridColumn colRFC;
+        private DevExpress.XtraGrid.Columns.GridColumn colCalle;
+        private DevExpress.XtraGrid.Columns.GridColumn colNoExterior;
+        private DevExpress.XtraGrid.Columns.GridColumn colNoInterior;
+        private DevExpress.XtraGrid.Columns.GridColumn colTelefono;
+        private DevExpress.XtraGrid.Columns.GridColumn colColonia;
+        private DevExpress.XtraGrid.Columns.GridColumn colMunicipio;
+        private DevExpress.XtraGrid.Columns.GridColumn colLocalidad;
+        private DevExpress.XtraGrid.Columns.GridColumn colEstado;
+        private DevExpress.XtraGrid.Columns.GridColumn colCodigoPostal;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmail;
+        private DevExpress.XtraGrid.Columns.GridColumn colRegimenFiscalID;
+        private DevExpress.XtraGrid.Columns.GridColumn colExCalle;
+        private DevExpress.XtraGrid.Columns.GridColumn colexColonia;
+        private DevExpress.XtraGrid.Columns.GridColumn colExNoExterior;
+        private DevExpress.XtraGrid.Columns.GridColumn colexNoInterior;
+        private DevExpress.XtraGrid.Columns.GridColumn colexMunicipio;
+        private DevExpress.XtraGrid.Columns.GridColumn colexLocalidad;
+        private DevExpress.XtraGrid.Columns.GridColumn colexEstado;
+        private DevExpress.XtraGrid.Columns.GridColumn colVersionCFDI;
     }
 }

@@ -40,8 +40,7 @@ namespace RedCoForm.Class
                     {
                         RegimenFiscalID = dr.Field<int>("RegimenFiscalID"),
                         Descripcion = dr.Field<string>("Descripcion"),
-
-                          CodigoSAT = dr.Field<string>("CodigoSAT")
+                        CodigoSAT = dr.Field<string>("CodigoSAT")
                     }
                     );
 
