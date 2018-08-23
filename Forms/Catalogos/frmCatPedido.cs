@@ -28,6 +28,7 @@ namespace RedCoForm.Forms.Catalogos
         clsProducto clsProducto = new clsProducto();
         List<clsStatus> lstStatus = new List<clsStatus>();
         clsStatus clsStatus = new clsStatus();
+        int PedidoID;
 
         private List<DataParameter> Params = new List<DataParameter>();
         public frmCatPedido()
@@ -45,6 +46,7 @@ namespace RedCoForm.Forms.Catalogos
             getTerminales();
             getVehiculos();
             lueProducto.EditValueChanged += LueProducto_EditValueChanged;
+            txtDetalleVolumen.EditValueChanging += txtDetalleVolumen_EditValueChanging;
             gvDetallePedido.CustomDrawFooterCell += gvDetallePedido_CustomDrawFooterCell;
             gvDetallePedido.Columns["Total"].Summary.Add(DevExpress.Data.SummaryItemType.Sum, "Total", "Total: {0}");
             gvDetallePedido.Columns["Subtotal"].Summary.Add(DevExpress.Data.SummaryItemType.Sum, "Subtotal", "Subtotal: {0}");
@@ -78,16 +80,31 @@ namespace RedCoForm.Forms.Catalogos
         {
             DevExpress.XtraEditors.LookUpEdit lue = sender as DevExpress.XtraEditors.LookUpEdit;
             CalcularTotales(Convert.ToInt32(lue.EditValue));
-            gvDetallePedido.UpdateTotalSummary();
-         
+            gvDetallePedido.UpdateTotalSummary();   
         }
 
         private void CalcularTotales(int ProductoID)
         {
             clsProducto Producto = lstProducto.Find(obj => obj.ProductoID == ProductoID);
             gvDetallePedido.SetRowCellValue(gvDetallePedido.FocusedRowHandle, "Precio", Producto.Precio);
-            double Volumen =Convert.ToDouble( gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Volumen"));
-            double Total = Producto.Precio * Volumen;
+            double Volumen;
+            double.TryParse(gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Volumen").ToString(), out Volumen);
+            CalcularTotales(Volumen);
+        }
+
+        private void txtDetalleVolumen_EditValueChanging(object sender, EventArgs e)
+        {
+            double Volumen;
+            double.TryParse(((DevExpress.XtraEditors.TextEdit)sender).Text, out Volumen);
+            CalcularTotales(Volumen);
+            gvDetallePedido.UpdateTotalSummary();
+        }
+
+
+
+        private void CalcularTotales(double Volumen)
+        {          
+            double Total = Convert.ToDouble(gvDetallePedido.GetRowCellValue(gvDetallePedido.FocusedRowHandle, "Precio")) * Volumen;
             double IVA = Total * 0.16;
             double IEPS = Total * 0.40;
             double Subtotal = Total - IVA - IEPS;
@@ -325,16 +342,17 @@ namespace RedCoForm.Forms.Catalogos
                 DataModule.ParamByName(Params, "PedidoID", PedidoID);
                 DataModule.FillDataSet(cdsDatos, cDataSetDatos, Params.ToArray());
                 gvDetallePedido.BestFitColumns(false);
-                if (gvDetallePedido.DataRowCount > 0)
-                {
-                    IEnumerable<DataRow> query = from dts in detallePedidoDS1.Tables["spDetallePedido"].AsEnumerable() select dts;
-                    foreach (DataRow dr in query)
-                    {
-                        CalcularTotales(dr.Field<int>("ProductoID"));
-                    }
-                    gvDetallePedido.UpdateTotalSummary();
+                //if (gvDetallePedido.DataRowCount > 0)
+                //{
+                //    IEnumerable<DataRow> query = from dts in detallePedidoDS1.Tables["spDetallePedido"].AsEnumerable() select dts;
+                //    foreach (DataRow dr in query)
+                //    {
+                //        CalcularTotales(dr.Field<int>("ProductoID"));
+                //    }
+                //    gvDetallePedido.UpdateTotalSummary();
 
-                }
+                //}
+                gvDetallePedido.UpdateTotalSummary();
                 ButtonGenerarRecibo();
             }
             catch (Exception ex)
@@ -347,7 +365,7 @@ namespace RedCoForm.Forms.Catalogos
         {
             try
             {
-                int PedidoID = Int32.Parse(gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "PedidoID").ToString());
+                PedidoID = Int32.Parse(gvCatalogo.GetRowCellValue(gvCatalogo.FocusedRowHandle, "PedidoID").ToString());
                 LlenarDetallePedido(PedidoID);
             }
             catch(Exception ex)
@@ -379,6 +397,7 @@ namespace RedCoForm.Forms.Catalogos
                 DataSource.EndEdit();
                 if (Data.DataModule.ApplyUpdates(cdsCatalogo))
                 {
+                    //Data.DataModule.ApplyUpdates(detallePedidoDS1);
                     UpdateDetallePedido();
                     State = stEstado.Browse;
                     newRecordRow = null;
@@ -395,14 +414,11 @@ namespace RedCoForm.Forms.Catalogos
             try
             {
                 List<RPSuiteServer.TDetallePedido> lstDetallePedido = FillListDetallePedido(detallePedidoDS1.Tables["spDetallePedido"]);
-                foreach (RPSuiteServer.TDetallePedido clsDetallePedido in lstDetallePedido)
-                {
-                    bool Pedido = RedCoForm.Data.DataModule.DataService.UpdateDetallePedido(clsDetallePedido);
-                    if (!Pedido)
-                        throw new Exception();
-                }
+                RPSuiteServer.TDetallePedido[] TADetallePedido = lstDetallePedido.ToArray();
+                bool Pedido = RedCoForm.Data.DataModule.DataService.UpdateDetallePedido(TADetallePedido);
+                if (!Pedido)
+                    throw new Exception();
                 ButtonGenerarRecibo();
-
             }
             catch (Exception ex)
             {
@@ -415,18 +431,24 @@ namespace RedCoForm.Forms.Catalogos
             //Creamos una lista de Categorias con la clave Categoria
             List<RPSuiteServer.TDetallePedido> DetallePedido = new List<RPSuiteServer.TDetallePedido>();
             IEnumerable<DataRow> query = from dts in dt.AsEnumerable() select dts;
-
             foreach (DataRow dr in query)
             {
                 DetallePedido.Add
                     (new RPSuiteServer.TDetallePedido()
                     {
-                        DetallePedidoID = dr.Field<int>("DetallePedidoID"),
-                        PedidoID = dr.Field<int>("PedidoID"),
+                        DetallePedidoID = dr.Field<int>("DetallePedidoID") ,
+                        Precio = dr.Field<double>("Precio"),
+                        Subtotal = dr.Field<double>("Subtotal"),
+                        IVA = dr.Field<double>("IVA"),
+                        IEPS = dr.Field<double>("IEPS"),
+                        Total = dr.Field<double>("Total"),
+                        Descuento = dr.Field<double>("Descuento"),
+                        NoItems = dr.Field<int>("NoItems"),
+                        PedidoID = PedidoID,
                         VehiculoID = dr.Field<int>("VehiculoID"),
                         ProductoID = dr.Field<int>("ProductoID"),
                         TerminalID = dr.Field<int>("TerminalID"),
-                        Volumen = dr.Field<int>("Volumen")
+                        Volumen = dr.Field<double>("Volumen")
                     }
                     );
 
@@ -547,5 +569,6 @@ namespace RedCoForm.Forms.Catalogos
         {
 
         }
+
     }
 }

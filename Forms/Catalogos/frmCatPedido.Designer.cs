@@ -75,6 +75,7 @@
             this.colTerminalID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colVehiculoID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colVolumen = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.txtDetalleVolumen = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.colPrecio = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -140,6 +141,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgcDetallePedido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDetallePedido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDetalleVolumen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memObservacion.Properties)).BeginInit();
@@ -161,6 +163,7 @@
             // 
             // tcCatalogo
             // 
+            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.Size = new System.Drawing.Size(1057, 452);
             this.tcCatalogo.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtpPedido});
@@ -260,106 +263,104 @@
             // 
             this.colPedidoID.FieldName = "PedidoID";
             this.colPedidoID.Name = "colPedidoID";
-            this.colPedidoID.Visible = true;
-            this.colPedidoID.VisibleIndex = 0;
             // 
             // colSerie
             // 
             this.colSerie.FieldName = "Serie";
             this.colSerie.Name = "colSerie";
             this.colSerie.Visible = true;
-            this.colSerie.VisibleIndex = 1;
+            this.colSerie.VisibleIndex = 0;
             // 
             // colFolio
             // 
             this.colFolio.FieldName = "Folio";
             this.colFolio.Name = "colFolio";
             this.colFolio.Visible = true;
-            this.colFolio.VisibleIndex = 2;
+            this.colFolio.VisibleIndex = 1;
             // 
             // colFecha
             // 
             this.colFecha.FieldName = "Fecha";
             this.colFecha.Name = "colFecha";
             this.colFecha.Visible = true;
-            this.colFecha.VisibleIndex = 3;
+            this.colFecha.VisibleIndex = 2;
             // 
             // colFechaModificacion
             // 
             this.colFechaModificacion.FieldName = "FechaModificacion";
             this.colFechaModificacion.Name = "colFechaModificacion";
             this.colFechaModificacion.Visible = true;
-            this.colFechaModificacion.VisibleIndex = 4;
+            this.colFechaModificacion.VisibleIndex = 3;
             // 
             // colEjercicio
             // 
             this.colEjercicio.FieldName = "Ejercicio";
             this.colEjercicio.Name = "colEjercicio";
             this.colEjercicio.Visible = true;
-            this.colEjercicio.VisibleIndex = 5;
+            this.colEjercicio.VisibleIndex = 4;
             // 
             // colPeriodo
             // 
             this.colPeriodo.FieldName = "Periodo";
             this.colPeriodo.Name = "colPeriodo";
             this.colPeriodo.Visible = true;
-            this.colPeriodo.VisibleIndex = 6;
+            this.colPeriodo.VisibleIndex = 5;
             // 
             // colDia
             // 
             this.colDia.FieldName = "Dia";
             this.colDia.Name = "colDia";
             this.colDia.Visible = true;
-            this.colDia.VisibleIndex = 7;
+            this.colDia.VisibleIndex = 6;
             // 
             // colSubtotal
             // 
             this.colSubtotal.FieldName = "Subtotal";
             this.colSubtotal.Name = "colSubtotal";
             this.colSubtotal.Visible = true;
-            this.colSubtotal.VisibleIndex = 8;
+            this.colSubtotal.VisibleIndex = 7;
             // 
             // colIVA
             // 
             this.colIVA.FieldName = "IVA";
             this.colIVA.Name = "colIVA";
             this.colIVA.Visible = true;
-            this.colIVA.VisibleIndex = 9;
+            this.colIVA.VisibleIndex = 8;
             // 
             // colIEPS
             // 
             this.colIEPS.FieldName = "IEPS";
             this.colIEPS.Name = "colIEPS";
             this.colIEPS.Visible = true;
-            this.colIEPS.VisibleIndex = 10;
+            this.colIEPS.VisibleIndex = 9;
             // 
             // colTotal
             // 
             this.colTotal.FieldName = "Total";
             this.colTotal.Name = "colTotal";
             this.colTotal.Visible = true;
-            this.colTotal.VisibleIndex = 11;
+            this.colTotal.VisibleIndex = 10;
             // 
             // colDescuento
             // 
             this.colDescuento.FieldName = "Descuento";
             this.colDescuento.Name = "colDescuento";
             this.colDescuento.Visible = true;
-            this.colDescuento.VisibleIndex = 12;
+            this.colDescuento.VisibleIndex = 11;
             // 
             // colStatus
             // 
             this.colStatus.FieldName = "Status";
             this.colStatus.Name = "colStatus";
             this.colStatus.Visible = true;
-            this.colStatus.VisibleIndex = 13;
+            this.colStatus.VisibleIndex = 12;
             // 
             // colObservacion
             // 
             this.colObservacion.FieldName = "Observacion";
             this.colObservacion.Name = "colObservacion";
             this.colObservacion.Visible = true;
-            this.colObservacion.VisibleIndex = 14;
+            this.colObservacion.VisibleIndex = 13;
             // 
             // colEstacionID
             // 
@@ -367,7 +368,7 @@
             this.colEstacionID.FieldName = "EstacionID";
             this.colEstacionID.Name = "colEstacionID";
             this.colEstacionID.Visible = true;
-            this.colEstacionID.VisibleIndex = 15;
+            this.colEstacionID.VisibleIndex = 14;
             // 
             // lueColEstacion
             // 
@@ -382,7 +383,7 @@
             this.colConfiguracionID.FieldName = "ConfiguracionID";
             this.colConfiguracionID.Name = "colConfiguracionID";
             this.colConfiguracionID.Visible = true;
-            this.colConfiguracionID.VisibleIndex = 16;
+            this.colConfiguracionID.VisibleIndex = 15;
             // 
             // lueColConfiguracion
             // 
@@ -397,7 +398,7 @@
             this.colUsuarioID.FieldName = "UsuarioID";
             this.colUsuarioID.Name = "colUsuarioID";
             this.colUsuarioID.Visible = true;
-            this.colUsuarioID.VisibleIndex = 17;
+            this.colUsuarioID.VisibleIndex = 16;
             // 
             // lueColUsuario
             // 
@@ -412,7 +413,7 @@
             this.colStatusID.FieldName = "StatusID";
             this.colStatusID.Name = "colStatusID";
             this.colStatusID.Visible = true;
-            this.colStatusID.VisibleIndex = 18;
+            this.colStatusID.VisibleIndex = 17;
             // 
             // lueColStatus
             // 
@@ -462,7 +463,7 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(926, 161);
+            this.labelControl5.Location = new System.Drawing.Point(927, 153);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(51, 13);
             this.labelControl5.TabIndex = 34;
@@ -470,7 +471,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(926, 94);
+            this.labelControl4.Location = new System.Drawing.Point(927, 99);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(39, 13);
             this.labelControl4.TabIndex = 33;
@@ -478,7 +479,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(926, 27);
+            this.labelControl3.Location = new System.Drawing.Point(927, 44);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(40, 13);
             this.labelControl3.TabIndex = 32;
@@ -487,7 +488,7 @@
             // txtcDescuento
             // 
             this.txtcDescuento.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spDetallePedidoBindingSource, "Descuento", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtcDescuento.Location = new System.Drawing.Point(902, 180);
+            this.txtcDescuento.Location = new System.Drawing.Point(903, 172);
             this.txtcDescuento.Name = "txtcDescuento";
             this.txtcDescuento.Size = new System.Drawing.Size(100, 20);
             this.txtcDescuento.TabIndex = 31;
@@ -506,7 +507,7 @@
             // lueCatVehiculo
             // 
             this.lueCatVehiculo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spDetallePedidoBindingSource, "VehiculoID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.lueCatVehiculo.Location = new System.Drawing.Point(902, 113);
+            this.lueCatVehiculo.Location = new System.Drawing.Point(903, 118);
             this.lueCatVehiculo.Name = "lueCatVehiculo";
             this.lueCatVehiculo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -516,7 +517,7 @@
             // lueCatTerminal
             // 
             this.lueCatTerminal.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spDetallePedidoBindingSource, "TerminalID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.lueCatTerminal.Location = new System.Drawing.Point(902, 46);
+            this.lueCatTerminal.Location = new System.Drawing.Point(903, 63);
             this.lueCatTerminal.Name = "lueCatTerminal";
             this.lueCatTerminal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -530,7 +531,8 @@
             this.dgcDetallePedido.MainView = this.gvDetallePedido;
             this.dgcDetallePedido.Name = "dgcDetallePedido";
             this.dgcDetallePedido.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.lueProducto});
+            this.lueProducto,
+            this.txtDetalleVolumen});
             this.dgcDetallePedido.Size = new System.Drawing.Size(886, 243);
             this.dgcDetallePedido.TabIndex = 28;
             this.dgcDetallePedido.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -555,6 +557,8 @@
             this.colChoferID});
             this.gvDetallePedido.GridControl = this.dgcDetallePedido;
             this.gvDetallePedido.Name = "gvDetallePedido";
+            this.gvDetallePedido.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.True;
+            this.gvDetallePedido.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
             this.gvDetallePedido.OptionsView.ShowFooter = true;
             // 
             // colDetallePedidoID
@@ -598,11 +602,17 @@
             // 
             // colVolumen
             // 
+            this.colVolumen.ColumnEdit = this.txtDetalleVolumen;
             this.colVolumen.FieldName = "Volumen";
             this.colVolumen.Name = "colVolumen";
             this.colVolumen.Visible = true;
             this.colVolumen.VisibleIndex = 1;
             this.colVolumen.Width = 101;
+            // 
+            // txtDetalleVolumen
+            // 
+            this.txtDetalleVolumen.AutoHeight = false;
+            this.txtDetalleVolumen.Name = "txtDetalleVolumen";
             // 
             // colPrecio
             // 
@@ -939,6 +949,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgcDetallePedido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDetallePedido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDetalleVolumen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -1041,5 +1052,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit lueTerminal;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit lueVehiculo;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit4;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit txtDetalleVolumen;
     }
 }
