@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoGrupoUsuario));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -35,7 +37,8 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tpPermisos = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.treeList1 = new DevExpress.XtraTreeList.TreeList();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.imagecollection = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -52,7 +55,6 @@
             this.tpPermisos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.treeList1)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
@@ -138,22 +140,36 @@
             // 
             this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupControl2.Controls.Add(this.treeList1);
+            this.groupControl2.Controls.Add(this.treeView1);
             this.groupControl2.Location = new System.Drawing.Point(11, 11);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(494, 255);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "Permisos";
             // 
-            // treeList1
+            // treeView1
             // 
-            this.treeList1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.treeList1.Location = new System.Drawing.Point(21, 24);
-            this.treeList1.Name = "treeList1";
-            this.treeList1.Size = new System.Drawing.Size(468, 226);
-            this.treeList1.TabIndex = 0;
+            this.treeView1.CheckBoxes = true;
+            this.treeView1.ImageIndex = 0;
+            this.treeView1.ImageList = this.imagecollection;
+            this.treeView1.Location = new System.Drawing.Point(19, 24);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.SelectedImageIndex = 0;
+            this.treeView1.Size = new System.Drawing.Size(470, 226);
+            this.treeView1.TabIndex = 1;
+            // 
+            // imagecollection
+            // 
+            this.imagecollection.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imagecollection.ImageStream")));
+            this.imagecollection.TransparentColor = System.Drawing.Color.Transparent;
+            this.imagecollection.Images.SetKeyName(0, "graph-sales-bullish-pin.png");
+            this.imagecollection.Images.SetKeyName(1, "cash-register-banknote.png");
+            this.imagecollection.Images.SetKeyName(2, "embedding-cassette-padlock.png");
+            this.imagecollection.Images.SetKeyName(3, "enum.png");
+            this.imagecollection.Images.SetKeyName(4, "gift.png");
             // 
             // frmCatalogoGrupoUsuario
             // 
@@ -161,6 +177,7 @@
             this.ClientSize = new System.Drawing.Size(680, 307);
             this.Name = "frmCatalogoGrupoUsuario";
             this.Text = "Grupo Usuario";
+            this.Load += new System.EventHandler(this.frmCatalogoGrupoUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
             this.tcCatalogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).EndInit();
@@ -179,7 +196,6 @@
             this.tpPermisos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.treeList1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -193,6 +209,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraTreeList.TreeList treeList1;
+        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.ImageList imagecollection;
     }
 }

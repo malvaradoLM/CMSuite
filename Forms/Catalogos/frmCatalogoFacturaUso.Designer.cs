@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoFacturaUso));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
             this.spCatFacturaUsoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -100,16 +101,17 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(11, 11);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(157, 172);
+            this.groupControl1.Size = new System.Drawing.Size(327, 172);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Datos";
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatFacturaUsoBindingSource, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtDescripcion.Location = new System.Drawing.Point(8, 133);
+            this.txtDescripcion.Location = new System.Drawing.Point(17, 133);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(136, 20);
+            this.txtDescripcion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtDescripcion.Size = new System.Drawing.Size(287, 20);
             this.txtDescripcion.TabIndex = 5;
             // 
             // spCatFacturaUsoBindingSource
@@ -126,23 +128,24 @@
             // txtCodigoSAT
             // 
             this.txtCodigoSAT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatFacturaUsoBindingSource, "CodigoSAT", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtCodigoSAT.Location = new System.Drawing.Point(8, 88);
+            this.txtCodigoSAT.Location = new System.Drawing.Point(17, 88);
             this.txtCodigoSAT.Name = "txtCodigoSAT";
-            this.txtCodigoSAT.Size = new System.Drawing.Size(136, 20);
+            this.txtCodigoSAT.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCodigoSAT.Size = new System.Drawing.Size(91, 20);
             this.txtCodigoSAT.TabIndex = 4;
             // 
             // txtID
             // 
             this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatFacturaUsoBindingSource, "FacturaUsoID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(8, 43);
+            this.txtID.Location = new System.Drawing.Point(17, 43);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(47, 20);
+            this.txtID.Size = new System.Drawing.Size(91, 20);
             this.txtID.TabIndex = 3;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(8, 114);
+            this.labelControl3.Location = new System.Drawing.Point(17, 114);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(54, 13);
             this.labelControl3.TabIndex = 2;
@@ -150,7 +153,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(8, 69);
+            this.labelControl2.Location = new System.Drawing.Point(17, 69);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(52, 13);
             this.labelControl2.TabIndex = 1;
@@ -158,7 +161,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(8, 24);
+            this.labelControl1.Location = new System.Drawing.Point(17, 24);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(11, 13);
             this.labelControl1.TabIndex = 0;
@@ -189,7 +192,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoFacturaUso";
+            this.Text = "Factura Uso";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
             this.tcCatalogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).EndInit();

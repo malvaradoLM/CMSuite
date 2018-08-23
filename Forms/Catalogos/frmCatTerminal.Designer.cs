@@ -241,6 +241,7 @@
             this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDescripcion.Location = new System.Drawing.Point(19, 51);
             this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDescripcion.Size = new System.Drawing.Size(212, 20);
             this.txtDescripcion.TabIndex = 9;
             // 
@@ -249,6 +250,7 @@
             this.txtDomicilio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Domicilio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDomicilio.Location = new System.Drawing.Point(19, 96);
             this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDomicilio.Size = new System.Drawing.Size(212, 20);
             this.txtDomicilio.TabIndex = 10;
             this.txtDomicilio.EditValueChanged += new System.EventHandler(this.txtDomicilio_EditValueChanged);
@@ -258,6 +260,7 @@
             this.txtRFC.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "RFC", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtRFC.Location = new System.Drawing.Point(19, 144);
             this.txtRFC.Name = "txtRFC";
+            this.txtRFC.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtRFC.Size = new System.Drawing.Size(138, 20);
             this.txtRFC.TabIndex = 11;
             // 
@@ -266,6 +269,7 @@
             this.txtRazonSocial.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "RazonSocial", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtRazonSocial.Location = new System.Drawing.Point(272, 51);
             this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtRazonSocial.Size = new System.Drawing.Size(184, 20);
             this.txtRazonSocial.TabIndex = 12;
             // 
@@ -274,6 +278,7 @@
             this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Telefono", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtTelefono.Location = new System.Drawing.Point(272, 96);
             this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtTelefono.Size = new System.Drawing.Size(101, 20);
             this.txtTelefono.TabIndex = 13;
             // 
@@ -282,6 +287,7 @@
             this.txtContacto.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Contacto", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtContacto.Location = new System.Drawing.Point(272, 144);
             this.txtContacto.Name = "txtContacto";
+            this.txtContacto.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtContacto.Size = new System.Drawing.Size(184, 20);
             this.txtContacto.TabIndex = 14;
             // 
@@ -290,6 +296,7 @@
             this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Email", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtEmail.Location = new System.Drawing.Point(272, 189);
             this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEmail.Size = new System.Drawing.Size(184, 20);
             this.txtEmail.TabIndex = 15;
             // 

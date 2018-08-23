@@ -90,10 +90,12 @@
     </Compile>
     <Compile Include="Base\Modules.cs" />
     <Compile Include="Base\ModulesRegistration.cs" />
+    <Compile Include="Class\clsBanco.cs" />
     <Compile Include="Class\clsCategoria.cs" />
     <Compile Include="Class\clsEstacion.cs" />
     <Compile Include="Class\clsGrupo.cs" />
     <Compile Include="Class\clsProducto.cs" />
+    <Compile Include="Class\clsRegimenFiscal.cs" />
     <Compile Include="Class\clsStatus.cs" />
     <Compile Include="Class\clsTerminal.cs" />
     <Compile Include="Class\clsUsuario.cs" />
@@ -144,11 +146,23 @@
     <Compile Include="Forms\Catalogos\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoBanco.Designer.cs">
+      <DependentUpon>frmCatalogoBanco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoCategoria.Designer.cs">
       <DependentUpon>frmCatalogoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoCuentaBancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoCuentaBancaria.Designer.cs">
+      <DependentUpon>frmCatalogoCuentaBancaria.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoFacturaUso.cs">
       <SubType>Form</SubType>
@@ -326,6 +340,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatVendedorDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spCatBancoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatBancoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spCatCuentaBancariaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatCuentaBancariaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\spcatConfiguracionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spcatConfiguracionDS.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -347,8 +376,14 @@
     <EmbeddedResource Include="Forms\Catalogos\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoBanco.resx">
+      <DependentUpon>frmCatalogoBanco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoCategoria.resx">
       <DependentUpon>frmCatalogoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoCuentaBancaria.resx">
+      <DependentUpon>frmCatalogoCuentaBancaria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoFacturaUso.resx">
       <DependentUpon>frmCatalogoFacturaUso.cs</DependentUpon>
@@ -591,6 +626,39 @@
     </None>
     <None Include="DataSets\spCatVendedorDS.xss">
       <DependentUpon>spCatVendedorDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatBancoDS.xsc">
+      <DependentUpon>spCatBancoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatBancoDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatBancoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatBancoDS.xss">
+      <DependentUpon>spCatBancoDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatCuentaBancariaDS.xsc">
+      <DependentUpon>spCatCuentaBancariaDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatCuentaBancariaDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatCuentaBancariaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatCuentaBancariaDS.xss">
+      <DependentUpon>spCatCuentaBancariaDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spcatConfiguracionDS.xsc">
+      <DependentUpon>spcatConfiguracionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spcatConfiguracionDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spcatConfiguracionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spcatConfiguracionDS.xss">
+      <DependentUpon>spcatConfiguracionDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
