@@ -258,3 +258,4 @@ C:\SuiteWEB\CMSuite\bin\Debug\de\DevExpress.Office.v17.2.Core.resources.dll
 C:\SuiteWEB\CMSuite\bin\Debug\es\DevExpress.Office.v17.2.Core.resources.dll
 C:\SuiteWEB\CMSuite\bin\Debug\ja\DevExpress.Office.v17.2.Core.resources.dll
 C:\SuiteWEB\CMSuite\bin\Debug\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Controles.AgregarRenglon.resources

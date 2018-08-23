@@ -22,7 +22,7 @@ namespace RedCoForm
         clsTerminal clsTerminal = new clsTerminal();
         List<clsProducto> lstProducto = new List<clsProducto>();
         clsProducto clsProducto = new clsProducto();
-
+        int PedidoID;
 
         public System.Data.DataSet cdsDatos { get; set; }
         public string NombreDataSetDatos { get; set; }
@@ -132,7 +132,7 @@ namespace RedCoForm
                     (new RPSuiteServer.TDetallePedido()
                     {
                         DetallePedidoID = dr.Field<int>("DetallePedidoID"),
-                        PedidoID = dr.Field<int>("PedidoID"),
+                        PedidoID = PedidoID,
                         VehiculoID = dr.Field<int>("VehiculoID"),
                         ProductoID = dr.Field<int>("ProductoID"),
                         TerminalID = dr.Field<int>("TerminalID"),
@@ -149,12 +149,16 @@ namespace RedCoForm
             try
             {
                 List<RPSuiteServer.TDetallePedido> lstDetallePedido = FillListDetallePedido(detallePedidoDS1.Tables["spDetallePedido"]);
-                foreach (RPSuiteServer.TDetallePedido clsDetallePedido in lstDetallePedido)
-                {
-                    bool Pedido = RedCoForm.Data.DataModule.DataService.UpdateDetallePedido(clsDetallePedido);
-                    if (!Pedido)
-                        throw new Exception();
-                }
+                RPSuiteServer.TDetallePedido[] TADetallePedido = lstDetallePedido.ToArray();
+                bool Pedido = RedCoForm.Data.DataModule.DataService.UpdateDetallePedido(TADetallePedido);
+                if (!Pedido)
+                    throw new Exception();
+                //foreach (RPSuiteServer.TDetallePedido clsDetallePedido in lstDetallePedido)
+                //{
+                //    bool Pedido = RedCoForm.Data.DataModule.DataService.UpdateDetallePedido(clsDetallePedido);
+                //    if (!Pedido)
+                //        throw new Exception();
+                //}
 
             }
             catch (Exception ex)
@@ -352,7 +356,7 @@ namespace RedCoForm
 
         private void gvPedido_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            int PedidoID= Int32.Parse( gvPedido.GetRowCellValue(gvPedido.FocusedRowHandle, "PedidoID").ToString());
+            PedidoID= Int32.Parse( gvPedido.GetRowCellValue(gvPedido.FocusedRowHandle, "PedidoID").ToString());
             LlenarDetallePedido(PedidoID);
         }
     }

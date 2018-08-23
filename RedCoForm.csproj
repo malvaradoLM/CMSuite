@@ -102,6 +102,12 @@
     <Compile Include="Class\GlobalVar.cs" />
     <Compile Include="Class\Misc.cs" />
     <Compile Include="Class\UserInfo.cs" />
+    <Compile Include="Controles\AgregarRenglon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\AgregarRenglon.Designer.cs">
+      <DependentUpon>AgregarRenglon.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSets\spCatTipoDocumentoDS.cs">
       <DependentUpon>spCatTipoDocumentoDS.xsd</DependentUpon>
     </Compile>
@@ -331,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Base\frmPadre.resx">
       <DependentUpon>frmPadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\AgregarRenglon.resx">
+      <DependentUpon>AgregarRenglon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Data\DataModule.resx">
       <DependentUpon>DataModule.cs</DependentUpon>
@@ -593,6 +602,14 @@
       <Name>RPSuiteServer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\table-row-new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table-row-new1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table-row-new2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
