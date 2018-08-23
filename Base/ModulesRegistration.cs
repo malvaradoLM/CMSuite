@@ -42,6 +42,9 @@ namespace RedCoForm.Base
             ModuleInfoCollection.Add("CatalogoFacturaUso", typeof(frmCatalogoFacturaUso));
             ModuleInfoCollection.Add("RegimenFiscal", typeof(frmCatalogoRegimenFiscal));
             ModuleInfoCollection.Add("CatalogoTipoDocumento", typeof(frmCatalogoTipoDocumento));
+            ModuleInfoCollection.Add("Transportista", typeof(frmCatalogoTransportista));
+            ModuleInfoCollection.Add("CatalogoOperador", typeof(frmCatalogoOperador));
+            
 
             //// Facturacion
             //ModuleInfoCollection.Add("FacturacionContado", typeof(frmFacturaContado));

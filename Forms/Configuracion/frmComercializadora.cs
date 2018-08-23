@@ -18,6 +18,12 @@ namespace RedCoForm.Forms.Catalogos
         public frmComercializadora()
         {
             InitializeComponent();
+            cdsCatalogo = spcatConfiguracionDS1;
+            DataSource = spCatConfiguracionBindingSource;
+            NombreDataSet = "spcatConfiguracion";
+            Buscar("~`|`~");
+
+
 
             getRegimenFiscal();
 
@@ -25,6 +31,16 @@ namespace RedCoForm.Forms.Catalogos
             GlobalVar.CargarEstados();
             lueEstado.Properties.DataSource = GlobalVar.Estados;
             lueExpEstado.Properties.DataSource = GlobalVar.Estados;
+        }
+
+
+        public override void onBeforePost()
+        {
+            if (newRecordRow != null)
+            {
+                newRecordRow["ConfiguracionID"] = Data.DataModule.DataService.Folio("ConfiguracionID", "");
+
+            }
         }
 
 
@@ -61,7 +77,21 @@ namespace RedCoForm.Forms.Catalogos
 
             this.lueRegimenFiscal.Properties.DropDownRows = Regimen.Count;
         }
-        #endregion  
+        #endregion
 
+        private void txtCalle_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNoExterior_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNoInterior_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

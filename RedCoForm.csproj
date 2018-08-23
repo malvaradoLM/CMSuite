@@ -182,6 +182,12 @@
     <Compile Include="Forms\Catalogos\frmCatalogoGrupoUsuario.Designer.cs">
       <DependentUpon>frmCatalogoGrupoUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoOperador.Designer.cs">
+      <DependentUpon>frmCatalogoOperador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,12 @@
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoTipoDocumento.Designer.cs">
       <DependentUpon>frmCatalogoTipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoTransportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoTransportista.Designer.cs">
+      <DependentUpon>frmCatalogoTransportista.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoUsuario.cs">
       <SubType>Form</SubType>
@@ -355,6 +367,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spcatConfiguracionDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spCatTransportistaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatTransportistaDS.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,6 +411,9 @@
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoGrupoUsuario.resx">
       <DependentUpon>frmCatalogoGrupoUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoOperador.resx">
+      <DependentUpon>frmCatalogoOperador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoProveedor.resx">
       <DependentUpon>frmCatalogoProveedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -402,6 +422,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoTipoDocumento.resx">
       <DependentUpon>frmCatalogoTipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoTransportista.resx">
+      <DependentUpon>frmCatalogoTransportista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoUsuario.resx">
       <DependentUpon>frmCatalogoUsuario.cs</DependentUpon>
@@ -659,6 +682,17 @@
     </None>
     <None Include="DataSets\spcatConfiguracionDS.xss">
       <DependentUpon>spcatConfiguracionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatTransportistaDS.xsc">
+      <DependentUpon>spCatTransportistaDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatTransportistaDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatTransportistaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatTransportistaDS.xss">
+      <DependentUpon>spCatTransportistaDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

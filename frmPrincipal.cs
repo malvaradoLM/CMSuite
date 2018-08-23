@@ -393,5 +393,17 @@ namespace RedCoForm
             ModuleInfoCollection.ShowModuleByName("CatalogoFacturaUso", this);
             bvcMenuPrincipal.Close();
         }
+
+        private void tileItem35_ItemClick_1(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("Transportista", this);
+            bvcMenuPrincipal.Close();
+        }
+
+        private void tileItem38_ItemClick_1(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("CatalogoOperador", this);
+            bvcMenuPrincipal.Close();
+        }
     }
 }
