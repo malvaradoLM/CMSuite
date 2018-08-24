@@ -1,5 +1,6 @@
 ﻿using RedCoForm.Forms.Catalogos;
 using RedCoForm.Forms.Configuracion;
+using RedCoForm.Forms.Movimientos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,7 +59,8 @@ namespace RedCoForm.Base
             ModuleInfoCollection.Add("RegimenFiscal", typeof(frmRegimenFiscal));
             ModuleInfoCollection.Add("CatalogoZona", typeof(frmCatalogoZona));
 
-
+            //Movimiento
+            ModuleInfoCollection.Add("ProductoIEPS", typeof(frmMovimientoProductoIEPS));
 
         }
     }    

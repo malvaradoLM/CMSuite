@@ -133,3 +133,10 @@ C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.exe.licenses
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.csproj.CoreCompileInputs.cache
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.exe
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.pdb
+C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.dll
+C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.xml
+C:\SuiteWEB\CMSuite\bin\Debug\de\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\SuiteWEB\CMSuite\bin\Debug\es\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\SuiteWEB\CMSuite\bin\Debug\ja\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\SuiteWEB\CMSuite\bin\Debug\ru\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Forms.Movimientos.frmMovimientoProductoIEPS.resources
