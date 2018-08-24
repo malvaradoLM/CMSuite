@@ -98,6 +98,7 @@
     <Compile Include="Class\clsRegimenFiscal.cs" />
     <Compile Include="Class\clsStatus.cs" />
     <Compile Include="Class\clsTerminal.cs" />
+    <Compile Include="Class\clsTransportista.cs" />
     <Compile Include="Class\clsUsuario.cs" />
     <Compile Include="Class\clsVehiculo.cs" />
     <Compile Include="Class\clsZona.cs" />
@@ -181,6 +182,12 @@
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoGrupoUsuario.Designer.cs">
       <DependentUpon>frmCatalogoGrupoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogos\frmCatalogoMetodoPago.Designer.cs">
+      <DependentUpon>frmCatalogoMetodoPago.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatalogoOperador.cs">
       <SubType>Form</SubType>
@@ -278,6 +285,12 @@
     <Compile Include="Forms\Configuracion\frmRegimenFiscal.Designer.cs">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Movimientos\frmMuestraPemex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movimientos\frmMuestraPemex.Designer.cs">
+      <DependentUpon>frmMuestraPemex.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -372,6 +385,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatTransportistaDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spCatOperadorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatOperadorDS.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -410,6 +428,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoGrupoUsuario.resx">
       <DependentUpon>frmCatalogoGrupoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogos\frmCatalogoMetodoPago.resx">
+      <DependentUpon>frmCatalogoMetodoPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatalogoOperador.resx">
       <DependentUpon>frmCatalogoOperador.cs</DependentUpon>
@@ -458,6 +479,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Configuracion\frmRegimenFiscal.resx">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movimientos\frmMuestraPemex.resx">
+      <DependentUpon>frmMuestraPemex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -693,6 +717,17 @@
     </None>
     <None Include="DataSets\spCatTransportistaDS.xss">
       <DependentUpon>spCatTransportistaDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatOperadorDS.xsc">
+      <DependentUpon>spCatOperadorDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatOperadorDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatOperadorDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatOperadorDS.xss">
+      <DependentUpon>spCatOperadorDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

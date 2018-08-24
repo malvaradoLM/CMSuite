@@ -33,22 +33,22 @@ namespace RedCoForm.Forms.Catalogos
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoBanco));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
-            this.txtBanco = new DevExpress.XtraEditors.TextEdit();
+            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
+            this.txtTelefono = new DevExpress.XtraEditors.TextEdit();
             this.spCatBancoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCatBancoDS1 = new RedCoForm.DataSets.spCatBancoDS();
+            this.txtEjecutivo = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.txtBanco = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.colBancoID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEjecutivo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTelefono = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtEjecutivo = new DevExpress.XtraEditors.TextEdit();
-            this.txtTelefono = new DevExpress.XtraEditors.TextEdit();
-            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -61,18 +61,17 @@ namespace RedCoForm.Forms.Catalogos
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBanco.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatBancoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatBancoDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEjecutivo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBanco.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
             // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.Size = new System.Drawing.Size(680, 339);
             // 
             // btnBuscar
@@ -82,14 +81,18 @@ namespace RedCoForm.Forms.Catalogos
             // txtDatosBusqueda
             // 
             // 
+            // tpBuscar
+            // 
+            this.tpBuscar.Size = new System.Drawing.Size(678, 314);
+            // 
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
-            this.tpDatos.Size = new System.Drawing.Size(678, 314);
             // 
             // dgcCatalogo
             // 
             this.dgcCatalogo.DataSource = this.spCatBancoBindingSource;
+            this.dgcCatalogo.Size = new System.Drawing.Size(678, 214);
             // 
             // gvCatalogo
             // 
@@ -125,40 +128,20 @@ namespace RedCoForm.Forms.Catalogos
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Datos";
             // 
-            // labelControl1
+            // txtEmail
             // 
-            this.labelControl1.Location = new System.Drawing.Point(25, 51);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(11, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "ID";
+            this.txtEmail.Location = new System.Drawing.Point(242, 205);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(200, 20);
+            this.txtEmail.TabIndex = 10;
             // 
-            // labelControl2
+            // txtTelefono
             // 
-            this.labelControl2.Location = new System.Drawing.Point(25, 96);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(29, 13);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "Banco";
-            // 
-            // txtID
-            // 
-            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatBancoBindingSource, "BancoID", true));
-            this.txtID.Location = new System.Drawing.Point(25, 70);
-            this.txtID.Name = "txtID";
-            this.txtID.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtID.Properties.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(69, 20);
-            this.txtID.TabIndex = 2;
-            // 
-            // txtBanco
-            // 
-            this.txtBanco.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatBancoBindingSource, "Nombre", true));
-            this.txtBanco.Location = new System.Drawing.Point(25, 115);
-            this.txtBanco.Name = "txtBanco";
-            this.txtBanco.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtBanco.Size = new System.Drawing.Size(417, 20);
-            this.txtBanco.TabIndex = 3;
+            this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatBancoBindingSource, "Telefono", true));
+            this.txtTelefono.Location = new System.Drawing.Point(25, 205);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(197, 20);
+            this.txtTelefono.TabIndex = 9;
             // 
             // spCatBancoBindingSource
             // 
@@ -170,6 +153,73 @@ namespace RedCoForm.Forms.Catalogos
             // 
             this.spCatBancoDS1.DataSetName = "spCatBancoDS";
             this.spCatBancoDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // txtEjecutivo
+            // 
+            this.txtEjecutivo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatBancoBindingSource, "Ejecutivo", true));
+            this.txtEjecutivo.Location = new System.Drawing.Point(25, 160);
+            this.txtEjecutivo.Name = "txtEjecutivo";
+            this.txtEjecutivo.Size = new System.Drawing.Size(417, 20);
+            this.txtEjecutivo.TabIndex = 8;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(25, 141);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(44, 13);
+            this.labelControl5.TabIndex = 7;
+            this.labelControl5.Text = "Ejecutivo";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(242, 186);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(24, 13);
+            this.labelControl4.TabIndex = 6;
+            this.labelControl4.Text = "Email";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(25, 186);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(42, 13);
+            this.labelControl3.TabIndex = 5;
+            this.labelControl3.Text = "Telefono";
+            // 
+            // txtBanco
+            // 
+            this.txtBanco.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatBancoBindingSource, "Nombre", true));
+            this.txtBanco.Location = new System.Drawing.Point(25, 115);
+            this.txtBanco.Name = "txtBanco";
+            this.txtBanco.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtBanco.Size = new System.Drawing.Size(417, 20);
+            this.txtBanco.TabIndex = 3;
+            // 
+            // txtID
+            // 
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatBancoBindingSource, "BancoID", true));
+            this.txtID.Location = new System.Drawing.Point(25, 70);
+            this.txtID.Name = "txtID";
+            this.txtID.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtID.Properties.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(69, 20);
+            this.txtID.TabIndex = 2;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(25, 96);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(29, 13);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "Banco";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(25, 51);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(11, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "ID";
             // 
             // colBancoID
             // 
@@ -199,53 +249,6 @@ namespace RedCoForm.Forms.Catalogos
             this.colTelefono.Visible = true;
             this.colTelefono.VisibleIndex = 3;
             // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(25, 186);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(42, 13);
-            this.labelControl3.TabIndex = 5;
-            this.labelControl3.Text = "Telefono";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(242, 186);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(24, 13);
-            this.labelControl4.TabIndex = 6;
-            this.labelControl4.Text = "Email";
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(25, 141);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(44, 13);
-            this.labelControl5.TabIndex = 7;
-            this.labelControl5.Text = "Ejecutivo";
-            // 
-            // txtEjecutivo
-            // 
-            this.txtEjecutivo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatBancoBindingSource, "Ejecutivo", true));
-            this.txtEjecutivo.Location = new System.Drawing.Point(25, 160);
-            this.txtEjecutivo.Name = "txtEjecutivo";
-            this.txtEjecutivo.Size = new System.Drawing.Size(417, 20);
-            this.txtEjecutivo.TabIndex = 8;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatBancoBindingSource, "Telefono", true));
-            this.txtTelefono.Location = new System.Drawing.Point(25, 205);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(197, 20);
-            this.txtTelefono.TabIndex = 9;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(242, 205);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(200, 20);
-            this.txtEmail.TabIndex = 10;
-            // 
             // frmCatalogoBanco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,13 +270,13 @@ namespace RedCoForm.Forms.Catalogos
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBanco.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatBancoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatBancoDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEjecutivo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBanco.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

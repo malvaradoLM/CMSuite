@@ -405,5 +405,11 @@ namespace RedCoForm
             ModuleInfoCollection.ShowModuleByName("CatalogoOperador", this);
             bvcMenuPrincipal.Close();
         }
+
+        private void tileItem25_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("MuestraPemex", this);
+            bvcMenuPrincipal.Close();
+        }
     }
 }

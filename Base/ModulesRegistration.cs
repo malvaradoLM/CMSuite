@@ -1,5 +1,6 @@
 ﻿using RedCoForm.Forms.Catalogos;
 using RedCoForm.Forms.Configuracion;
+using RedCoForm.Forms.Movimientos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,6 +58,10 @@ namespace RedCoForm.Base
             ModuleInfoCollection.Add("Comercializadora", typeof(frmComercializadora));
             ModuleInfoCollection.Add("RegimenFiscal", typeof(frmRegimenFiscal));
             ModuleInfoCollection.Add("CatalogoZona", typeof(frmCatalogoZona));
+
+            //Movimientos
+            ModuleInfoCollection.Add("MuestraPemex", typeof(frmMuestraPemex));
+
 
 
 
