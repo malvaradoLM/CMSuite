@@ -49,6 +49,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
+            // tcCatalogo
+            // 
+            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
+            // 
             // btnBuscar
             // 
             this.btnBuscar.ImageOptions.ImageIndex = 0;

@@ -59,8 +59,16 @@ namespace RedCoForm.Base
             ModuleInfoCollection.Add("RegimenFiscal", typeof(frmRegimenFiscal));
             ModuleInfoCollection.Add("CatalogoZona", typeof(frmCatalogoZona));
 
+<<<<<<< HEAD
             //Movimiento
             ModuleInfoCollection.Add("ProductoIEPS", typeof(frmMovimientoProductoIEPS));
+=======
+            //Movimientos
+            ModuleInfoCollection.Add("MuestraPemex", typeof(frmMuestraPemex));
+
+
+
+>>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
 
         }
     }    
