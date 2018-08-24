@@ -397,7 +397,6 @@ namespace RedCoForm.Forms.Catalogos
                 DataSource.EndEdit();
                 if (Data.DataModule.ApplyUpdates(cdsCatalogo))
                 {
-                    //Data.DataModule.ApplyUpdates(detallePedidoDS1);
                     UpdateDetallePedido();
                     State = stEstado.Browse;
                     newRecordRow = null;
