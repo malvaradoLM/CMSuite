@@ -713,5 +713,8 @@
   <ItemGroup>
     <None Include="Resources\table-row-new2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Movimientos\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
