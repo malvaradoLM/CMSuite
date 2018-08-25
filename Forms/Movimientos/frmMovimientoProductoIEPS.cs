@@ -19,7 +19,6 @@ namespace RedCoForm.Forms.Movimientos
         {
             InitializeComponent();
             Cargar();
-
         }
 
         public void Cargar()
@@ -28,16 +27,37 @@ namespace RedCoForm.Forms.Movimientos
             {
                 RPSuiteServer.TCustomProductoIEPS[] arrayProductoIEPS = RedCoForm.Data.DataModule.DataService.CargarProductoIEPS();
                 dgcProductoIEPS.DataSource = arrayProductoIEPS;
-                gvProductoIEPS.Columns["TerminalID"].Visible = false;
-                gvProductoIEPS.Columns["Descripcion"].Caption = "Estacion";
-                gvProductoIEPS.Columns["PIEPSID87"].Visible = false;
-                gvProductoIEPS.Columns["Precio87"].Caption = "87 Octanos";
-                gvProductoIEPS.Columns["PIEPSID91"].Visible = false;
-                gvProductoIEPS.Columns["Precio91"].Caption = "91 Octanos";
-                gvProductoIEPS.Columns["PIEPSIDDiesel"].Visible = false;
-                gvProductoIEPS.Columns["PrecioDiesel"].Caption = "Diesel";
-                gvProductoIEPS.Columns["UsuarioID"].Visible = false;             
-                gvProductoIEPS.BestFitColumns(true);
+                bgvProductoIEPS.Columns["TerminalID"].Visible = false;
+                bgvProductoIEPS.Columns["Descripcion"].Caption = "Terminal";
+                bgvProductoIEPS.Columns["PIEPSID87"].Visible = false;
+                bgvProductoIEPS.Columns["Precio87"].Caption = "Precio";
+                bgvProductoIEPS.Columns["IEPS87"].Caption = "IEPS";
+                bgvProductoIEPS.Columns["PIEPSID91"].Visible = false;
+                bgvProductoIEPS.Columns["Precio91"].Caption = "Precio";
+                bgvProductoIEPS.Columns["IEPS91"].Caption = "IEPS";
+                bgvProductoIEPS.Columns["PIEPSIDDiesel"].Visible = false;
+                bgvProductoIEPS.Columns["PrecioDiesel"].Caption = "Precio";
+                bgvProductoIEPS.Columns["IEPSDiesel"].Caption = "IEPS";
+                bgvProductoIEPS.Columns["Ejercicio"].Visible = false;
+                bgvProductoIEPS.Columns["Periodo"].Visible = false;
+                bgvProductoIEPS.Columns["Dia"].Visible = false;
+                bgvProductoIEPS.Columns["Fecha"].Visible = false;
+                bgvProductoIEPS.Columns["UsuarioID"].Visible = false;
+
+                bgvProductoIEPS.Columns["Descripcion"].OwnerBand = gbEstacion;
+
+                bgvProductoIEPS.Columns["Precio87"].OwnerBand = gb87;
+                bgvProductoIEPS.Columns["IEPS87"].OwnerBand = gb87;
+
+                bgvProductoIEPS.Columns["Precio91"].OwnerBand = gb91;
+                bgvProductoIEPS.Columns["IEPS91"].OwnerBand = gb91;
+
+                bgvProductoIEPS.Columns["PrecioDiesel"].OwnerBand = gbDiesel;
+                bgvProductoIEPS.Columns["IEPSDiesel"].OwnerBand = gbDiesel;
+
+                bgvProductoIEPS.Columns["IVA"].OwnerBand = gbMisc;
+
+                bgvProductoIEPS.BestFitColumns(true);
             }
             catch (Exception ex)
             {
@@ -45,7 +65,29 @@ namespace RedCoForm.Forms.Movimientos
             }
         }
 
+        private void GridHeaders()
+        {
+                //GridViewRow row = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Normal);
+                //TableHeaderCell cell = new TableHeaderCell();
+                //cell.Text = "Customers";
+                //cell.ColumnSpan = 2;
+                //row.Controls.Add(cell);
+
+                //cell = new TableHeaderCell();
+                //cell.ColumnSpan = 2;
+                //cell.Text = "Employees";
+                //row.Controls.Add(cell);
+
+                //row.BackColor = ColorTranslator.FromHtml("#3AC0F2");
+                //GridView1.HeaderRow.Parent.Controls.AddAt(0, row);
+        }
+
         public override void DoBuscar(object key, object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgcProductoIEPS_Click(object sender, EventArgs e)
         {
 
         }

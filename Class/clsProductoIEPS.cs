@@ -11,7 +11,6 @@ namespace RedCoForm.Class
         public int TerminalID { get; set; }
         public int ProductoIEPSID { get; set; }
         public double Precio { get; set; }
-        public double IEPS { get; set; }
         public DateTime Fecha { get; set; }
         public double Producto87 { get; set; }
         public double Producto91 { get; set; }
@@ -19,6 +18,9 @@ namespace RedCoForm.Class
         public int Producto87ID { get; set; }
         public int Producto91ID { get; set; }
         public int ProductoDieselID { get; set; }
+        public double IEPS87 { get; set; }
+        public double IEPS91 { get; set; }
+        public double IEPSDiesel { get; set; }
         public int Ejercicio { get; set; }
         public int Periodo { get; set; }
         public int Dia { get; set; }
