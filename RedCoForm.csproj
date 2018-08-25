@@ -287,19 +287,17 @@
     <Compile Include="Forms\Configuracion\frmRegimenFiscal.Designer.cs">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Forms\Movimientos\frmMovimientoProductoIEPS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Movimientos\frmMovimientoProductoIEPS.Designer.cs">
       <DependentUpon>frmMovimientoProductoIEPS.cs</DependentUpon>
-=======
+    </Compile>
     <Compile Include="Forms\Movimientos\frmMuestraPemex.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Movimientos\frmMuestraPemex.Designer.cs">
       <DependentUpon>frmMuestraPemex.cs</DependentUpon>
->>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -395,17 +393,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatTransportistaDS.xsd</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="DataSets\spProductoIEPSDS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>spProductoIEPSDS.xsd</DependentUpon>
-=======
+    </Compile>
     <Compile Include="DataSets\spCatOperadorDS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatOperadorDS.xsd</DependentUpon>
->>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
     </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
@@ -497,13 +493,11 @@
     <EmbeddedResource Include="Forms\Configuracion\frmRegimenFiscal.resx">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Forms\Movimientos\frmMovimientoProductoIEPS.resx">
       <DependentUpon>frmMovimientoProductoIEPS.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Movimientos\frmMuestraPemex.resx">
       <DependentUpon>frmMuestraPemex.cs</DependentUpon>
->>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -740,7 +734,6 @@
     <None Include="DataSets\spCatTransportistaDS.xss">
       <DependentUpon>spCatTransportistaDS.xsd</DependentUpon>
     </None>
-<<<<<<< HEAD
     <None Include="DataSets\spProductoIEPSDS.xsc">
       <DependentUpon>spProductoIEPSDS.xsd</DependentUpon>
     </None>
@@ -751,7 +744,7 @@
     </None>
     <None Include="DataSets\spProductoIEPSDS.xss">
       <DependentUpon>spProductoIEPSDS.xsd</DependentUpon>
-=======
+    </None>
     <None Include="DataSets\spCatOperadorDS.xsc">
       <DependentUpon>spCatOperadorDS.xsd</DependentUpon>
     </None>
@@ -762,7 +755,6 @@
     </None>
     <None Include="DataSets\spCatOperadorDS.xss">
       <DependentUpon>spCatOperadorDS.xsd</DependentUpon>
->>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
     </None>
   </ItemGroup>
   <ItemGroup>

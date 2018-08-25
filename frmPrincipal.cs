@@ -406,15 +406,14 @@ namespace RedCoForm
             bvcMenuPrincipal.Close();
         }
 
-<<<<<<< HEAD
         private void tileItem6_ItemClick_1(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             ModuleInfoCollection.ShowModuleByName("ProductoIEPS", this);
-=======
+            bvcMenuPrincipal.Close();
+        }
         private void tileItem25_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             ModuleInfoCollection.ShowModuleByName("MuestraPemex", this);
->>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
             bvcMenuPrincipal.Close();
         }
     }

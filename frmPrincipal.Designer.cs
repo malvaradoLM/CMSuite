@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
-=======
             this.components = new System.ComponentModel.Container();
->>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
             DevExpress.XtraEditors.TileItemElement tileItemElement38 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement39 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement40 = new DevExpress.XtraEditors.TileItemElement();
@@ -88,11 +85,8 @@
             this.tileItem15 = new DevExpress.XtraEditors.TileItem();
             this.tileItem26 = new DevExpress.XtraEditors.TileItem();
             this.tileItem28 = new DevExpress.XtraEditors.TileItem();
-<<<<<<< HEAD
             this.ImageCollectionTiles = new DevExpress.Utils.ImageCollection();
-=======
             this.ImageCollectionTiles = new DevExpress.Utils.ImageCollection(this.components);
->>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
             this.backstageViewClientControl8 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.tlcFavoritos = new DevExpress.XtraEditors.TileControl();
             this.tileGroup3 = new DevExpress.XtraEditors.TileGroup();
@@ -613,11 +607,8 @@
             // 
             tileItemElement28.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             tileItemElement28.ImageIndex = 0;
-<<<<<<< HEAD
             tileItemElement28.Text = "tileItem25";
-=======
             tileItemElement28.Text = "Muestra Pemex";
->>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
             this.tileItem25.Elements.Add(tileItemElement28);
             this.tileItem25.Id = 3;
             this.tileItem25.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
@@ -626,11 +617,8 @@
             // 
             // tileItem6
             // 
-<<<<<<< HEAD
             tileItemElement29.Text = "Producto IEPS";
-=======
             tileItemElement29.Text = "tileItem6";
->>>>>>> d99ad473eb5e72f5b3dcd1fd28881b6b1ebbafca
             this.tileItem6.Elements.Add(tileItemElement29);
             this.tileItem6.Id = 4;
             this.tileItem6.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
