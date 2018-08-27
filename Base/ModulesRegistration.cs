@@ -61,6 +61,7 @@ namespace RedCoForm.Base
 
             //Movimientos
             ModuleInfoCollection.Add("MuestraPemex", typeof(frmMuestraPemex));
+            ModuleInfoCollection.Add("GeneraRemision", typeof(frmGeneraRemision));
 
 
 

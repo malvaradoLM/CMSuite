@@ -106,7 +106,7 @@ namespace RedCoForm.Data
 
         public static DevExpress.Utils.SvgImageCollection Images48
         {
-            get { return Instance.ImageCollection48;  }
+            get { return Instance.ImageCollection48; }
         }
 
         public static DevExpress.Utils.SvgImageCollection Images16

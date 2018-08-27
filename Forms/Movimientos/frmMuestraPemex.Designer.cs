@@ -28,49 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMuestraPemex));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMuestraID = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtNoMuestra = new DevExpress.XtraEditors.TextEdit();
-            this.txtPesoCarga = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.lueTerminal = new DevExpress.XtraEditors.LookUpEdit();
-            this.lueProductoID = new DevExpress.XtraEditors.LookUpEdit();
-            this.txtAzufre = new DevExpress.XtraEditors.TextEdit();
-            this.txtOctanos = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.txtObservacion = new System.Windows.Forms.TextBox();
             this.txtAdimensional = new DevExpress.XtraEditors.TextEdit();
+            this.txtOctanos = new DevExpress.XtraEditors.TextEdit();
+            this.txtAzufre = new DevExpress.XtraEditors.TextEdit();
+            this.lueProductoID = new DevExpress.XtraEditors.LookUpEdit();
+            this.lueTerminal = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.txtPesoCarga = new DevExpress.XtraEditors.TextEdit();
+            this.txtNoMuestra = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.txtMuestraID = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.spCatTerminalDS = new RedCoForm.DataSets.spCatTerminalDS();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtObservacion = new System.Windows.Forms.TextBox();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.spCatProductoDS = new RedCoForm.DataSets.spCatProductoDS();
             ((System.ComponentModel.ISupportInitialize)(this.tbControl)).BeginInit();
             this.tbControl.SuspendLayout();
             this.tpDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMuestraID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNoMuestra.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPesoCarga.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lueTerminal.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lueProductoID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAzufre.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOctanos.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAdimensional.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOctanos.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAzufre.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueProductoID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueTerminal.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPesoCarga.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoMuestra.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMuestraID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTerminalDS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProductoDS)).BeginInit();
             this.SuspendLayout();
             // 
             // tbControl
             // 
-            this.tbControl.SelectedTabPage = this.tpDatos;
             this.tbControl.Size = new System.Drawing.Size(762, 524);
             // 
             // tpDatos
@@ -110,127 +111,29 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Muestra Pemex";
             // 
-            // labelControl1
+            // labelControl9
             // 
-            this.labelControl1.Location = new System.Drawing.Point(24, 38);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(11, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "ID";
+            this.labelControl9.Location = new System.Drawing.Point(24, 325);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(60, 13);
+            this.labelControl9.TabIndex = 18;
+            this.labelControl9.Text = "Observacion";
             // 
-            // txtMuestraID
+            // txtObservacion
             // 
-            this.txtMuestraID.Location = new System.Drawing.Point(24, 57);
-            this.txtMuestraID.Name = "txtMuestraID";
-            this.txtMuestraID.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtMuestraID.Properties.ReadOnly = true;
-            this.txtMuestraID.Size = new System.Drawing.Size(67, 20);
-            this.txtMuestraID.TabIndex = 1;
-            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule1.ErrorText = "No debe Quedar Vacio";
-            this.vpValidador.SetValidationRule(this.txtMuestraID, conditionValidationRule1);
+            this.txtObservacion.Location = new System.Drawing.Point(24, 344);
+            this.txtObservacion.Multiline = true;
+            this.txtObservacion.Name = "txtObservacion";
+            this.txtObservacion.Size = new System.Drawing.Size(325, 98);
+            this.txtObservacion.TabIndex = 17;
             // 
-            // labelControl2
+            // txtAdimensional
             // 
-            this.labelControl2.Location = new System.Drawing.Point(24, 87);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(74, 13);
-            this.labelControl2.TabIndex = 2;
-            this.labelControl2.Text = "No. de Muestra";
-            // 
-            // txtNoMuestra
-            // 
-            this.txtNoMuestra.Location = new System.Drawing.Point(24, 106);
-            this.txtNoMuestra.Name = "txtNoMuestra";
-            this.txtNoMuestra.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNoMuestra.Size = new System.Drawing.Size(138, 20);
-            this.txtNoMuestra.TabIndex = 3;
-            // 
-            // txtPesoCarga
-            // 
-            this.txtPesoCarga.Location = new System.Drawing.Point(198, 106);
-            this.txtPesoCarga.Name = "txtPesoCarga";
-            this.txtPesoCarga.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPesoCarga.Size = new System.Drawing.Size(134, 20);
-            this.txtPesoCarga.TabIndex = 4;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(198, 87);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(70, 13);
-            this.labelControl3.TabIndex = 5;
-            this.labelControl3.Text = "Peso de Carga";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(24, 235);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(32, 13);
-            this.labelControl4.TabIndex = 6;
-            this.labelControl4.Text = "Azufre";
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(194, 235);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(40, 13);
-            this.labelControl5.TabIndex = 7;
-            this.labelControl5.Text = "Octanos";
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Location = new System.Drawing.Point(24, 280);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(62, 13);
-            this.labelControl6.TabIndex = 8;
-            this.labelControl6.Text = "Adimensional";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Location = new System.Drawing.Point(24, 145);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(40, 13);
-            this.labelControl7.TabIndex = 9;
-            this.labelControl7.Text = "Terminal";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Location = new System.Drawing.Point(24, 190);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(43, 13);
-            this.labelControl8.TabIndex = 10;
-            this.labelControl8.Text = "Producto";
-            // 
-            // lueTerminal
-            // 
-            this.lueTerminal.Location = new System.Drawing.Point(24, 164);
-            this.lueTerminal.Name = "lueTerminal";
-            this.lueTerminal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lueTerminal.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.lueTerminal.Properties.NullText = "[Seleccione Terminal...]";
-            this.lueTerminal.Size = new System.Drawing.Size(308, 20);
-            this.lueTerminal.TabIndex = 11;
-            // 
-            // lueProductoID
-            // 
-            this.lueProductoID.Location = new System.Drawing.Point(24, 209);
-            this.lueProductoID.Name = "lueProductoID";
-            this.lueProductoID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lueProductoID.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.lueProductoID.Properties.NullText = "[Seleccione Producto...]";
-            this.lueProductoID.Size = new System.Drawing.Size(308, 20);
-            this.lueProductoID.TabIndex = 12;
-            // 
-            // txtAzufre
-            // 
-            this.txtAzufre.Location = new System.Drawing.Point(24, 254);
-            this.txtAzufre.Name = "txtAzufre";
-            this.txtAzufre.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtAzufre.Size = new System.Drawing.Size(138, 20);
-            this.txtAzufre.TabIndex = 13;
+            this.txtAdimensional.Location = new System.Drawing.Point(24, 299);
+            this.txtAdimensional.Name = "txtAdimensional";
+            this.txtAdimensional.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtAdimensional.Size = new System.Drawing.Size(138, 20);
+            this.txtAdimensional.TabIndex = 15;
             // 
             // txtOctanos
             // 
@@ -240,13 +143,125 @@
             this.txtOctanos.Size = new System.Drawing.Size(138, 20);
             this.txtOctanos.TabIndex = 14;
             // 
-            // txtAdimensional
+            // txtAzufre
             // 
-            this.txtAdimensional.Location = new System.Drawing.Point(24, 299);
-            this.txtAdimensional.Name = "txtAdimensional";
-            this.txtAdimensional.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtAdimensional.Size = new System.Drawing.Size(138, 20);
-            this.txtAdimensional.TabIndex = 15;
+            this.txtAzufre.Location = new System.Drawing.Point(24, 254);
+            this.txtAzufre.Name = "txtAzufre";
+            this.txtAzufre.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtAzufre.Size = new System.Drawing.Size(138, 20);
+            this.txtAzufre.TabIndex = 13;
+            // 
+            // lueProductoID
+            // 
+            this.lueProductoID.Location = new System.Drawing.Point(24, 209);
+            this.lueProductoID.Name = "lueProductoID";
+            this.lueProductoID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueProductoID.Properties.NullText = "[Seleccione Una Opcion...]";
+            this.lueProductoID.Size = new System.Drawing.Size(308, 20);
+            this.lueProductoID.TabIndex = 12;
+            this.lueProductoID.EditValueChanged += new System.EventHandler(this.lueProductoID_EditValueChanged);
+            // 
+            // lueTerminal
+            // 
+            this.lueTerminal.Location = new System.Drawing.Point(24, 164);
+            this.lueTerminal.Name = "lueTerminal";
+            this.lueTerminal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueTerminal.Properties.NullText = "[Seleccione Una Opcion...]";
+            this.lueTerminal.Size = new System.Drawing.Size(308, 20);
+            this.lueTerminal.TabIndex = 11;
+            this.lueTerminal.EditValueChanged += new System.EventHandler(this.lueTerminal_EditValueChanged);
+            this.lueTerminal.Validated += new System.EventHandler(this.lueTerminal_Validated);
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(24, 190);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(43, 13);
+            this.labelControl8.TabIndex = 10;
+            this.labelControl8.Text = "Producto";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Location = new System.Drawing.Point(24, 145);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(40, 13);
+            this.labelControl7.TabIndex = 9;
+            this.labelControl7.Text = "Terminal";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(24, 280);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(62, 13);
+            this.labelControl6.TabIndex = 8;
+            this.labelControl6.Text = "Adimensional";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(194, 235);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(40, 13);
+            this.labelControl5.TabIndex = 7;
+            this.labelControl5.Text = "Octanos";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(24, 235);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(32, 13);
+            this.labelControl4.TabIndex = 6;
+            this.labelControl4.Text = "Azufre";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(198, 87);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(70, 13);
+            this.labelControl3.TabIndex = 5;
+            this.labelControl3.Text = "Peso de Carga";
+            // 
+            // txtPesoCarga
+            // 
+            this.txtPesoCarga.Location = new System.Drawing.Point(198, 106);
+            this.txtPesoCarga.Name = "txtPesoCarga";
+            this.txtPesoCarga.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtPesoCarga.Size = new System.Drawing.Size(134, 20);
+            this.txtPesoCarga.TabIndex = 4;
+            // 
+            // txtNoMuestra
+            // 
+            this.txtNoMuestra.Location = new System.Drawing.Point(24, 106);
+            this.txtNoMuestra.Name = "txtNoMuestra";
+            this.txtNoMuestra.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNoMuestra.Size = new System.Drawing.Size(138, 20);
+            this.txtNoMuestra.TabIndex = 3;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(24, 87);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(74, 13);
+            this.labelControl2.TabIndex = 2;
+            this.labelControl2.Text = "No. de Muestra";
+            // 
+            // txtMuestraID
+            // 
+            this.txtMuestraID.Location = new System.Drawing.Point(24, 57);
+            this.txtMuestraID.Name = "txtMuestraID";
+            this.txtMuestraID.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtMuestraID.Properties.ReadOnly = true;
+            this.txtMuestraID.Size = new System.Drawing.Size(67, 20);
+            this.txtMuestraID.TabIndex = 1;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(24, 38);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(11, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "ID";
             // 
             // spCatTerminalDS
             // 
@@ -263,22 +278,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtObservacion
-            // 
-            this.txtObservacion.Location = new System.Drawing.Point(24, 344);
-            this.txtObservacion.Multiline = true;
-            this.txtObservacion.Name = "txtObservacion";
-            this.txtObservacion.Size = new System.Drawing.Size(325, 98);
-            this.txtObservacion.TabIndex = 17;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Location = new System.Drawing.Point(24, 325);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(60, 13);
-            this.labelControl9.TabIndex = 18;
-            this.labelControl9.Text = "Observacion";
-            // 
             // simpleButton1
             // 
             this.simpleButton1.Location = new System.Drawing.Point(530, 178);
@@ -288,10 +287,16 @@
             this.simpleButton1.Text = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // spCatProductoDS
+            // 
+            this.spCatProductoDS.DataSetName = "spCatProductoDS";
+            this.spCatProductoDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // frmMuestraPemex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(762, 524);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMuestraPemex";
             this.Text = "Muestra Pemex";
             ((System.ComponentModel.ISupportInitialize)(this.tbControl)).EndInit();
@@ -301,15 +306,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMuestraID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNoMuestra.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPesoCarga.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lueTerminal.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lueProductoID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAzufre.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOctanos.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAdimensional.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOctanos.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAzufre.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueProductoID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueTerminal.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPesoCarga.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoMuestra.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMuestraID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTerminalDS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProductoDS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -338,5 +344,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private System.Windows.Forms.TextBox txtObservacion;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DataSets.spCatProductoDS spCatProductoDS;
     }
 }

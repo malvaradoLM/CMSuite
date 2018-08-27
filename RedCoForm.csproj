@@ -285,6 +285,12 @@
     <Compile Include="Forms\Configuracion\frmRegimenFiscal.Designer.cs">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Movimientos\frmGeneraRemision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movimientos\frmGeneraRemision.Designer.cs">
+      <DependentUpon>frmGeneraRemision.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Movimientos\frmMuestraPemex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -390,6 +396,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatOperadorDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spDetalleRemisionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spDetalleRemisionDS.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -479,6 +490,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Configuracion\frmRegimenFiscal.resx">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movimientos\frmGeneraRemision.resx">
+      <DependentUpon>frmGeneraRemision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Movimientos\frmMuestraPemex.resx">
       <DependentUpon>frmMuestraPemex.cs</DependentUpon>
@@ -729,6 +743,17 @@
     <None Include="DataSets\spCatOperadorDS.xss">
       <DependentUpon>spCatOperadorDS.xsd</DependentUpon>
     </None>
+    <None Include="DataSets\spDetalleRemisionDS.xsc">
+      <DependentUpon>spDetalleRemisionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spDetalleRemisionDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spDetalleRemisionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spDetalleRemisionDS.xss">
+      <DependentUpon>spDetalleRemisionDS.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -748,8 +773,6 @@
   <ItemGroup>
     <None Include="Resources\table-row-new2.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\Movimientos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

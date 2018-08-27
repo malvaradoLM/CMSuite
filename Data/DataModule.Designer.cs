@@ -36,8 +36,10 @@
             this.dataStreamer = new RemObjects.DataAbstract.Bin2DataStreamer(this.components);
             this.remoteDataAdapter = new RemObjects.DataAbstract.RemoteDataAdapter(this.components);
             this.ImageCollection16 = new DevExpress.Utils.SvgImageCollection(this.components);
+            this.ImageCollection48 = new DevExpress.Utils.SvgImageCollection(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.remoteDataAdapter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImageCollection16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageCollection48)).BeginInit();
             // 
             // ROMessage
             // 
@@ -109,8 +111,13 @@
             this.ImageCollection16.Add("11", ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ImageCollection16.11"))));
             this.ImageCollection16.Add("12", ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ImageCollection16.12"))));
             this.ImageCollection16.Add("13", ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ImageCollection16.13"))));
+            // 
+            // ImageCollection48
+            // 
+            this.ImageCollection48.ImageSize = new System.Drawing.Size(44, 48);
             ((System.ComponentModel.ISupportInitialize)(this.remoteDataAdapter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImageCollection16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageCollection48)).EndInit();
 
         }
 
@@ -120,7 +127,8 @@
         private RemObjects.DataAbstract.Bin2DataStreamer dataStreamer;
         private RemObjects.DataAbstract.RemoteDataAdapter remoteDataAdapter;
         private RemObjects.SDK.IpHttpClientChannel ROChannel;
-        private DevExpress.Utils.SvgImageCollection ImageCollection48;
+       // private DevExpress.Utils.SvgImageCollection ImageCollection48;
         private DevExpress.Utils.SvgImageCollection ImageCollection16;
+        private DevExpress.Utils.SvgImageCollection ImageCollection48;
     }
 }

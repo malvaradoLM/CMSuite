@@ -35,6 +35,13 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Colonia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="NoExterior" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -71,10 +78,18 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Status" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CodigoPostal" type="xs:int" minOccurs="0" />
               <xs:element name="Telefono" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CuentaContable" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -85,6 +100,20 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="PlazoPago" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaIngreso" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NIP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaBaja" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LimiteCredito" type="xs:double" minOccurs="0" />
+              <xs:element name="Deposito" type="xs:double" minOccurs="0" />
+              <xs:element name="CambioCredito" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CambioCreditoAnterior" type="xs:dateTime" minOccurs="0" />
               <xs:element name="Email" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -95,47 +124,18 @@
               <xs:element name="GrupoID" type="xs:int" />
               <xs:element name="ZonaID" type="xs:int" />
               <xs:element name="FormaPagoID" type="xs:int" minOccurs="0" />
-              <xs:element name="MetodoPagoID" type="xs:int" minOccurs="0" />
-              <xs:element name="PlazoPago" type="xs:int" minOccurs="0" />
-              <xs:element name="NIP" type="xs:int" minOccurs="0" />
-              <xs:element name="FechaBaja" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="LimiteCredito" type="xs:double" minOccurs="0" />
-              <xs:element name="Deposito" type="xs:double" minOccurs="0" />
-              <xs:element name="CambioCredito" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="UltimoPago" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="DiasRevisionID" type="xs:int" minOccurs="0" />
-              <xs:element name="DiaPagoID" type="xs:int" minOccurs="0" />
               <xs:element name="VendedorID" type="xs:int" minOccurs="0" />
-              <xs:element name="GrupoFacturarID" type="xs:int" minOccurs="0" />
-              <xs:element name="CP" type="xs:int" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="spCatZona" msprop:Schema="spCatZona">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ZonaID" type="xs:int" />
-              <xs:element name="Descripcion" minOccurs="0">
+              <xs:element name="DiaRevision" type="xs:int" minOccurs="0" />
+              <xs:element name="DiaPago" type="xs:int" minOccurs="0" />
+              <xs:element name="CuentaBancaria" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="spCatGrupo" msprop:Schema="spCatGrupo">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="GrupoID" type="xs:int" />
-              <xs:element name="Descripcion" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="100" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
+              <xs:element name="FacturaUsoID" type="xs:int" minOccurs="0" />
+              <xs:element name="MetodoPagoID" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -144,14 +144,6 @@
     <xs:unique name="PK_spCatEstacion" msdata:PrimaryKey="true">
       <xs:selector xpath=".//spCatEstacion" />
       <xs:field xpath="EstacionID" />
-    </xs:unique>
-    <xs:unique name="PK_spCatZona" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//spCatZona" />
-      <xs:field xpath="ZonaID" />
-    </xs:unique>
-    <xs:unique name="PK_spCatGrupo" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//spCatGrupo" />
-      <xs:field xpath="GrupoID" />
     </xs:unique>
   </xs:element>
 </xs:schema>

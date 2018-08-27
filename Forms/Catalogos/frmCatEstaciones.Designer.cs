@@ -168,7 +168,6 @@
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
-            this.tpDatos.Size = new System.Drawing.Size(751, 396);
             // 
             // dgcCatalogo
             // 
@@ -710,7 +709,7 @@
             // 
             this.tpDireccion.Controls.Add(this.groupControl4);
             this.tpDireccion.Name = "tpDireccion";
-            this.tpDireccion.Size = new System.Drawing.Size(751, 396);
+            this.tpDireccion.Size = new System.Drawing.Size(678, 282);
             this.tpDireccion.Text = "Direccion";
             // 
             // groupControl4

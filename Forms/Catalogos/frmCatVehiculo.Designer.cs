@@ -52,16 +52,16 @@
             this.txtNoToneles = new DevExpress.XtraEditors.TextEdit();
             this.txtNoSerie = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.txtVehiculoID = new DevExpress.XtraEditors.TextEdit();
             this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.txtVehiculoID = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -82,12 +82,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNoSerie.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVehiculoID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVehiculoID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -311,51 +311,30 @@
             this.groupControl1.TabIndex = 14;
             this.groupControl1.Text = "Datos";
             // 
-            // labelControl7
+            // lookUpEdit1
             // 
-            this.labelControl7.Location = new System.Drawing.Point(20, 84);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(30, 13);
-            this.labelControl7.TabIndex = 14;
-            this.labelControl7.Text = "Placas";
+            this.lookUpEdit1.Location = new System.Drawing.Point(338, 49);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Size = new System.Drawing.Size(198, 20);
+            this.lookUpEdit1.TabIndex = 24;
             // 
-            // labelControl8
+            // txtVehiculoID
             // 
-            this.labelControl8.Location = new System.Drawing.Point(20, 135);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(52, 13);
-            this.labelControl8.TabIndex = 15;
-            this.labelControl8.Text = "Certificado";
+            this.txtVehiculoID.Location = new System.Drawing.Point(20, 49);
+            this.txtVehiculoID.Name = "txtVehiculoID";
+            this.txtVehiculoID.Properties.ReadOnly = true;
+            this.txtVehiculoID.Size = new System.Drawing.Size(127, 20);
+            this.txtVehiculoID.TabIndex = 23;
             // 
-            // labelControl9
+            // labelControl11
             // 
-            this.labelControl9.Location = new System.Drawing.Point(20, 185);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(84, 13);
-            this.labelControl9.TabIndex = 16;
-            this.labelControl9.Text = "Fecha Certificado";
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Location = new System.Drawing.Point(338, 30);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(64, 13);
-            this.labelControl10.TabIndex = 17;
-            this.labelControl10.Text = "Transportista";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(20, 103);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(127, 20);
-            this.textEdit1.TabIndex = 18;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(20, 150);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(127, 20);
-            this.textEdit2.TabIndex = 19;
+            this.labelControl11.Location = new System.Drawing.Point(20, 30);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(11, 13);
+            this.labelControl11.TabIndex = 22;
+            this.labelControl11.Text = "ID";
             // 
             // dateEdit1
             // 
@@ -369,30 +348,51 @@
             this.dateEdit1.Size = new System.Drawing.Size(127, 20);
             this.dateEdit1.TabIndex = 21;
             // 
-            // labelControl11
+            // textEdit2
             // 
-            this.labelControl11.Location = new System.Drawing.Point(20, 30);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(11, 13);
-            this.labelControl11.TabIndex = 22;
-            this.labelControl11.Text = "ID";
+            this.textEdit2.Location = new System.Drawing.Point(20, 150);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(127, 20);
+            this.textEdit2.TabIndex = 19;
             // 
-            // txtVehiculoID
+            // textEdit1
             // 
-            this.txtVehiculoID.Location = new System.Drawing.Point(20, 49);
-            this.txtVehiculoID.Name = "txtVehiculoID";
-            this.txtVehiculoID.Properties.ReadOnly = true;
-            this.txtVehiculoID.Size = new System.Drawing.Size(127, 20);
-            this.txtVehiculoID.TabIndex = 23;
+            this.textEdit1.Location = new System.Drawing.Point(20, 103);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(127, 20);
+            this.textEdit1.TabIndex = 18;
             // 
-            // lookUpEdit1
+            // labelControl10
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(338, 49);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Size = new System.Drawing.Size(198, 20);
-            this.lookUpEdit1.TabIndex = 24;
+            this.labelControl10.Location = new System.Drawing.Point(338, 30);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(64, 13);
+            this.labelControl10.TabIndex = 17;
+            this.labelControl10.Text = "Transportista";
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(20, 185);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(84, 13);
+            this.labelControl9.TabIndex = 16;
+            this.labelControl9.Text = "Fecha Certificado";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(20, 135);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(52, 13);
+            this.labelControl8.TabIndex = 15;
+            this.labelControl8.Text = "Certificado";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Location = new System.Drawing.Point(20, 84);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(30, 13);
+            this.labelControl7.TabIndex = 14;
+            this.labelControl7.Text = "Placas";
             // 
             // frmCatVehiculo
             // 
@@ -423,12 +423,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVehiculoID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVehiculoID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

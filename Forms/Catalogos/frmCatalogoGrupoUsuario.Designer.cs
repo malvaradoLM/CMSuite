@@ -59,7 +59,6 @@
             // 
             // tcCatalogo
             // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpPermisos});
             this.tcCatalogo.Controls.SetChildIndex(this.tpPermisos, 0);
