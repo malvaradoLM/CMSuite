@@ -197,7 +197,7 @@ namespace RedCoForm
 
         private void tileItem7_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
-            ModuleInfoCollection.ShowModuleByName("CatalogoReportes", this);
+            ModuleInfoCollection.ShowModuleByName("ProductoIEPS", this);
             bvcMenuPrincipal.Close();
         }
 
