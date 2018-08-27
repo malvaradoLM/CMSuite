@@ -24,7 +24,7 @@ namespace RedCoForm.Forms.Movimientos
 
             CargarTerminal();
 
-            // CargarEstacion();
+             CargarEstacion();
             CargarTransportista();
 
             CargarOperador();
@@ -90,7 +90,7 @@ namespace RedCoForm.Forms.Movimientos
             Data.DataModule.ParamByName(Params, "Datos", "");
             Data.DataModule.FillDataSet(spCatEstacionDS, "spCatEstacion", Params.ToArray());
 
-            dt = spCatTerminalDS.Tables["spCatEstacion"];
+            dt = spCatEstacionDS.Tables["spCatEstacion"];
             Estacion = c.FillList(dt);
             bs.DataSource = Estacion;
 
@@ -100,7 +100,7 @@ namespace RedCoForm.Forms.Movimientos
             this.lueEstacion.Properties.DisplayMember = "Nombre";
             this.lueEstacion.Properties.ValueMember = "EstacionID";
 
-            this.lueTerminal.Properties.DropDownRows = Estacion.Count;
+            this.lueEstacion.Properties.DropDownRows = Estacion.Count;
         }
 
 

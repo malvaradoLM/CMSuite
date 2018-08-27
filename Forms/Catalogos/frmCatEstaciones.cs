@@ -24,6 +24,9 @@ namespace RedCoForm.Forms.Catalogos
             DataSource = spCatEstacionBindingSource;
             NombreDataSet = "spCatEstacion";
             Buscar("~`|`~");
+
+
+
             getZona();
             getGrupo();
             getFormaPago();
@@ -74,7 +77,9 @@ namespace RedCoForm.Forms.Catalogos
             FillCombos obj = new FillCombos();
 
             //Lenamos el DS de FormaPago
-            Data.DataModule.FillDataSet(spCatFormaPagoDS1, "spCatFormaPago", null);
+            // Data.DataModule.FillDataSet(spCatFormaPagoDS1, "spCatFormaPago", null);
+            Data.DataModule.ParamByName(Params, "Datos", "");
+            Data.DataModule.FillDataSet(spCatFormaPagoDS1, "spCatGrupo", Params.ToArray());
 
             dt = spCatFormaPagoDS1.Tables["spCatFormaPago"];
             lst = obj.FillListCombo(dt, "FormaPagoID", "Descripcion");
@@ -101,7 +106,8 @@ namespace RedCoForm.Forms.Catalogos
             FillCombos obj = new FillCombos();
 
             //Lenamos el DS de FormaPago
-            Data.DataModule.FillDataSet(spCatMetodoPagoDS1, "spCatMetodoPago", null);
+            Data.DataModule.ParamByName(Params, "Datos", "");
+            Data.DataModule.FillDataSet(spCatMetodoPagoDS1, "spCatMetodoPago", Params.ToArray());
 
             dt = spCatMetodoPagoDS1.Tables["spCatMetodoPago"];
             lst = obj.FillListCombo(dt, "MetodoPagoID", "Descripcion");

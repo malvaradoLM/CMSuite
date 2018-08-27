@@ -346,6 +346,8 @@ namespace RedCoForm.DataSets {
             
             private global::System.Data.DataColumn columnMetodoPagoID;
             
+            private global::System.Data.DataColumn columnFormaCompraID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public spCatEstacionDataTable() {
@@ -653,6 +655,14 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn FormaCompraIDColumn {
+                get {
+                    return this.columnFormaCompraID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -722,7 +732,8 @@ namespace RedCoForm.DataSets {
                         int DiaPago, 
                         string CuentaBancaria, 
                         int FacturaUsoID, 
-                        int MetodoPagoID) {
+                        int MetodoPagoID, 
+                        int FormaCompraID) {
                 spCatEstacionRow rowspCatEstacionRow = ((spCatEstacionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         EstacionID,
@@ -758,7 +769,8 @@ namespace RedCoForm.DataSets {
                         DiaPago,
                         CuentaBancaria,
                         FacturaUsoID,
-                        MetodoPagoID};
+                        MetodoPagoID,
+                        FormaCompraID};
                 rowspCatEstacionRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowspCatEstacionRow);
                 return rowspCatEstacionRow;
@@ -822,6 +834,7 @@ namespace RedCoForm.DataSets {
                 this.columnCuentaBancaria = base.Columns["CuentaBancaria"];
                 this.columnFacturaUsoID = base.Columns["FacturaUsoID"];
                 this.columnMetodoPagoID = base.Columns["MetodoPagoID"];
+                this.columnFormaCompraID = base.Columns["FormaCompraID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -895,6 +908,8 @@ namespace RedCoForm.DataSets {
                 base.Columns.Add(this.columnFacturaUsoID);
                 this.columnMetodoPagoID = new global::System.Data.DataColumn("MetodoPagoID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMetodoPagoID);
+                this.columnFormaCompraID = new global::System.Data.DataColumn("FormaCompraID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFormaCompraID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("PK_spCatEstacion", new global::System.Data.DataColumn[] {
                                 this.columnEstacionID}, true));
                 this.columnEstacionID.AllowDBNull = false;
@@ -1584,6 +1599,22 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int FormaCompraID {
+                get {
+                    try {
+                        return ((int)(this[this.tablespCatEstacion.FormaCompraIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FormaCompraID\' in table \'spCatEstacion\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatEstacion.FormaCompraIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsNombreNull() {
                 return this.IsNull(this.tablespCatEstacion.NombreColumn);
             }
@@ -1940,6 +1971,18 @@ namespace RedCoForm.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetMetodoPagoIDNull() {
                 this[this.tablespCatEstacion.MetodoPagoIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsFormaCompraIDNull() {
+                return this.IsNull(this.tablespCatEstacion.FormaCompraIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetFormaCompraIDNull() {
+                this[this.tablespCatEstacion.FormaCompraIDColumn] = global::System.Convert.DBNull;
             }
         }
         

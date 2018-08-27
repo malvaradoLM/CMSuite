@@ -89,10 +89,10 @@
             this.colTerminalID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colVehiculoID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.spCatTerminalDS = new RedCoForm.DataSets.spCatTerminalDS();
-            this.spCatEstacionDS = new RedCoForm.DataSets.spCatEstacionDS();
             this.spCatTransportistaDS = new RedCoForm.DataSets.spCatTransportistaDS();
             this.spCatOperadorDS1 = new RedCoForm.DataSets.spCatOperadorDS();
             this.spCatVehiculoDS = new RedCoForm.DataSets.spCatVehiculoDS();
+            this.spCatEstacionDS = new RedCoForm.DataSets.spCatEstacionDS();
             ((System.ComponentModel.ISupportInitialize)(this.tbControl)).BeginInit();
             this.tbControl.SuspendLayout();
             this.tpDatos.SuspendLayout();
@@ -128,14 +128,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.spDetalleRemisionDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTerminalDS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTransportistaDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatOperadorDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatVehiculoDS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS)).BeginInit();
             this.SuspendLayout();
             // 
             // tbControl
             // 
+            this.tbControl.SelectedTabPage = this.tpDatos;
             this.tbControl.Size = new System.Drawing.Size(763, 676);
             // 
             // tpDatos
@@ -263,7 +264,7 @@
             this.groupControl2.Controls.Add(this.labelControl5);
             this.groupControl2.Controls.Add(this.labelControl4);
             this.groupControl2.Controls.Add(this.labelControl3);
-            this.groupControl2.Location = new System.Drawing.Point(26, 374);
+            this.groupControl2.Location = new System.Drawing.Point(17, 447);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(696, 257);
             this.groupControl2.TabIndex = 1;
@@ -521,7 +522,7 @@
             this.groupBox1.Controls.Add(this.gridControl1);
             this.groupBox1.Location = new System.Drawing.Point(11, 124);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(906, 222);
+            this.groupBox1.Size = new System.Drawing.Size(1008, 222);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inf. de Producto";
@@ -535,7 +536,7 @@
             this.gridControl1.Location = new System.Drawing.Point(6, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(894, 130);
+            this.gridControl1.Size = new System.Drawing.Size(996, 130);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -668,11 +669,6 @@
             this.spCatTerminalDS.DataSetName = "spCatTerminalDS";
             this.spCatTerminalDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // spCatEstacionDS
-            // 
-            this.spCatEstacionDS.DataSetName = "6";
-            this.spCatEstacionDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // spCatTransportistaDS
             // 
             this.spCatTransportistaDS.DataSetName = "spCatTransportistaDS";
@@ -687,6 +683,11 @@
             // 
             this.spCatVehiculoDS.DataSetName = "spCatVehiculoDS";
             this.spCatVehiculoDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // spCatEstacionDS
+            // 
+            this.spCatEstacionDS.DataSetName = "spCatEstacionDS";
+            this.spCatEstacionDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // frmGeneraRemision
             // 
@@ -732,10 +733,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.spDetalleRemisionDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTerminalDS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTransportistaDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatOperadorDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatVehiculoDS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -786,7 +787,6 @@
         private DevExpress.XtraEditors.TextEdit txtNombreEstacion;
         private DevExpress.XtraEditors.LabelControl lblPermisoCRE;
         private DataSets.spCatTerminalDS spCatTerminalDS;
-        private DataSets.spCatEstacionDS spCatEstacionDS;
         private DataSets.spCatTransportistaDS spCatTransportistaDS;
         private DataSets.spCatOperadorDS spCatOperadorDS1;
         private System.Windows.Forms.BindingSource spDetallePedidoBindingSource;
@@ -805,5 +805,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTerminalID;
         private DevExpress.XtraGrid.Columns.GridColumn colVehiculoID;
         private DataSets.spCatVehiculoDS spCatVehiculoDS;
+        private DataSets.spCatEstacionDS spCatEstacionDS;
     }
 }
