@@ -287,19 +287,17 @@
     <Compile Include="Forms\Configuracion\frmRegimenFiscal.Designer.cs">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Forms\Movimientos\frmGeneraRemision.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Movimientos\frmGeneraRemision.Designer.cs">
       <DependentUpon>frmGeneraRemision.cs</DependentUpon>
-=======
+    </Compile>
     <Compile Include="Forms\Movimientos\frmMovimientoProductoIEPS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Movimientos\frmMovimientoProductoIEPS.Designer.cs">
       <DependentUpon>frmMovimientoProductoIEPS.cs</DependentUpon>
->>>>>>> 94afcd3fd40fae1e57faaf6e6844c7207634a07f
     </Compile>
     <Compile Include="Forms\Movimientos\frmMuestraPemex.cs">
       <SubType>Form</SubType>
@@ -506,13 +504,11 @@
     <EmbeddedResource Include="Forms\Configuracion\frmRegimenFiscal.resx">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Forms\Movimientos\frmGeneraRemision.resx">
       <DependentUpon>frmGeneraRemision.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Movimientos\frmMovimientoProductoIEPS.resx">
       <DependentUpon>frmMovimientoProductoIEPS.cs</DependentUpon>
->>>>>>> 94afcd3fd40fae1e57faaf6e6844c7207634a07f
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Movimientos\frmMuestraPemex.resx">
       <DependentUpon>frmMuestraPemex.cs</DependentUpon>
