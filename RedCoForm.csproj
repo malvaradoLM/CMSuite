@@ -42,6 +42,7 @@
     <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="RemObjects.DataAbstract, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098, processorArchitecture=MSIL" />
     <Reference Include="RemObjects.DataAbstract.Async, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098, processorArchitecture=MSIL" />
     <Reference Include="RemObjects.SDK, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098, processorArchitecture=MSIL" />
@@ -95,6 +96,7 @@
     <Compile Include="Class\clsEstacion.cs" />
     <Compile Include="Class\clsGrupo.cs" />
     <Compile Include="Class\clsProducto.cs" />
+    <Compile Include="Class\clsProductoIEPS.cs" />
     <Compile Include="Class\clsRegimenFiscal.cs" />
     <Compile Include="Class\clsStatus.cs" />
     <Compile Include="Class\clsTerminal.cs" />
@@ -285,11 +287,19 @@
     <Compile Include="Forms\Configuracion\frmRegimenFiscal.Designer.cs">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Forms\Movimientos\frmGeneraRemision.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Movimientos\frmGeneraRemision.Designer.cs">
       <DependentUpon>frmGeneraRemision.cs</DependentUpon>
+=======
+    <Compile Include="Forms\Movimientos\frmMovimientoProductoIEPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movimientos\frmMovimientoProductoIEPS.Designer.cs">
+      <DependentUpon>frmMovimientoProductoIEPS.cs</DependentUpon>
+>>>>>>> 94afcd3fd40fae1e57faaf6e6844c7207634a07f
     </Compile>
     <Compile Include="Forms\Movimientos\frmMuestraPemex.cs">
       <SubType>Form</SubType>
@@ -391,6 +401,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatTransportistaDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spProductoIEPSDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spProductoIEPSDS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSets\spCatOperadorDS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -491,8 +506,13 @@
     <EmbeddedResource Include="Forms\Configuracion\frmRegimenFiscal.resx">
       <DependentUpon>frmRegimenFiscal.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Forms\Movimientos\frmGeneraRemision.resx">
       <DependentUpon>frmGeneraRemision.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Forms\Movimientos\frmMovimientoProductoIEPS.resx">
+      <DependentUpon>frmMovimientoProductoIEPS.cs</DependentUpon>
+>>>>>>> 94afcd3fd40fae1e57faaf6e6844c7207634a07f
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Movimientos\frmMuestraPemex.resx">
       <DependentUpon>frmMuestraPemex.cs</DependentUpon>
@@ -731,6 +751,17 @@
     </None>
     <None Include="DataSets\spCatTransportistaDS.xss">
       <DependentUpon>spCatTransportistaDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spProductoIEPSDS.xsc">
+      <DependentUpon>spProductoIEPSDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spProductoIEPSDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spProductoIEPSDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spProductoIEPSDS.xss">
+      <DependentUpon>spProductoIEPSDS.xsd</DependentUpon>
     </None>
     <None Include="DataSets\spCatOperadorDS.xsc">
       <DependentUpon>spCatOperadorDS.xsd</DependentUpon>
