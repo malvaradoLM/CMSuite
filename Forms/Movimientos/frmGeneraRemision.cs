@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -14,6 +15,7 @@ namespace RedCoForm.Forms.Movimientos
     public partial class frmGeneraRemision : RedCoForm.Base.frmEstructura
     {
 
+        public int TerminalPrimaria=0;
 
         private List<DataParameter> Params = new List<DataParameter>();
 
@@ -88,11 +90,24 @@ namespace RedCoForm.Forms.Movimientos
             Params.Clear();
 
             Data.DataModule.ParamByName(Params, "Datos", "");
+
+       
+
+           // gvPedidos.DataSource = dt.Select("StatusID=" + 1 + " or StatusID =" + 3);
+
             Data.DataModule.FillDataSet(spCatEstacionDS, "spCatEstacion", Params.ToArray());
 
             dt = spCatEstacionDS.Tables["spCatEstacion"];
+
+            //DataRow[] dr = dt.Select("TerminalPrimaria=" + TerminalPrimaria);
+            //dt = dr.CopyToDataTable();
+
             Estacion = c.FillList(dt);
-            bs.DataSource = Estacion;
+
+
+          
+
+            bs.DataSource = Estacion ;
 
             this.lueEstacion.Properties.DataSource = bs.List;
             this.lueEstacion.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("EstacionID", "ID"));
@@ -232,6 +247,25 @@ namespace RedCoForm.Forms.Movimientos
         private void groupControl2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lueTerminal_EnabledChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void lueEstacion_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+
+        }
+
+        private void lueTerminal_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            //DevExpress.XtraEditors.LookUpEdit editor = (sender as DevExpress.XtraEditors.LookUpEdit);
+
+            //TerminalPrimaria = int.Parse(editor.EditValue.ToString());
+
+            //CargarEstacion();
         }
     }
 }

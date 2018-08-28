@@ -136,7 +136,6 @@
             // 
             // tbControl
             // 
-            this.tbControl.SelectedTabPage = this.tpDatos;
             this.tbControl.Size = new System.Drawing.Size(763, 676);
             // 
             // tpDatos
@@ -204,6 +203,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lueEstacion.Size = new System.Drawing.Size(146, 20);
             this.lueEstacion.TabIndex = 3;
+            this.lueEstacion.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.lueEstacion_EditValueChanging);
             // 
             // lueTerminal
             // 
@@ -213,6 +213,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lueTerminal.Size = new System.Drawing.Size(260, 20);
             this.lueTerminal.TabIndex = 2;
+            this.lueTerminal.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.lueTerminal_EditValueChanging);
+            this.lueTerminal.EnabledChanged += new System.EventHandler(this.lueTerminal_EnabledChanged);
             // 
             // labelControl2
             // 
@@ -264,7 +266,7 @@
             this.groupControl2.Controls.Add(this.labelControl5);
             this.groupControl2.Controls.Add(this.labelControl4);
             this.groupControl2.Controls.Add(this.labelControl3);
-            this.groupControl2.Location = new System.Drawing.Point(17, 447);
+            this.groupControl2.Location = new System.Drawing.Point(17, 542);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(696, 257);
             this.groupControl2.TabIndex = 1;
@@ -522,7 +524,7 @@
             this.groupBox1.Controls.Add(this.gridControl1);
             this.groupBox1.Location = new System.Drawing.Point(11, 124);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1008, 222);
+            this.groupBox1.Size = new System.Drawing.Size(1059, 222);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inf. de Producto";
@@ -536,7 +538,7 @@
             this.gridControl1.Location = new System.Drawing.Point(6, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(996, 130);
+            this.gridControl1.Size = new System.Drawing.Size(1047, 130);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});

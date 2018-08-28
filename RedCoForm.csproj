@@ -443,6 +443,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spDetalleRemisionDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spCatFormaCompraDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatFormaCompraDS.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -809,6 +814,17 @@
     </None>
     <None Include="DataSets\spDetalleRemisionDS.xss">
       <DependentUpon>spDetalleRemisionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatFormaCompraDS.xsc">
+      <DependentUpon>spCatFormaCompraDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatFormaCompraDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatFormaCompraDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatFormaCompraDS.xss">
+      <DependentUpon>spCatFormaCompraDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

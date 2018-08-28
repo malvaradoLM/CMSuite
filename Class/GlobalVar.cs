@@ -14,7 +14,9 @@ namespace RedCoForm.Class
         public static string _NombreEstacion;
 
 
-        public static string[] Estados; 
+        public static string[] Estados;
+
+        public static string[] DiasSemana;
 
       
         public static  void CargarEstados()
@@ -54,6 +56,19 @@ namespace RedCoForm.Class
             Estados[31] = "ZACATECAS";
 
         }
+
+        public static void CargarDiasSemana()
+        {
+            DiasSemana = new string[7];
+            DiasSemana[0] = "LUNES";
+            DiasSemana[1] = "MARTES";
+            DiasSemana[2] = "MIERCOLES";
+            DiasSemana[3] = "JUEVES";
+            DiasSemana[4] = "VIERNES";
+            DiasSemana[5] = "SABADO";
+            DiasSemana[6] = "DOMINGO";
+        }
+    
 
 
        
