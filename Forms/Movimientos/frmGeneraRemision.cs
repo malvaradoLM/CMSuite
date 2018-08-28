@@ -16,6 +16,8 @@ namespace RedCoForm.Forms.Movimientos
     {
 
         public int TerminalPrimaria=0;
+        public int EstacionSeleccionada = 0;
+        RPSuiteServer.TEstacion datosestacion = new RPSuiteServer.TEstacion();
 
         private List<DataParameter> Params = new List<DataParameter>();
 
@@ -256,6 +258,8 @@ namespace RedCoForm.Forms.Movimientos
 
         private void lueEstacion_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
+           
+          
 
         }
 
@@ -266,6 +270,26 @@ namespace RedCoForm.Forms.Movimientos
             //TerminalPrimaria = int.Parse(editor.EditValue.ToString());
 
             //CargarEstacion();
+        }
+
+        private void lueEstacion_EditValueChanged(object sender, EventArgs e)
+        {
+            //Cuando Seleccionamos UnaEstacion Cargar Los Datos de la Estacion
+            DevExpress.XtraEditors.LookUpEdit editor = (sender as DevExpress.XtraEditors.LookUpEdit);
+
+            EstacionSeleccionada = int.Parse(editor.EditValue.ToString());
+            // MessageBox.Show("Estacion Seleccionada " + EstacionSeleccionada, "Ejemplo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            datosestacion = Data.DataModule.DataService.GetEstacion(EstacionSeleccionada.ToString());
+
+            if (datosestacion.EstacionID != -1)
+            {
+                txtNombreEstacion.Text = EstacionSeleccionada.ToString() + " - "+ datosestacion.RazonSocial;
+
+            }
+            else
+            {
+                MessageBox.Show("Error al Cargar Estacion", "RedPacifico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

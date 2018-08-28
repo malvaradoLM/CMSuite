@@ -203,6 +203,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lueEstacion.Size = new System.Drawing.Size(146, 20);
             this.lueEstacion.TabIndex = 3;
+            this.lueEstacion.EditValueChanged += new System.EventHandler(this.lueEstacion_EditValueChanged);
             this.lueEstacion.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.lueEstacion_EditValueChanging);
             // 
             // lueTerminal
@@ -235,7 +236,8 @@
             // 
             // groupControl2
             // 
-            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl2.Controls.Add(this.memoEdit1);
             this.groupControl2.Controls.Add(this.labelControl16);
             this.groupControl2.Controls.Add(this.lueMuestraPemex);
@@ -266,9 +268,9 @@
             this.groupControl2.Controls.Add(this.labelControl5);
             this.groupControl2.Controls.Add(this.labelControl4);
             this.groupControl2.Controls.Add(this.labelControl3);
-            this.groupControl2.Location = new System.Drawing.Point(17, 542);
+            this.groupControl2.Location = new System.Drawing.Point(17, 365);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(696, 257);
+            this.groupControl2.Size = new System.Drawing.Size(733, 273);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "inf. para el Transporte";
             this.groupControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl2_Paint);
@@ -519,12 +521,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.gridControl1);
             this.groupBox1.Location = new System.Drawing.Point(11, 124);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1059, 222);
+            this.groupBox1.Size = new System.Drawing.Size(727, 222);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inf. de Producto";
@@ -538,7 +540,7 @@
             this.gridControl1.Location = new System.Drawing.Point(6, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1047, 130);
+            this.gridControl1.Size = new System.Drawing.Size(715, 130);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
