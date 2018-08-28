@@ -265,11 +265,7 @@ namespace RedCoForm.Forms.Movimientos
 
         private void lueTerminal_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
-            //DevExpress.XtraEditors.LookUpEdit editor = (sender as DevExpress.XtraEditors.LookUpEdit);
 
-            //TerminalPrimaria = int.Parse(editor.EditValue.ToString());
-
-            //CargarEstacion();
         }
 
         private void lueEstacion_EditValueChanged(object sender, EventArgs e)
@@ -284,7 +280,8 @@ namespace RedCoForm.Forms.Movimientos
             if (datosestacion.EstacionID != -1)
             {
                 txtNombreEstacion.Text = EstacionSeleccionada.ToString() + " - "+ datosestacion.RazonSocial;
-
+                txtLugarEntrega.Text = datosestacion.EntregaCalle + " "+ datosestacion.EntregaNoExterior + " " + datosestacion.EntregaNoInterior;
+                txtLugarEntrega.Text = txtLugarEntrega.Text + " " + datosestacion.EntregaColonia;
             }
             else
             {
