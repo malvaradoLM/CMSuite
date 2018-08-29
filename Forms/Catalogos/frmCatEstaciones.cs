@@ -24,10 +24,35 @@ namespace RedCoForm.Forms.Catalogos
             DataSource = spCatEstacionBindingSource;
             NombreDataSet = "spCatEstacion";
             Buscar("~`|`~");
+
+
+
             getZona();
             getGrupo();
             getFormaPago();
             getMetodoPago();
+            CargarTerminal();
+            getVendedor();
+            getFormaCompra();
+            getFacturaUso();
+
+            //Cargar Los Estados
+            GlobalVar.CargarEstados();
+            lueEstado.Properties.DataSource = GlobalVar.Estados;
+            lueEntregaEstado.Properties.DataSource = GlobalVar.Estados;
+
+            //Cargar Los Estados
+
+            //lueEntregaEstado.Properties.DataSource = GlobalVar.Estados;
+            //lueEntregaEstado.Properties.DataSource = GlobalVar.Estados;
+
+
+            //Cargar DiasRemision
+         
+            GlobalVar.CargarDiasSemana();
+            lueDiaRevision.Properties.DataSource = GlobalVar.DiasSemana;
+            lueDiaPago.Properties.DataSource = GlobalVar.DiasSemana;
+
         }
 
         #region Grupo
@@ -62,6 +87,7 @@ namespace RedCoForm.Forms.Catalogos
 
         }
         #endregion
+
         #region FormaPago
         public void getFormaPago()
         {
@@ -74,7 +100,9 @@ namespace RedCoForm.Forms.Catalogos
             FillCombos obj = new FillCombos();
 
             //Lenamos el DS de FormaPago
-            Data.DataModule.FillDataSet(spCatFormaPagoDS1, "spCatFormaPago", null);
+            // Data.DataModule.FillDataSet(spCatFormaPagoDS1, "spCatFormaPago", null);
+            Data.DataModule.ParamByName(Params, "Datos", "");
+            Data.DataModule.FillDataSet(spCatFormaPagoDS1, "spCatFormaPago", Params.ToArray());
 
             dt = spCatFormaPagoDS1.Tables["spCatFormaPago"];
             lst = obj.FillListCombo(dt, "FormaPagoID", "Descripcion");
@@ -90,6 +118,8 @@ namespace RedCoForm.Forms.Catalogos
 
         }
         #endregion
+
+
         #region MetodoPago
         public void getMetodoPago()
         {
@@ -101,7 +131,8 @@ namespace RedCoForm.Forms.Catalogos
             FillCombos obj = new FillCombos();
 
             //Lenamos el DS de FormaPago
-            Data.DataModule.FillDataSet(spCatMetodoPagoDS1, "spCatMetodoPago", null);
+            Data.DataModule.ParamByName(Params, "Datos", "");
+            Data.DataModule.FillDataSet(spCatMetodoPagoDS1, "spCatMetodoPago", Params.ToArray());
 
             dt = spCatMetodoPagoDS1.Tables["spCatMetodoPago"];
             lst = obj.FillListCombo(dt, "MetodoPagoID", "Descripcion");
@@ -152,6 +183,143 @@ namespace RedCoForm.Forms.Catalogos
 
         }
         #endregion
+
+
+        #region Terminal
+        private void CargarTerminal()
+        {
+            DataTable dt = new DataTable();
+            BindingSource bs = new BindingSource();
+
+            List<clsTerminal> Terminal = new List<clsTerminal>();
+            clsTerminal c = new clsTerminal();
+
+            //Lenamos el DS de Categorias
+
+            Params.Clear();
+
+            Data.DataModule.ParamByName(Params, "Datos", "");
+            Data.DataModule.FillDataSet(spCatTerminalDS, "spCatTerminal", Params.ToArray());
+
+            dt = spCatTerminalDS.Tables["spCatTerminal"];
+            Terminal = c.FillList(dt);
+            bs.DataSource = Terminal;
+
+            this.lueTerminalPrimaria.Properties.DataSource = bs.List;
+            this.lueTerminalPrimaria.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TerminalID", "ID"));
+            this.lueTerminalPrimaria.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Descripcion", "Nombre"));
+            this.lueTerminalPrimaria.Properties.DisplayMember = "Descripcion";
+            this.lueTerminalPrimaria.Properties.ValueMember = "TerminalID";
+
+            this.lueTerminalPrimaria.Properties.DropDownRows = Terminal.Count;
+
+            //Terminal Secundaria
+            this.lueTerminalSecundaria.Properties.DataSource = bs.List;
+            this.lueTerminalSecundaria.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TerminalID", "ID"));
+            this.lueTerminalSecundaria.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Descripcion", "Nombre"));
+            this.lueTerminalSecundaria.Properties.DisplayMember = "Descripcion";
+            this.lueTerminalSecundaria.Properties.ValueMember = "TerminalID";
+
+            this.lueTerminalSecundaria.Properties.DropDownRows = Terminal.Count;
+
+        }
+        #endregion
+
+
+        #region Vendedor
+        public void getVendedor()
+        {
+            //Variables 
+
+            DataTable dt = new DataTable();
+            BindingSource bs = new BindingSource();
+            List<FillCombos> lst = new List<FillCombos>();
+            FillCombos obj = new FillCombos();
+
+            //Lenamos el DS de FormaPago
+            Data.DataModule.ParamByName(Params, "Datos", "");
+            Data.DataModule.FillDataSet(spCatVendedorDS, "spCatVendedor", Params.ToArray());
+
+            dt = spCatVendedorDS.Tables["spCatVendedor"];
+            lst = obj.FillListCombo(dt, "VendedorID", "Nombre");
+            bs.DataSource = lst;
+
+            this.lueVendedor.Properties.DataSource = bs.List;
+            //this.lueCambiaEstacion.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("EstacionID", "Banco ID"));
+            this.lueVendedor.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Nombre", "Nombre"));
+            this.lueVendedor.Properties.DisplayMember = "Nombre";
+            this.lueVendedor.Properties.ValueMember = "ID";
+
+            this.lueVendedor.Properties.DropDownRows = lst.Count;
+        }
+
+        #endregion
+
+
+        #region Forma de Compra
+        private void getFormaCompra()
+        {
+            //Variables 
+
+            DataTable dt = new DataTable();
+            BindingSource bs = new BindingSource();
+            List<FillCombos> lst = new List<FillCombos>();
+            FillCombos obj = new FillCombos();
+
+            //Lenamos el DS de FormaPago
+            Data.DataModule.ParamByName(Params, "Datos", "");
+            Data.DataModule.FillDataSet(spCatFormaCompraDS, "spCatFormaCompra", Params.ToArray());
+
+            dt = spCatFormaCompraDS.Tables["spCatFormaCompra"];
+            lst = obj.FillListCombo(dt, "FormaCompraID", "Descripcion");
+            bs.DataSource = lst;
+
+            this.lueFormaCompra.Properties.DataSource = bs.List;
+            //this.lueCambiaEstacion.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("EstacionID", "Banco ID"));
+            this.lueFormaCompra.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Nombre", "Nombre"));
+            this.lueFormaCompra.Properties.DisplayMember = "Nombre";
+            this.lueFormaCompra.Properties.ValueMember = "ID";
+
+            this.lueFormaCompra.Properties.DropDownRows = lst.Count;
+
+        }
+
+        #endregion
+
+
+        #region FacturaUso
+        private void getFacturaUso()
+        {
+
+            //Variables 
+
+            DataTable dt = new DataTable();
+            BindingSource bs = new BindingSource();
+            List<FillCombos> lst = new List<FillCombos>();
+            FillCombos obj = new FillCombos();
+
+            //Lenamos el DS de FormaPago
+            Data.DataModule.ParamByName(Params, "Datos", "");
+            Data.DataModule.FillDataSet(spCatFacturaUsoDS, "spCatFacturaUso", Params.ToArray());
+
+            dt = spCatFacturaUsoDS.Tables["spCatFacturaUso"];
+            lst = obj.FillListCombo(dt, "FacturaUsoID", "Descripcion");
+            bs.DataSource = lst;
+
+            this.lueFacturaUso.Properties.DataSource = bs.List;
+            //this.lueCambiaEstacion.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("EstacionID", "Banco ID"));
+            this.lueFacturaUso.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Nombre", "Nombre"));
+            this.lueFacturaUso.Properties.DisplayMember = "Nombre";
+            this.lueFacturaUso.Properties.ValueMember = "ID";
+
+            this.lueFacturaUso.Properties.DropDownRows = lst.Count;
+
+
+        }
+
+
+        #endregion
+
 
         public override void DoNuevo(object key, object sender, EventArgs e)
         {
