@@ -38,15 +38,15 @@
             this.colDireccion = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colstatus = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.txtDireccion = new RedCoForm.Controles.CTextBox();
-            this.txtRazonSocial = new RedCoForm.Controles.CTextBox();
-            this.txtNombre = new RedCoForm.Controles.CTextBox();
             this.chkStatus = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.txtNombre = new UserControls.CTextEdit();
+            this.txtDireccion = new UserControls.CTextEdit();
+            this.txtRazonSocial = new UserControls.CTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -63,6 +63,9 @@
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
@@ -159,8 +162,8 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.txtDireccion);
             this.groupControl1.Controls.Add(this.txtRazonSocial);
+            this.groupControl1.Controls.Add(this.txtDireccion);
             this.groupControl1.Controls.Add(this.txtNombre);
             this.groupControl1.Controls.Add(this.chkStatus);
             this.groupControl1.Controls.Add(this.labelControl4);
@@ -173,36 +176,6 @@
             this.groupControl1.Size = new System.Drawing.Size(536, 285);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Datos";
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.spCatTransportistaBindingSource, "Direccion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtDireccion.Location = new System.Drawing.Point(23, 200);
-            this.txtDireccion.MaskType = RedCoForm.Class.GlobalVar.CMask.None;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.NDecimales = 2;
-            this.txtDireccion.Size = new System.Drawing.Size(477, 20);
-            this.txtDireccion.TabIndex = 12;
-            // 
-            // txtRazonSocial
-            // 
-            this.txtRazonSocial.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.spCatTransportistaBindingSource, "RazonSocial", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtRazonSocial.Location = new System.Drawing.Point(23, 155);
-            this.txtRazonSocial.MaskType = RedCoForm.Class.GlobalVar.CMask.None;
-            this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.NDecimales = 2;
-            this.txtRazonSocial.Size = new System.Drawing.Size(477, 20);
-            this.txtRazonSocial.TabIndex = 11;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.spCatTransportistaBindingSource, "Nombre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtNombre.Location = new System.Drawing.Point(23, 110);
-            this.txtNombre.MaskType = RedCoForm.Class.GlobalVar.CMask.Percentaje;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.NDecimales = 2;
-            this.txtNombre.Size = new System.Drawing.Size(477, 20);
-            this.txtNombre.TabIndex = 10;
             // 
             // chkStatus
             // 
@@ -254,6 +227,36 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID";
             // 
+            // txtNombre
+            // 
+            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTransportistaBindingSource, "Nombre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtNombre.Location = new System.Drawing.Point(23, 110);
+            this.txtNombre.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.NDecimales = 2;
+            this.txtNombre.Size = new System.Drawing.Size(477, 20);
+            this.txtNombre.TabIndex = 12;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTransportistaBindingSource, "Direccion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtDireccion.Location = new System.Drawing.Point(23, 200);
+            this.txtDireccion.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.NDecimales = 2;
+            this.txtDireccion.Size = new System.Drawing.Size(477, 20);
+            this.txtDireccion.TabIndex = 13;
+            // 
+            // txtRazonSocial
+            // 
+            this.txtRazonSocial.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTransportistaBindingSource, "RazonSocial", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtRazonSocial.Location = new System.Drawing.Point(23, 155);
+            this.txtRazonSocial.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.NDecimales = 2;
+            this.txtRazonSocial.Size = new System.Drawing.Size(477, 20);
+            this.txtRazonSocial.TabIndex = 14;
+            // 
             // frmCatalogoTransportista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,6 +282,9 @@
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,8 +305,8 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private Controles.CTextBox txtDireccion;
-        private Controles.CTextBox txtRazonSocial;
-        private Controles.CTextBox txtNombre;
+        private UserControls.CTextEdit txtRazonSocial;
+        private UserControls.CTextEdit txtDireccion;
+        private UserControls.CTextEdit txtNombre;
     }
 }

@@ -140,18 +140,6 @@
     <Compile Include="Class\GlobalVar.cs" />
     <Compile Include="Class\Misc.cs" />
     <Compile Include="Class\UserInfo.cs" />
-    <Compile Include="Controles\AgregarRenglon.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controles\AgregarRenglon.Designer.cs">
-      <DependentUpon>AgregarRenglon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controles\CTextBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controles\CTextBox.Designer.cs">
-      <DependentUpon>CTextBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="DataSets\spCatTipoDocumentoDS.cs">
       <DependentUpon>spCatTipoDocumentoDS.xsd</DependentUpon>
     </Compile>
@@ -469,12 +457,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Base\frmPadre.resx">
       <DependentUpon>frmPadre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controles\AgregarRenglon.resx">
-      <DependentUpon>AgregarRenglon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controles\CTextBox.resx">
-      <DependentUpon>CTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Data\DataModule.resx">
       <DependentUpon>DataModule.cs</DependentUpon>
@@ -860,6 +842,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DLL\UserControls.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

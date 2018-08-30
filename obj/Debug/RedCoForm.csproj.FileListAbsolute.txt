@@ -106,7 +106,6 @@ C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Base.BaseModule.resources
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Base.frmCatalogo.resources
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Base.frmEstructura.resources
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Base.frmPadre.resources
-C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Controles.AgregarRenglon.resources
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Data.DataModule.resources
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Form1.resources
 C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Forms.Catalogos.frmCatalogoBanco.resources
@@ -532,5 +531,4 @@ C:\SuiteWEB\CMSuite\bin\Debug\de\DevExpress.XtraNavBar.v17.2.resources.dll
 C:\SuiteWEB\CMSuite\bin\Debug\es\DevExpress.XtraNavBar.v17.2.resources.dll
 C:\SuiteWEB\CMSuite\bin\Debug\ja\DevExpress.XtraNavBar.v17.2.resources.dll
 C:\SuiteWEB\CMSuite\bin\Debug\ru\DevExpress.XtraNavBar.v17.2.resources.dll
-C:\SuiteWEB\CMSuite\obj\Debug\RedCoForm.Controles.CTextBox.resources
 C:\SuiteWEB\CMSuite\bin\Debug\UserControls.dll
