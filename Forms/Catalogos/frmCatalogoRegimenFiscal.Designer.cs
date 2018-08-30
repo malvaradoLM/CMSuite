@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoRegimenFiscal));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
+            this.spCatRegimenFiscalBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatRegimenFiscalDS1 = new RedCoForm.DataSets.spCatRegimenFiscalDS();
             this.txtCodigoSAT = new DevExpress.XtraEditors.TextEdit();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.spCatRegimenFiscalBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.spCatRegimenFiscalDS1 = new RedCoForm.DataSets.spCatRegimenFiscalDS();
             this.colRegimenFiscalID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCodigoSAT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,15 +55,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodigoSAT.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatRegimenFiscalBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatRegimenFiscalDS1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodigoSAT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tcCatalogo
-            // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -105,7 +101,7 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(11, 11);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(157, 172);
+            this.groupControl1.Size = new System.Drawing.Size(363, 172);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Datos";
             // 
@@ -114,15 +110,26 @@
             this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatRegimenFiscalBindingSource1, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDescripcion.Location = new System.Drawing.Point(8, 133);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(136, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(323, 20);
             this.txtDescripcion.TabIndex = 5;
+            // 
+            // spCatRegimenFiscalBindingSource1
+            // 
+            this.spCatRegimenFiscalBindingSource1.DataMember = "spCatRegimenFiscal";
+            this.spCatRegimenFiscalBindingSource1.DataSource = this.spCatRegimenFiscalDS1;
+            this.spCatRegimenFiscalBindingSource1.Sort = "";
+            // 
+            // spCatRegimenFiscalDS1
+            // 
+            this.spCatRegimenFiscalDS1.DataSetName = "spCatRegimenFiscalDS";
+            this.spCatRegimenFiscalDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtCodigoSAT
             // 
             this.txtCodigoSAT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatRegimenFiscalBindingSource1, "CodigoSAT", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCodigoSAT.Location = new System.Drawing.Point(8, 88);
             this.txtCodigoSAT.Name = "txtCodigoSAT";
-            this.txtCodigoSAT.Size = new System.Drawing.Size(136, 20);
+            this.txtCodigoSAT.Size = new System.Drawing.Size(63, 20);
             this.txtCodigoSAT.TabIndex = 4;
             // 
             // txtID
@@ -131,7 +138,7 @@
             this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(8, 43);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(47, 20);
+            this.txtID.Size = new System.Drawing.Size(63, 20);
             this.txtID.TabIndex = 3;
             // 
             // labelControl3
@@ -157,17 +164,6 @@
             this.labelControl1.Size = new System.Drawing.Size(11, 13);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID";
-            // 
-            // spCatRegimenFiscalBindingSource1
-            // 
-            this.spCatRegimenFiscalBindingSource1.DataMember = "spCatRegimenFiscal";
-            this.spCatRegimenFiscalBindingSource1.DataSource = this.spCatRegimenFiscalDS1;
-            this.spCatRegimenFiscalBindingSource1.Sort = "";
-            // 
-            // spCatRegimenFiscalDS1
-            // 
-            this.spCatRegimenFiscalDS1.DataSetName = "spCatRegimenFiscalDS";
-            this.spCatRegimenFiscalDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // colRegimenFiscalID
             // 
@@ -212,10 +208,10 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodigoSAT.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatRegimenFiscalBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatRegimenFiscalDS1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodigoSAT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
