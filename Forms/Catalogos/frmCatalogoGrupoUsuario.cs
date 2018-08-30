@@ -69,6 +69,14 @@ namespace RedCoForm.Forms.Catalogos
 
             TreeNode tNode;
             tNode = treePermisos.Nodes.Add("Persisos Comercializadora");
+
+            RPSuiteServer.TPermiso[] arrayPermiso = RedCoForm.Data.DataModule.DataService.SelectPermisos();
+
+
+
+
+            treePermisos.Nodes[0].Nodes[0].Nodes.Add("CLR");
+
         }
     }
 }
