@@ -102,7 +102,7 @@ namespace RedCoForm
 
         private void tileItem1_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
-            ModuleInfoCollection.ShowModuleByName("Facturacion", this);
+            ModuleInfoCollection.ShowModuleByName("FacturacionContado", this);
             //ModuleInfoCollection.ShowModuleByName("Module1", this);
             bvcMenuPrincipal.Close();
         }

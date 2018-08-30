@@ -1,4 +1,4 @@
-﻿namespace RedCoForm.Forms.Catalogos
+﻿  namespace RedCoForm.Forms.Catalogos
 {
     partial class frmCatalogoCategoria
     {
