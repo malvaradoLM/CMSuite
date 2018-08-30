@@ -452,6 +452,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>spCatFormaCompraDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\spCatZonaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spCatZonaDS.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base\BaseModule.resx">
       <DependentUpon>BaseModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -826,6 +831,17 @@
     </None>
     <None Include="DataSets\spCatFormaCompraDS.xss">
       <DependentUpon>spCatFormaCompraDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatZonaDS.xsc">
+      <DependentUpon>spCatZonaDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\spCatZonaDS.xsd">
+      <Generator>MSDatasetGenerator</Generator>
+      <LastGenOutput>spCatZonaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\spCatZonaDS.xss">
+      <DependentUpon>spCatZonaDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -13,6 +13,10 @@ namespace RedCoForm.Forms.Configuracion
         public frmCatalogoZona()
         {
             InitializeComponent();
+            cdsCatalogo = spCatZonaDS1;
+            DataSource = spCatZonaBindingSource;
+            NombreDataSet = "spCatZona";
+            Buscar("~`|`~");
         }
     }
 }
