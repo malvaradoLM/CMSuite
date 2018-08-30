@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoVendedor));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
+            this.txtEmail = new UserControls.CTextEdit();
             this.spCatVendedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCatVendedorDS1 = new RedCoForm.DataSets.spCatVendedorDS();
-            this.txtTelefono = new DevExpress.XtraEditors.TextEdit();
-            this.txtNombre = new DevExpress.XtraEditors.TextEdit();
-            this.txtVendedorID = new DevExpress.XtraEditors.TextEdit();
+            this.txtTelefono = new UserControls.CTextEdit();
+            this.txtNombre = new UserControls.CTextEdit();
+            this.txtVendedorID = new UserControls.CTextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -64,10 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVendedorID.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tcCatalogo
-            // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -120,7 +116,11 @@
             // 
             this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVendedorBindingSource, "Email", true));
             this.txtEmail.Location = new System.Drawing.Point(24, 191);
+            this.txtEmail.MaskType = UserControls.GlobalVar.CMask.Email;
             this.txtEmail.Name = "txtEmail";
+            this.txtEmail.NDecimales = 2;
+            this.txtEmail.Properties.Mask.EditMask = "[a-zA-Z0-9_\\.]+@[a-zA-Z0-9]+\\.[a-z]{2,}\\.?[a-z]{0,3}";
+            this.txtEmail.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtEmail.Size = new System.Drawing.Size(247, 20);
             this.txtEmail.TabIndex = 7;
             // 
@@ -139,7 +139,11 @@
             // 
             this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVendedorBindingSource, "Telefono", true));
             this.txtTelefono.Location = new System.Drawing.Point(24, 146);
+            this.txtTelefono.MaskType = UserControls.GlobalVar.CMask.Phone;
             this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.NDecimales = 2;
+            this.txtTelefono.Properties.Mask.EditMask = "\\(\\d{3}\\)-\\d{3}-\\d{4}";
+            this.txtTelefono.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtTelefono.Size = new System.Drawing.Size(247, 20);
             this.txtTelefono.TabIndex = 6;
             // 
@@ -147,7 +151,11 @@
             // 
             this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVendedorBindingSource, "Nombre", true));
             this.txtNombre.Location = new System.Drawing.Point(24, 100);
+            this.txtNombre.MaskType = UserControls.GlobalVar.CMask.String;
             this.txtNombre.Name = "txtNombre";
+            this.txtNombre.NDecimales = 2;
+            this.txtNombre.Properties.Mask.EditMask = "([^0-9^a-z])+";
+            this.txtNombre.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtNombre.Size = new System.Drawing.Size(432, 20);
             this.txtNombre.TabIndex = 5;
             // 
@@ -155,7 +163,9 @@
             // 
             this.txtVendedorID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatVendedorBindingSource, "VendedorID", true));
             this.txtVendedorID.Location = new System.Drawing.Point(24, 55);
+            this.txtVendedorID.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtVendedorID.Name = "txtVendedorID";
+            this.txtVendedorID.NDecimales = 2;
             this.txtVendedorID.Size = new System.Drawing.Size(60, 20);
             this.txtVendedorID.TabIndex = 4;
             // 
@@ -253,10 +263,10 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit txtEmail;
-        private DevExpress.XtraEditors.TextEdit txtTelefono;
-        private DevExpress.XtraEditors.TextEdit txtNombre;
-        private DevExpress.XtraEditors.TextEdit txtVendedorID;
+        private UserControls.CTextEdit txtEmail;
+        private UserControls.CTextEdit txtTelefono;
+        private UserControls.CTextEdit txtNombre;
+        private UserControls.CTextEdit txtVendedorID;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;

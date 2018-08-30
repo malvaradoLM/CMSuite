@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtClave = new DevExpress.XtraEditors.TextEdit();
-            this.txtUsuario = new DevExpress.XtraEditors.TextEdit();
+            this.txtClave = new UserControls.CTextEdit();
+            this.txtUsuario = new UserControls.CTextEdit();
             this.btnLogin = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -151,8 +151,8 @@
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtClave;
-        private DevExpress.XtraEditors.TextEdit txtUsuario;
+        private UserControls.CTextEdit txtClave;
+        private UserControls.CTextEdit txtUsuario;
         private DevExpress.XtraEditors.SimpleButton btnLogin;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;

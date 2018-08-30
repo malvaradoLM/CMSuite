@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.txtCorreo = new DevExpress.XtraEditors.TextEdit();
-            this.txtTelefono = new DevExpress.XtraEditors.TextEdit();
-            this.txtRazonSocial = new DevExpress.XtraEditors.TextEdit();
-            this.txtNombre = new DevExpress.XtraEditors.TextEdit();
+            this.txtCorreo = new UserControls.CTextEdit();
+            this.txtTelefono = new UserControls.CTextEdit();
+            this.txtRazonSocial = new UserControls.CTextEdit();
+            this.txtNombre = new UserControls.CTextEdit();
             this.spCatProveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCatProveedorDS1 = new RedCoForm.DataSets.spCatProveedorDS();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new UserControls.CTextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -364,11 +364,11 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit txtCorreo;
-        private DevExpress.XtraEditors.TextEdit txtTelefono;
-        private DevExpress.XtraEditors.TextEdit txtRazonSocial;
-        private DevExpress.XtraEditors.TextEdit txtNombre;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private UserControls.CTextEdit txtCorreo;
+        private UserControls.CTextEdit txtTelefono;
+        private UserControls.CTextEdit txtRazonSocial;
+        private UserControls.CTextEdit txtNombre;
+        private UserControls.CTextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;

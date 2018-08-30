@@ -42,7 +42,7 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new UserControls.CTextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtNombre = new UserControls.CTextEdit();
             this.txtDireccion = new UserControls.CTextEdit();
@@ -303,7 +303,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private UserControls.CTextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private UserControls.CTextEdit txtRazonSocial;
         private UserControls.CTextEdit txtDireccion;

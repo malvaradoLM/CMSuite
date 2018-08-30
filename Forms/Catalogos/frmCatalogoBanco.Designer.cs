@@ -33,16 +33,16 @@ namespace RedCoForm.Forms.Catalogos
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoBanco));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
-            this.txtTelefono = new DevExpress.XtraEditors.TextEdit();
+            this.txtEmail = new UserControls.CTextEdit();
+            this.txtTelefono = new UserControls.CTextEdit();
             this.spCatBancoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCatBancoDS1 = new RedCoForm.DataSets.spCatBancoDS();
-            this.txtEjecutivo = new DevExpress.XtraEditors.TextEdit();
+            this.txtEjecutivo = new UserControls.CTextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtBanco = new DevExpress.XtraEditors.TextEdit();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.txtBanco = new UserControls.CTextEdit();
+            this.txtID = new UserControls.CTextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.colBancoID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -284,8 +284,8 @@ namespace RedCoForm.Forms.Catalogos
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit txtBanco;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private UserControls.CTextEdit txtBanco;
+        private UserControls.CTextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.BindingSource spCatBancoBindingSource;
@@ -294,9 +294,9 @@ namespace RedCoForm.Forms.Catalogos
         private DevExpress.XtraGrid.Columns.GridColumn colNombre;
         private DevExpress.XtraGrid.Columns.GridColumn colEjecutivo;
         private DevExpress.XtraGrid.Columns.GridColumn colTelefono;
-        private DevExpress.XtraEditors.TextEdit txtEmail;
-        private DevExpress.XtraEditors.TextEdit txtTelefono;
-        private DevExpress.XtraEditors.TextEdit txtEjecutivo;
+        private UserControls.CTextEdit txtEmail;
+        private UserControls.CTextEdit txtTelefono;
+        private UserControls.CTextEdit txtEjecutivo;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
