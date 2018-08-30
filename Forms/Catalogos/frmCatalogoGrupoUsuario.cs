@@ -66,17 +66,58 @@ namespace RedCoForm.Forms.Catalogos
         private void CargarPermisos()
         {
             treePermisos.Nodes.Clear();
-
+            int i = 0;
             TreeNode tNode;
             tNode = treePermisos.Nodes.Add("Persisos Comercializadora");
 
             RPSuiteServer.TPermiso[] arrayPermiso = RedCoForm.Data.DataModule.DataService.SelectPermisos();
 
 
+            int Padre = -1;
+            int Hijo = -1;
 
+            for (i = 0; i <= arrayPermiso.Length-1; i++)
+            {
+               // MessageBox.Show(arrayPermiso[i].PermisoID + " " + arrayPermiso[i].Descripcion, "RedPacifico", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            treePermisos.Nodes[0].Nodes[0].Nodes.Add("CLR");
+                if (arrayPermiso[i].PermisoID== arrayPermiso[i].PadreID)
+                {
+                    // es Padre
+                    Padre++;
+                    treePermisos.Nodes[0].Nodes.Add(arrayPermiso[i].Descripcion);
+                    treePermisos.Nodes[0].Nodes[Padre].ImageIndex = arrayPermiso[i].ImagenIndex;
+                    treePermisos.Nodes[0].Nodes[Padre].SelectedImageIndex = arrayPermiso[i].ImagenIndex;
+                    treePermisos.Nodes[0].Nodes[Padre].Tag = arrayPermiso[i].PermisoID;
+
+                    Hijo = -1;
+                  
+                }
+                else
+                {
+                    // es Hijo
+                    Hijo++;
+                    treePermisos.Nodes[0].Nodes[Padre].Nodes.Add(arrayPermiso[i].Descripcion);
+                    treePermisos.Nodes[0].Nodes[Padre].Nodes[Hijo].ImageIndex = arrayPermiso[i].ImagenIndex;
+                    treePermisos.Nodes[0].Nodes[Padre].Nodes[Hijo].SelectedImageIndex = arrayPermiso[i].ImagenIndex;
+                    treePermisos.Nodes[0].Nodes[Padre].Nodes[Hijo].Tag = arrayPermiso[i].PermisoID;
+                }
+
+            }
+
+            treePermisos.ExpandAll();
+            //            treePermisos.Nodes[0].Nodes[0].Nodes.Add("CLR");
 
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+         
+
+        }
+
+
+        // Recorremos el Árbol
+
+      
     }
 }

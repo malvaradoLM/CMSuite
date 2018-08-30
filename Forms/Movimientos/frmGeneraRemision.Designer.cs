@@ -268,9 +268,9 @@
             this.groupControl2.Controls.Add(this.labelControl5);
             this.groupControl2.Controls.Add(this.labelControl4);
             this.groupControl2.Controls.Add(this.labelControl3);
-            this.groupControl2.Location = new System.Drawing.Point(11, 414);
+            this.groupControl2.Location = new System.Drawing.Point(11, 509);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(721, 273);
+            this.groupControl2.Size = new System.Drawing.Size(772, 273);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "inf. para el Transporte";
             this.groupControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl2_Paint);
@@ -526,7 +526,7 @@
             this.groupBox1.Controls.Add(this.gridControl1);
             this.groupBox1.Location = new System.Drawing.Point(11, 124);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(727, 284);
+            this.groupBox1.Size = new System.Drawing.Size(727, 379);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inf. de Producto";
@@ -540,7 +540,7 @@
             this.gridControl1.Location = new System.Drawing.Point(6, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(715, 192);
+            this.gridControl1.Size = new System.Drawing.Size(715, 287);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
