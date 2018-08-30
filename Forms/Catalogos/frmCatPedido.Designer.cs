@@ -163,6 +163,7 @@
             // 
             // tcCatalogo
             // 
+            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.Size = new System.Drawing.Size(1057, 452);
             this.tcCatalogo.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtpPedido});
@@ -905,7 +906,7 @@
             // xtpPedido
             // 
             this.xtpPedido.Name = "xtpPedido";
-            this.xtpPedido.Size = new System.Drawing.Size(678, 282);
+            this.xtpPedido.Size = new System.Drawing.Size(1055, 427);
             this.xtpPedido.Text = "Pedidos";
             // 
             // frmCatPedido

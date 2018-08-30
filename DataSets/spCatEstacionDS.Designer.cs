@@ -368,6 +368,19 @@ namespace RedCoForm.DataSets {
             
             private global::System.Data.DataColumn columnEntregaCP;
             
+<<<<<<< HEAD
+            private global::System.Data.DataColumn columnNoCREE;
+            
+            private global::System.Data.DataColumn columnEntregaColonia;
+            
+            private global::System.Data.DataColumn columnAutoAbasto;
+            
+            private global::System.Data.DataColumn columnTransportistaID;
+            
+            private global::System.Data.DataColumn columnFleteID;
+            
+=======
+>>>>>>> 61dd40d44b4313b7ffc7e297585520a458b698a1
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public spCatEstacionDataTable() {
@@ -763,6 +776,49 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+<<<<<<< HEAD
+            public global::System.Data.DataColumn NoCREEColumn {
+                get {
+                    return this.columnNoCREE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn EntregaColoniaColumn {
+                get {
+                    return this.columnEntregaColonia;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn AutoAbastoColumn {
+                get {
+                    return this.columnAutoAbasto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn TransportistaIDColumn {
+                get {
+                    return this.columnTransportistaID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn FleteIDColumn {
+                get {
+                    return this.columnFleteID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+=======
+>>>>>>> 61dd40d44b4313b7ffc7e297585520a458b698a1
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -843,7 +899,16 @@ namespace RedCoForm.DataSets {
                         string EntregaCiudad, 
                         string EntregaMunicipio, 
                         string EntregaEstado, 
+<<<<<<< HEAD
+                        string EntregaCP, 
+                        string NoCREE, 
+                        string EntregaColonia, 
+                        byte[] AutoAbasto, 
+                        int TransportistaID, 
+                        int FleteID) {
+=======
                         string EntregaCP) {
+>>>>>>> 61dd40d44b4313b7ffc7e297585520a458b698a1
                 spCatEstacionRow rowspCatEstacionRow = ((spCatEstacionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         EstacionID,
@@ -890,7 +955,16 @@ namespace RedCoForm.DataSets {
                         EntregaCiudad,
                         EntregaMunicipio,
                         EntregaEstado,
+<<<<<<< HEAD
+                        EntregaCP,
+                        NoCREE,
+                        EntregaColonia,
+                        AutoAbasto,
+                        TransportistaID,
+                        FleteID};
+=======
                         EntregaCP};
+>>>>>>> 61dd40d44b4313b7ffc7e297585520a458b698a1
                 rowspCatEstacionRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowspCatEstacionRow);
                 return rowspCatEstacionRow;
@@ -965,6 +1039,14 @@ namespace RedCoForm.DataSets {
                 this.columnEntregaMunicipio = base.Columns["EntregaMunicipio"];
                 this.columnEntregaEstado = base.Columns["EntregaEstado"];
                 this.columnEntregaCP = base.Columns["EntregaCP"];
+<<<<<<< HEAD
+                this.columnNoCREE = base.Columns["NoCREE"];
+                this.columnEntregaColonia = base.Columns["EntregaColonia"];
+                this.columnAutoAbasto = base.Columns["AutoAbasto"];
+                this.columnTransportistaID = base.Columns["TransportistaID"];
+                this.columnFleteID = base.Columns["FleteID"];
+=======
+>>>>>>> 61dd40d44b4313b7ffc7e297585520a458b698a1
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1060,6 +1142,19 @@ namespace RedCoForm.DataSets {
                 base.Columns.Add(this.columnEntregaEstado);
                 this.columnEntregaCP = new global::System.Data.DataColumn("EntregaCP", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEntregaCP);
+<<<<<<< HEAD
+                this.columnNoCREE = new global::System.Data.DataColumn("NoCREE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNoCREE);
+                this.columnEntregaColonia = new global::System.Data.DataColumn("EntregaColonia", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEntregaColonia);
+                this.columnAutoAbasto = new global::System.Data.DataColumn("AutoAbasto", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAutoAbasto);
+                this.columnTransportistaID = new global::System.Data.DataColumn("TransportistaID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransportistaID);
+                this.columnFleteID = new global::System.Data.DataColumn("FleteID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFleteID);
+=======
+>>>>>>> 61dd40d44b4313b7ffc7e297585520a458b698a1
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("PK_spCatEstacion", new global::System.Data.DataColumn[] {
                                 this.columnEstacionID}, true));
                 this.columnEstacionID.AllowDBNull = false;
@@ -1090,6 +1185,11 @@ namespace RedCoForm.DataSets {
                 this.columnEntregaMunicipio.MaxLength = 50;
                 this.columnEntregaEstado.MaxLength = 50;
                 this.columnEntregaCP.MaxLength = 50;
+<<<<<<< HEAD
+                this.columnNoCREE.MaxLength = 50;
+                this.columnEntregaColonia.MaxLength = 100;
+=======
+>>>>>>> 61dd40d44b4313b7ffc7e297585520a458b698a1
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1932,6 +2032,89 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+<<<<<<< HEAD
+            public string NoCREE {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatEstacion.NoCREEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NoCREE\' in table \'spCatEstacion\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatEstacion.NoCREEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string EntregaColonia {
+                get {
+                    try {
+                        return ((string)(this[this.tablespCatEstacion.EntregaColoniaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EntregaColonia\' in table \'spCatEstacion\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatEstacion.EntregaColoniaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public byte[] AutoAbasto {
+                get {
+                    try {
+                        return ((byte[])(this[this.tablespCatEstacion.AutoAbastoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AutoAbasto\' in table \'spCatEstacion\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatEstacion.AutoAbastoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int TransportistaID {
+                get {
+                    try {
+                        return ((int)(this[this.tablespCatEstacion.TransportistaIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TransportistaID\' in table \'spCatEstacion\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatEstacion.TransportistaIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int FleteID {
+                get {
+                    try {
+                        return ((int)(this[this.tablespCatEstacion.FleteIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FleteID\' in table \'spCatEstacion\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespCatEstacion.FleteIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+=======
+>>>>>>> 61dd40d44b4313b7ffc7e297585520a458b698a1
             public bool IsNombreNull() {
                 return this.IsNull(this.tablespCatEstacion.NombreColumn);
             }
@@ -2421,6 +2604,69 @@ namespace RedCoForm.DataSets {
             public void SetEntregaCPNull() {
                 this[this.tablespCatEstacion.EntregaCPColumn] = global::System.Convert.DBNull;
             }
+<<<<<<< HEAD
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNoCREENull() {
+                return this.IsNull(this.tablespCatEstacion.NoCREEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNoCREENull() {
+                this[this.tablespCatEstacion.NoCREEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsEntregaColoniaNull() {
+                return this.IsNull(this.tablespCatEstacion.EntregaColoniaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetEntregaColoniaNull() {
+                this[this.tablespCatEstacion.EntregaColoniaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsAutoAbastoNull() {
+                return this.IsNull(this.tablespCatEstacion.AutoAbastoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetAutoAbastoNull() {
+                this[this.tablespCatEstacion.AutoAbastoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsTransportistaIDNull() {
+                return this.IsNull(this.tablespCatEstacion.TransportistaIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetTransportistaIDNull() {
+                this[this.tablespCatEstacion.TransportistaIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsFleteIDNull() {
+                return this.IsNull(this.tablespCatEstacion.FleteIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetFleteIDNull() {
+                this[this.tablespCatEstacion.FleteIDColumn] = global::System.Convert.DBNull;
+            }
+=======
+>>>>>>> 61dd40d44b4313b7ffc7e297585520a458b698a1
         }
         
         /// <summary>

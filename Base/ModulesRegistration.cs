@@ -48,7 +48,7 @@ namespace RedCoForm.Base
             
 
             //// Facturacion
-            //ModuleInfoCollection.Add("FacturacionContado", typeof(frmFacturaContado));
+            ModuleInfoCollection.Add("Facturacion", typeof(frmFacturacion));
 
 
             ////Almacen
