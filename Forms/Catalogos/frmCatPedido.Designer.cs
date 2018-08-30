@@ -62,7 +62,7 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtcDescuento = new DevExpress.XtraEditors.TextEdit();
+            this.txtcDescuento = new UserControls.CTextEdit();
             this.spDetallePedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detallePedidoDS1 = new RedCoForm.DataSets.DetallePedidoDS();
             this.lueCatVehiculo = new DevExpress.XtraEditors.LookUpEdit();
@@ -98,17 +98,17 @@
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.lueStatusPedido = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.txtFolio = new DevExpress.XtraEditors.TextEdit();
+            this.txtFolio = new UserControls.CTextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.lueUsuario = new DevExpress.XtraEditors.LookUpEdit();
-            this.txtSerie = new DevExpress.XtraEditors.TextEdit();
+            this.txtSerie = new UserControls.CTextEdit();
             this.lueEstacion = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTotal = new DevExpress.XtraEditors.TextEdit();
-            this.txtDescuento = new DevExpress.XtraEditors.TextEdit();
-            this.txtIEPS = new DevExpress.XtraEditors.TextEdit();
-            this.txtIVA = new DevExpress.XtraEditors.TextEdit();
-            this.txtSubtotal = new DevExpress.XtraEditors.TextEdit();
+            this.txtTotal = new UserControls.CTextEdit();
+            this.txtDescuento = new UserControls.CTextEdit();
+            this.txtIEPS = new UserControls.CTextEdit();
+            this.txtIVA = new UserControls.CTextEdit();
+            this.txtSubtotal = new UserControls.CTextEdit();
             this.xtpPedido = new DevExpress.XtraTab.XtraTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
@@ -163,7 +163,6 @@
             // 
             // tcCatalogo
             // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.Size = new System.Drawing.Size(1057, 452);
             this.tcCatalogo.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtpPedido});
@@ -906,7 +905,7 @@
             // xtpPedido
             // 
             this.xtpPedido.Name = "xtpPedido";
-            this.xtpPedido.Size = new System.Drawing.Size(1055, 427);
+            this.xtpPedido.Size = new System.Drawing.Size(678, 282);
             this.xtpPedido.Text = "Pedidos";
             // 
             // frmCatPedido
@@ -1010,16 +1009,16 @@
         private DevExpress.XtraGrid.Columns.GridColumn colNoItems;
         private DevExpress.XtraGrid.Columns.GridColumn colChoferID;
         private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.TextEdit txtTotal;
+        private UserControls.CTextEdit txtTotal;
         private DevExpress.XtraEditors.LookUpEdit lueEstacion;
-        private DevExpress.XtraEditors.TextEdit txtDescuento;
-        private DevExpress.XtraEditors.TextEdit txtIEPS;
+        private UserControls.CTextEdit txtDescuento;
+        private UserControls.CTextEdit txtIEPS;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.TextEdit txtIVA;
-        private DevExpress.XtraEditors.TextEdit txtSerie;
-        private DevExpress.XtraEditors.TextEdit txtSubtotal;
+        private UserControls.CTextEdit txtIVA;
+        private UserControls.CTextEdit txtSerie;
+        private UserControls.CTextEdit txtSubtotal;
         private DevExpress.XtraEditors.LookUpEdit lueUsuario;
-        private DevExpress.XtraEditors.TextEdit txtFolio;
+        private UserControls.CTextEdit txtFolio;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl12;
@@ -1033,7 +1032,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit txtcDescuento;
+        private UserControls.CTextEdit txtcDescuento;
         private DevExpress.XtraEditors.LookUpEdit lueCatVehiculo;
         private DevExpress.XtraEditors.LookUpEdit lueCatTerminal;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit lueColEstacion;

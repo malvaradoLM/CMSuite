@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new UserControls.CTextEdit();
+            this.textEdit1 = new UserControls.CTextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
@@ -142,8 +142,8 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private UserControls.CTextEdit textEdit2;
+        private UserControls.CTextEdit textEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
     }

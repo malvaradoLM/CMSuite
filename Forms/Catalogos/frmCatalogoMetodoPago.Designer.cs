@@ -36,8 +36,8 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
-            this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new UserControls.CTextEdit();
+            this.txtDescripcion = new UserControls.CTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -195,8 +195,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn colMetodoPagoID;
         private DevExpress.XtraGrid.Columns.GridColumn colDescripcion;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit txtDescripcion;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private UserControls.CTextEdit txtDescripcion;
+        private UserControls.CTextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
     }

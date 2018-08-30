@@ -368,6 +368,7 @@ namespace RedCoForm.DataSets {
             
             private global::System.Data.DataColumn columnEntregaCP;
             
+<<<<<<< HEAD
             private global::System.Data.DataColumn columnNoCREE;
             
             private global::System.Data.DataColumn columnEntregaColonia;
@@ -378,6 +379,8 @@ namespace RedCoForm.DataSets {
             
             private global::System.Data.DataColumn columnFleteID;
             
+=======
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public spCatEstacionDataTable() {
@@ -773,6 +776,7 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn NoCREEColumn {
                 get {
                     return this.columnNoCREE;
@@ -813,6 +817,8 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+=======
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -893,12 +899,16 @@ namespace RedCoForm.DataSets {
                         string EntregaCiudad, 
                         string EntregaMunicipio, 
                         string EntregaEstado, 
+<<<<<<< HEAD
                         string EntregaCP, 
                         string NoCREE, 
                         string EntregaColonia, 
                         byte[] AutoAbasto, 
                         int TransportistaID, 
                         int FleteID) {
+=======
+                        string EntregaCP) {
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
                 spCatEstacionRow rowspCatEstacionRow = ((spCatEstacionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         EstacionID,
@@ -945,12 +955,16 @@ namespace RedCoForm.DataSets {
                         EntregaCiudad,
                         EntregaMunicipio,
                         EntregaEstado,
+<<<<<<< HEAD
                         EntregaCP,
                         NoCREE,
                         EntregaColonia,
                         AutoAbasto,
                         TransportistaID,
                         FleteID};
+=======
+                        EntregaCP};
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
                 rowspCatEstacionRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowspCatEstacionRow);
                 return rowspCatEstacionRow;
@@ -1025,11 +1039,14 @@ namespace RedCoForm.DataSets {
                 this.columnEntregaMunicipio = base.Columns["EntregaMunicipio"];
                 this.columnEntregaEstado = base.Columns["EntregaEstado"];
                 this.columnEntregaCP = base.Columns["EntregaCP"];
+<<<<<<< HEAD
                 this.columnNoCREE = base.Columns["NoCREE"];
                 this.columnEntregaColonia = base.Columns["EntregaColonia"];
                 this.columnAutoAbasto = base.Columns["AutoAbasto"];
                 this.columnTransportistaID = base.Columns["TransportistaID"];
                 this.columnFleteID = base.Columns["FleteID"];
+=======
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1125,6 +1142,7 @@ namespace RedCoForm.DataSets {
                 base.Columns.Add(this.columnEntregaEstado);
                 this.columnEntregaCP = new global::System.Data.DataColumn("EntregaCP", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEntregaCP);
+<<<<<<< HEAD
                 this.columnNoCREE = new global::System.Data.DataColumn("NoCREE", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNoCREE);
                 this.columnEntregaColonia = new global::System.Data.DataColumn("EntregaColonia", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1135,6 +1153,8 @@ namespace RedCoForm.DataSets {
                 base.Columns.Add(this.columnTransportistaID);
                 this.columnFleteID = new global::System.Data.DataColumn("FleteID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFleteID);
+=======
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("PK_spCatEstacion", new global::System.Data.DataColumn[] {
                                 this.columnEstacionID}, true));
                 this.columnEstacionID.AllowDBNull = false;
@@ -1165,8 +1185,11 @@ namespace RedCoForm.DataSets {
                 this.columnEntregaMunicipio.MaxLength = 50;
                 this.columnEntregaEstado.MaxLength = 50;
                 this.columnEntregaCP.MaxLength = 50;
+<<<<<<< HEAD
                 this.columnNoCREE.MaxLength = 50;
                 this.columnEntregaColonia.MaxLength = 100;
+=======
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2009,6 +2032,7 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+<<<<<<< HEAD
             public string NoCREE {
                 get {
                     try {
@@ -2089,6 +2113,8 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+=======
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
             public bool IsNombreNull() {
                 return this.IsNull(this.tablespCatEstacion.NombreColumn);
             }
@@ -2578,6 +2604,7 @@ namespace RedCoForm.DataSets {
             public void SetEntregaCPNull() {
                 this[this.tablespCatEstacion.EntregaCPColumn] = global::System.Convert.DBNull;
             }
+<<<<<<< HEAD
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -2638,6 +2665,8 @@ namespace RedCoForm.DataSets {
             public void SetFleteIDNull() {
                 this[this.tablespCatEstacion.FleteIDColumn] = global::System.Convert.DBNull;
             }
+=======
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
         }
         
         /// <summary>

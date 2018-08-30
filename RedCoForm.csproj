@@ -46,8 +46,11 @@
     <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+<<<<<<< HEAD
     <Reference Include="DevExpress.Web.Bootstrap.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+=======
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
     <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -69,9 +72,6 @@
     <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.AspNet.FriendlyUrls">
-      <HintPath>..\CMWebSite\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
-    </Reference>
     <Reference Include="RemObjects.DataAbstract, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098, processorArchitecture=MSIL" />
     <Reference Include="RemObjects.DataAbstract.Async, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098, processorArchitecture=MSIL" />
     <Reference Include="RemObjects.SDK, Version=9.3.105.1345, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098, processorArchitecture=MSIL" />
@@ -81,6 +81,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+<<<<<<< HEAD
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Optimization">
@@ -88,6 +89,11 @@
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+=======
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+>>>>>>> f25a317bd357d2af028e1d60ed27e2f1084a93a6
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -304,12 +310,6 @@
     </Compile>
     <Compile Include="Forms\Catalogos\frmCatVehiculo.Designer.cs">
       <DependentUpon>frmCatVehiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Catalogos\frmFacturacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Catalogos\frmFacturacion.Designer.cs">
-      <DependentUpon>frmFacturacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Configuracion\frmCatalogoZona.cs">
       <SubType>Form</SubType>
@@ -538,9 +538,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Catalogos\frmCatVehiculo.resx">
       <DependentUpon>frmCatVehiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Catalogos\frmFacturacion.resx">
-      <DependentUpon>frmFacturacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Configuracion\frmCatalogoZona.resx">
       <DependentUpon>frmCatalogoZona.cs</DependentUpon>
@@ -847,10 +844,6 @@
     <ProjectReference Include="..\CMSuiteServer\RPSuiteServer.csproj">
       <Project>{a5453b9c-7e66-4da7-8ca0-2ae983896619}</Project>
       <Name>RPSuiteServer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CMWebSite\RedCoSite\RedCoSite.csproj">
-      <Project>{D5A4639E-FABA-4793-9822-FD8A7EA684EB}</Project>
-      <Name>RedCoSite</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

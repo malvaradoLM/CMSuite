@@ -39,11 +39,11 @@
             this.colBancoID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEstacionID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new UserControls.CTextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.chkdll = new DevExpress.XtraEditors.CheckEdit();
             this.lueBanco = new DevExpress.XtraEditors.LookUpEdit();
-            this.txtCuentaBancaria = new DevExpress.XtraEditors.TextEdit();
+            this.txtCuentaBancaria = new UserControls.CTextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.spCatBancoDS = new RedCoForm.DataSets.spCatBancoDS();
@@ -279,10 +279,10 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.CheckEdit chkdll;
         private DevExpress.XtraEditors.LookUpEdit lueBanco;
-        private DevExpress.XtraEditors.TextEdit txtCuentaBancaria;
+        private UserControls.CTextEdit txtCuentaBancaria;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private UserControls.CTextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DataSets.spCatBancoDS spCatBancoDS;
     }

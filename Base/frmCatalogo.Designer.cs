@@ -34,7 +34,7 @@
             this.gvCatalogo = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gcBusqueda = new DevExpress.XtraEditors.GroupControl();
             this.btnBuscar = new DevExpress.XtraEditors.SimpleButton();
-            this.txtDatosBusqueda = new DevExpress.XtraEditors.TextEdit();
+            this.txtDatosBusqueda = new UserControls.CTextEdit();
             this.lblDatosBusqueda = new DevExpress.XtraEditors.LabelControl();
             this.tpDatos = new DevExpress.XtraTab.XtraTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
@@ -165,7 +165,7 @@
         public DevExpress.XtraTab.XtraTabControl tcCatalogo;
         public DevExpress.XtraEditors.GroupControl gcBusqueda;
         public DevExpress.XtraEditors.SimpleButton btnBuscar;
-        public DevExpress.XtraEditors.TextEdit txtDatosBusqueda;
+        public UserControls.CTextEdit txtDatosBusqueda;
         public DevExpress.XtraEditors.LabelControl lblDatosBusqueda;
         public DevExpress.XtraTab.XtraTabPage tpBuscar;
         public DevExpress.XtraTab.XtraTabPage tpDatos;
