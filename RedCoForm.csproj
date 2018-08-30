@@ -89,6 +89,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UserControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\UserControls.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\ActionKeys.cs" />
@@ -141,6 +145,12 @@
     </Compile>
     <Compile Include="Controles\AgregarRenglon.Designer.cs">
       <DependentUpon>AgregarRenglon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\CTextBox.Designer.cs">
+      <DependentUpon>CTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSets\spCatTipoDocumentoDS.cs">
       <DependentUpon>spCatTipoDocumentoDS.xsd</DependentUpon>
@@ -462,6 +472,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\AgregarRenglon.resx">
       <DependentUpon>AgregarRenglon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\CTextBox.resx">
+      <DependentUpon>CTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Data\DataModule.resx">
       <DependentUpon>DataModule.cs</DependentUpon>
@@ -845,6 +858,8 @@
   <ItemGroup>
     <None Include="Resources\table-row-new2.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DLL\UserControls.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

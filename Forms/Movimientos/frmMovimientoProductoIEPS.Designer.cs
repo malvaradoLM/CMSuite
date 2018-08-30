@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.dgcProductoIEPS = new DevExpress.XtraGrid.GridControl();
             this.bgvProductoIEPS = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
             this.gbEstacion = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -37,7 +36,7 @@
             this.gbDiesel = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gbMisc = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.spProductoIEPSDS1 = new RedCoForm.DataSets.spProductoIEPSDS();
-            this.spProductoIEPSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spProductoIEPSBindingSource = new System.Windows.Forms.BindingSource();
             this.label1 = new System.Windows.Forms.Label();
             this.dateFecha = new DevExpress.XtraEditors.DateEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -72,7 +71,7 @@
             this.dgcProductoIEPS.Location = new System.Drawing.Point(11, 62);
             this.dgcProductoIEPS.MainView = this.bgvProductoIEPS;
             this.dgcProductoIEPS.Name = "dgcProductoIEPS";
-            this.dgcProductoIEPS.Size = new System.Drawing.Size(688, 176);
+            this.dgcProductoIEPS.Size = new System.Drawing.Size(688, 71);
             this.dgcProductoIEPS.TabIndex = 0;
             this.dgcProductoIEPS.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.bgvProductoIEPS});
