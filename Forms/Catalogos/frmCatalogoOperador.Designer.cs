@@ -40,8 +40,8 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtOperadorID = new DevExpress.XtraEditors.TextEdit();
-            this.txtNombre = new DevExpress.XtraEditors.TextEdit();
+            this.txtOperadorID = new UserControls.CTextEdit();
+            this.txtNombre = new UserControls.CTextEdit();
             this.lueTransportista = new DevExpress.XtraEditors.LookUpEdit();
             this.chkStatus = new DevExpress.XtraEditors.CheckEdit();
             this.spCatTransportistaDS = new RedCoForm.DataSets.spCatTransportistaDS();
@@ -276,8 +276,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTransportistaID;
         private DevExpress.XtraEditors.CheckEdit chkStatus;
         private DevExpress.XtraEditors.LookUpEdit lueTransportista;
-        private DevExpress.XtraEditors.TextEdit txtNombre;
-        private DevExpress.XtraEditors.TextEdit txtOperadorID;
+        private UserControls.CTextEdit txtNombre;
+        private UserControls.CTextEdit txtOperadorID;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;

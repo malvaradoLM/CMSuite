@@ -32,9 +32,9 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtObservacion = new System.Windows.Forms.TextBox();
-            this.txtAdimensional = new DevExpress.XtraEditors.TextEdit();
-            this.txtOctanos = new DevExpress.XtraEditors.TextEdit();
-            this.txtAzufre = new DevExpress.XtraEditors.TextEdit();
+            this.txtAdimensional = new UserControls.CTextEdit();
+            this.txtOctanos = new UserControls.CTextEdit();
+            this.txtAzufre = new UserControls.CTextEdit();
             this.lueProductoID = new DevExpress.XtraEditors.LookUpEdit();
             this.lueTerminal = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
@@ -43,10 +43,10 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtPesoCarga = new DevExpress.XtraEditors.TextEdit();
-            this.txtNoMuestra = new DevExpress.XtraEditors.TextEdit();
+            this.txtPesoCarga = new UserControls.CTextEdit();
+            this.txtNoMuestra = new UserControls.CTextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMuestraID = new DevExpress.XtraEditors.TextEdit();
+            this.txtMuestraID = new UserControls.CTextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.spCatTerminalDS = new RedCoForm.DataSets.spCatTerminalDS();
             this.button1 = new System.Windows.Forms.Button();
@@ -323,9 +323,9 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit txtAdimensional;
-        private DevExpress.XtraEditors.TextEdit txtOctanos;
-        private DevExpress.XtraEditors.TextEdit txtAzufre;
+        private UserControls.CTextEdit txtAdimensional;
+        private UserControls.CTextEdit txtOctanos;
+        private UserControls.CTextEdit txtAzufre;
         private DevExpress.XtraEditors.LookUpEdit lueProductoID;
         private DevExpress.XtraEditors.LookUpEdit lueTerminal;
         private DevExpress.XtraEditors.LabelControl labelControl8;
@@ -334,10 +334,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit txtPesoCarga;
-        private DevExpress.XtraEditors.TextEdit txtNoMuestra;
+        private UserControls.CTextEdit txtPesoCarga;
+        private UserControls.CTextEdit txtNoMuestra;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtMuestraID;
+        private UserControls.CTextEdit txtMuestraID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DataSets.spCatTerminalDS spCatTerminalDS;
         private System.Windows.Forms.Button button1;

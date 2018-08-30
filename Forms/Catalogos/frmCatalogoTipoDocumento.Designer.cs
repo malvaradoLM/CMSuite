@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoTipoDocumento));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
+            this.txtDescripcion = new UserControls.CTextEdit();
             this.spCatTipoDocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCatTipoDocumentoDS1 = new RedCoForm.DataSets.spCatTipoDocumentoDS();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new UserControls.CTextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.colTipoDocumentoID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -185,8 +185,8 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit txtDescripcion;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private UserControls.CTextEdit txtDescripcion;
+        private UserControls.CTextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.BindingSource spCatTipoDocumentoBindingSource;

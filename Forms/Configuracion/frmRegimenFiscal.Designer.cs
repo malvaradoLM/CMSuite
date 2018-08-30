@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.txtCodigoSAT = new DevExpress.XtraEditors.TextEdit();
-            this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.txtCodigoSAT = new UserControls.CTextEdit();
+            this.txtDescripcion = new UserControls.CTextEdit();
+            this.txtID = new UserControls.CTextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -163,9 +163,9 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit txtCodigoSAT;
-        private DevExpress.XtraEditors.TextEdit txtDescripcion;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private UserControls.CTextEdit txtCodigoSAT;
+        private UserControls.CTextEdit txtDescripcion;
+        private UserControls.CTextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;

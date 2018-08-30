@@ -95,7 +95,7 @@ namespace RedCoForm.Forms.Catalogos
         private void txtDetalleVolumen_EditValueChanging(object sender, EventArgs e)
         {
             double Volumen;
-            double.TryParse(((DevExpress.XtraEditors.TextEdit)sender).Text, out Volumen);
+            double.TryParse(((UserControls.CTextEdit)sender).Text, out Volumen);
             CalcularTotales(Volumen);
             gvDetallePedido.UpdateTotalSummary();
         }

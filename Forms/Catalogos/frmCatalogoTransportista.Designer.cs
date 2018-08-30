@@ -39,14 +39,14 @@
             this.colstatus = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.chkStatus = new DevExpress.XtraEditors.CheckEdit();
-            this.txtDireccion = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtRazonSocial = new DevExpress.XtraEditors.TextEdit();
-            this.txtNombre = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new UserControls.CTextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.txtNombre = new UserControls.CTextEdit();
+            this.txtDireccion = new UserControls.CTextEdit();
+            this.txtRazonSocial = new UserControls.CTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -62,10 +62,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
@@ -161,11 +161,11 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.chkStatus);
-            this.groupControl1.Controls.Add(this.txtDireccion);
-            this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.txtRazonSocial);
+            this.groupControl1.Controls.Add(this.txtDireccion);
             this.groupControl1.Controls.Add(this.txtNombre);
+            this.groupControl1.Controls.Add(this.chkStatus);
+            this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.txtID);
@@ -185,15 +185,6 @@
             this.chkStatus.Size = new System.Drawing.Size(75, 19);
             this.chkStatus.TabIndex = 9;
             // 
-            // txtDireccion
-            // 
-            this.txtDireccion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTransportistaBindingSource, "Direccion", true));
-            this.txtDireccion.Location = new System.Drawing.Point(23, 200);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDireccion.Size = new System.Drawing.Size(459, 20);
-            this.txtDireccion.TabIndex = 8;
-            // 
             // labelControl4
             // 
             this.labelControl4.Location = new System.Drawing.Point(23, 181);
@@ -201,24 +192,6 @@
             this.labelControl4.Size = new System.Drawing.Size(43, 13);
             this.labelControl4.TabIndex = 6;
             this.labelControl4.Text = "Direccion";
-            // 
-            // txtRazonSocial
-            // 
-            this.txtRazonSocial.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTransportistaBindingSource, "RazonSocial", true));
-            this.txtRazonSocial.Location = new System.Drawing.Point(23, 155);
-            this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtRazonSocial.Size = new System.Drawing.Size(459, 20);
-            this.txtRazonSocial.TabIndex = 5;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTransportistaBindingSource, "Nombre", true));
-            this.txtNombre.Location = new System.Drawing.Point(23, 110);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNombre.Size = new System.Drawing.Size(459, 20);
-            this.txtNombre.TabIndex = 4;
             // 
             // labelControl3
             // 
@@ -253,6 +226,36 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID";
             // 
+            // txtNombre
+            // 
+            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTransportistaBindingSource, "Nombre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtNombre.Location = new System.Drawing.Point(23, 110);
+            this.txtNombre.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.NDecimales = 2;
+            this.txtNombre.Size = new System.Drawing.Size(477, 20);
+            this.txtNombre.TabIndex = 12;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTransportistaBindingSource, "Direccion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtDireccion.Location = new System.Drawing.Point(23, 200);
+            this.txtDireccion.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.NDecimales = 2;
+            this.txtDireccion.Size = new System.Drawing.Size(477, 20);
+            this.txtDireccion.TabIndex = 13;
+            // 
+            // txtRazonSocial
+            // 
+            this.txtRazonSocial.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTransportistaBindingSource, "RazonSocial", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtRazonSocial.Location = new System.Drawing.Point(23, 155);
+            this.txtRazonSocial.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.NDecimales = 2;
+            this.txtRazonSocial.Size = new System.Drawing.Size(477, 20);
+            this.txtRazonSocial.TabIndex = 14;
+            // 
             // frmCatalogoTransportista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,10 +280,10 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkStatus.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -296,13 +299,13 @@
         private DevExpress.XtraGrid.Columns.GridColumn colstatus;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.CheckEdit chkStatus;
-        private DevExpress.XtraEditors.TextEdit txtDireccion;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit txtRazonSocial;
-        private DevExpress.XtraEditors.TextEdit txtNombre;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private UserControls.CTextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private UserControls.CTextEdit txtRazonSocial;
+        private UserControls.CTextEdit txtDireccion;
+        private UserControls.CTextEdit txtNombre;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RedCoForm.Class
 {
-    class GlobalVar
+    public class GlobalVar
     {
 
         public static int _IDEstacion;
@@ -18,7 +18,18 @@ namespace RedCoForm.Class
 
         public static string[] DiasSemana;
 
-      
+        public enum CMask
+        {
+            None = 0,
+            Phone = 1,
+            Numeric = 2,
+            String = 3,
+            Currency = 4,
+            Email = 5,
+            RFC = 6,
+            Percentaje=7
+        };
+
         public static  void CargarEstados()
         {
             Estados = new string[32];

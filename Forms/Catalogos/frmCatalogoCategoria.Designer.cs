@@ -1,4 +1,4 @@
-﻿namespace RedCoForm.Forms.Catalogos
+﻿  namespace RedCoForm.Forms.Catalogos
 {
     partial class frmCatalogoCategoria
     {
@@ -32,8 +32,8 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
-            this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new UserControls.CTextEdit();
+            this.txtDescripcion = new UserControls.CTextEdit();
             this.spCatCategoriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spCatCategoriaDS = new RedCoForm.DataSets.spCatCategoriaDS();
             this.colCategoriaID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -189,8 +189,8 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit txtDescripcion;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private UserControls.CTextEdit txtDescripcion;
+        private UserControls.CTextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.BindingSource spCatCategoriaBindingSource;
