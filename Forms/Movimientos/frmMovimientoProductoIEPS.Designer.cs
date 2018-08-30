@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.dgcProductoIEPS = new DevExpress.XtraGrid.GridControl();
             this.bgvProductoIEPS = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
-            this.spProductoIEPSDS1 = new RedCoForm.DataSets.spProductoIEPSDS();
-            this.spProductoIEPSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.gbEstacion = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gb87 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gb91 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gbDiesel = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gbMisc = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.spProductoIEPSDS1 = new RedCoForm.DataSets.spProductoIEPSDS();
+            this.spProductoIEPSBindingSource = new System.Windows.Forms.BindingSource();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateFecha = new DevExpress.XtraEditors.DateEdit();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tbControl)).BeginInit();
             this.tbControl.SuspendLayout();
             this.tpDatos.SuspendLayout();
@@ -48,8 +48,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bgvProductoIEPS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spProductoIEPSDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spProductoIEPSBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateFecha.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateFecha.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tbControl
@@ -58,7 +58,8 @@
             // 
             // tpDatos
             // 
-            this.tpDatos.Controls.Add(this.dateEdit1);
+            this.tpDatos.Controls.Add(this.simpleButton1);
+            this.tpDatos.Controls.Add(this.dateFecha);
             this.tpDatos.Controls.Add(this.label1);
             this.tpDatos.Controls.Add(this.dgcProductoIEPS);
             this.tpDatos.Size = new System.Drawing.Size(710, 451);
@@ -70,7 +71,7 @@
             this.dgcProductoIEPS.Location = new System.Drawing.Point(11, 62);
             this.dgcProductoIEPS.MainView = this.bgvProductoIEPS;
             this.dgcProductoIEPS.Name = "dgcProductoIEPS";
-            this.dgcProductoIEPS.Size = new System.Drawing.Size(688, 386);
+            this.dgcProductoIEPS.Size = new System.Drawing.Size(688, 71);
             this.dgcProductoIEPS.TabIndex = 0;
             this.dgcProductoIEPS.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.bgvProductoIEPS});
@@ -87,37 +88,6 @@
             this.bgvProductoIEPS.CustomizationFormBounds = new System.Drawing.Rectangle(562, 500, 204, 209);
             this.bgvProductoIEPS.GridControl = this.dgcProductoIEPS;
             this.bgvProductoIEPS.Name = "bgvProductoIEPS";
-            // 
-            // spProductoIEPSDS1
-            // 
-            this.spProductoIEPSDS1.DataSetName = "spProductoIEPSDS";
-            this.spProductoIEPSDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // spProductoIEPSBindingSource
-            // 
-            this.spProductoIEPSBindingSource.DataMember = "spProductoIEP";
-            this.spProductoIEPSBindingSource.DataSource = this.spProductoIEPSDS1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Aplicar en Fecha:";
-            // 
-            // dateEdit1
-            // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(11, 24);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(100, 20);
-            this.dateEdit1.TabIndex = 2;
             // 
             // gbEstacion
             // 
@@ -150,6 +120,46 @@
             this.gbMisc.Name = "gbMisc";
             this.gbMisc.VisibleIndex = 4;
             // 
+            // spProductoIEPSDS1
+            // 
+            this.spProductoIEPSDS1.DataSetName = "spProductoIEPSDS";
+            this.spProductoIEPSDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // spProductoIEPSBindingSource
+            // 
+            this.spProductoIEPSBindingSource.DataMember = "spProductoIEP";
+            this.spProductoIEPSBindingSource.DataSource = this.spProductoIEPSDS1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Aplicar en Fecha:";
+            // 
+            // dateFecha
+            // 
+            this.dateFecha.EditValue = null;
+            this.dateFecha.Location = new System.Drawing.Point(11, 24);
+            this.dateFecha.Name = "dateFecha";
+            this.dateFecha.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateFecha.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateFecha.Size = new System.Drawing.Size(100, 20);
+            this.dateFecha.TabIndex = 2;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(320, 27);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.TabIndex = 3;
+            this.simpleButton1.Text = "Aplicar";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
             // frmMovimientoProductoIEPS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,8 +175,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bgvProductoIEPS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spProductoIEPSDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spProductoIEPSBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateFecha.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateFecha.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -177,12 +187,13 @@
         private DataSets.spProductoIEPSDS spProductoIEPSDS1;
         private System.Windows.Forms.BindingSource spProductoIEPSBindingSource;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridView bgvProductoIEPS;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.DateEdit dateFecha;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gbEstacion;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gb87;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gb91;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gbDiesel;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gbMisc;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

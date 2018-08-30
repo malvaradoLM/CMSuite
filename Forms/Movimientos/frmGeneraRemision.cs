@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -14,6 +15,9 @@ namespace RedCoForm.Forms.Movimientos
     public partial class frmGeneraRemision : RedCoForm.Base.frmEstructura
     {
 
+        public int TerminalPrimaria=0;
+        public int EstacionSeleccionada = 0;
+        RPSuiteServer.TEstacion datosestacion = new RPSuiteServer.TEstacion();
 
         private List<DataParameter> Params = new List<DataParameter>();
 
@@ -24,7 +28,7 @@ namespace RedCoForm.Forms.Movimientos
 
             CargarTerminal();
 
-            // CargarEstacion();
+             CargarEstacion();
             CargarTransportista();
 
             CargarOperador();
@@ -88,11 +92,24 @@ namespace RedCoForm.Forms.Movimientos
             Params.Clear();
 
             Data.DataModule.ParamByName(Params, "Datos", "");
+
+       
+
+           // gvPedidos.DataSource = dt.Select("StatusID=" + 1 + " or StatusID =" + 3);
+
             Data.DataModule.FillDataSet(spCatEstacionDS, "spCatEstacion", Params.ToArray());
 
-            dt = spCatTerminalDS.Tables["spCatEstacion"];
+            dt = spCatEstacionDS.Tables["spCatEstacion"];
+
+            //DataRow[] dr = dt.Select("TerminalPrimaria=" + TerminalPrimaria);
+            //dt = dr.CopyToDataTable();
+
             Estacion = c.FillList(dt);
-            bs.DataSource = Estacion;
+
+
+          
+
+            bs.DataSource = Estacion ;
 
             this.lueEstacion.Properties.DataSource = bs.List;
             this.lueEstacion.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("EstacionID", "ID"));
@@ -100,7 +117,7 @@ namespace RedCoForm.Forms.Movimientos
             this.lueEstacion.Properties.DisplayMember = "Nombre";
             this.lueEstacion.Properties.ValueMember = "EstacionID";
 
-            this.lueTerminal.Properties.DropDownRows = Estacion.Count;
+            this.lueEstacion.Properties.DropDownRows = Estacion.Count;
         }
 
 
@@ -232,6 +249,44 @@ namespace RedCoForm.Forms.Movimientos
         private void groupControl2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lueTerminal_EnabledChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void lueEstacion_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+           
+          
+
+        }
+
+        private void lueTerminal_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+
+        }
+
+        private void lueEstacion_EditValueChanged(object sender, EventArgs e)
+        {
+            //Cuando Seleccionamos UnaEstacion Cargar Los Datos de la Estacion
+            DevExpress.XtraEditors.LookUpEdit editor = (sender as DevExpress.XtraEditors.LookUpEdit);
+
+            EstacionSeleccionada = int.Parse(editor.EditValue.ToString());
+            // MessageBox.Show("Estacion Seleccionada " + EstacionSeleccionada, "Ejemplo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            datosestacion = Data.DataModule.DataService.GetEstacion(EstacionSeleccionada.ToString());
+
+            if (datosestacion.EstacionID != -1)
+            {
+                txtNombreEstacion.Text = EstacionSeleccionada.ToString() + " - "+ datosestacion.RazonSocial;
+                txtLugarEntrega.Text = datosestacion.EntregaCalle + " "+ datosestacion.EntregaNoExterior + " " + datosestacion.EntregaNoInterior;
+                txtLugarEntrega.Text = txtLugarEntrega.Text + " " + datosestacion.EntregaColonia;
+            }
+            else
+            {
+                MessageBox.Show("Error al Cargar Estacion", "RedPacifico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -33,8 +33,8 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.lblPermisoCRE = new DevExpress.XtraEditors.LabelControl();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-            this.txtLugarEntrega = new DevExpress.XtraEditors.TextEdit();
-            this.txtNombreEstacion = new DevExpress.XtraEditors.TextEdit();
+            this.txtLugarEntrega = new UserControls.CTextEdit();
+            this.txtNombreEstacion = new UserControls.CTextEdit();
             this.lueEstacion = new DevExpress.XtraEditors.LookUpEdit();
             this.lueTerminal = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -44,16 +44,16 @@
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.lueMuestraPemex = new DevExpress.XtraEditors.LookUpEdit();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDatosOperativos = new DevExpress.XtraEditors.TextEdit();
+            this.txtDatosOperativos = new UserControls.CTextEdit();
             this.dtFechaOrden = new DevExpress.XtraEditors.DateEdit();
-            this.txtNoOrden = new DevExpress.XtraEditors.TextEdit();
+            this.txtNoOrden = new UserControls.CTextEdit();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.lueNombreOperador = new DevExpress.XtraEditors.LookUpEdit();
             this.txtFechaCertificado = new DevExpress.XtraEditors.DateEdit();
-            this.txtCertificado = new DevExpress.XtraEditors.TextEdit();
-            this.txtPlacas = new DevExpress.XtraEditors.TextEdit();
+            this.txtCertificado = new UserControls.CTextEdit();
+            this.txtPlacas = new UserControls.CTextEdit();
             this.lueVehiculo = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -61,10 +61,10 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.lueTransportista = new DevExpress.XtraEditors.LookUpEdit();
-            this.txtCantidad20Grados = new DevExpress.XtraEditors.TextEdit();
-            this.txtCantidadAlNat = new DevExpress.XtraEditors.TextEdit();
-            this.txtTemperatura = new DevExpress.XtraEditors.TextEdit();
-            this.txtSellos = new DevExpress.XtraEditors.TextEdit();
+            this.txtCantidad20Grados = new UserControls.CTextEdit();
+            this.txtCantidadAlNat = new UserControls.CTextEdit();
+            this.txtTemperatura = new UserControls.CTextEdit();
+            this.txtSellos = new UserControls.CTextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -89,10 +89,10 @@
             this.colTerminalID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colVehiculoID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.spCatTerminalDS = new RedCoForm.DataSets.spCatTerminalDS();
-            this.spCatEstacionDS = new RedCoForm.DataSets.spCatEstacionDS();
             this.spCatTransportistaDS = new RedCoForm.DataSets.spCatTransportistaDS();
             this.spCatOperadorDS1 = new RedCoForm.DataSets.spCatOperadorDS();
             this.spCatVehiculoDS = new RedCoForm.DataSets.spCatVehiculoDS();
+            this.spCatEstacionDS = new RedCoForm.DataSets.spCatEstacionDS();
             ((System.ComponentModel.ISupportInitialize)(this.tbControl)).BeginInit();
             this.tbControl.SuspendLayout();
             this.tpDatos.SuspendLayout();
@@ -128,10 +128,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.spDetalleRemisionDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTerminalDS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTransportistaDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatOperadorDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatVehiculoDS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS)).BeginInit();
             this.SuspendLayout();
             // 
             // tbControl
@@ -184,14 +184,20 @@
             // txtLugarEntrega
             // 
             this.txtLugarEntrega.Location = new System.Drawing.Point(89, 82);
+            this.txtLugarEntrega.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtLugarEntrega.Name = "txtLugarEntrega";
+            this.txtLugarEntrega.NDecimales = 2;
+            this.txtLugarEntrega.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtLugarEntrega.Size = new System.Drawing.Size(571, 20);
             this.txtLugarEntrega.TabIndex = 5;
             // 
             // txtNombreEstacion
             // 
             this.txtNombreEstacion.Location = new System.Drawing.Point(249, 51);
+            this.txtNombreEstacion.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtNombreEstacion.Name = "txtNombreEstacion";
+            this.txtNombreEstacion.NDecimales = 2;
+            this.txtNombreEstacion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombreEstacion.Size = new System.Drawing.Size(411, 20);
             this.txtNombreEstacion.TabIndex = 4;
             // 
@@ -203,6 +209,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lueEstacion.Size = new System.Drawing.Size(146, 20);
             this.lueEstacion.TabIndex = 3;
+            this.lueEstacion.EditValueChanged += new System.EventHandler(this.lueEstacion_EditValueChanged);
+            this.lueEstacion.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.lueEstacion_EditValueChanging);
             // 
             // lueTerminal
             // 
@@ -212,6 +220,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lueTerminal.Size = new System.Drawing.Size(260, 20);
             this.lueTerminal.TabIndex = 2;
+            this.lueTerminal.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.lueTerminal_EditValueChanging);
+            this.lueTerminal.EnabledChanged += new System.EventHandler(this.lueTerminal_EnabledChanged);
             // 
             // labelControl2
             // 
@@ -232,7 +242,8 @@
             // 
             // groupControl2
             // 
-            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl2.Controls.Add(this.memoEdit1);
             this.groupControl2.Controls.Add(this.labelControl16);
             this.groupControl2.Controls.Add(this.lueMuestraPemex);
@@ -263,9 +274,9 @@
             this.groupControl2.Controls.Add(this.labelControl5);
             this.groupControl2.Controls.Add(this.labelControl4);
             this.groupControl2.Controls.Add(this.labelControl3);
-            this.groupControl2.Location = new System.Drawing.Point(26, 374);
+            this.groupControl2.Location = new System.Drawing.Point(11, 414);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(696, 257);
+            this.groupControl2.Size = new System.Drawing.Size(721, 273);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "inf. para el Transporte";
             this.groupControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl2_Paint);
@@ -306,7 +317,10 @@
             // txtDatosOperativos
             // 
             this.txtDatosOperativos.Location = new System.Drawing.Point(253, 133);
+            this.txtDatosOperativos.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtDatosOperativos.Name = "txtDatosOperativos";
+            this.txtDatosOperativos.NDecimales = 2;
+            this.txtDatosOperativos.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDatosOperativos.Size = new System.Drawing.Size(401, 20);
             this.txtDatosOperativos.TabIndex = 25;
             // 
@@ -325,7 +339,10 @@
             // txtNoOrden
             // 
             this.txtNoOrden.Location = new System.Drawing.Point(5, 133);
+            this.txtNoOrden.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtNoOrden.Name = "txtNoOrden";
+            this.txtNoOrden.NDecimales = 2;
+            this.txtNoOrden.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNoOrden.Size = new System.Drawing.Size(147, 20);
             this.txtNoOrden.TabIndex = 23;
             // 
@@ -377,14 +394,20 @@
             // txtCertificado
             // 
             this.txtCertificado.Location = new System.Drawing.Point(253, 88);
+            this.txtCertificado.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCertificado.Name = "txtCertificado";
+            this.txtCertificado.NDecimales = 2;
+            this.txtCertificado.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCertificado.Size = new System.Drawing.Size(90, 20);
             this.txtCertificado.TabIndex = 17;
             // 
             // txtPlacas
             // 
             this.txtPlacas.Location = new System.Drawing.Point(158, 88);
+            this.txtPlacas.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtPlacas.Name = "txtPlacas";
+            this.txtPlacas.NDecimales = 2;
+            this.txtPlacas.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPlacas.Size = new System.Drawing.Size(89, 20);
             this.txtPlacas.TabIndex = 16;
             // 
@@ -449,28 +472,46 @@
             // txtCantidad20Grados
             // 
             this.txtCantidad20Grados.Location = new System.Drawing.Point(358, 43);
+            this.txtCantidad20Grados.MaskType = UserControls.GlobalVar.CMask.Numeric;
             this.txtCantidad20Grados.Name = "txtCantidad20Grados";
+            this.txtCantidad20Grados.NDecimales = 2;
+            this.txtCantidad20Grados.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCantidad20Grados.Properties.Mask.EditMask = "n2";
+            this.txtCantidad20Grados.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtCantidad20Grados.Size = new System.Drawing.Size(90, 20);
             this.txtCantidad20Grados.TabIndex = 8;
             // 
             // txtCantidadAlNat
             // 
             this.txtCantidadAlNat.Location = new System.Drawing.Point(253, 43);
+            this.txtCantidadAlNat.MaskType = UserControls.GlobalVar.CMask.Numeric;
             this.txtCantidadAlNat.Name = "txtCantidadAlNat";
+            this.txtCantidadAlNat.NDecimales = 2;
+            this.txtCantidadAlNat.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCantidadAlNat.Properties.Mask.EditMask = "n2";
+            this.txtCantidadAlNat.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtCantidadAlNat.Size = new System.Drawing.Size(90, 20);
             this.txtCantidadAlNat.TabIndex = 7;
             // 
             // txtTemperatura
             // 
             this.txtTemperatura.Location = new System.Drawing.Point(158, 43);
+            this.txtTemperatura.MaskType = UserControls.GlobalVar.CMask.Numeric;
             this.txtTemperatura.Name = "txtTemperatura";
+            this.txtTemperatura.NDecimales = 1;
+            this.txtTemperatura.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtTemperatura.Properties.Mask.EditMask = "n1";
+            this.txtTemperatura.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtTemperatura.Size = new System.Drawing.Size(89, 20);
             this.txtTemperatura.TabIndex = 6;
             // 
             // txtSellos
             // 
             this.txtSellos.Location = new System.Drawing.Point(5, 43);
+            this.txtSellos.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtSellos.Name = "txtSellos";
+            this.txtSellos.NDecimales = 2;
+            this.txtSellos.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSellos.Size = new System.Drawing.Size(147, 20);
             this.txtSellos.TabIndex = 5;
             // 
@@ -516,12 +557,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.gridControl1);
             this.groupBox1.Location = new System.Drawing.Point(11, 124);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(906, 222);
+            this.groupBox1.Size = new System.Drawing.Size(727, 284);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inf. de Producto";
@@ -535,7 +576,7 @@
             this.gridControl1.Location = new System.Drawing.Point(6, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(894, 130);
+            this.gridControl1.Size = new System.Drawing.Size(715, 192);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -668,11 +709,6 @@
             this.spCatTerminalDS.DataSetName = "spCatTerminalDS";
             this.spCatTerminalDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // spCatEstacionDS
-            // 
-            this.spCatEstacionDS.DataSetName = "6";
-            this.spCatEstacionDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // spCatTransportistaDS
             // 
             this.spCatTransportistaDS.DataSetName = "spCatTransportistaDS";
@@ -687,6 +723,11 @@
             // 
             this.spCatVehiculoDS.DataSetName = "spCatVehiculoDS";
             this.spCatVehiculoDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // spCatEstacionDS
+            // 
+            this.spCatEstacionDS.DataSetName = "spCatEstacionDS";
+            this.spCatEstacionDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // frmGeneraRemision
             // 
@@ -732,10 +773,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.spDetalleRemisionDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTerminalDS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatTransportistaDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatOperadorDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatVehiculoDS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -753,16 +794,16 @@
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.LookUpEdit lueMuestraPemex;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.TextEdit txtDatosOperativos;
+        private UserControls.CTextEdit txtDatosOperativos;
         private DevExpress.XtraEditors.DateEdit dtFechaOrden;
-        private DevExpress.XtraEditors.TextEdit txtNoOrden;
+        private UserControls.CTextEdit txtNoOrden;
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.LookUpEdit lueNombreOperador;
         private DevExpress.XtraEditors.DateEdit txtFechaCertificado;
-        private DevExpress.XtraEditors.TextEdit txtCertificado;
-        private DevExpress.XtraEditors.TextEdit txtPlacas;
+        private UserControls.CTextEdit txtCertificado;
+        private UserControls.CTextEdit txtPlacas;
         private DevExpress.XtraEditors.LookUpEdit lueVehiculo;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.LabelControl labelControl11;
@@ -770,10 +811,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LookUpEdit lueTransportista;
-        private DevExpress.XtraEditors.TextEdit txtCantidad20Grados;
-        private DevExpress.XtraEditors.TextEdit txtCantidadAlNat;
-        private DevExpress.XtraEditors.TextEdit txtTemperatura;
-        private DevExpress.XtraEditors.TextEdit txtSellos;
+        private UserControls.CTextEdit txtCantidad20Grados;
+        private UserControls.CTextEdit txtCantidadAlNat;
+        private UserControls.CTextEdit txtTemperatura;
+        private UserControls.CTextEdit txtSellos;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
@@ -782,11 +823,10 @@
         private DevExpress.XtraEditors.LookUpEdit lueEstacion;
         private DevExpress.XtraEditors.LookUpEdit lueTerminal;
         private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.TextEdit txtLugarEntrega;
-        private DevExpress.XtraEditors.TextEdit txtNombreEstacion;
+        private UserControls.CTextEdit txtLugarEntrega;
+        private UserControls.CTextEdit txtNombreEstacion;
         private DevExpress.XtraEditors.LabelControl lblPermisoCRE;
         private DataSets.spCatTerminalDS spCatTerminalDS;
-        private DataSets.spCatEstacionDS spCatEstacionDS;
         private DataSets.spCatTransportistaDS spCatTransportistaDS;
         private DataSets.spCatOperadorDS spCatOperadorDS1;
         private System.Windows.Forms.BindingSource spDetallePedidoBindingSource;
@@ -805,5 +845,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTerminalID;
         private DevExpress.XtraGrid.Columns.GridColumn colVehiculoID;
         private DataSets.spCatVehiculoDS spCatVehiculoDS;
+        private DataSets.spCatEstacionDS spCatEstacionDS;
     }
 }

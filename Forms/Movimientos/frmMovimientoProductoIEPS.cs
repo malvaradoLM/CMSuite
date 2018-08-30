@@ -18,6 +18,7 @@ namespace RedCoForm.Forms.Movimientos
         public frmMovimientoProductoIEPS()
         {
             InitializeComponent();
+            dateFecha.DateTime = DateTime.Today;
             Cargar();
         }
 
@@ -32,12 +33,15 @@ namespace RedCoForm.Forms.Movimientos
                 bgvProductoIEPS.Columns["PIEPSID87"].Visible = false;
                 bgvProductoIEPS.Columns["Precio87"].Caption = "Precio";
                 bgvProductoIEPS.Columns["IEPS87"].Caption = "IEPS";
+                bgvProductoIEPS.Columns["ProdID87"].Visible = false;
                 bgvProductoIEPS.Columns["PIEPSID91"].Visible = false;
                 bgvProductoIEPS.Columns["Precio91"].Caption = "Precio";
                 bgvProductoIEPS.Columns["IEPS91"].Caption = "IEPS";
+                bgvProductoIEPS.Columns["ProdID91"].Visible = false;
                 bgvProductoIEPS.Columns["PIEPSIDDiesel"].Visible = false;
                 bgvProductoIEPS.Columns["PrecioDiesel"].Caption = "Precio";
                 bgvProductoIEPS.Columns["IEPSDiesel"].Caption = "IEPS";
+                bgvProductoIEPS.Columns["ProdIDDiesel"].Visible = false;
                 bgvProductoIEPS.Columns["Ejercicio"].Visible = false;
                 bgvProductoIEPS.Columns["Periodo"].Visible = false;
                 bgvProductoIEPS.Columns["Dia"].Visible = false;
@@ -65,23 +69,6 @@ namespace RedCoForm.Forms.Movimientos
             }
         }
 
-        private void GridHeaders()
-        {
-                //GridViewRow row = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Normal);
-                //TableHeaderCell cell = new TableHeaderCell();
-                //cell.Text = "Customers";
-                //cell.ColumnSpan = 2;
-                //row.Controls.Add(cell);
-
-                //cell = new TableHeaderCell();
-                //cell.ColumnSpan = 2;
-                //cell.Text = "Employees";
-                //row.Controls.Add(cell);
-
-                //row.BackColor = ColorTranslator.FromHtml("#3AC0F2");
-                //GridView1.HeaderRow.Parent.Controls.AddAt(0, row);
-        }
-
         public override void DoBuscar(object key, object sender, EventArgs e)
         {
 
@@ -89,6 +76,16 @@ namespace RedCoForm.Forms.Movimientos
 
         private void dgcProductoIEPS_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            RPSuiteServer.TCustomProductoIEPS[] arrayProductoIEPS;
+            arrayProductoIEPS =(RPSuiteServer.TCustomProductoIEPS[])dgcProductoIEPS.DataSource;
+            foreach (RPSuiteServer.TCustomProductoIEPS Prod in arrayProductoIEPS)
+                Prod.Fecha = dateFecha.DateTime;
+            RedCoForm.Data.DataModule.DataService.ActualizarProductoIEPS(arrayProductoIEPS);
 
         }
     }
