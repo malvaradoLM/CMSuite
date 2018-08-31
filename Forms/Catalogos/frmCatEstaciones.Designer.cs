@@ -293,7 +293,6 @@
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
-            this.tpDatos.Size = new System.Drawing.Size(878, 557);
             // 
             // dgcCatalogo
             // 
@@ -648,7 +647,10 @@
             // 
             this.txtCuentaContable.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "CuentaContable", true));
             this.txtCuentaContable.Location = new System.Drawing.Point(440, 101);
+            this.txtCuentaContable.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCuentaContable.Name = "txtCuentaContable";
+            this.txtCuentaContable.NDecimales = 2;
+            this.txtCuentaContable.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCuentaContable.Size = new System.Drawing.Size(191, 20);
             this.txtCuentaContable.TabIndex = 123;
             // 
@@ -886,7 +888,10 @@
             // 
             this.txtEntregaCP.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "EntregaCP", true));
             this.txtEntregaCP.Location = new System.Drawing.Point(17, 169);
+            this.txtEntregaCP.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtEntregaCP.Name = "txtEntregaCP";
+            this.txtEntregaCP.NDecimales = 2;
+            this.txtEntregaCP.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEntregaCP.Size = new System.Drawing.Size(106, 20);
             this.txtEntregaCP.TabIndex = 13;
             // 
@@ -904,7 +909,10 @@
             // 
             this.txtEntregaMunicipio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "EntregaMunicipio", true));
             this.txtEntregaMunicipio.Location = new System.Drawing.Point(188, 118);
+            this.txtEntregaMunicipio.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtEntregaMunicipio.Name = "txtEntregaMunicipio";
+            this.txtEntregaMunicipio.NDecimales = 2;
+            this.txtEntregaMunicipio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEntregaMunicipio.Size = new System.Drawing.Size(159, 20);
             this.txtEntregaMunicipio.TabIndex = 11;
             // 
@@ -912,7 +920,10 @@
             // 
             this.txtEntregaCiudad.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "EntregaCiudad", true));
             this.txtEntregaCiudad.Location = new System.Drawing.Point(17, 118);
+            this.txtEntregaCiudad.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtEntregaCiudad.Name = "txtEntregaCiudad";
+            this.txtEntregaCiudad.NDecimales = 2;
+            this.txtEntregaCiudad.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEntregaCiudad.Size = new System.Drawing.Size(156, 20);
             this.txtEntregaCiudad.TabIndex = 10;
             // 
@@ -920,7 +931,10 @@
             // 
             this.txtEntregaNoInterior.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "EntregaNoInterior", true));
             this.txtEntregaNoInterior.Location = new System.Drawing.Point(464, 58);
+            this.txtEntregaNoInterior.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtEntregaNoInterior.Name = "txtEntregaNoInterior";
+            this.txtEntregaNoInterior.NDecimales = 2;
+            this.txtEntregaNoInterior.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEntregaNoInterior.Size = new System.Drawing.Size(96, 20);
             this.txtEntregaNoInterior.TabIndex = 9;
             // 
@@ -928,7 +942,10 @@
             // 
             this.txtEntregaNoExterior.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "EntregaNoExterior", true));
             this.txtEntregaNoExterior.Location = new System.Drawing.Point(365, 58);
+            this.txtEntregaNoExterior.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtEntregaNoExterior.Name = "txtEntregaNoExterior";
+            this.txtEntregaNoExterior.NDecimales = 2;
+            this.txtEntregaNoExterior.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEntregaNoExterior.Size = new System.Drawing.Size(93, 20);
             this.txtEntregaNoExterior.TabIndex = 8;
             // 
@@ -936,7 +953,10 @@
             // 
             this.txtEntregaCalle.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "EntregaCalle", true));
             this.txtEntregaCalle.Location = new System.Drawing.Point(17, 60);
+            this.txtEntregaCalle.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtEntregaCalle.Name = "txtEntregaCalle";
+            this.txtEntregaCalle.NDecimales = 2;
+            this.txtEntregaCalle.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEntregaCalle.Size = new System.Drawing.Size(330, 20);
             this.txtEntregaCalle.TabIndex = 7;
             // 
@@ -1025,7 +1045,10 @@
             // 
             this.txtColonia.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "Colonia", true));
             this.txtColonia.Location = new System.Drawing.Point(17, 96);
+            this.txtColonia.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtColonia.Name = "txtColonia";
+            this.txtColonia.NDecimales = 2;
+            this.txtColonia.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtColonia.Size = new System.Drawing.Size(330, 20);
             this.txtColonia.TabIndex = 121;
             // 
@@ -1339,7 +1362,10 @@
             // 
             this.txtDescuento.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "Descuento", true));
             this.txtDescuento.Location = new System.Drawing.Point(47, 38);
+            this.txtDescuento.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.NDecimales = 2;
+            this.txtDescuento.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDescuento.Size = new System.Drawing.Size(178, 20);
             this.txtDescuento.TabIndex = 125;
             // 
@@ -1347,7 +1373,10 @@
             // 
             this.txtCuentaBancaria.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatEstacionBindingSource, "CuentaBancaria", true));
             this.txtCuentaBancaria.Location = new System.Drawing.Point(15, 184);
+            this.txtCuentaBancaria.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCuentaBancaria.Name = "txtCuentaBancaria";
+            this.txtCuentaBancaria.NDecimales = 2;
+            this.txtCuentaBancaria.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCuentaBancaria.Size = new System.Drawing.Size(243, 20);
             this.txtCuentaBancaria.TabIndex = 123;
             // 
@@ -1519,35 +1548,50 @@
             // textEdit8
             // 
             this.textEdit8.Location = new System.Drawing.Point(133, 315);
+            this.textEdit8.MaskType = UserControls.GlobalVar.CMask.None;
             this.textEdit8.Name = "textEdit8";
+            this.textEdit8.NDecimales = 2;
+            this.textEdit8.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textEdit8.Size = new System.Drawing.Size(112, 20);
             this.textEdit8.TabIndex = 15;
             // 
             // textEdit7
             // 
             this.textEdit7.Location = new System.Drawing.Point(133, 275);
+            this.textEdit7.MaskType = UserControls.GlobalVar.CMask.None;
             this.textEdit7.Name = "textEdit7";
+            this.textEdit7.NDecimales = 2;
+            this.textEdit7.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textEdit7.Size = new System.Drawing.Size(112, 20);
             this.textEdit7.TabIndex = 14;
             // 
             // textEdit6
             // 
             this.textEdit6.Location = new System.Drawing.Point(133, 235);
+            this.textEdit6.MaskType = UserControls.GlobalVar.CMask.None;
             this.textEdit6.Name = "textEdit6";
+            this.textEdit6.NDecimales = 2;
+            this.textEdit6.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textEdit6.Size = new System.Drawing.Size(112, 20);
             this.textEdit6.TabIndex = 13;
             // 
             // textEdit5
             // 
             this.textEdit5.Location = new System.Drawing.Point(133, 198);
+            this.textEdit5.MaskType = UserControls.GlobalVar.CMask.None;
             this.textEdit5.Name = "textEdit5";
+            this.textEdit5.NDecimales = 2;
+            this.textEdit5.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textEdit5.Size = new System.Drawing.Size(112, 20);
             this.textEdit5.TabIndex = 12;
             // 
             // txtSaldoInicial
             // 
             this.txtSaldoInicial.Location = new System.Drawing.Point(133, 160);
+            this.txtSaldoInicial.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtSaldoInicial.Name = "txtSaldoInicial";
+            this.txtSaldoInicial.NDecimales = 2;
+            this.txtSaldoInicial.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSaldoInicial.Size = new System.Drawing.Size(112, 20);
             this.txtSaldoInicial.TabIndex = 11;
             // 

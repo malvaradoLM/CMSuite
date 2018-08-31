@@ -17,6 +17,12 @@ namespace RedCoForm.Forms.Catalogos
     {
         private List<DataParameter> Params = new List<DataParameter>();
 
+
+        public class dias
+        {
+            public int ID { get; set; }
+            public string Nombre { get; set; }
+        }
         public frmCatEstaciones()
         {
             InitializeComponent();
@@ -50,11 +56,30 @@ namespace RedCoForm.Forms.Catalogos
             //Cargar DiasRemision
          
             GlobalVar.CargarDiasSemana();
-            lueDiaRevision.Properties.DataSource = GlobalVar.DiasSemana;
-            lueDiaPago.Properties.DataSource = GlobalVar.DiasSemana;
+            lueDiaRevision.Properties.DataSource = GetDiasPagoRevision(GlobalVar.DiasSemana);
+            lueDiaRevision.Properties.DisplayMember = "Nombre";
+            lueDiaRevision.Properties.ValueMember = "ID";
+            lueDiaPago.Properties.DataSource = GetDiasPagoRevision(GlobalVar.DiasSemana);
+            lueDiaPago.Properties.DisplayMember = "Nombre";
+            lueDiaPago.Properties.ValueMember = "ID";
 
         }
 
+        //Cargar lista de dias
+        private List<dias> GetDiasPagoRevision(string[] dias)
+        {
+            List<dias> Semana = new List<dias>();
+            int contador = 1;
+            foreach(string i in dias)
+            {
+                Semana.Add(new dias { ID = contador , Nombre = i });
+                contador++;
+            }
+
+            return Semana;
+
+        }
+        
         #region Grupo
         public void getGrupo()
         {
@@ -337,7 +362,7 @@ namespace RedCoForm.Forms.Catalogos
                 {
                     RPSuiteServer.TSaldo Saldo = new RPSuiteServer.TSaldo();
                     Saldo.EstacionID = Int32.Parse(txtEstacionID.Text);
-                    Saldo.LimiteCredito = float.Parse(txtLimiteCredito.Text);
+                    Saldo.LimiteCredito = double.Parse(txtLimiteCredito.Text);
                     if (Data.DataModule.DataService.GuardarSaldo(Saldo))
                     {
                         State = stEstado.Browse;

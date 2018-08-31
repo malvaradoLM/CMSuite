@@ -17,6 +17,7 @@ namespace RedCoForm.Class
         public static string[] Estados;
 
         public static string[] DiasSemana;
+        
 
         public enum CMask
         {
@@ -70,6 +71,7 @@ namespace RedCoForm.Class
 
         public static void CargarDiasSemana()
         {
+
             DiasSemana = new string[7];
             DiasSemana[0] = "LUNES";
             DiasSemana[1] = "MARTES";
