@@ -55,10 +55,8 @@
             this.txtContacto = new UserControls.CTextEdit();
             this.txtEmail = new UserControls.CTextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new UserControls.CTextEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit2 = new UserControls.CTextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -80,13 +78,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tcCatalogo
             // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.Size = new System.Drawing.Size(819, 380);
             // 
             // gcBusqueda
@@ -227,7 +223,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(113, 77);
+            this.labelControl4.Location = new System.Drawing.Point(19, 77);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(60, 13);
             this.labelControl4.TabIndex = 5;
@@ -261,7 +257,9 @@
             // 
             this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDescripcion.Location = new System.Drawing.Point(113, 51);
+            this.txtDescripcion.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.NDecimales = 2;
             this.txtDescripcion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDescripcion.Size = new System.Drawing.Size(461, 20);
             this.txtDescripcion.TabIndex = 9;
@@ -270,7 +268,9 @@
             // 
             this.txtDomicilio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Domicilio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDomicilio.Location = new System.Drawing.Point(19, 142);
+            this.txtDomicilio.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.NDecimales = 2;
             this.txtDomicilio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDomicilio.Size = new System.Drawing.Size(555, 20);
             this.txtDomicilio.TabIndex = 10;
@@ -280,7 +280,9 @@
             // 
             this.txtRFC.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "RFC", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtRFC.Location = new System.Drawing.Point(19, 187);
+            this.txtRFC.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtRFC.Name = "txtRFC";
+            this.txtRFC.NDecimales = 2;
             this.txtRFC.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtRFC.Size = new System.Drawing.Size(154, 20);
             this.txtRFC.TabIndex = 11;
@@ -288,17 +290,21 @@
             // txtRazonSocial
             // 
             this.txtRazonSocial.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "RazonSocial", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtRazonSocial.Location = new System.Drawing.Point(113, 96);
+            this.txtRazonSocial.Location = new System.Drawing.Point(19, 96);
+            this.txtRazonSocial.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.NDecimales = 2;
             this.txtRazonSocial.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtRazonSocial.Size = new System.Drawing.Size(461, 20);
+            this.txtRazonSocial.Size = new System.Drawing.Size(555, 20);
             this.txtRazonSocial.TabIndex = 12;
             // 
             // txtTelefono
             // 
             this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Telefono", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtTelefono.Location = new System.Drawing.Point(19, 231);
+            this.txtTelefono.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.NDecimales = 2;
             this.txtTelefono.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtTelefono.Size = new System.Drawing.Size(154, 20);
             this.txtTelefono.TabIndex = 13;
@@ -307,7 +313,9 @@
             // 
             this.txtContacto.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Contacto", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtContacto.Location = new System.Drawing.Point(179, 231);
+            this.txtContacto.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtContacto.Name = "txtContacto";
+            this.txtContacto.NDecimales = 2;
             this.txtContacto.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtContacto.Size = new System.Drawing.Size(395, 20);
             this.txtContacto.TabIndex = 14;
@@ -316,7 +324,9 @@
             // 
             this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "Email", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtEmail.Location = new System.Drawing.Point(179, 187);
+            this.txtEmail.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtEmail.Name = "txtEmail";
+            this.txtEmail.NDecimales = 2;
             this.txtEmail.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEmail.Size = new System.Drawing.Size(395, 20);
             this.txtEmail.TabIndex = 15;
@@ -325,8 +335,6 @@
             // 
             this.groupControl1.Controls.Add(this.textEdit2);
             this.groupControl1.Controls.Add(this.labelControl9);
-            this.groupControl1.Controls.Add(this.textEdit1);
-            this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.txtEmail);
             this.groupControl1.Controls.Add(this.labelControl7);
@@ -347,35 +355,23 @@
             this.groupControl1.TabIndex = 16;
             this.groupControl1.Text = "Datos";
             // 
-            // labelControl8
+            // textEdit2
             // 
-            this.labelControl8.Location = new System.Drawing.Point(19, 32);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(11, 13);
-            this.labelControl8.TabIndex = 16;
-            this.labelControl8.Text = "ID";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(19, 51);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(88, 20);
-            this.textEdit1.TabIndex = 17;
+            this.textEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatTerminalBindingSource, "TerminalID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textEdit2.Location = new System.Drawing.Point(19, 51);
+            this.textEdit2.MaskType = UserControls.GlobalVar.CMask.None;
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.NDecimales = 2;
+            this.textEdit2.Size = new System.Drawing.Size(88, 20);
+            this.textEdit2.TabIndex = 19;
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(19, 77);
+            this.labelControl9.Location = new System.Drawing.Point(19, 32);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(40, 13);
             this.labelControl9.TabIndex = 18;
             this.labelControl9.Text = "No. TAD";
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(19, 96);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(88, 20);
-            this.textEdit2.TabIndex = 19;
             // 
             // frmCatTerminal
             // 
@@ -407,7 +403,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -442,7 +437,5 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private UserControls.CTextEdit textEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private UserControls.CTextEdit textEdit1;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
     }
 }
