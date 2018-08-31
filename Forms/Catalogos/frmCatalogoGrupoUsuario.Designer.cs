@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node1");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoGrupoUsuario));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit1 = new UserControls.CTextEdit();
@@ -41,6 +40,7 @@
             this.treePermisos = new System.Windows.Forms.TreeView();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.imagecollection = new System.Windows.Forms.ImageList(this.components);
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -134,6 +134,7 @@
             // 
             // tpPermisos
             // 
+            this.tpPermisos.Controls.Add(this.simpleButton1);
             this.tpPermisos.Controls.Add(this.groupControl2);
             this.tpPermisos.Name = "tpPermisos";
             this.tpPermisos.Size = new System.Drawing.Size(678, 282);
@@ -161,11 +162,6 @@
             this.treePermisos.ImageList = this.imageList;
             this.treePermisos.Location = new System.Drawing.Point(19, 24);
             this.treePermisos.Name = "treePermisos";
-            treeNode1.Name = "Node1";
-            treeNode1.SelectedImageIndex = 3;
-            treeNode1.Text = "Node1";
-            this.treePermisos.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1});
             this.treePermisos.SelectedImageIndex = 0;
             this.treePermisos.Size = new System.Drawing.Size(470, 226);
             this.treePermisos.TabIndex = 1;
@@ -180,6 +176,24 @@
             this.imageList.Images.SetKeyName(3, "calculator-business-money-coins.ico");
             this.imageList.Images.SetKeyName(4, "cash-register-banknote.ico");
             this.imageList.Images.SetKeyName(5, "drive-customer.ico");
+            this.imageList.Images.SetKeyName(6, "blood-test.ico");
+            this.imageList.Images.SetKeyName(7, "briefcase-business.ico");
+            this.imageList.Images.SetKeyName(8, "court-money-coins.ico");
+            this.imageList.Images.SetKeyName(9, "document-order-pin.ico");
+            this.imageList.Images.SetKeyName(10, "embedding-cassette-find.ico");
+            this.imageList.Images.SetKeyName(11, "embedding-cassette-padlock.ico");
+            this.imageList.Images.SetKeyName(12, "enum.ico");
+            this.imageList.Images.SetKeyName(13, "execute.ico");
+            this.imageList.Images.SetKeyName(14, "function-library-financial.ico");
+            this.imageList.Images.SetKeyName(15, "gift.ico");
+            this.imageList.Images.SetKeyName(16, "gift-business.ico");
+            this.imageList.Images.SetKeyName(17, "money.ico");
+            this.imageList.Images.SetKeyName(18, "sheet-calculate.ico");
+            this.imageList.Images.SetKeyName(19, "sheet-cross-reference.ico");
+            this.imageList.Images.SetKeyName(20, "shopping-cart-blue.ico");
+            this.imageList.Images.SetKeyName(21, "vehicle-car-product.ico");
+            this.imageList.Images.SetKeyName(22, "vehicle-truck-customer.ico");
+            this.imageList.Images.SetKeyName(23, "vehicle-van-small-product.ico");
             // 
             // imagecollection
             // 
@@ -190,6 +204,15 @@
             this.imagecollection.Images.SetKeyName(2, "embedding-cassette-padlock.png");
             this.imagecollection.Images.SetKeyName(3, "enum.png");
             this.imagecollection.Images.SetKeyName(4, "gift.png");
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(532, 35);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(110, 63);
+            this.simpleButton1.TabIndex = 1;
+            this.simpleButton1.Text = "simpleButton1";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // frmCatalogoGrupoUsuario
             // 
@@ -232,5 +255,6 @@
         private System.Windows.Forms.TreeView treePermisos;
         private System.Windows.Forms.ImageList imagecollection;
         private System.Windows.Forms.ImageList imageList;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

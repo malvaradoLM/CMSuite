@@ -90,7 +90,6 @@
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
-            this.tpDatos.Size = new System.Drawing.Size(617, 351);
             // 
             // dgcCatalogo
             // 
