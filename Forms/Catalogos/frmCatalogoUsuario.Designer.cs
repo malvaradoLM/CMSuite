@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoUsuario));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new UserControls.CTextEdit();
-            this.textEdit2 = new UserControls.CTextEdit();
             this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.textEdit2 = new UserControls.CTextEdit();
+            this.textEdit1 = new UserControls.CTextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -47,9 +48,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -88,44 +89,6 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Datos";
             // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(20, 33);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(11, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "ID";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(20, 79);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(36, 13);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "Usuario";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(20, 125);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(68, 13);
-            this.labelControl3.TabIndex = 2;
-            this.labelControl3.Text = "Grupo Usuario";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(20, 53);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(100, 20);
-            this.textEdit1.TabIndex = 4;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(20, 98);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(383, 20);
-            this.textEdit2.TabIndex = 5;
-            // 
             // lookUpEdit1
             // 
             this.lookUpEdit1.Location = new System.Drawing.Point(20, 144);
@@ -135,10 +98,53 @@
             this.lookUpEdit1.Size = new System.Drawing.Size(383, 20);
             this.lookUpEdit1.TabIndex = 6;
             // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(20, 98);
+            this.textEdit2.MaskType = UserControls.GlobalVar.CMask.None;
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.NDecimales = 2;
+            this.textEdit2.Size = new System.Drawing.Size(383, 20);
+            this.textEdit2.TabIndex = 5;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(20, 53);
+            this.textEdit1.MaskType = UserControls.GlobalVar.CMask.None;
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.NDecimales = 2;
+            this.textEdit1.Size = new System.Drawing.Size(100, 20);
+            this.textEdit1.TabIndex = 4;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(20, 125);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(68, 13);
+            this.labelControl3.TabIndex = 2;
+            this.labelControl3.Text = "Grupo Usuario";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(20, 79);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(36, 13);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "Usuario";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(20, 33);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(11, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "ID";
+            // 
             // frmCatalogoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoUsuario";
             this.Text = "Catalogo Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
@@ -155,9 +161,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

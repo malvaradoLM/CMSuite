@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.spCatMetodoPagoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoMetodoPago));
+            this.spCatMetodoPagoBindingSource = new System.Windows.Forms.BindingSource();
             this.spCatMetodoPagoDS = new RedCoForm.DataSets.spCatMetodoPagoDS();
             this.colMetodoPagoID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new UserControls.CTextEdit();
             this.txtDescripcion = new UserControls.CTextEdit();
+            this.txtID = new UserControls.CTextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -52,13 +52,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.spCatMetodoPagoDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tcCatalogo
-            // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -126,13 +122,27 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Datos";
             // 
-            // labelControl1
+            // txtDescripcion
             // 
-            this.labelControl1.Location = new System.Drawing.Point(38, 50);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(11, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "ID";
+            this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatMetodoPagoBindingSource, "Descripcion", true));
+            this.txtDescripcion.Location = new System.Drawing.Point(38, 112);
+            this.txtDescripcion.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.NDecimales = 2;
+            this.txtDescripcion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtDescripcion.Size = new System.Drawing.Size(471, 20);
+            this.txtDescripcion.TabIndex = 3;
+            // 
+            // txtID
+            // 
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatMetodoPagoBindingSource, "MetodoPagoID", true));
+            this.txtID.Location = new System.Drawing.Point(38, 67);
+            this.txtID.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtID.Name = "txtID";
+            this.txtID.NDecimales = 2;
+            this.txtID.Properties.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(65, 20);
+            this.txtID.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -142,28 +152,19 @@
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "Descripcion";
             // 
-            // txtID
+            // labelControl1
             // 
-            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatMetodoPagoBindingSource, "MetodoPagoID", true));
-            this.txtID.Location = new System.Drawing.Point(38, 67);
-            this.txtID.Name = "txtID";
-            this.txtID.Properties.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(65, 20);
-            this.txtID.TabIndex = 2;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatMetodoPagoBindingSource, "Descripcion", true));
-            this.txtDescripcion.Location = new System.Drawing.Point(38, 112);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDescripcion.Size = new System.Drawing.Size(471, 20);
-            this.txtDescripcion.TabIndex = 3;
+            this.labelControl1.Location = new System.Drawing.Point(38, 50);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(11, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "ID";
             // 
             // frmCatalogoMetodoPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoMetodoPago";
             this.Text = "Metodo de Pago";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
@@ -182,8 +183,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

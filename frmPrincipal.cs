@@ -418,5 +418,12 @@ namespace RedCoForm
             bvcMenuPrincipal.Close();
             
         }
+
+        private void tileItem37_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            ModuleInfoCollection.ShowModuleByName("CatalogoFormaPago", this);
+            bvcMenuPrincipal.Close();
+            
+        }
     }
 }

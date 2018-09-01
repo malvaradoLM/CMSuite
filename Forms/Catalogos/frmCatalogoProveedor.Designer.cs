@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoProveedor));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtCorreo = new UserControls.CTextEdit();
+            this.spCatProveedorBindingSource = new System.Windows.Forms.BindingSource();
+            this.spCatProveedorDS1 = new RedCoForm.DataSets.spCatProveedorDS();
             this.txtTelefono = new UserControls.CTextEdit();
             this.txtRazonSocial = new UserControls.CTextEdit();
             this.txtNombre = new UserControls.CTextEdit();
-            this.spCatProveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.spCatProveedorDS1 = new RedCoForm.DataSets.spCatProveedorDS();
             this.txtID = new UserControls.CTextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -68,11 +68,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtCorreo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,7 +98,6 @@
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
-            this.tpDatos.Size = new System.Drawing.Size(553, 306);
             // 
             // dgcCatalogo
             // 
@@ -152,32 +151,11 @@
             // 
             this.txtCorreo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Email", true));
             this.txtCorreo.Location = new System.Drawing.Point(132, 185);
+            this.txtCorreo.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.NDecimales = 2;
             this.txtCorreo.Size = new System.Drawing.Size(260, 20);
             this.txtCorreo.TabIndex = 10;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Telefono", true));
-            this.txtTelefono.Location = new System.Drawing.Point(19, 185);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefono.TabIndex = 9;
-            // 
-            // txtRazonSocial
-            // 
-            this.txtRazonSocial.Location = new System.Drawing.Point(19, 142);
-            this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(373, 20);
-            this.txtRazonSocial.TabIndex = 8;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Nombre", true));
-            this.txtNombre.Location = new System.Drawing.Point(19, 97);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(196, 20);
-            this.txtNombre.TabIndex = 7;
             // 
             // spCatProveedorBindingSource
             // 
@@ -190,11 +168,42 @@
             this.spCatProveedorDS1.DataSetName = "spCatProveedorDS";
             this.spCatProveedorDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // txtTelefono
+            // 
+            this.txtTelefono.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Telefono", true));
+            this.txtTelefono.Location = new System.Drawing.Point(19, 185);
+            this.txtTelefono.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.NDecimales = 2;
+            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefono.TabIndex = 9;
+            // 
+            // txtRazonSocial
+            // 
+            this.txtRazonSocial.Location = new System.Drawing.Point(19, 142);
+            this.txtRazonSocial.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.NDecimales = 2;
+            this.txtRazonSocial.Size = new System.Drawing.Size(373, 20);
+            this.txtRazonSocial.TabIndex = 8;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "Nombre", true));
+            this.txtNombre.Location = new System.Drawing.Point(19, 97);
+            this.txtNombre.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.NDecimales = 2;
+            this.txtNombre.Size = new System.Drawing.Size(196, 20);
+            this.txtNombre.TabIndex = 7;
+            // 
             // txtID
             // 
             this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProveedorBindingSource, "ProveedorId", true));
             this.txtID.Location = new System.Drawing.Point(19, 52);
+            this.txtID.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtID.Name = "txtID";
+            this.txtID.NDecimales = 2;
             this.txtID.Properties.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(49, 20);
             this.txtID.TabIndex = 6;
@@ -334,6 +343,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(555, 331);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoProveedor";
             this.Text = "Catalogo Proveedor";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
@@ -351,11 +361,11 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtCorreo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spCatProveedorDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 

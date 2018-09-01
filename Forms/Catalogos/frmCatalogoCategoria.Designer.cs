@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoCategoria));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new UserControls.CTextEdit();
             this.txtDescripcion = new UserControls.CTextEdit();
-            this.spCatCategoriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatCategoriaBindingSource = new System.Windows.Forms.BindingSource();
             this.spCatCategoriaDS = new RedCoForm.DataSets.spCatCategoriaDS();
+            this.txtID = new UserControls.CTextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.colCategoriaID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
@@ -50,15 +50,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatCategoriaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatCategoriaDS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tcCatalogo
-            // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             // 
             // btnBuscar
             // 
@@ -101,35 +97,13 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Datos";
             // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(12, 43);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(11, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "ID";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(15, 91);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(54, 13);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "Descripcion";
-            // 
-            // txtID
-            // 
-            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatCategoriaBindingSource, "CategoriaID", true));
-            this.txtID.Location = new System.Drawing.Point(12, 62);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 20);
-            this.txtID.TabIndex = 2;
-            // 
             // txtDescripcion
             // 
             this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatCategoriaBindingSource, "Descripcion", true));
             this.txtDescripcion.Location = new System.Drawing.Point(15, 110);
+            this.txtDescripcion.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.NDecimales = 2;
             this.txtDescripcion.Size = new System.Drawing.Size(324, 20);
             this.txtDescripcion.TabIndex = 3;
             // 
@@ -143,6 +117,32 @@
             // 
             this.spCatCategoriaDS.DataSetName = "spCatCategoriaDS";
             this.spCatCategoriaDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // txtID
+            // 
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatCategoriaBindingSource, "CategoriaID", true));
+            this.txtID.Location = new System.Drawing.Point(12, 62);
+            this.txtID.MaskType = UserControls.GlobalVar.CMask.None;
+            this.txtID.Name = "txtID";
+            this.txtID.NDecimales = 2;
+            this.txtID.Size = new System.Drawing.Size(100, 20);
+            this.txtID.TabIndex = 2;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(15, 91);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(54, 13);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "Descripcion";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(12, 43);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(11, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "ID";
             // 
             // colCategoriaID
             // 
@@ -162,8 +162,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoCategoria";
-            this.Text = ".";
+            this.Text = "Categoria";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
             this.tcCatalogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).EndInit();
@@ -178,10 +179,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatCategoriaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatCategoriaDS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
