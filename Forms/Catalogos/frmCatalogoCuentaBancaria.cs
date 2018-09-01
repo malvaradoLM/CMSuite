@@ -31,7 +31,6 @@ namespace RedCoForm.Forms.Catalogos
             if (newRecordRow != null)
             {
                 newRecordRow["CuentaBancariaID"] = Data.DataModule.DataService.Folio("CuentaBancariaID", "");
-
             }
         }
 

@@ -68,6 +68,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.spCatBancoDS)).BeginInit();
             this.SuspendLayout();
             // 
+            // tcCatalogo
+            // 
+            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
+            // 
             // btnBuscar
             // 
             this.btnBuscar.ImageOptions.ImageIndex = 0;
@@ -166,7 +170,9 @@
             // 
             this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatCuentaBancariaBindingSource, "CuentaBancariaID", true));
             this.txtID.Location = new System.Drawing.Point(26, 52);
+            this.txtID.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtID.Name = "txtID";
+            this.txtID.NDecimales = 2;
             this.txtID.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtID.Properties.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(100, 20);
@@ -189,6 +195,7 @@
             // 
             // chkdll
             // 
+            this.chkdll.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatCuentaBancariaBindingSource, "Dlls", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkdll.Location = new System.Drawing.Point(26, 181);
             this.chkdll.Name = "chkdll";
             this.chkdll.Properties.Caption = "Dlls";
@@ -197,6 +204,7 @@
             // 
             // lueBanco
             // 
+            this.lueBanco.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatCuentaBancariaBindingSource, "BancoID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.lueBanco.Location = new System.Drawing.Point(26, 142);
             this.lueBanco.Name = "lueBanco";
             this.lueBanco.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -207,8 +215,11 @@
             // 
             // txtCuentaBancaria
             // 
+            this.txtCuentaBancaria.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatCuentaBancariaBindingSource, "NoCuenta", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCuentaBancaria.Location = new System.Drawing.Point(26, 97);
+            this.txtCuentaBancaria.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCuentaBancaria.Name = "txtCuentaBancaria";
+            this.txtCuentaBancaria.NDecimales = 2;
             this.txtCuentaBancaria.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCuentaBancaria.Size = new System.Drawing.Size(272, 20);
             this.txtCuentaBancaria.TabIndex = 4;
