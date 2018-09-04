@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegimenFiscal));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtCodigoSAT = new UserControls.CTextEdit();
             this.txtDescripcion = new UserControls.CTextEdit();
@@ -91,21 +92,27 @@
             // txtCodigoSAT
             // 
             this.txtCodigoSAT.Location = new System.Drawing.Point(32, 142);
+            this.txtCodigoSAT.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCodigoSAT.Name = "txtCodigoSAT";
+            this.txtCodigoSAT.NDecimales = 2;
             this.txtCodigoSAT.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoSAT.TabIndex = 5;
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(32, 97);
+            this.txtDescripcion.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.NDecimales = 2;
             this.txtDescripcion.Size = new System.Drawing.Size(432, 20);
             this.txtDescripcion.TabIndex = 4;
             // 
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(32, 52);
+            this.txtID.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtID.Name = "txtID";
+            this.txtID.NDecimales = 2;
             this.txtID.Size = new System.Drawing.Size(61, 20);
             this.txtID.TabIndex = 3;
             // 
@@ -137,6 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegimenFiscal";
             this.Text = "Regimen Fiscal";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();

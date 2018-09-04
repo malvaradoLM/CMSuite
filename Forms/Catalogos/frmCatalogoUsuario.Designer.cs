@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.components = new System.ComponentModel.Container();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit2 = new UserControls.CTextEdit();
@@ -50,6 +51,16 @@
             this.lueEstacion = new DevExpress.XtraEditors.LookUpEdit();
             this.spCatEstacionDS1 = new RedCoForm.DataSets.spCatEstacionDS();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+=======
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoUsuario));
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.textEdit2 = new UserControls.CTextEdit();
+            this.textEdit1 = new UserControls.CTextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+>>>>>>> e96f8b797903f41ed8822607bb03109f402b3d40
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -62,6 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vpValidador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatUsuarioBindingSource)).BeginInit();
@@ -71,6 +83,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.lueEstacion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+>>>>>>> e96f8b797903f41ed8822607bb03109f402b3d40
             this.SuspendLayout();
             // 
             // tcCatalogo
@@ -131,6 +148,7 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Datos";
             // 
+<<<<<<< HEAD
             // textEdit2
             // 
             this.textEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatUsuarioBindingSource, "Nombre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -153,9 +171,20 @@
             this.textEdit1.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textEdit1.Size = new System.Drawing.Size(100, 20);
             this.textEdit1.TabIndex = 4;
+=======
+            // lookUpEdit1
             // 
-            // labelControl2
+            this.lookUpEdit1.Location = new System.Drawing.Point(20, 144);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Size = new System.Drawing.Size(383, 20);
+            this.lookUpEdit1.TabIndex = 6;
+>>>>>>> e96f8b797903f41ed8822607bb03109f402b3d40
             // 
+            // textEdit2
+            // 
+<<<<<<< HEAD
             this.labelControl2.Location = new System.Drawing.Point(20, 79);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(37, 13);
@@ -235,6 +264,23 @@
             this.cTextEdit1.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.cTextEdit1.Size = new System.Drawing.Size(383, 20);
             this.cTextEdit1.TabIndex = 7;
+=======
+            this.textEdit2.Location = new System.Drawing.Point(20, 98);
+            this.textEdit2.MaskType = UserControls.GlobalVar.CMask.None;
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.NDecimales = 2;
+            this.textEdit2.Size = new System.Drawing.Size(383, 20);
+            this.textEdit2.TabIndex = 5;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(20, 53);
+            this.textEdit1.MaskType = UserControls.GlobalVar.CMask.None;
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.NDecimales = 2;
+            this.textEdit1.Size = new System.Drawing.Size(100, 20);
+            this.textEdit1.TabIndex = 4;
+>>>>>>> e96f8b797903f41ed8822607bb03109f402b3d40
             // 
             // labelControl3
             // 
@@ -244,6 +290,7 @@
             this.labelControl3.TabIndex = 6;
             this.labelControl3.Text = "Nombre Usuario";
             // 
+<<<<<<< HEAD
             // cTextEdit2
             // 
             this.cTextEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatUsuarioBindingSource, "Password", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -297,11 +344,33 @@
             this.checkEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkEdit1.Size = new System.Drawing.Size(75, 19);
             this.checkEdit1.TabIndex = 12;
+=======
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(20, 79);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(36, 13);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "Usuario";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(20, 33);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(11, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "ID";
+>>>>>>> e96f8b797903f41ed8822607bb03109f402b3d40
             // 
             // frmCatalogoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(680, 392);
+=======
+            this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+>>>>>>> e96f8b797903f41ed8822607bb03109f402b3d40
             this.Name = "frmCatalogoUsuario";
             this.Text = "Catalogo Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
@@ -318,6 +387,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatUsuarioBindingSource)).EndInit();
@@ -327,6 +397,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.lueEstacion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spCatEstacionDS1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+>>>>>>> e96f8b797903f41ed8822607bb03109f402b3d40
             this.ResumeLayout(false);
 
         }

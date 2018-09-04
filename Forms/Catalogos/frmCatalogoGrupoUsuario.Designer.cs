@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatalogoGrupoUsuario));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit1 = new UserControls.CTextEdit();
@@ -36,11 +35,11 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tpPermisos = new DevExpress.XtraTab.XtraTabPage();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.treePermisos = new System.Windows.Forms.TreeView();
-            this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.imagecollection = new System.Windows.Forms.ImageList(this.components);
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.imageList = new System.Windows.Forms.ImageList();
+            this.imagecollection = new System.Windows.Forms.ImageList();
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).BeginInit();
             this.tcCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcBusqueda)).BeginInit();
@@ -61,7 +60,6 @@
             // 
             // tcCatalogo
             // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpPermisos});
             this.tcCatalogo.Controls.SetChildIndex(this.tpPermisos, 0);
@@ -105,7 +103,9 @@
             // textEdit1
             // 
             this.textEdit1.Location = new System.Drawing.Point(33, 104);
+            this.textEdit1.MaskType = UserControls.GlobalVar.CMask.None;
             this.textEdit1.Name = "textEdit1";
+            this.textEdit1.NDecimales = 2;
             this.textEdit1.Size = new System.Drawing.Size(321, 20);
             this.textEdit1.TabIndex = 3;
             // 
@@ -140,6 +140,15 @@
             this.tpPermisos.Size = new System.Drawing.Size(678, 282);
             this.tpPermisos.Text = "Permisos";
             this.tpPermisos.Paint += new System.Windows.Forms.PaintEventHandler(this.tpPermisos_Paint);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(532, 35);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(110, 63);
+            this.simpleButton1.TabIndex = 1;
+            this.simpleButton1.Text = "simpleButton1";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // groupControl2
             // 
@@ -205,19 +214,11 @@
             this.imagecollection.Images.SetKeyName(3, "enum.png");
             this.imagecollection.Images.SetKeyName(4, "gift.png");
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(532, 35);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(110, 63);
-            this.simpleButton1.TabIndex = 1;
-            this.simpleButton1.Text = "simpleButton1";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
             // frmCatalogoGrupoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(680, 307);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatalogoGrupoUsuario";
             this.Text = "Grupo Usuario";
             this.Load += new System.EventHandler(this.frmCatalogoGrupoUsuario_Load);

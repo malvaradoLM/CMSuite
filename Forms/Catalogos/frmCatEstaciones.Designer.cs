@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatEstaciones));
             this.colEstacionID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -48,7 +47,7 @@
             this.colZonaID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFormaPagoID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMetodoPagoID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.spCatEstacionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatEstacionBindingSource = new System.Windows.Forms.BindingSource();
             this.spCatEstacionDS1 = new RedCoForm.DataSets.spCatEstacionDS();
             this.spCatFormaPagoDS1 = new RedCoForm.DataSets.spCatFormaPagoDS();
             this.spCatMetodoPagoDS1 = new RedCoForm.DataSets.spCatMetodoPagoDS();
@@ -206,7 +205,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.lueGrupo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContacto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTel.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEstacionID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueZona.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRFC.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             this.tpDireccion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
             this.groupControl8.SuspendLayout();
@@ -221,6 +227,12 @@
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtColonia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueEstado.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoExterior.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCiudad.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodigoPostal.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoInterior.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMunicipio.Properties)).BeginInit();
             this.tpCredito.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
@@ -242,6 +254,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuento.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCuentaBancaria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueFormaPago.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLimiteCredito.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlazoPago.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDeposito.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNIP.Properties)).BeginInit();
             this.tpConsultarSaldo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -263,7 +279,6 @@
             // 
             // tcCatalogo
             // 
-            this.tcCatalogo.SelectedTabPage = this.tpBuscar;
             this.tcCatalogo.Size = new System.Drawing.Size(880, 582);
             this.tcCatalogo.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpDireccion,
@@ -293,6 +308,7 @@
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.groupControl1);
+            this.tpDatos.Size = new System.Drawing.Size(878, 557);
             // 
             // dgcCatalogo
             // 
@@ -719,16 +735,20 @@
             // 
             this.txtContacto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "Contacto", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtContacto.Location = new System.Drawing.Point(12, 38);
+            this.txtContacto.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtContacto.Name = "txtContacto";
-            this.txtContacto.Size = new System.Drawing.Size(353, 21);
+            this.txtContacto.NDecimales = 2;
+            this.txtContacto.Size = new System.Drawing.Size(353, 20);
             this.txtContacto.TabIndex = 79;
             // 
             // txtEmail
             // 
             this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "Email", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtEmail.Location = new System.Drawing.Point(197, 87);
+            this.txtEmail.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(148, 21);
+            this.txtEmail.NDecimales = 2;
+            this.txtEmail.Size = new System.Drawing.Size(148, 20);
             this.txtEmail.TabIndex = 103;
             // 
             // label12
@@ -744,8 +764,10 @@
             // 
             this.txtTel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "Telefono", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtTel.Location = new System.Drawing.Point(12, 87);
+            this.txtTel.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(148, 21);
+            this.txtTel.NDecimales = 2;
+            this.txtTel.Size = new System.Drawing.Size(148, 20);
             this.txtTel.TabIndex = 106;
             // 
             // label11
@@ -780,8 +802,10 @@
             this.txtEstacionID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "EstacionID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtEstacionID.Enabled = false;
             this.txtEstacionID.Location = new System.Drawing.Point(20, 55);
+            this.txtEstacionID.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtEstacionID.Name = "txtEstacionID";
-            this.txtEstacionID.Size = new System.Drawing.Size(60, 21);
+            this.txtEstacionID.NDecimales = 2;
+            this.txtEstacionID.Size = new System.Drawing.Size(60, 20);
             this.txtEstacionID.TabIndex = 101;
             // 
             // label23
@@ -834,24 +858,30 @@
             // 
             this.txtRazonSocial.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "RazonSocial", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtRazonSocial.Location = new System.Drawing.Point(20, 143);
+            this.txtRazonSocial.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(380, 21);
+            this.txtRazonSocial.NDecimales = 2;
+            this.txtRazonSocial.Size = new System.Drawing.Size(380, 20);
             this.txtRazonSocial.TabIndex = 57;
             // 
             // txtRFC
             // 
             this.txtRFC.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "RFC", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtRFC.Location = new System.Drawing.Point(20, 235);
+            this.txtRFC.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtRFC.Name = "txtRFC";
-            this.txtRFC.Size = new System.Drawing.Size(160, 21);
+            this.txtRFC.NDecimales = 2;
+            this.txtRFC.Size = new System.Drawing.Size(160, 20);
             this.txtRFC.TabIndex = 53;
             // 
             // txtNombre
             // 
             this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "Nombre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtNombre.Location = new System.Drawing.Point(20, 96);
+            this.txtNombre.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(380, 21);
+            this.txtNombre.NDecimales = 2;
+            this.txtNombre.Size = new System.Drawing.Size(380, 20);
             this.txtNombre.TabIndex = 52;
             // 
             // tpDireccion
@@ -859,7 +889,7 @@
             this.tpDireccion.Controls.Add(this.groupControl8);
             this.tpDireccion.Controls.Add(this.groupControl4);
             this.tpDireccion.Name = "tpDireccion";
-            this.tpDireccion.Size = new System.Drawing.Size(678, 282);
+            this.tpDireccion.Size = new System.Drawing.Size(878, 557);
             this.tpDireccion.Text = "Direccion";
             // 
             // groupControl8
@@ -1082,16 +1112,20 @@
             // 
             this.txtNoExterior.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "NoExterior", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtNoExterior.Location = new System.Drawing.Point(365, 50);
+            this.txtNoExterior.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtNoExterior.Name = "txtNoExterior";
-            this.txtNoExterior.Size = new System.Drawing.Size(93, 21);
+            this.txtNoExterior.NDecimales = 2;
+            this.txtNoExterior.Size = new System.Drawing.Size(93, 20);
             this.txtNoExterior.TabIndex = 118;
             // 
             // txtCiudad
             // 
             this.txtCiudad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "Ciudad", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCiudad.Location = new System.Drawing.Point(365, 95);
+            this.txtCiudad.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(195, 21);
+            this.txtCiudad.NDecimales = 2;
+            this.txtCiudad.Size = new System.Drawing.Size(195, 20);
             this.txtCiudad.TabIndex = 102;
             // 
             // label9
@@ -1115,8 +1149,10 @@
             // txtCodigoPostal
             // 
             this.txtCodigoPostal.Location = new System.Drawing.Point(17, 186);
+            this.txtCodigoPostal.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCodigoPostal.Name = "txtCodigoPostal";
-            this.txtCodigoPostal.Size = new System.Drawing.Size(106, 21);
+            this.txtCodigoPostal.NDecimales = 2;
+            this.txtCodigoPostal.Size = new System.Drawing.Size(106, 20);
             this.txtCodigoPostal.TabIndex = 117;
             // 
             // label5
@@ -1132,8 +1168,10 @@
             // 
             this.txtNoInterior.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "NoInterior", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtNoInterior.Location = new System.Drawing.Point(464, 50);
+            this.txtNoInterior.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtNoInterior.Name = "txtNoInterior";
-            this.txtNoInterior.Size = new System.Drawing.Size(96, 21);
+            this.txtNoInterior.NDecimales = 2;
+            this.txtNoInterior.Size = new System.Drawing.Size(96, 20);
             this.txtNoInterior.TabIndex = 101;
             // 
             // label24
@@ -1158,8 +1196,10 @@
             // 
             this.txtCalle.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "Calle", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCalle.Location = new System.Drawing.Point(17, 50);
+            this.txtCalle.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCalle.Name = "txtCalle";
-            this.txtCalle.Size = new System.Drawing.Size(330, 21);
+            this.txtCalle.NDecimales = 2;
+            this.txtCalle.Size = new System.Drawing.Size(330, 20);
             this.txtCalle.TabIndex = 104;
             // 
             // label4
@@ -1175,8 +1215,10 @@
             // 
             this.txtMunicipio.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "Municipio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtMunicipio.Location = new System.Drawing.Point(17, 140);
+            this.txtMunicipio.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtMunicipio.Name = "txtMunicipio";
-            this.txtMunicipio.Size = new System.Drawing.Size(330, 21);
+            this.txtMunicipio.NDecimales = 2;
+            this.txtMunicipio.Size = new System.Drawing.Size(330, 20);
             this.txtMunicipio.TabIndex = 105;
             // 
             // tpCredito
@@ -1411,16 +1453,20 @@
             // 
             this.txtLimiteCredito.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "LimiteCredito", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtLimiteCredito.Location = new System.Drawing.Point(15, 41);
+            this.txtLimiteCredito.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtLimiteCredito.Name = "txtLimiteCredito";
-            this.txtLimiteCredito.Size = new System.Drawing.Size(84, 21);
+            this.txtLimiteCredito.NDecimales = 2;
+            this.txtLimiteCredito.Size = new System.Drawing.Size(84, 20);
             this.txtLimiteCredito.TabIndex = 97;
             // 
             // txtPlazoPago
             // 
             this.txtPlazoPago.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "PlazoPago", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtPlazoPago.Location = new System.Drawing.Point(15, 86);
+            this.txtPlazoPago.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtPlazoPago.Name = "txtPlazoPago";
-            this.txtPlazoPago.Size = new System.Drawing.Size(88, 21);
+            this.txtPlazoPago.NDecimales = 2;
+            this.txtPlazoPago.Size = new System.Drawing.Size(88, 20);
             this.txtPlazoPago.TabIndex = 95;
             // 
             // label13
@@ -1445,8 +1491,10 @@
             // 
             this.txtDeposito.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "Deposito", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDeposito.Location = new System.Drawing.Point(110, 41);
+            this.txtDeposito.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtDeposito.Name = "txtDeposito";
-            this.txtDeposito.Size = new System.Drawing.Size(148, 21);
+            this.txtDeposito.NDecimales = 2;
+            this.txtDeposito.Size = new System.Drawing.Size(148, 20);
             this.txtDeposito.TabIndex = 91;
             // 
             // label16
@@ -1471,8 +1519,10 @@
             // 
             this.txtNIP.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spCatEstacionBindingSource, "NIP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtNIP.Location = new System.Drawing.Point(110, 86);
+            this.txtNIP.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtNIP.Name = "txtNIP";
-            this.txtNIP.Size = new System.Drawing.Size(148, 21);
+            this.txtNIP.NDecimales = 2;
+            this.txtNIP.Size = new System.Drawing.Size(148, 20);
             this.txtNIP.TabIndex = 93;
             // 
             // tpConsultarSaldo
@@ -1480,7 +1530,7 @@
             this.tpConsultarSaldo.Controls.Add(this.gridControl1);
             this.tpConsultarSaldo.Controls.Add(this.groupControl2);
             this.tpConsultarSaldo.Name = "tpConsultarSaldo";
-            this.tpConsultarSaldo.Size = new System.Drawing.Size(678, 282);
+            this.tpConsultarSaldo.Size = new System.Drawing.Size(878, 557);
             this.tpConsultarSaldo.Text = "Consultar Saldo";
             // 
             // gridControl1
@@ -1491,7 +1541,7 @@
             this.gridControl1.Location = new System.Drawing.Point(283, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(792, 755);
+            this.gridControl1.Size = new System.Drawing.Size(992, 1030);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1525,7 +1575,7 @@
             this.groupControl2.Controls.Add(this.labelControl10);
             this.groupControl2.Location = new System.Drawing.Point(11, 3);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(266, 772);
+            this.groupControl2.Size = new System.Drawing.Size(266, 1047);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "Consultar Saldo";
             // 
@@ -1742,7 +1792,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
             this.groupControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContacto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTel.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEstacionID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueZona.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRFC.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
             this.tpDireccion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
             this.groupControl8.ResumeLayout(false);
@@ -1759,6 +1816,12 @@
             this.groupControl4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtColonia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueEstado.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoExterior.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCiudad.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodigoPostal.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoInterior.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalle.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMunicipio.Properties)).EndInit();
             this.tpCredito.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
@@ -1782,6 +1845,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCuentaBancaria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueFormaPago.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLimiteCredito.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlazoPago.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDeposito.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNIP.Properties)).EndInit();
             this.tpConsultarSaldo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

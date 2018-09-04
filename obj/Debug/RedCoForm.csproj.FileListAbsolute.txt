@@ -337,7 +337,6 @@ C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.Pdf.v17.2.Core.dll
 C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.Images.v17.2.dll
 C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.Web.Resources.v17.2.dll
 C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.XtraNavBar.v17.2.dll
-C:\SuiteWEB\CMSuite\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\SuiteWEB\CMSuite\bin\Debug\RPSuiteServer.pdb
 C:\SuiteWEB\CMSuite\bin\Debug\RPSuiteServer.exe.config
 C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.Dashboard.v17.2.Core.xml
@@ -386,7 +385,6 @@ C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.Diagram.v17.2.Core.xml
 C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.XtraDiagram.v17.2.xml
 C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.Pdf.v17.2.Core.xml
 C:\SuiteWEB\CMSuite\bin\Debug\DevExpress.XtraNavBar.v17.2.xml
-C:\SuiteWEB\CMSuite\bin\Debug\Microsoft.Web.Infrastructure.xml
 C:\SuiteWEB\CMSuite\bin\Debug\de\DevExpress.Dashboard.v17.2.Core.resources.dll
 C:\SuiteWEB\CMSuite\bin\Debug\es\DevExpress.Dashboard.v17.2.Core.resources.dll
 C:\SuiteWEB\CMSuite\bin\Debug\ja\DevExpress.Dashboard.v17.2.Core.resources.dll

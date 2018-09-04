@@ -28,54 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement47 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement48 = new DevExpress.XtraEditors.TileItemElement();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
-            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement9 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement11 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement12 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement13 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement14 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement15 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement16 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement17 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement18 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement19 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement20 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement21 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement22 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement23 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement24 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement25 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement26 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement27 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement28 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement29 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement30 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement31 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement32 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement33 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement34 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement35 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement36 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement37 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement38 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement39 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement40 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement41 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement42 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement43 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement44 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement45 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement46 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement49 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement50 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement51 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement52 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement53 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement54 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement55 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement56 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement57 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement58 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement59 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement60 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement61 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement62 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement63 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement64 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement65 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement66 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement67 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement68 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement69 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement70 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement71 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement72 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement73 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement74 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement75 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement76 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement77 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement78 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement79 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement80 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement81 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement82 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement83 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement84 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement85 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement86 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement87 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement88 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement89 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement90 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement91 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement92 = new DevExpress.XtraEditors.TileItemElement();
             this.rbPrincipal = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bvcMenuPrincipal = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewClientControl5 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
@@ -84,7 +83,7 @@
             this.tileItem6 = new DevExpress.XtraEditors.TileItem();
             this.tileItem25 = new DevExpress.XtraEditors.TileItem();
             this.tileItem7 = new DevExpress.XtraEditors.TileItem();
-            this.ImageCollectionTiles = new DevExpress.Utils.ImageCollection(this.components);
+            this.ImageCollectionTiles = new DevExpress.Utils.ImageCollection();
             this.backstageViewClientControl8 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.tlcFavoritos = new DevExpress.XtraEditors.TileControl();
             this.tileGroup3 = new DevExpress.XtraEditors.TileGroup();
@@ -198,9 +197,9 @@
             this.rpVentanas = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.tmmPrincipal = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.tmmPrincipal = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
+            this.timer1 = new System.Windows.Forms.Timer();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             this.gbFavoritos = new System.Windows.Forms.GroupBox();
             this.tileControl1 = new DevExpress.XtraEditors.TileControl();
             this.tileGroup10 = new DevExpress.XtraEditors.TileGroup();
@@ -208,7 +207,7 @@
             this.tileItem22 = new DevExpress.XtraEditors.TileItem();
             this.tileItem23 = new DevExpress.XtraEditors.TileItem();
             this.tileItem24 = new DevExpress.XtraEditors.TileItem();
-            this.ImageCollection64 = new DevExpress.Utils.ImageCollection(this.components);
+            this.ImageCollection64 = new DevExpress.Utils.ImageCollection();
             this.tileGroup9 = new DevExpress.XtraEditors.TileGroup();
             this.tileItem14 = new DevExpress.XtraEditors.TileItem();
             this.tileItem34 = new DevExpress.XtraEditors.TileItem();
@@ -287,13 +286,13 @@
             // 
             // bvcMenuPrincipal
             // 
-            this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl5);
+            this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl3);
             this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl8);
+            this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl5);
             this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl2);
             this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl1);
             this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl7);
             this.bvcMenuPrincipal.Controls.Add(this.bvcReportes);
-            this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl3);
             this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl6);
             this.bvcMenuPrincipal.Controls.Add(this.backstageViewClientControl4);
             this.bvcMenuPrincipal.Items.Add(this.bvtFavoritos);
@@ -308,8 +307,8 @@
             this.bvcMenuPrincipal.Location = new System.Drawing.Point(12, 149);
             this.bvcMenuPrincipal.Name = "bvcMenuPrincipal";
             this.bvcMenuPrincipal.OwnerControl = this.rbPrincipal;
-            this.bvcMenuPrincipal.SelectedTab = this.bvtCatalogos;
-            this.bvcMenuPrincipal.SelectedTabIndex = 6;
+            this.bvcMenuPrincipal.SelectedTab = this.bvtVolumetricos;
+            this.bvcMenuPrincipal.SelectedTabIndex = 1;
             this.bvcMenuPrincipal.Size = new System.Drawing.Size(1157, 555);
             this.bvcMenuPrincipal.TabIndex = 7;
             this.bvcMenuPrincipal.SelectedTabChanged += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvcMenuPrincipal_SelectedTabChanged);
@@ -354,10 +353,10 @@
             this.tileItem6.AppearanceItem.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.tileItem6.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileItem6.AppearanceItem.Normal.Options.UseFont = true;
-            tileItemElement1.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement1.ImageIndex = 30;
-            tileItemElement1.Text = "Genera Remision";
-            this.tileItem6.Elements.Add(tileItemElement1);
+            tileItemElement47.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement47.ImageIndex = 30;
+            tileItemElement47.Text = "Producto IEPS";
+            this.tileItem6.Elements.Add(tileItemElement47);
             this.tileItem6.Id = 4;
             this.tileItem6.ItemSize = DevExpress.XtraEditors.TileItemSize.Large;
             this.tileItem6.Name = "tileItem6";
@@ -369,10 +368,10 @@
             this.tileItem25.AppearanceItem.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.tileItem25.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileItem25.AppearanceItem.Normal.Options.UseFont = true;
-            tileItemElement2.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement2.ImageIndex = 29;
-            tileItemElement2.Text = "Muestra Pemex";
-            this.tileItem25.Elements.Add(tileItemElement2);
+            tileItemElement48.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement48.ImageIndex = 29;
+            tileItemElement48.Text = "Muestra Pemex";
+            this.tileItem25.Elements.Add(tileItemElement48);
             this.tileItem25.Id = 3;
             this.tileItem25.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem25.Name = "tileItem25";
@@ -380,7 +379,7 @@
             // 
             // tileItem7
             // 
-            this.tileItem7.Elements.Add(tileItemElement1);
+            this.tileItem7.Elements.Add(tileItemElement47);
             this.tileItem7.Id = 2;
             this.tileItem7.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem7.Name = "tileItem7";
@@ -461,13 +460,13 @@
             // 
             // tileItem4
             // 
-            tileItemElement3.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            tileItemElement3.Appearance.Normal.Options.UseFont = true;
-            tileItemElement3.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement3.ImageBorder = DevExpress.XtraEditors.TileItemElementImageBorderMode.None;
-            tileItemElement3.ImageIndex = 1;
-            tileItemElement3.Text = "Facturación";
-            this.tileItem4.Elements.Add(tileItemElement3);
+            tileItemElement49.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            tileItemElement49.Appearance.Normal.Options.UseFont = true;
+            tileItemElement49.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement49.ImageBorder = DevExpress.XtraEditors.TileItemElementImageBorderMode.None;
+            tileItemElement49.ImageIndex = 1;
+            tileItemElement49.Text = "Facturación";
+            this.tileItem4.Elements.Add(tileItemElement49);
             this.tileItem4.Id = 1;
             this.tileItem4.ItemSize = DevExpress.XtraEditors.TileItemSize.Large;
             this.tileItem4.Name = "tileItem4";
@@ -477,52 +476,52 @@
             // 
             this.tileItem5.AppearanceItem.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.tileItem5.AppearanceItem.Normal.Options.UseFont = true;
-            tileItemElement4.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement4.ImageIndex = 0;
-            tileItemElement4.Text = "tileItem3";
-            this.tileItem5.Elements.Add(tileItemElement4);
+            tileItemElement50.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement50.ImageIndex = 0;
+            tileItemElement50.Text = "tileItem3";
+            this.tileItem5.Elements.Add(tileItemElement50);
             this.tileItem5.Id = 2;
             this.tileItem5.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem5.Name = "tileItem5";
             // 
             // tileItem20
             // 
-            tileItemElement5.Text = "tileItem20";
-            this.tileItem20.Elements.Add(tileItemElement5);
+            tileItemElement51.Text = "tileItem20";
+            this.tileItem20.Elements.Add(tileItemElement51);
             this.tileItem20.Id = 11;
             this.tileItem20.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem20.Name = "tileItem20";
             // 
             // tileItem16
             // 
-            tileItemElement6.Text = "";
-            this.tileItem16.Elements.Add(tileItemElement6);
+            tileItemElement52.Text = "";
+            this.tileItem16.Elements.Add(tileItemElement52);
             this.tileItem16.Id = 7;
             this.tileItem16.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem16.Name = "tileItem16";
             // 
             // tileItem18
             // 
-            tileItemElement7.Text = "tileItem18";
-            this.tileItem18.Elements.Add(tileItemElement7);
+            tileItemElement53.Text = "tileItem18";
+            this.tileItem18.Elements.Add(tileItemElement53);
             this.tileItem18.Id = 9;
             this.tileItem18.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem18.Name = "tileItem18";
             // 
             // tileItem19
             // 
-            tileItemElement8.Text = "tileItem19";
-            this.tileItem19.Elements.Add(tileItemElement8);
+            tileItemElement54.Text = "tileItem19";
+            this.tileItem19.Elements.Add(tileItemElement54);
             this.tileItem19.Id = 10;
             this.tileItem19.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem19.Name = "tileItem19";
             // 
             // tileItem17
             // 
-            tileItemElement9.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement9.ImageIndex = 0;
-            tileItemElement9.Text = "tileItem17";
-            this.tileItem17.Elements.Add(tileItemElement9);
+            tileItemElement55.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement55.ImageIndex = 0;
+            tileItemElement55.Text = "tileItem17";
+            this.tileItem17.Elements.Add(tileItemElement55);
             this.tileItem17.Id = 8;
             this.tileItem17.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem17.Name = "tileItem17";
@@ -559,8 +558,8 @@
             // 
             // tileItem2
             // 
-            tileItemElement10.Text = "Liquidacion";
-            this.tileItem2.Elements.Add(tileItemElement10);
+            tileItemElement56.Text = "Liquidacion";
+            this.tileItem2.Elements.Add(tileItemElement56);
             this.tileItem2.Id = 1;
             this.tileItem2.ItemSize = DevExpress.XtraEditors.TileItemSize.Large;
             this.tileItem2.Name = "tileItem2";
@@ -568,8 +567,8 @@
             // 
             // timAlmacen
             // 
-            tileItemElement11.Text = "Almacen";
-            this.timAlmacen.Elements.Add(tileItemElement11);
+            tileItemElement57.Text = "Almacen";
+            this.timAlmacen.Elements.Add(tileItemElement57);
             this.timAlmacen.Id = 2;
             this.timAlmacen.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.timAlmacen.Name = "timAlmacen";
@@ -607,8 +606,8 @@
             // 
             // tileItem1
             // 
-            tileItemElement12.Text = "Facturación";
-            this.tileItem1.Elements.Add(tileItemElement12);
+            tileItemElement58.Text = "Facturación";
+            this.tileItem1.Elements.Add(tileItemElement58);
             this.tileItem1.Id = 1;
             this.tileItem1.ItemSize = DevExpress.XtraEditors.TileItemSize.Large;
             this.tileItem1.Name = "tileItem1";
@@ -616,8 +615,8 @@
             // 
             // tileItem3
             // 
-            tileItemElement13.Text = "tileItem3";
-            this.tileItem3.Elements.Add(tileItemElement13);
+            tileItemElement59.Text = "tileItem3";
+            this.tileItem3.Elements.Add(tileItemElement59);
             this.tileItem3.Id = 2;
             this.tileItem3.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem3.Name = "tileItem3";
@@ -655,16 +654,16 @@
             // 
             // tileItem8
             // 
-            tileItemElement14.Text = "Facturación";
-            this.tileItem8.Elements.Add(tileItemElement14);
+            tileItemElement60.Text = "Facturación";
+            this.tileItem8.Elements.Add(tileItemElement60);
             this.tileItem8.Id = 1;
             this.tileItem8.ItemSize = DevExpress.XtraEditors.TileItemSize.Large;
             this.tileItem8.Name = "tileItem8";
             // 
             // tileItem9
             // 
-            tileItemElement15.Text = "tileItem3";
-            this.tileItem9.Elements.Add(tileItemElement15);
+            tileItemElement61.Text = "tileItem3";
+            this.tileItem9.Elements.Add(tileItemElement61);
             this.tileItem9.Id = 2;
             this.tileItem9.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem9.Name = "tileItem9";
@@ -701,16 +700,16 @@
             // 
             // tileItem10
             // 
-            tileItemElement16.Text = "Facturación";
-            this.tileItem10.Elements.Add(tileItemElement16);
+            tileItemElement62.Text = "Facturación";
+            this.tileItem10.Elements.Add(tileItemElement62);
             this.tileItem10.Id = 1;
             this.tileItem10.ItemSize = DevExpress.XtraEditors.TileItemSize.Large;
             this.tileItem10.Name = "tileItem10";
             // 
             // tileItem11
             // 
-            tileItemElement17.Text = "tileItem3";
-            this.tileItem11.Elements.Add(tileItemElement17);
+            tileItemElement63.Text = "tileItem3";
+            this.tileItem11.Elements.Add(tileItemElement63);
             this.tileItem11.Id = 2;
             this.tileItem11.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem11.Name = "tileItem11";
@@ -789,14 +788,14 @@
             this.tileItem32.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem32.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem32.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement18.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement18.ImageIndex = 6;
-            tileItemElement18.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement18.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement18.ImageToTextIndent = 0;
-            tileItemElement18.Text = "Estacion";
-            tileItemElement18.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileItem32.Elements.Add(tileItemElement18);
+            tileItemElement64.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement64.ImageIndex = 6;
+            tileItemElement64.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement64.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement64.ImageToTextIndent = 0;
+            tileItemElement64.Text = "Estacion";
+            tileItemElement64.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileItem32.Elements.Add(tileItemElement64);
             this.tileItem32.Id = 17;
             this.tileItem32.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem32.Name = "tileItem32";
@@ -824,14 +823,14 @@
             this.timTipoDocumento.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.timTipoDocumento.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.timTipoDocumento.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement19.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement19.ImageIndex = 9;
-            tileItemElement19.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement19.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement19.ImageToTextIndent = 0;
-            tileItemElement19.Text = "Tipo Documento";
-            tileItemElement19.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.timTipoDocumento.Elements.Add(tileItemElement19);
+            tileItemElement65.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement65.ImageIndex = 9;
+            tileItemElement65.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement65.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement65.ImageToTextIndent = 0;
+            tileItemElement65.Text = "Tipo Documento";
+            tileItemElement65.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.timTipoDocumento.Elements.Add(tileItemElement65);
             this.timTipoDocumento.Id = 9;
             this.timTipoDocumento.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.timTipoDocumento.Name = "timTipoDocumento";
@@ -855,14 +854,14 @@
             this.tiCatalogoProveedor.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tiCatalogoProveedor.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tiCatalogoProveedor.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement20.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement20.ImageIndex = 18;
-            tileItemElement20.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement20.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement20.ImageToTextIndent = 0;
-            tileItemElement20.Text = "Proveedor";
-            tileItemElement20.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tiCatalogoProveedor.Elements.Add(tileItemElement20);
+            tileItemElement66.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement66.ImageIndex = 18;
+            tileItemElement66.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement66.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement66.ImageToTextIndent = 0;
+            tileItemElement66.Text = "Proveedor";
+            tileItemElement66.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tiCatalogoProveedor.Elements.Add(tileItemElement66);
             this.tiCatalogoProveedor.Id = 5;
             this.tiCatalogoProveedor.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tiCatalogoProveedor.Name = "tiCatalogoProveedor";
@@ -890,14 +889,14 @@
             this.tileItem12.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem12.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem12.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement21.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement21.ImageIndex = 4;
-            tileItemElement21.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement21.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement21.ImageToTextIndent = 0;
-            tileItemElement21.Text = "Usuario";
-            tileItemElement21.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileItem12.Elements.Add(tileItemElement21);
+            tileItemElement67.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement67.ImageIndex = 4;
+            tileItemElement67.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement67.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement67.ImageToTextIndent = 0;
+            tileItemElement67.Text = "Usuario";
+            tileItemElement67.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileItem12.Elements.Add(tileItemElement67);
             this.tileItem12.Id = 1;
             this.tileItem12.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem12.Name = "tileItem12";
@@ -925,14 +924,14 @@
             this.tiVehiculo.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tiVehiculo.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tiVehiculo.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement22.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement22.ImageIndex = 5;
-            tileItemElement22.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement22.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement22.ImageToTextIndent = 0;
-            tileItemElement22.Text = "Vehiculo";
-            tileItemElement22.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tiVehiculo.Elements.Add(tileItemElement22);
+            tileItemElement68.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement68.ImageIndex = 5;
+            tileItemElement68.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement68.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement68.ImageToTextIndent = 0;
+            tileItemElement68.Text = "Vehiculo";
+            tileItemElement68.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tiVehiculo.Elements.Add(tileItemElement68);
             this.tiVehiculo.Id = 13;
             this.tiVehiculo.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tiVehiculo.Name = "tiVehiculo";
@@ -956,14 +955,14 @@
             this.tileItem31.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem31.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem31.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement23.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement23.ImageIndex = 31;
-            tileItemElement23.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement23.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement23.ImageToTextIndent = 0;
-            tileItemElement23.Text = "Terminal";
-            tileItemElement23.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileItem31.Elements.Add(tileItemElement23);
+            tileItemElement69.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement69.ImageIndex = 31;
+            tileItemElement69.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement69.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement69.ImageToTextIndent = 0;
+            tileItemElement69.Text = "Terminal";
+            tileItemElement69.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileItem31.Elements.Add(tileItemElement69);
             this.tileItem31.Id = 15;
             this.tileItem31.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem31.Name = "tileItem31";
@@ -991,14 +990,14 @@
             this.tileItem36.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem36.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem36.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement24.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement24.ImageIndex = 11;
-            tileItemElement24.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement24.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement24.ImageToTextIndent = 0;
-            tileItemElement24.Text = "Factura Uso";
-            tileItemElement24.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileItem36.Elements.Add(tileItemElement24);
+            tileItemElement70.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement70.ImageIndex = 11;
+            tileItemElement70.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement70.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement70.ImageToTextIndent = 0;
+            tileItemElement70.Text = "Factura Uso";
+            tileItemElement70.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileItem36.Elements.Add(tileItemElement70);
             this.tileItem36.Id = 21;
             this.tileItem36.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem36.Name = "tileItem36";
@@ -1010,14 +1009,14 @@
             this.tileItem13.AppearanceItem.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tileItem13.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileItem13.AppearanceItem.Normal.Options.UseFont = true;
-            tileItemElement25.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement25.ImageIndex = 17;
-            tileItemElement25.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement25.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement25.ImageToTextIndent = 0;
-            tileItemElement25.Text = "Catalogo Categoria";
-            tileItemElement25.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileItem13.Elements.Add(tileItemElement25);
+            tileItemElement71.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement71.ImageIndex = 17;
+            tileItemElement71.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement71.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement71.ImageToTextIndent = 0;
+            tileItemElement71.Text = "Catalogo Categoria";
+            tileItemElement71.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileItem13.Elements.Add(tileItemElement71);
             this.tileItem13.Id = 2;
             this.tileItem13.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem13.Name = "tileItem13";
@@ -1045,14 +1044,14 @@
             this.tetCatProducto.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tetCatProducto.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tetCatProducto.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement26.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement26.ImageIndex = 2;
-            tileItemElement26.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement26.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement26.ImageToTextIndent = 0;
-            tileItemElement26.Text = "Productos";
-            tileItemElement26.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tetCatProducto.Elements.Add(tileItemElement26);
+            tileItemElement72.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement72.ImageIndex = 2;
+            tileItemElement72.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement72.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement72.ImageToTextIndent = 0;
+            tileItemElement72.Text = "Productos";
+            tileItemElement72.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tetCatProducto.Elements.Add(tileItemElement72);
             this.tetCatProducto.Id = 3;
             this.tetCatProducto.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tetCatProducto.Name = "tetCatProducto";
@@ -1080,14 +1079,14 @@
             this.tileItem30.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem30.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem30.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement27.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement27.ImageIndex = 7;
-            tileItemElement27.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement27.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement27.ImageToTextIndent = 0;
-            tileItemElement27.Text = "Grupo Usuario";
-            tileItemElement27.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileItem30.Elements.Add(tileItemElement27);
+            tileItemElement73.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement73.ImageIndex = 7;
+            tileItemElement73.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement73.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement73.ImageToTextIndent = 0;
+            tileItemElement73.Text = "Grupo Usuario";
+            tileItemElement73.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileItem30.Elements.Add(tileItemElement73);
             this.tileItem30.Id = 18;
             this.tileItem30.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem30.Name = "tileItem30";
@@ -1115,14 +1114,14 @@
             this.tileItem33.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem33.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem33.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement28.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement28.ImageIndex = 8;
-            tileItemElement28.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement28.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement28.ImageToTextIndent = 0;
-            tileItemElement28.Text = "Permisos";
-            tileItemElement28.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileItem33.Elements.Add(tileItemElement28);
+            tileItemElement74.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement74.ImageIndex = 8;
+            tileItemElement74.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement74.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement74.ImageToTextIndent = 0;
+            tileItemElement74.Text = "Permisos";
+            tileItemElement74.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileItem33.Elements.Add(tileItemElement74);
             this.tileItem33.Id = 19;
             this.tileItem33.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem33.Name = "tileItem33";
@@ -1151,14 +1150,14 @@
             this.tileItem40.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem40.AppearanceItem.Pressed.Options.UseBorderColor = true;
             this.tileItem40.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement29.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement29.ImageIndex = 14;
-            tileItemElement29.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement29.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement29.ImageToTextIndent = 0;
-            tileItemElement29.Text = "Banco";
-            tileItemElement29.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileItem40.Elements.Add(tileItemElement29);
+            tileItemElement75.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement75.ImageIndex = 14;
+            tileItemElement75.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement75.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement75.ImageToTextIndent = 0;
+            tileItemElement75.Text = "Banco";
+            tileItemElement75.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileItem40.Elements.Add(tileItemElement75);
             this.tileItem40.Id = 25;
             this.tileItem40.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem40.Name = "tileItem40";
@@ -1186,14 +1185,14 @@
             this.tiCatalogoCuentaBancaria.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tiCatalogoCuentaBancaria.AppearanceItem.Pressed.Options.UseBorderColor = true;
             this.tiCatalogoCuentaBancaria.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement30.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement30.ImageIndex = 15;
-            tileItemElement30.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement30.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement30.ImageToTextIndent = 3;
-            tileItemElement30.Text = "Cuenta Bancaria";
-            tileItemElement30.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tiCatalogoCuentaBancaria.Elements.Add(tileItemElement30);
+            tileItemElement76.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement76.ImageIndex = 15;
+            tileItemElement76.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement76.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement76.ImageToTextIndent = 3;
+            tileItemElement76.Text = "Cuenta Bancaria";
+            tileItemElement76.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tiCatalogoCuentaBancaria.Elements.Add(tileItemElement76);
             this.tiCatalogoCuentaBancaria.Id = 4;
             this.tiCatalogoCuentaBancaria.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tiCatalogoCuentaBancaria.Name = "tiCatalogoCuentaBancaria";
@@ -1221,17 +1220,18 @@
             this.tileItem37.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem37.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem37.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement31.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement31.ImageIndex = 12;
-            tileItemElement31.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement31.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement31.ImageToTextIndent = 0;
-            tileItemElement31.Text = "Metodo de Pago";
-            tileItemElement31.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileItem37.Elements.Add(tileItemElement31);
+            tileItemElement77.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement77.ImageIndex = 12;
+            tileItemElement77.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement77.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement77.ImageToTextIndent = 0;
+            tileItemElement77.Text = "Metodo de Pago";
+            tileItemElement77.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileItem37.Elements.Add(tileItemElement77);
             this.tileItem37.Id = 22;
             this.tileItem37.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem37.Name = "tileItem37";
+            this.tileItem37.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem37_ItemClick);
             // 
             // tiFormadePago
             // 
@@ -1251,14 +1251,14 @@
             this.tiFormadePago.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tiFormadePago.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tiFormadePago.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement32.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement32.ImageIndex = 22;
-            tileItemElement32.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement32.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement32.ImageToTextIndent = 0;
-            tileItemElement32.Text = "Forma de Pago";
-            tileItemElement32.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tiFormadePago.Elements.Add(tileItemElement32);
+            tileItemElement78.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement78.ImageIndex = 22;
+            tileItemElement78.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement78.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement78.ImageToTextIndent = 0;
+            tileItemElement78.Text = "Forma de Pago";
+            tileItemElement78.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tiFormadePago.Elements.Add(tileItemElement78);
             this.tiFormadePago.Id = 6;
             this.tiFormadePago.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tiFormadePago.Name = "tiFormadePago";
@@ -1268,9 +1268,9 @@
             // 
             this.tileItem27.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tileItem27.AppearanceItem.Normal.Options.UseBackColor = true;
-            tileItemElement33.ImageIndex = 25;
-            tileItemElement33.Text = "Vendedor";
-            this.tileItem27.Elements.Add(tileItemElement33);
+            tileItemElement79.ImageIndex = 25;
+            tileItemElement79.Text = "Vendedor";
+            this.tileItem27.Elements.Add(tileItemElement79);
             this.tileItem27.Id = 30;
             this.tileItem27.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem27.Name = "tileItem27";
@@ -1280,9 +1280,9 @@
             // 
             this.tileItem35.AppearanceItem.Normal.BackColor = System.Drawing.Color.DarkOrange;
             this.tileItem35.AppearanceItem.Normal.Options.UseBackColor = true;
-            tileItemElement34.ImageIndex = 27;
-            tileItemElement34.Text = "Transportista";
-            this.tileItem35.Elements.Add(tileItemElement34);
+            tileItemElement80.ImageIndex = 27;
+            tileItemElement80.Text = "Transportista";
+            this.tileItem35.Elements.Add(tileItemElement80);
             this.tileItem35.Id = 31;
             this.tileItem35.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem35.Name = "tileItem35";
@@ -1292,9 +1292,9 @@
             // 
             this.tileItem38.AppearanceItem.Normal.BackColor = System.Drawing.Color.DarkOrange;
             this.tileItem38.AppearanceItem.Normal.Options.UseBackColor = true;
-            tileItemElement35.ImageIndex = 28;
-            tileItemElement35.Text = "Operador";
-            this.tileItem38.Elements.Add(tileItemElement35);
+            tileItemElement81.ImageIndex = 28;
+            tileItemElement81.Text = "Operador";
+            this.tileItem38.Elements.Add(tileItemElement81);
             this.tileItem38.Id = 32;
             this.tileItem38.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem38.Name = "tileItem38";
@@ -1308,8 +1308,8 @@
             // 
             // tileItem42
             // 
-            tileItemElement36.Text = "ZONA";
-            this.tileItem42.Elements.Add(tileItemElement36);
+            tileItemElement82.Text = "ZONA";
+            this.tileItem42.Elements.Add(tileItemElement82);
             this.tileItem42.Id = 27;
             this.tileItem42.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem42.Name = "tileItem42";
@@ -1363,9 +1363,9 @@
             this.tileItem15.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem15.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem15.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement37.ImageIndex = 26;
-            tileItemElement37.Text = "Comercializadora";
-            this.tileItem15.Elements.Add(tileItemElement37);
+            tileItemElement83.ImageIndex = 26;
+            tileItemElement83.Text = "Comercializadora";
+            this.tileItem15.Elements.Add(tileItemElement83);
             this.tileItem15.Id = 2;
             this.tileItem15.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem15.Name = "tileItem15";
@@ -1389,12 +1389,12 @@
             this.tileItem26.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem26.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem26.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement38.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement38.ImageIndex = 10;
-            tileItemElement38.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement38.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement38.Text = "Regimen Fiscal";
-            this.tileItem26.Elements.Add(tileItemElement38);
+            tileItemElement84.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement84.ImageIndex = 10;
+            tileItemElement84.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement84.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement84.Text = "Regimen Fiscal";
+            this.tileItem26.Elements.Add(tileItemElement84);
             this.tileItem26.Id = 3;
             this.tileItem26.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem26.Name = "tileItem26";
@@ -1413,8 +1413,8 @@
             this.tileItem28.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem28.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem28.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement39.Text = "Zona";
-            this.tileItem28.Elements.Add(tileItemElement39);
+            tileItemElement85.Text = "Zona";
+            this.tileItem28.Elements.Add(tileItemElement85);
             this.tileItem28.Id = 4;
             this.tileItem28.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem28.Name = "tileItem28";
@@ -1468,12 +1468,12 @@
             this.tileItem29.AppearanceItem.Pressed.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.tileItem29.AppearanceItem.Pressed.Options.UseBackColor = true;
             this.tileItem29.AppearanceItem.Pressed.Options.UseFont = true;
-            tileItemElement40.ImageIndex = 24;
-            tileItemElement40.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement40.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
-            tileItemElement40.ImageToTextIndent = -10;
-            tileItemElement40.Text = "Pedido";
-            this.tileItem29.Elements.Add(tileItemElement40);
+            tileItemElement86.ImageIndex = 24;
+            tileItemElement86.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement86.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom;
+            tileItemElement86.ImageToTextIndent = -10;
+            tileItemElement86.Text = "Pedido";
+            this.tileItem29.Elements.Add(tileItemElement86);
             this.tileItem29.Id = 2;
             this.tileItem29.ItemSize = DevExpress.XtraEditors.TileItemSize.Large;
             this.tileItem29.Name = "tileItem29";
@@ -1490,6 +1490,7 @@
             this.bvtVolumetricos.Caption = "Movimientos";
             this.bvtVolumetricos.ContentControl = this.backstageViewClientControl5;
             this.bvtVolumetricos.Name = "bvtVolumetricos";
+            this.bvtVolumetricos.Selected = true;
             // 
             // bvtLiquidacion
             // 
@@ -1520,7 +1521,6 @@
             this.bvtCatalogos.Caption = "Catálogos";
             this.bvtCatalogos.ContentControl = this.backstageViewClientControl3;
             this.bvtCatalogos.Name = "bvtCatalogos";
-            this.bvtCatalogos.Selected = true;
             this.bvtCatalogos.SelectedChanged += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvtCatalogos_SelectedChanged);
             // 
             // bvtConfiguracion
@@ -1937,32 +1937,32 @@
             // 
             // tileItem21
             // 
-            tileItemElement41.Text = "tileItem21";
-            this.tileItem21.Elements.Add(tileItemElement41);
+            tileItemElement87.Text = "tileItem21";
+            this.tileItem21.Elements.Add(tileItemElement87);
             this.tileItem21.Id = 0;
             this.tileItem21.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem21.Name = "tileItem21";
             // 
             // tileItem22
             // 
-            tileItemElement42.Text = "tileItem22";
-            this.tileItem22.Elements.Add(tileItemElement42);
+            tileItemElement88.Text = "tileItem22";
+            this.tileItem22.Elements.Add(tileItemElement88);
             this.tileItem22.Id = 1;
             this.tileItem22.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem22.Name = "tileItem22";
             // 
             // tileItem23
             // 
-            tileItemElement43.Text = "tileItem23";
-            this.tileItem23.Elements.Add(tileItemElement43);
+            tileItemElement89.Text = "tileItem23";
+            this.tileItem23.Elements.Add(tileItemElement89);
             this.tileItem23.Id = 2;
             this.tileItem23.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem23.Name = "tileItem23";
             // 
             // tileItem24
             // 
-            tileItemElement44.Text = "tileItem24";
-            this.tileItem24.Elements.Add(tileItemElement44);
+            tileItemElement90.Text = "tileItem24";
+            this.tileItem24.Elements.Add(tileItemElement90);
             this.tileItem24.Id = 3;
             this.tileItem24.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem24.Name = "tileItem24";
@@ -1979,8 +1979,8 @@
             // 
             // tileItem14
             // 
-            tileItemElement45.Text = "Estacion";
-            this.tileItem14.Elements.Add(tileItemElement45);
+            tileItemElement91.Text = "Estacion";
+            this.tileItem14.Elements.Add(tileItemElement91);
             this.tileItem14.Id = 1;
             this.tileItem14.ItemSize = DevExpress.XtraEditors.TileItemSize.Large;
             this.tileItem14.Name = "tileItem14";
@@ -2002,12 +2002,12 @@
             this.tileItem34.AppearanceItem.Normal.Options.UseBorderColor = true;
             this.tileItem34.AppearanceItem.Normal.Options.UseFont = true;
             this.tileItem34.AppearanceItem.Normal.Options.UseForeColor = true;
-            tileItemElement46.ImageIndex = 5;
-            tileItemElement46.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileItemElement46.ImageToTextIndent = 0;
-            tileItemElement46.Text = "VEHICULOS";
-            tileItemElement46.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
-            this.tileItem34.Elements.Add(tileItemElement46);
+            tileItemElement92.ImageIndex = 5;
+            tileItemElement92.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement92.ImageToTextIndent = 0;
+            tileItemElement92.Text = "VEHICULOS";
+            tileItemElement92.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
+            this.tileItem34.Elements.Add(tileItemElement92);
             this.tileItem34.Id = 13;
             this.tileItem34.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem34.Name = "tileItem34";

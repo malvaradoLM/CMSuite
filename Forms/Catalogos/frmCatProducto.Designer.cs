@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatProducto));
             this.colProductoID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCodigo = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -47,7 +47,7 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.chkStatus = new DevExpress.XtraEditors.CheckEdit();
-            this.spCatProductoDSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spCatProductoDSBindingSource = new System.Windows.Forms.BindingSource();
             this.spCatProductoDS = new RedCoForm.DataSets.spCatProductoDS();
             this.lueCategoria = new DevExpress.XtraEditors.LookUpEdit();
             this.txtDescripcion = new UserControls.CTextEdit();
@@ -301,7 +301,9 @@
             // 
             this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "Descripcion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtDescripcion.Location = new System.Drawing.Point(132, 54);
+            this.txtDescripcion.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.NDecimales = 2;
             this.txtDescripcion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDescripcion.Size = new System.Drawing.Size(510, 20);
             this.txtDescripcion.TabIndex = 14;
@@ -310,7 +312,9 @@
             // 
             this.txtCodigo.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "Codigo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCodigo.Location = new System.Drawing.Point(44, 99);
+            this.txtCodigo.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.NDecimales = 2;
             this.txtCodigo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigo.Size = new System.Drawing.Size(82, 20);
             this.txtCodigo.TabIndex = 15;
@@ -319,7 +323,9 @@
             // 
             this.txtPrecio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "Precio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtPrecio.Location = new System.Drawing.Point(132, 99);
+            this.txtPrecio.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.NDecimales = 2;
             this.txtPrecio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 16;
@@ -328,7 +334,9 @@
             // 
             this.txtCodigoBarras.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CodigoBarras", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCodigoBarras.Location = new System.Drawing.Point(238, 99);
+            this.txtCodigoBarras.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCodigoBarras.Name = "txtCodigoBarras";
+            this.txtCodigoBarras.NDecimales = 2;
             this.txtCodigoBarras.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigoBarras.Size = new System.Drawing.Size(163, 20);
             this.txtCodigoBarras.TabIndex = 17;
@@ -337,7 +345,9 @@
             // 
             this.txtClaveSAT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "ClaveSAT", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtClaveSAT.Location = new System.Drawing.Point(44, 148);
+            this.txtClaveSAT.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtClaveSAT.Name = "txtClaveSAT";
+            this.txtClaveSAT.NDecimales = 2;
             this.txtClaveSAT.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtClaveSAT.Size = new System.Drawing.Size(82, 20);
             this.txtClaveSAT.TabIndex = 18;
@@ -347,7 +357,9 @@
             // 
             this.txtCuentaContCompra.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CuentaContableCompra", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCuentaContCompra.Location = new System.Drawing.Point(44, 193);
+            this.txtCuentaContCompra.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCuentaContCompra.Name = "txtCuentaContCompra";
+            this.txtCuentaContCompra.NDecimales = 2;
             this.txtCuentaContCompra.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCuentaContCompra.Size = new System.Drawing.Size(188, 20);
             this.txtCuentaContCompra.TabIndex = 19;
@@ -356,7 +368,9 @@
             // 
             this.txtCuentaContVenta.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CuentaContableVenta", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCuentaContVenta.Location = new System.Drawing.Point(238, 148);
+            this.txtCuentaContVenta.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCuentaContVenta.Name = "txtCuentaContVenta";
+            this.txtCuentaContVenta.NDecimales = 2;
             this.txtCuentaContVenta.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCuentaContVenta.Size = new System.Drawing.Size(163, 20);
             this.txtCuentaContVenta.TabIndex = 20;
@@ -365,7 +379,9 @@
             // 
             this.txtCuentaContIVA.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CuentaContableIVA", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCuentaContIVA.Location = new System.Drawing.Point(407, 148);
+            this.txtCuentaContIVA.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCuentaContIVA.Name = "txtCuentaContIVA";
+            this.txtCuentaContIVA.NDecimales = 2;
             this.txtCuentaContIVA.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCuentaContIVA.Size = new System.Drawing.Size(235, 20);
             this.txtCuentaContIVA.TabIndex = 22;
@@ -374,7 +390,9 @@
             // 
             this.txtCostoPromedio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "CostoPromedio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtCostoPromedio.Location = new System.Drawing.Point(132, 148);
+            this.txtCostoPromedio.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtCostoPromedio.Name = "txtCostoPromedio";
+            this.txtCostoPromedio.NDecimales = 2;
             this.txtCostoPromedio.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCostoPromedio.Size = new System.Drawing.Size(100, 20);
             this.txtCostoPromedio.TabIndex = 23;
@@ -415,7 +433,9 @@
             // 
             this.txtProductoID.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatProductoDSBindingSource, "ProductoID", true));
             this.txtProductoID.Location = new System.Drawing.Point(44, 54);
+            this.txtProductoID.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtProductoID.Name = "txtProductoID";
+            this.txtProductoID.NDecimales = 2;
             this.txtProductoID.Properties.ReadOnly = true;
             this.txtProductoID.Size = new System.Drawing.Size(82, 20);
             this.txtProductoID.TabIndex = 25;
@@ -432,6 +452,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(763, 399);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCatProducto";
             this.Text = "Catalogo Producto";
             ((System.ComponentModel.ISupportInitialize)(this.tcCatalogo)).EndInit();
