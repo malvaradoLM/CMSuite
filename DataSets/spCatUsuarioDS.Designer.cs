@@ -284,9 +284,9 @@ namespace RedCoForm.DataSets {
             
             private global::System.Data.DataColumn columnStatus;
             
-            private global::System.Data.DataColumn columnUsuario;
+            private global::System.Data.DataColumn columnUserName;
             
-            private global::System.Data.DataColumn columnClave;
+            private global::System.Data.DataColumn columnPassword;
             
             private global::System.Data.DataColumn columnEstacionID;
             
@@ -349,17 +349,17 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn UsuarioColumn {
+            public global::System.Data.DataColumn UserNameColumn {
                 get {
-                    return this.columnUsuario;
+                    return this.columnUserName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ClaveColumn {
+            public global::System.Data.DataColumn PasswordColumn {
                 get {
-                    return this.columnClave;
+                    return this.columnPassword;
                 }
             }
             
@@ -408,14 +408,14 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public spCatUsuarioRow AddspCatUsuarioRow(int UsuarioID, string Nombre, bool Status, string Usuario, string Clave, int EstacionID) {
+            public spCatUsuarioRow AddspCatUsuarioRow(int UsuarioID, string Nombre, bool Status, string UserName, string Password, int EstacionID) {
                 spCatUsuarioRow rowspCatUsuarioRow = ((spCatUsuarioRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         UsuarioID,
                         Nombre,
                         Status,
-                        Usuario,
-                        Clave,
+                        UserName,
+                        Password,
                         EstacionID};
                 rowspCatUsuarioRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowspCatUsuarioRow);
@@ -442,8 +442,8 @@ namespace RedCoForm.DataSets {
                 this.columnUsuarioID = base.Columns["UsuarioID"];
                 this.columnNombre = base.Columns["Nombre"];
                 this.columnStatus = base.Columns["Status"];
-                this.columnUsuario = base.Columns["Usuario"];
-                this.columnClave = base.Columns["Clave"];
+                this.columnUserName = base.Columns["UserName"];
+                this.columnPassword = base.Columns["Password"];
                 this.columnEstacionID = base.Columns["EstacionID"];
             }
             
@@ -456,16 +456,16 @@ namespace RedCoForm.DataSets {
                 base.Columns.Add(this.columnNombre);
                 this.columnStatus = new global::System.Data.DataColumn("Status", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStatus);
-                this.columnUsuario = new global::System.Data.DataColumn("Usuario", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnUsuario);
-                this.columnClave = new global::System.Data.DataColumn("Clave", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnClave);
+                this.columnUserName = new global::System.Data.DataColumn("UserName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUserName);
+                this.columnPassword = new global::System.Data.DataColumn("Password", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPassword);
                 this.columnEstacionID = new global::System.Data.DataColumn("EstacionID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEstacionID);
                 this.columnUsuarioID.AllowDBNull = false;
                 this.columnNombre.MaxLength = 100;
-                this.columnUsuario.MaxLength = 10;
-                this.columnClave.MaxLength = 10;
+                this.columnUserName.MaxLength = 10;
+                this.columnPassword.MaxLength = 10;
                 this.columnEstacionID.AllowDBNull = false;
             }
             
@@ -652,33 +652,33 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Usuario {
+            public string UserName {
                 get {
                     try {
-                        return ((string)(this[this.tablespCatUsuario.UsuarioColumn]));
+                        return ((string)(this[this.tablespCatUsuario.UserNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Usuario\' in table \'spCatUsuario\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'UserName\' in table \'spCatUsuario\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablespCatUsuario.UsuarioColumn] = value;
+                    this[this.tablespCatUsuario.UserNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Clave {
+            public string Password {
                 get {
                     try {
-                        return ((string)(this[this.tablespCatUsuario.ClaveColumn]));
+                        return ((string)(this[this.tablespCatUsuario.PasswordColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Clave\' in table \'spCatUsuario\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Password\' in table \'spCatUsuario\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablespCatUsuario.ClaveColumn] = value;
+                    this[this.tablespCatUsuario.PasswordColumn] = value;
                 }
             }
             
@@ -719,26 +719,26 @@ namespace RedCoForm.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsUsuarioNull() {
-                return this.IsNull(this.tablespCatUsuario.UsuarioColumn);
+            public bool IsUserNameNull() {
+                return this.IsNull(this.tablespCatUsuario.UserNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetUsuarioNull() {
-                this[this.tablespCatUsuario.UsuarioColumn] = global::System.Convert.DBNull;
+            public void SetUserNameNull() {
+                this[this.tablespCatUsuario.UserNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsClaveNull() {
-                return this.IsNull(this.tablespCatUsuario.ClaveColumn);
+            public bool IsPasswordNull() {
+                return this.IsNull(this.tablespCatUsuario.PasswordColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetClaveNull() {
-                this[this.tablespCatUsuario.ClaveColumn] = global::System.Convert.DBNull;
+            public void SetPasswordNull() {
+                this[this.tablespCatUsuario.PasswordColumn] = global::System.Convert.DBNull;
             }
         }
         

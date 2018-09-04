@@ -488,7 +488,9 @@
             // 
             this.txtcDescuento.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spDetallePedidoBindingSource, "Descuento", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtcDescuento.Location = new System.Drawing.Point(903, 172);
+            this.txtcDescuento.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtcDescuento.Name = "txtcDescuento";
+            this.txtcDescuento.NDecimales = 2;
             this.txtcDescuento.Size = new System.Drawing.Size(100, 20);
             this.txtcDescuento.TabIndex = 31;
             // 
@@ -813,8 +815,11 @@
             // txtFolio
             // 
             this.txtFolio.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatPedidoBindingSource, "Folio", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtFolio.Enabled = false;
             this.txtFolio.Location = new System.Drawing.Point(134, 43);
+            this.txtFolio.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtFolio.Name = "txtFolio";
+            this.txtFolio.NDecimales = 2;
             this.txtFolio.Size = new System.Drawing.Size(100, 20);
             this.txtFolio.TabIndex = 16;
             // 
@@ -839,8 +844,11 @@
             // txtSerie
             // 
             this.txtSerie.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.spCatPedidoBindingSource, "Serie", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtSerie.Enabled = false;
             this.txtSerie.Location = new System.Drawing.Point(14, 43);
+            this.txtSerie.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtSerie.Name = "txtSerie";
+            this.txtSerie.NDecimales = 2;
             this.txtSerie.Size = new System.Drawing.Size(100, 20);
             this.txtSerie.TabIndex = 15;
             // 
@@ -866,7 +874,9 @@
             // 
             this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotal.Location = new System.Drawing.Point(1065, 80);
+            this.txtTotal.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtTotal.Name = "txtTotal";
+            this.txtTotal.NDecimales = 2;
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
             this.txtTotal.TabIndex = 21;
             // 
@@ -874,7 +884,9 @@
             // 
             this.txtDescuento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescuento.Location = new System.Drawing.Point(1065, 61);
+            this.txtDescuento.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.NDecimales = 2;
             this.txtDescuento.Size = new System.Drawing.Size(100, 20);
             this.txtDescuento.TabIndex = 20;
             // 
@@ -882,7 +894,9 @@
             // 
             this.txtIEPS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtIEPS.Location = new System.Drawing.Point(1065, 42);
+            this.txtIEPS.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtIEPS.Name = "txtIEPS";
+            this.txtIEPS.NDecimales = 2;
             this.txtIEPS.Size = new System.Drawing.Size(100, 20);
             this.txtIEPS.TabIndex = 19;
             // 
@@ -890,7 +904,9 @@
             // 
             this.txtIVA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtIVA.Location = new System.Drawing.Point(1065, 23);
+            this.txtIVA.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtIVA.Name = "txtIVA";
+            this.txtIVA.NDecimales = 2;
             this.txtIVA.Size = new System.Drawing.Size(100, 20);
             this.txtIVA.TabIndex = 18;
             // 
@@ -898,7 +914,9 @@
             // 
             this.txtSubtotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSubtotal.Location = new System.Drawing.Point(1065, 4);
+            this.txtSubtotal.MaskType = UserControls.GlobalVar.CMask.None;
             this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.NDecimales = 2;
             this.txtSubtotal.Size = new System.Drawing.Size(100, 20);
             this.txtSubtotal.TabIndex = 17;
             // 

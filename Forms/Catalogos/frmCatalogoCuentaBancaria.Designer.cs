@@ -127,15 +127,13 @@
             // 
             this.colCuenta.FieldName = "Cuenta";
             this.colCuenta.Name = "colCuenta";
-            this.colCuenta.Visible = true;
-            this.colCuenta.VisibleIndex = 1;
             // 
             // colCuentaContable
             // 
-            this.colCuentaContable.FieldName = "CuentaContable";
+            this.colCuentaContable.FieldName = "NoCuenta";
             this.colCuentaContable.Name = "colCuentaContable";
             this.colCuentaContable.Visible = true;
-            this.colCuentaContable.VisibleIndex = 2;
+            this.colCuentaContable.VisibleIndex = 1;
             // 
             // colDlls
             // 
@@ -155,8 +153,6 @@
             // 
             this.colEstacionID.FieldName = "EstacionID";
             this.colEstacionID.Name = "colEstacionID";
-            this.colEstacionID.Visible = true;
-            this.colEstacionID.VisibleIndex = 5;
             // 
             // labelControl1
             // 
